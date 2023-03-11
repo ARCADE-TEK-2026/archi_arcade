@@ -1,0 +1,21 @@
+name: Doxygen GitHub Pages Deploy Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: epitechcontent/epitest-docker
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build documentation
+        run: make doxygen
+
+      - deploy:
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: documentation/html
