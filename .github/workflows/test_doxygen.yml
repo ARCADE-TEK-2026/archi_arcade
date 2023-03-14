@@ -1,9 +1,6 @@
 name: Doxygen GitHub Pages Deploy Action
 
-on:
-  push:
-    branches:
-      - main
+on: [push, pull_request]
 
 jobs:
   deploy:
@@ -29,11 +26,3 @@ jobs:
 
       - name: Build documentation
         run: make doxygen
-
-      - name: deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: documentation/
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
-          git-config-email: "<>"
-          git-config-name: "Github Action documentation"
