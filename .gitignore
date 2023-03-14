@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+documentation/html
+documentation/latex
+documentation/uml.png

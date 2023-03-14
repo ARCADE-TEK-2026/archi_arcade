@@ -12,8 +12,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Install python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+
       - name: Install dependencies
-        run: sudo apt-get install -y graphviz doxygen
+        run: |
+          sudo apt-get install -y graphviz doxygen plantuml
+          pip install hpp2plantuml
+
+      - name: Build uml
+        run: make uml
 
       - name: Build documentation
         run: make doxygen
@@ -21,5 +32,7 @@ jobs:
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: documentation/html
+          folder: documentation/
           ssh-key: ${{ secrets.DEPLOY_KEY }}
+          git-config-email: "<>"
+          git-config-name: "Github Action documentation"
