@@ -1,0 +1,415 @@
+\hypertarget{a00036}{}\doxysection{Arcade Namespace Reference}
+\label{a00036}\index{Arcade@{Arcade}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{a00852}{IComponents}}
+\item 
+class \mbox{\hyperlink{a00856}{ICore\+Module}}
+\item 
+class \mbox{\hyperlink{a00860}{IEntity\+Module}}
+\item 
+class \mbox{\hyperlink{a00864}{IEvent\+Module}}
+\item 
+class \mbox{\hyperlink{a00868}{IEvent\+Handler}}
+\item 
+class \mbox{\hyperlink{a00872}{IGame\+Module}}
+\item 
+class \mbox{\hyperlink{a00876}{IGraph\+Module}}
+\item 
+class \mbox{\hyperlink{a00880}{ISystem\+Module}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337}{event\+Type}} \{ \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a868ac6749b0e2c167d0d3fa10d4eeb63}{MOUSE\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337afdf9bdaa4ff30c2d58a845c3e7126510}{MOUSE\+\_\+\+MOVED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a021429970d72b88bcc877710ed4a56ed}{KEY\+\_\+\+A\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a52f7de1fd1564f70666af4ca2a286da2}{KEY\+\_\+\+B\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a4f3e21b825048c5adeffe0d0c7c93ebd}{KEY\+\_\+\+C\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a1210a640c8222bab31be68e969fbca5f}{KEY\+\_\+\+D\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a9869d217410a8f18033469fd62027518}{KEY\+\_\+\+E\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a52e2a932029a1e987702498217895115}{KEY\+\_\+\+F\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a96096d0355c360f4d56fa4ff1c8b652e}{KEY\+\_\+\+G\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337acf033843cd2076030a8a0967f50c4185}{KEY\+\_\+\+H\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a9682e1d7acd760f7ae4cee95ec1ddf18}{KEY\+\_\+\+I\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337afa72f89071fbb57defe677fb3507186f}{KEY\+\_\+\+J\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337af09d5e44479c9a13650802ec1f39c288}{KEY\+\_\+\+K\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a093f5818834d20a9c8a5ca9dd6b38d9c}{KEY\+\_\+\+L\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a1bce9e4db548765e50bbd930d2b46b66}{KEY\+\_\+\+M\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a2e3e87c9a0aadc94d3b2c95ec15a7658}{KEY\+\_\+\+N\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a706c49a741f42c71a223fa806a371982}{KEY\+\_\+\+O\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337ac2e006cbc956fc44c666cd416e0c06bb}{KEY\+\_\+\+P\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a870001bab4db45dea53657e8f16e57f3}{KEY\+\_\+\+Q\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a401ca602a83063dd511691c85dff341b}{KEY\+\_\+\+R\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a2633d8bbc25a1a06aa39bef0445dff2d}{KEY\+\_\+\+S\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a83a07015559604b9001d5f2647fa802d}{KEY\+\_\+\+T\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337ab68d2422ebb4c656a6ad677ead4b4f2a}{KEY\+\_\+\+U\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a1fb600da1d225014b75a0158ee686f36}{KEY\+\_\+\+V\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a461cec84654b599e51de502f676c768f}{KEY\+\_\+\+W\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337addefc1f166df864fefa99a2a737f7a2b}{KEY\+\_\+\+X\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337aebbe67201b686da4c07f4c91aea654b6}{KEY\+\_\+\+Y\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a7cd058c6ea9a56f1d073ddcdcedaed3e}{KEY\+\_\+\+Z\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a62b1bc865d89fbb827982c36522eaa13}{KEY\+\_\+0\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a79b70a4e7c2ecd9791bc8a06146f97de}{KEY\+\_\+1\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a7b825a3419125123e4705f26e9f02479}{KEY\+\_\+2\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a6fd1915995f14aa95d92946530521f7f}{KEY\+\_\+3\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a7f90be182f0652c4404569ef2fd5b803}{KEY\+\_\+4\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a619cadc2f30e2fd9d73f278e19f53cba}{KEY\+\_\+5\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a070af890ebd1a73d0750926f4ec8ca5d}{KEY\+\_\+6\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a94530aebb43f12d33eae166fccf25fb8}{KEY\+\_\+7\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a05c83f37ba27d9e7de8002583f48d6ec}{KEY\+\_\+8\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a896e43f37eb0cbd8c95066a0c500b36e}{KEY\+\_\+9\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a3f2c55ca068b4e1b217e8dbe261d7665}{KEY\+\_\+\+SPACE\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337aba78ae7336420f4ee5a9ad016a8bbe53}{KEY\+\_\+\+ENTER\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a32d26298b210815f1c24bee013db85ab}{KEY\+\_\+\+ESC\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a3e73c2018a69fffb54c65790359792e4}{KEY\+\_\+\+UP\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a8d8a7f361bedba82ac3195ca6e850f45}{KEY\+\_\+\+DOWN\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a06c43111732891ec7535ea4cdf8d7415}{KEY\+\_\+\+LEFT\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a38b46196cf85fa670a1bf5c698587aae}{KEY\+\_\+\+RIGHT\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a2452eab051bbe376c2ca389a9204c2e1}{KEY\+\_\+\+TAB\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a28e3d04bd0be47df1c5f3eb014df0af6}{KEY\+\_\+\+BACKSPACE\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a0468c2866929052beda754d947f3a5d8}{KEY\+\_\+\+DELETE\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337abfd64b11946f2900976648071b2d82aa}{KEY\+\_\+\+SHIFT\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337aaf5c8d2dc5dad547298104e82970ecc5}{KEY\+\_\+\+CTRL\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a9525ac27ffb175afbd82c2f0772ffd7f}{KEY\+\_\+\+ALT\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a8a550c4f6f6d3d43574ee4abf8442f37}{KEY\+\_\+\+F1\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337af167f8f449a8ea04d3bcc9eb00c4cc36}{KEY\+\_\+\+F2\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a73d2bece50c4c8fde8656f47a5e4b65f}{KEY\+\_\+\+F3\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337ad224ac4acf333176f04c80f0a9c19982}{KEY\+\_\+\+F4\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337aba2341f877def1dc3b8e0e7286f91579}{KEY\+\_\+\+F5\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a3f79b016247a836fdd3e1d66d0f9019e}{KEY\+\_\+\+F6\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337aad8f60ae0bdddcb0a38b567062057ca9}{KEY\+\_\+\+F7\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337aa163e6b88b952658c78c0270de103f8c}{KEY\+\_\+\+F8\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337afabcc38a6cd5af59f3236b70fb7a3abc}{KEY\+\_\+\+F9\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337a18d864321f33a9fe869f22c6bdb31d54}{KEY\+\_\+\+F10\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337afc826d0a41b83d5080864a9332bae2a0}{KEY\+\_\+\+F11\+\_\+\+PRESSED}}
+, \newline
+\mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337adf2a5d83bf336fc02a8a7dd43538af16}{KEY\+\_\+\+F12\+\_\+\+PRESSED}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337}\label{a00036_abf845df5143915e382e6826c22170337}} 
+\index{Arcade@{Arcade}!eventType@{eventType}}
+\index{eventType@{eventType}!Arcade@{Arcade}}
+\doxysubsubsection{\texorpdfstring{eventType}{eventType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{a00036_abf845df5143915e382e6826c22170337}{Arcade\+::event\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOUSE\_PRESSED@{MOUSE\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!MOUSE\_PRESSED@{MOUSE\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a868ac6749b0e2c167d0d3fa10d4eeb63}\label{a00036_abf845df5143915e382e6826c22170337a868ac6749b0e2c167d0d3fa10d4eeb63}} 
+MOUSE\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOUSE\_MOVED@{MOUSE\_MOVED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!MOUSE\_MOVED@{MOUSE\_MOVED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337afdf9bdaa4ff30c2d58a845c3e7126510}\label{a00036_abf845df5143915e382e6826c22170337afdf9bdaa4ff30c2d58a845c3e7126510}} 
+MOUSE\+\_\+\+MOVED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_A\_PRESSED@{KEY\_A\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_A\_PRESSED@{KEY\_A\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a021429970d72b88bcc877710ed4a56ed}\label{a00036_abf845df5143915e382e6826c22170337a021429970d72b88bcc877710ed4a56ed}} 
+KEY\+\_\+\+A\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_B\_PRESSED@{KEY\_B\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_B\_PRESSED@{KEY\_B\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a52f7de1fd1564f70666af4ca2a286da2}\label{a00036_abf845df5143915e382e6826c22170337a52f7de1fd1564f70666af4ca2a286da2}} 
+KEY\+\_\+\+B\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_C\_PRESSED@{KEY\_C\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_C\_PRESSED@{KEY\_C\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a4f3e21b825048c5adeffe0d0c7c93ebd}\label{a00036_abf845df5143915e382e6826c22170337a4f3e21b825048c5adeffe0d0c7c93ebd}} 
+KEY\+\_\+\+C\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_D\_PRESSED@{KEY\_D\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_D\_PRESSED@{KEY\_D\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a1210a640c8222bab31be68e969fbca5f}\label{a00036_abf845df5143915e382e6826c22170337a1210a640c8222bab31be68e969fbca5f}} 
+KEY\+\_\+\+D\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_E\_PRESSED@{KEY\_E\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_E\_PRESSED@{KEY\_E\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a9869d217410a8f18033469fd62027518}\label{a00036_abf845df5143915e382e6826c22170337a9869d217410a8f18033469fd62027518}} 
+KEY\+\_\+\+E\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F\_PRESSED@{KEY\_F\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F\_PRESSED@{KEY\_F\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a52e2a932029a1e987702498217895115}\label{a00036_abf845df5143915e382e6826c22170337a52e2a932029a1e987702498217895115}} 
+KEY\+\_\+\+F\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_G\_PRESSED@{KEY\_G\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_G\_PRESSED@{KEY\_G\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a96096d0355c360f4d56fa4ff1c8b652e}\label{a00036_abf845df5143915e382e6826c22170337a96096d0355c360f4d56fa4ff1c8b652e}} 
+KEY\+\_\+\+G\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_H\_PRESSED@{KEY\_H\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_H\_PRESSED@{KEY\_H\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337acf033843cd2076030a8a0967f50c4185}\label{a00036_abf845df5143915e382e6826c22170337acf033843cd2076030a8a0967f50c4185}} 
+KEY\+\_\+\+H\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_I\_PRESSED@{KEY\_I\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_I\_PRESSED@{KEY\_I\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a9682e1d7acd760f7ae4cee95ec1ddf18}\label{a00036_abf845df5143915e382e6826c22170337a9682e1d7acd760f7ae4cee95ec1ddf18}} 
+KEY\+\_\+\+I\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_J\_PRESSED@{KEY\_J\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_J\_PRESSED@{KEY\_J\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337afa72f89071fbb57defe677fb3507186f}\label{a00036_abf845df5143915e382e6826c22170337afa72f89071fbb57defe677fb3507186f}} 
+KEY\+\_\+\+J\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_K\_PRESSED@{KEY\_K\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_K\_PRESSED@{KEY\_K\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337af09d5e44479c9a13650802ec1f39c288}\label{a00036_abf845df5143915e382e6826c22170337af09d5e44479c9a13650802ec1f39c288}} 
+KEY\+\_\+\+K\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_L\_PRESSED@{KEY\_L\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_L\_PRESSED@{KEY\_L\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a093f5818834d20a9c8a5ca9dd6b38d9c}\label{a00036_abf845df5143915e382e6826c22170337a093f5818834d20a9c8a5ca9dd6b38d9c}} 
+KEY\+\_\+\+L\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_M\_PRESSED@{KEY\_M\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_M\_PRESSED@{KEY\_M\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a1bce9e4db548765e50bbd930d2b46b66}\label{a00036_abf845df5143915e382e6826c22170337a1bce9e4db548765e50bbd930d2b46b66}} 
+KEY\+\_\+\+M\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_N\_PRESSED@{KEY\_N\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_N\_PRESSED@{KEY\_N\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a2e3e87c9a0aadc94d3b2c95ec15a7658}\label{a00036_abf845df5143915e382e6826c22170337a2e3e87c9a0aadc94d3b2c95ec15a7658}} 
+KEY\+\_\+\+N\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_O\_PRESSED@{KEY\_O\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_O\_PRESSED@{KEY\_O\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a706c49a741f42c71a223fa806a371982}\label{a00036_abf845df5143915e382e6826c22170337a706c49a741f42c71a223fa806a371982}} 
+KEY\+\_\+\+O\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_P\_PRESSED@{KEY\_P\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_P\_PRESSED@{KEY\_P\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337ac2e006cbc956fc44c666cd416e0c06bb}\label{a00036_abf845df5143915e382e6826c22170337ac2e006cbc956fc44c666cd416e0c06bb}} 
+KEY\+\_\+\+P\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_Q\_PRESSED@{KEY\_Q\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_Q\_PRESSED@{KEY\_Q\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a870001bab4db45dea53657e8f16e57f3}\label{a00036_abf845df5143915e382e6826c22170337a870001bab4db45dea53657e8f16e57f3}} 
+KEY\+\_\+\+Q\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_R\_PRESSED@{KEY\_R\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_R\_PRESSED@{KEY\_R\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a401ca602a83063dd511691c85dff341b}\label{a00036_abf845df5143915e382e6826c22170337a401ca602a83063dd511691c85dff341b}} 
+KEY\+\_\+\+R\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_S\_PRESSED@{KEY\_S\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_S\_PRESSED@{KEY\_S\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a2633d8bbc25a1a06aa39bef0445dff2d}\label{a00036_abf845df5143915e382e6826c22170337a2633d8bbc25a1a06aa39bef0445dff2d}} 
+KEY\+\_\+\+S\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_T\_PRESSED@{KEY\_T\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_T\_PRESSED@{KEY\_T\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a83a07015559604b9001d5f2647fa802d}\label{a00036_abf845df5143915e382e6826c22170337a83a07015559604b9001d5f2647fa802d}} 
+KEY\+\_\+\+T\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_U\_PRESSED@{KEY\_U\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_U\_PRESSED@{KEY\_U\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337ab68d2422ebb4c656a6ad677ead4b4f2a}\label{a00036_abf845df5143915e382e6826c22170337ab68d2422ebb4c656a6ad677ead4b4f2a}} 
+KEY\+\_\+\+U\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_V\_PRESSED@{KEY\_V\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_V\_PRESSED@{KEY\_V\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a1fb600da1d225014b75a0158ee686f36}\label{a00036_abf845df5143915e382e6826c22170337a1fb600da1d225014b75a0158ee686f36}} 
+KEY\+\_\+\+V\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_W\_PRESSED@{KEY\_W\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_W\_PRESSED@{KEY\_W\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a461cec84654b599e51de502f676c768f}\label{a00036_abf845df5143915e382e6826c22170337a461cec84654b599e51de502f676c768f}} 
+KEY\+\_\+\+W\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_X\_PRESSED@{KEY\_X\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_X\_PRESSED@{KEY\_X\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337addefc1f166df864fefa99a2a737f7a2b}\label{a00036_abf845df5143915e382e6826c22170337addefc1f166df864fefa99a2a737f7a2b}} 
+KEY\+\_\+\+X\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_Y\_PRESSED@{KEY\_Y\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_Y\_PRESSED@{KEY\_Y\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337aebbe67201b686da4c07f4c91aea654b6}\label{a00036_abf845df5143915e382e6826c22170337aebbe67201b686da4c07f4c91aea654b6}} 
+KEY\+\_\+\+Y\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_Z\_PRESSED@{KEY\_Z\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_Z\_PRESSED@{KEY\_Z\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a7cd058c6ea9a56f1d073ddcdcedaed3e}\label{a00036_abf845df5143915e382e6826c22170337a7cd058c6ea9a56f1d073ddcdcedaed3e}} 
+KEY\+\_\+\+Z\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_0\_PRESSED@{KEY\_0\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_0\_PRESSED@{KEY\_0\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a62b1bc865d89fbb827982c36522eaa13}\label{a00036_abf845df5143915e382e6826c22170337a62b1bc865d89fbb827982c36522eaa13}} 
+KEY\+\_\+0\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_1\_PRESSED@{KEY\_1\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_1\_PRESSED@{KEY\_1\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a79b70a4e7c2ecd9791bc8a06146f97de}\label{a00036_abf845df5143915e382e6826c22170337a79b70a4e7c2ecd9791bc8a06146f97de}} 
+KEY\+\_\+1\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_2\_PRESSED@{KEY\_2\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_2\_PRESSED@{KEY\_2\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a7b825a3419125123e4705f26e9f02479}\label{a00036_abf845df5143915e382e6826c22170337a7b825a3419125123e4705f26e9f02479}} 
+KEY\+\_\+2\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_3\_PRESSED@{KEY\_3\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_3\_PRESSED@{KEY\_3\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a6fd1915995f14aa95d92946530521f7f}\label{a00036_abf845df5143915e382e6826c22170337a6fd1915995f14aa95d92946530521f7f}} 
+KEY\+\_\+3\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_4\_PRESSED@{KEY\_4\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_4\_PRESSED@{KEY\_4\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a7f90be182f0652c4404569ef2fd5b803}\label{a00036_abf845df5143915e382e6826c22170337a7f90be182f0652c4404569ef2fd5b803}} 
+KEY\+\_\+4\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_5\_PRESSED@{KEY\_5\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_5\_PRESSED@{KEY\_5\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a619cadc2f30e2fd9d73f278e19f53cba}\label{a00036_abf845df5143915e382e6826c22170337a619cadc2f30e2fd9d73f278e19f53cba}} 
+KEY\+\_\+5\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_6\_PRESSED@{KEY\_6\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_6\_PRESSED@{KEY\_6\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a070af890ebd1a73d0750926f4ec8ca5d}\label{a00036_abf845df5143915e382e6826c22170337a070af890ebd1a73d0750926f4ec8ca5d}} 
+KEY\+\_\+6\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_7\_PRESSED@{KEY\_7\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_7\_PRESSED@{KEY\_7\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a94530aebb43f12d33eae166fccf25fb8}\label{a00036_abf845df5143915e382e6826c22170337a94530aebb43f12d33eae166fccf25fb8}} 
+KEY\+\_\+7\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_8\_PRESSED@{KEY\_8\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_8\_PRESSED@{KEY\_8\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a05c83f37ba27d9e7de8002583f48d6ec}\label{a00036_abf845df5143915e382e6826c22170337a05c83f37ba27d9e7de8002583f48d6ec}} 
+KEY\+\_\+8\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_9\_PRESSED@{KEY\_9\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_9\_PRESSED@{KEY\_9\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a896e43f37eb0cbd8c95066a0c500b36e}\label{a00036_abf845df5143915e382e6826c22170337a896e43f37eb0cbd8c95066a0c500b36e}} 
+KEY\+\_\+9\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_SPACE\_PRESSED@{KEY\_SPACE\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_SPACE\_PRESSED@{KEY\_SPACE\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a3f2c55ca068b4e1b217e8dbe261d7665}\label{a00036_abf845df5143915e382e6826c22170337a3f2c55ca068b4e1b217e8dbe261d7665}} 
+KEY\+\_\+\+SPACE\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_ENTER\_PRESSED@{KEY\_ENTER\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_ENTER\_PRESSED@{KEY\_ENTER\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337aba78ae7336420f4ee5a9ad016a8bbe53}\label{a00036_abf845df5143915e382e6826c22170337aba78ae7336420f4ee5a9ad016a8bbe53}} 
+KEY\+\_\+\+ENTER\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_ESC\_PRESSED@{KEY\_ESC\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_ESC\_PRESSED@{KEY\_ESC\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a32d26298b210815f1c24bee013db85ab}\label{a00036_abf845df5143915e382e6826c22170337a32d26298b210815f1c24bee013db85ab}} 
+KEY\+\_\+\+ESC\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_UP\_PRESSED@{KEY\_UP\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_UP\_PRESSED@{KEY\_UP\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a3e73c2018a69fffb54c65790359792e4}\label{a00036_abf845df5143915e382e6826c22170337a3e73c2018a69fffb54c65790359792e4}} 
+KEY\+\_\+\+UP\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_DOWN\_PRESSED@{KEY\_DOWN\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_DOWN\_PRESSED@{KEY\_DOWN\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a8d8a7f361bedba82ac3195ca6e850f45}\label{a00036_abf845df5143915e382e6826c22170337a8d8a7f361bedba82ac3195ca6e850f45}} 
+KEY\+\_\+\+DOWN\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_LEFT\_PRESSED@{KEY\_LEFT\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_LEFT\_PRESSED@{KEY\_LEFT\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a06c43111732891ec7535ea4cdf8d7415}\label{a00036_abf845df5143915e382e6826c22170337a06c43111732891ec7535ea4cdf8d7415}} 
+KEY\+\_\+\+LEFT\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_RIGHT\_PRESSED@{KEY\_RIGHT\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_RIGHT\_PRESSED@{KEY\_RIGHT\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a38b46196cf85fa670a1bf5c698587aae}\label{a00036_abf845df5143915e382e6826c22170337a38b46196cf85fa670a1bf5c698587aae}} 
+KEY\+\_\+\+RIGHT\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_TAB\_PRESSED@{KEY\_TAB\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_TAB\_PRESSED@{KEY\_TAB\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a2452eab051bbe376c2ca389a9204c2e1}\label{a00036_abf845df5143915e382e6826c22170337a2452eab051bbe376c2ca389a9204c2e1}} 
+KEY\+\_\+\+TAB\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_BACKSPACE\_PRESSED@{KEY\_BACKSPACE\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_BACKSPACE\_PRESSED@{KEY\_BACKSPACE\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a28e3d04bd0be47df1c5f3eb014df0af6}\label{a00036_abf845df5143915e382e6826c22170337a28e3d04bd0be47df1c5f3eb014df0af6}} 
+KEY\+\_\+\+BACKSPACE\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_DELETE\_PRESSED@{KEY\_DELETE\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_DELETE\_PRESSED@{KEY\_DELETE\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a0468c2866929052beda754d947f3a5d8}\label{a00036_abf845df5143915e382e6826c22170337a0468c2866929052beda754d947f3a5d8}} 
+KEY\+\_\+\+DELETE\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_SHIFT\_PRESSED@{KEY\_SHIFT\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_SHIFT\_PRESSED@{KEY\_SHIFT\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337abfd64b11946f2900976648071b2d82aa}\label{a00036_abf845df5143915e382e6826c22170337abfd64b11946f2900976648071b2d82aa}} 
+KEY\+\_\+\+SHIFT\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_CTRL\_PRESSED@{KEY\_CTRL\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_CTRL\_PRESSED@{KEY\_CTRL\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337aaf5c8d2dc5dad547298104e82970ecc5}\label{a00036_abf845df5143915e382e6826c22170337aaf5c8d2dc5dad547298104e82970ecc5}} 
+KEY\+\_\+\+CTRL\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_ALT\_PRESSED@{KEY\_ALT\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_ALT\_PRESSED@{KEY\_ALT\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a9525ac27ffb175afbd82c2f0772ffd7f}\label{a00036_abf845df5143915e382e6826c22170337a9525ac27ffb175afbd82c2f0772ffd7f}} 
+KEY\+\_\+\+ALT\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F1\_PRESSED@{KEY\_F1\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F1\_PRESSED@{KEY\_F1\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a8a550c4f6f6d3d43574ee4abf8442f37}\label{a00036_abf845df5143915e382e6826c22170337a8a550c4f6f6d3d43574ee4abf8442f37}} 
+KEY\+\_\+\+F1\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F2\_PRESSED@{KEY\_F2\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F2\_PRESSED@{KEY\_F2\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337af167f8f449a8ea04d3bcc9eb00c4cc36}\label{a00036_abf845df5143915e382e6826c22170337af167f8f449a8ea04d3bcc9eb00c4cc36}} 
+KEY\+\_\+\+F2\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F3\_PRESSED@{KEY\_F3\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F3\_PRESSED@{KEY\_F3\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a73d2bece50c4c8fde8656f47a5e4b65f}\label{a00036_abf845df5143915e382e6826c22170337a73d2bece50c4c8fde8656f47a5e4b65f}} 
+KEY\+\_\+\+F3\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F4\_PRESSED@{KEY\_F4\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F4\_PRESSED@{KEY\_F4\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337ad224ac4acf333176f04c80f0a9c19982}\label{a00036_abf845df5143915e382e6826c22170337ad224ac4acf333176f04c80f0a9c19982}} 
+KEY\+\_\+\+F4\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F5\_PRESSED@{KEY\_F5\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F5\_PRESSED@{KEY\_F5\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337aba2341f877def1dc3b8e0e7286f91579}\label{a00036_abf845df5143915e382e6826c22170337aba2341f877def1dc3b8e0e7286f91579}} 
+KEY\+\_\+\+F5\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F6\_PRESSED@{KEY\_F6\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F6\_PRESSED@{KEY\_F6\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a3f79b016247a836fdd3e1d66d0f9019e}\label{a00036_abf845df5143915e382e6826c22170337a3f79b016247a836fdd3e1d66d0f9019e}} 
+KEY\+\_\+\+F6\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F7\_PRESSED@{KEY\_F7\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F7\_PRESSED@{KEY\_F7\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337aad8f60ae0bdddcb0a38b567062057ca9}\label{a00036_abf845df5143915e382e6826c22170337aad8f60ae0bdddcb0a38b567062057ca9}} 
+KEY\+\_\+\+F7\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F8\_PRESSED@{KEY\_F8\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F8\_PRESSED@{KEY\_F8\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337aa163e6b88b952658c78c0270de103f8c}\label{a00036_abf845df5143915e382e6826c22170337aa163e6b88b952658c78c0270de103f8c}} 
+KEY\+\_\+\+F8\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F9\_PRESSED@{KEY\_F9\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F9\_PRESSED@{KEY\_F9\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337afabcc38a6cd5af59f3236b70fb7a3abc}\label{a00036_abf845df5143915e382e6826c22170337afabcc38a6cd5af59f3236b70fb7a3abc}} 
+KEY\+\_\+\+F9\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F10\_PRESSED@{KEY\_F10\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F10\_PRESSED@{KEY\_F10\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337a18d864321f33a9fe869f22c6bdb31d54}\label{a00036_abf845df5143915e382e6826c22170337a18d864321f33a9fe869f22c6bdb31d54}} 
+KEY\+\_\+\+F10\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F11\_PRESSED@{KEY\_F11\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F11\_PRESSED@{KEY\_F11\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337afc826d0a41b83d5080864a9332bae2a0}\label{a00036_abf845df5143915e382e6826c22170337afc826d0a41b83d5080864a9332bae2a0}} 
+KEY\+\_\+\+F11\+\_\+\+PRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_F12\_PRESSED@{KEY\_F12\_PRESSED}!Arcade@{Arcade}}\index{Arcade@{Arcade}!KEY\_F12\_PRESSED@{KEY\_F12\_PRESSED}}}\mbox{\Hypertarget{a00036_abf845df5143915e382e6826c22170337adf2a5d83bf336fc02a8a7dd43538af16}\label{a00036_abf845df5143915e382e6826c22170337adf2a5d83bf336fc02a8a7dd43538af16}} 
+KEY\+\_\+\+F12\+\_\+\+PRESSED&\\
+\hline
+
+\end{DoxyEnumFields}
