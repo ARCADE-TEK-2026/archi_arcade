@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['eventtype_149',['eventType',['../a00036.html#abf845df5143915e382e6826c22170337',1,'Arcade']]]
+  ['userinputtype_213',['UserInputType',['../a00036.html#a327438c107b143d6168dbe2b194df4fb',1,'Arcade']]]
 ];

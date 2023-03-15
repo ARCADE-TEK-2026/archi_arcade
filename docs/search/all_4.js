@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handleevent_12',['handleEvent',['../a00868.html#acb5fcdefa2fc367dc587a8709a2e9d69',1,'Arcade::IEventHandler']]]
+  ['exec_9',['exec',['../a00855.html#a9fc66189ebe9d375d43daaf2230dc3b2',1,'Arcade::Core::ICore']]]
 ];

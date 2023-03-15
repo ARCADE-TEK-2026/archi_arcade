@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/IGraph.hpp Source File</title>
+<title>Architecture Arcade: include/ISprite.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,43 +67,107 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">IGraph.hpp</div>  </div>
+<div class="title">ISprite.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00029.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2023</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Visual Studio Live Share (Workspace)</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** IGraphh</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** ISprite</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef IGRAPHH_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define IGRAPHH_HPP_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef ISPRITE_HPP_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #define ISPRITE_HPP_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00036.html">Arcade</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00876.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00876.html">IGraphModule</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00876.html#a7a6be49c11eab7436d6f566ab0673312">   16</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="a00876.html#a7a6be49c11eab7436d6f566ab0673312">~IGraphModule</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="a00876.html#afd33126cd6089d48f1e421a12dde0a1f">   17</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00876.html#afd33126cd6089d48f1e421a12dde0a1f">getMousePos</a>() = 0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00876.html#ac421a032c82b4fea1acf508bfe0a22b8">   18</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00876.html#ac421a032c82b4fea1acf508bfe0a22b8">getEventQueue</a>() = 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00876.html#abd2eafd40fd30afaf7952c90730c24a4">   19</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00876.html#abd2eafd40fd30afaf7952c90730c24a4">display</a>(<a class="code" href="a00860.html">IEntityModule</a> *) = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    };</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !IGRAPHH_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aa00036_html"><div class="ttname"><a href="a00036.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> IComponents.hpp:11</div></div>
-<div class="ttc" id="aa00860_html"><div class="ttname"><a href="a00860.html">Arcade::IEntityModule</a></div><div class="ttdef"><b>Definition:</b> IEntity.hpp:15</div></div>
-<div class="ttc" id="aa00876_html"><div class="ttname"><a href="a00876.html">Arcade::IGraphModule</a></div><div class="ttdef"><b>Definition:</b> IGraph.hpp:14</div></div>
-<div class="ttc" id="aa00876_html_a7a6be49c11eab7436d6f566ab0673312"><div class="ttname"><a href="a00876.html#a7a6be49c11eab7436d6f566ab0673312">Arcade::IGraphModule::~IGraphModule</a></div><div class="ttdeci">virtual ~IGraphModule()=default</div></div>
-<div class="ttc" id="aa00876_html_abd2eafd40fd30afaf7952c90730c24a4"><div class="ttname"><a href="a00876.html#abd2eafd40fd30afaf7952c90730c24a4">Arcade::IGraphModule::display</a></div><div class="ttdeci">virtual void display(IEntityModule *)=0</div></div>
-<div class="ttc" id="aa00876_html_ac421a032c82b4fea1acf508bfe0a22b8"><div class="ttname"><a href="a00876.html#ac421a032c82b4fea1acf508bfe0a22b8">Arcade::IGraphModule::getEventQueue</a></div><div class="ttdeci">virtual void getEventQueue()=0</div></div>
-<div class="ttc" id="aa00876_html_afd33126cd6089d48f1e421a12dde0a1f"><div class="ttname"><a href="a00876.html#afd33126cd6089d48f1e421a12dde0a1f">Arcade::IGraphModule::getMousePos</a></div><div class="ttdeci">virtual void getMousePos()=0</div></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    #include &lt;string&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="a00026.html">IRenderComp.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00036.html">Arcade</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">namespace </span>Graph {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00875.html">   16</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="a00875.html">Color</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="a00875.html#ab01b045ccd33e59b8f914e849176fdc5">   17</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="a00875.html#ab01b045ccd33e59b8f914e849176fdc5">r</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00875.html#abb17ee7862551379901ccc6ef7533d19">   18</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="a00875.html#abb17ee7862551379901ccc6ef7533d19">g</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00875.html#ad27410851699269c3d51fdeb6bd0f25d">   19</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="a00875.html#ad27410851699269c3d51fdeb6bd0f25d">b</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        };</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00879.html">   21</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="a00879.html">NcursesData</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00879.html#ac5fd66d5f36e9f5995cb9b31ebdd65b4">   22</a></span>&#160;            std::string <a class="code" href="a00879.html#ac5fd66d5f36e9f5995cb9b31ebdd65b4">pathAsciiArt</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00879.html#afde83c3292b0cba7eb06f3191c58b7de">   23</a></span>&#160;            std::string <a class="code" href="a00879.html#afde83c3292b0cba7eb06f3191c58b7de">defaultChar</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00879.html#a5054e48bd7eead2b62e4a931cb1d1293">   24</a></span>&#160;            <a class="code" href="a00875.html">Color</a> <a class="code" href="a00879.html#a5054e48bd7eead2b62e4a931cb1d1293">foreground</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00879.html#a58f363914f01195d13d285e6ebe79747">   25</a></span>&#160;            <a class="code" href="a00875.html">Color</a> <a class="code" href="a00879.html#a58f363914f01195d13d285e6ebe79747">background</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        };</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00883.html">   29</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00883.html">Vector2f</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00883.html#af557defcffc95fa93218721668570ee8">   30</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="a00883.html#af557defcffc95fa93218721668570ee8">x</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00883.html#abdd122772c584069e597edfce415f6e6">   31</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="a00883.html#abdd122772c584069e597edfce415f6e6">y</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="a00887.html">   34</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00887.html">Vector3f</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00887.html#a2e8a2bc339493b62bebcbbd95a24dfc4">   35</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="a00887.html#a2e8a2bc339493b62bebcbbd95a24dfc4">x</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00887.html#ad282c1d3a2a7981a7465c7a012104afa">   36</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="a00887.html#ad282c1d3a2a7981a7465c7a012104afa">y</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00891.html">   39</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00891.html">ISprite</a> : <span class="keyword">public</span> <a class="code" href="a00871.html">IRenderComp</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00891.html#a7cee84c03d660bea29c6eb6f60311a2d">   41</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="a00891.html#a7cee84c03d660bea29c6eb6f60311a2d">~ISprite</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="a00891.html#a59db6ad75d267e2b76489679d2b6e5f7">   43</a></span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="a00891.html#a59db6ad75d267e2b76489679d2b6e5f7">getPath2d</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00891.html#a4d01d0c853766b2bd7f9449830807a65">   45</a></span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="a00891.html#a4d01d0c853766b2bd7f9449830807a65">getPath3d</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00891.html#afad636fd64ba300a56998a87577cf43c">   47</a></span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="a00879.html">Graph::NcursesData</a>&amp; <a class="code" href="a00891.html#afad636fd64ba300a56998a87577cf43c">getNcurseData</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00891.html#a178ce05c925d3ac7e7a3ce8c61417d41">   49</a></span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="a00883.html">Vector2f</a>&amp; <a class="code" href="a00891.html#a178ce05c925d3ac7e7a3ce8c61417d41">get2dPos</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00891.html#ab50822c2655daaea290b7640f9e99f2e">   50</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00891.html#ab50822c2655daaea290b7640f9e99f2e">set2dPos</a>(<a class="code" href="a00883.html">Vector2f</a> pos);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00891.html#aeb0a9e46dbb3e4b6011a41dc73acbc23">   52</a></span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="a00883.html">Vector2f</a>&amp; <a class="code" href="a00891.html#aeb0a9e46dbb3e4b6011a41dc73acbc23">get2dSize</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00891.html#ad18e434be9565aeae0d3d1bde549848b">   53</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00891.html#ad18e434be9565aeae0d3d1bde549848b">set2dSize</a>(<a class="code" href="a00883.html">Vector2f</a> size) = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="a00891.html#a04f695382890b04669ebdd88145974c1">   55</a></span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="a00887.html">Vector3f</a>&amp; <a class="code" href="a00891.html#a04f695382890b04669ebdd88145974c1">get3dPos</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00891.html#ae29d520ca20d9a58cf82fc5e3ecec3d0">   56</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00891.html#ae29d520ca20d9a58cf82fc5e3ecec3d0">set3dPos</a>(<a class="code" href="a00887.html">Vector3f</a> pos) = 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="a00891.html#aa75f240dd2c225ff3f901d6f1e4678ea">   58</a></span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="a00887.html">Vector3f</a>&amp; <a class="code" href="a00891.html#aa75f240dd2c225ff3f901d6f1e4678ea">get3dSize</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="a00891.html#a4a43f8eb6c9e88c30d8dc5bd597b9380">   59</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00891.html#a4a43f8eb6c9e88c30d8dc5bd597b9380">set3dSize</a>(<a class="code" href="a00887.html">Vector3f</a> size) = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    };</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ISPRITE_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aa00026_html"><div class="ttname"><a href="a00026.html">IRenderComp.hpp</a></div></div>
+<div class="ttc" id="aa00036_html"><div class="ttname"><a href="a00036.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ICore.hpp:11</div></div>
+<div class="ttc" id="aa00871_html"><div class="ttname"><a href="a00871.html">Arcade::IRenderComp</a></div><div class="ttdef"><b>Definition:</b> IRenderComp.hpp:14</div></div>
+<div class="ttc" id="aa00875_html"><div class="ttname"><a href="a00875.html">Arcade::Graph::Color</a></div><div class="ttdef"><b>Definition:</b> ISprite.hpp:16</div></div>
+<div class="ttc" id="aa00875_html_ab01b045ccd33e59b8f914e849176fdc5"><div class="ttname"><a href="a00875.html#ab01b045ccd33e59b8f914e849176fdc5">Arcade::Graph::Color::r</a></div><div class="ttdeci">int r</div><div class="ttdef"><b>Definition:</b> ISprite.hpp:17</div></div>
+<div class="ttc" id="aa00875_html_abb17ee7862551379901ccc6ef7533d19"><div class="ttname"><a href="a00875.html#abb17ee7862551379901ccc6ef7533d19">Arcade::Graph::Color::g</a></div><div class="ttdeci">int g</div><div class="ttdef"><b>Definition:</b> ISprite.hpp:18</div></div>
+<div class="ttc" id="aa00875_html_ad27410851699269c3d51fdeb6bd0f25d"><div class="ttname"><a href="a00875.html#ad27410851699269c3d51fdeb6bd0f25d">Arcade::Graph::Color::b</a></div><div class="ttdeci">int b</div><div class="ttdef"><b>Definition:</b> ISprite.hpp:19</div></div>
+<div class="ttc" id="aa00879_html"><div class="ttname"><a href="a00879.html">Arcade::Graph::NcursesData</a></div><div class="ttdef"><b>Definition:</b> ISprite.hpp:21</div></div>
+<div class="ttc" id="aa00879_html_a5054e48bd7eead2b62e4a931cb1d1293"><div class="ttname"><a href="a00879.html#a5054e48bd7eead2b62e4a931cb1d1293">Arcade::Graph::NcursesData::foreground</a></div><div class="ttdeci">Color foreground</div><div class="ttdef"><b>Definition:</b> ISprite.hpp:24</div></div>
+<div class="ttc" id="aa00879_html_a58f363914f01195d13d285e6ebe79747"><div class="ttname"><a href="a00879.html#a58f363914f01195d13d285e6ebe79747">Arcade::Graph::NcursesData::background</a></div><div class="ttdeci">Color background</div><div class="ttdef"><b>Definition:</b> ISprite.hpp:25</div></div>
+<div class="ttc" id="aa00879_html_ac5fd66d5f36e9f5995cb9b31ebdd65b4"><div class="ttname"><a href="a00879.html#ac5fd66d5f36e9f5995cb9b31ebdd65b4">Arcade::Graph::NcursesData::pathAsciiArt</a></div><div class="ttdeci">std::string pathAsciiArt</div><div class="ttdef"><b>Definition:</b> ISprite.hpp:22</div></div>
+<div class="ttc" id="aa00879_html_afde83c3292b0cba7eb06f3191c58b7de"><div class="ttname"><a href="a00879.html#afde83c3292b0cba7eb06f3191c58b7de">Arcade::Graph::NcursesData::defaultChar</a></div><div class="ttdeci">std::string defaultChar</div><div class="ttdef"><b>Definition:</b> ISprite.hpp:23</div></div>
+<div class="ttc" id="aa00883_html"><div class="ttname"><a href="a00883.html">Arcade::Vector2f</a></div><div class="ttdef"><b>Definition:</b> ISprite.hpp:29</div></div>
+<div class="ttc" id="aa00883_html_abdd122772c584069e597edfce415f6e6"><div class="ttname"><a href="a00883.html#abdd122772c584069e597edfce415f6e6">Arcade::Vector2f::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> ISprite.hpp:31</div></div>
+<div class="ttc" id="aa00883_html_af557defcffc95fa93218721668570ee8"><div class="ttname"><a href="a00883.html#af557defcffc95fa93218721668570ee8">Arcade::Vector2f::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> ISprite.hpp:30</div></div>
+<div class="ttc" id="aa00887_html"><div class="ttname"><a href="a00887.html">Arcade::Vector3f</a></div><div class="ttdef"><b>Definition:</b> ISprite.hpp:34</div></div>
+<div class="ttc" id="aa00887_html_a2e8a2bc339493b62bebcbbd95a24dfc4"><div class="ttname"><a href="a00887.html#a2e8a2bc339493b62bebcbbd95a24dfc4">Arcade::Vector3f::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> ISprite.hpp:35</div></div>
+<div class="ttc" id="aa00887_html_ad282c1d3a2a7981a7465c7a012104afa"><div class="ttname"><a href="a00887.html#ad282c1d3a2a7981a7465c7a012104afa">Arcade::Vector3f::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> ISprite.hpp:36</div></div>
+<div class="ttc" id="aa00891_html"><div class="ttname"><a href="a00891.html">Arcade::ISprite</a></div><div class="ttdef"><b>Definition:</b> ISprite.hpp:39</div></div>
+<div class="ttc" id="aa00891_html_a04f695382890b04669ebdd88145974c1"><div class="ttname"><a href="a00891.html#a04f695382890b04669ebdd88145974c1">Arcade::ISprite::get3dPos</a></div><div class="ttdeci">virtual const Vector3f &amp; get3dPos() const =0</div></div>
+<div class="ttc" id="aa00891_html_a178ce05c925d3ac7e7a3ce8c61417d41"><div class="ttname"><a href="a00891.html#a178ce05c925d3ac7e7a3ce8c61417d41">Arcade::ISprite::get2dPos</a></div><div class="ttdeci">virtual const Vector2f &amp; get2dPos() const =0</div></div>
+<div class="ttc" id="aa00891_html_a4a43f8eb6c9e88c30d8dc5bd597b9380"><div class="ttname"><a href="a00891.html#a4a43f8eb6c9e88c30d8dc5bd597b9380">Arcade::ISprite::set3dSize</a></div><div class="ttdeci">virtual void set3dSize(Vector3f size)=0</div></div>
+<div class="ttc" id="aa00891_html_a4d01d0c853766b2bd7f9449830807a65"><div class="ttname"><a href="a00891.html#a4d01d0c853766b2bd7f9449830807a65">Arcade::ISprite::getPath3d</a></div><div class="ttdeci">virtual const std::string &amp; getPath3d() const =0</div></div>
+<div class="ttc" id="aa00891_html_a59db6ad75d267e2b76489679d2b6e5f7"><div class="ttname"><a href="a00891.html#a59db6ad75d267e2b76489679d2b6e5f7">Arcade::ISprite::getPath2d</a></div><div class="ttdeci">virtual const std::string &amp; getPath2d() const =0</div></div>
+<div class="ttc" id="aa00891_html_a7cee84c03d660bea29c6eb6f60311a2d"><div class="ttname"><a href="a00891.html#a7cee84c03d660bea29c6eb6f60311a2d">Arcade::ISprite::~ISprite</a></div><div class="ttdeci">virtual ~ISprite()=default</div></div>
+<div class="ttc" id="aa00891_html_aa75f240dd2c225ff3f901d6f1e4678ea"><div class="ttname"><a href="a00891.html#aa75f240dd2c225ff3f901d6f1e4678ea">Arcade::ISprite::get3dSize</a></div><div class="ttdeci">virtual const Vector3f &amp; get3dSize() const =0</div></div>
+<div class="ttc" id="aa00891_html_ab50822c2655daaea290b7640f9e99f2e"><div class="ttname"><a href="a00891.html#ab50822c2655daaea290b7640f9e99f2e">Arcade::ISprite::set2dPos</a></div><div class="ttdeci">virtual void set2dPos(Vector2f pos)</div></div>
+<div class="ttc" id="aa00891_html_ad18e434be9565aeae0d3d1bde549848b"><div class="ttname"><a href="a00891.html#ad18e434be9565aeae0d3d1bde549848b">Arcade::ISprite::set2dSize</a></div><div class="ttdeci">virtual void set2dSize(Vector2f size)=0</div></div>
+<div class="ttc" id="aa00891_html_ae29d520ca20d9a58cf82fc5e3ecec3d0"><div class="ttname"><a href="a00891.html#ae29d520ca20d9a58cf82fc5e3ecec3d0">Arcade::ISprite::set3dPos</a></div><div class="ttdeci">virtual void set3dPos(Vector3f pos)=0</div></div>
+<div class="ttc" id="aa00891_html_aeb0a9e46dbb3e4b6011a41dc73acbc23"><div class="ttname"><a href="a00891.html#aeb0a9e46dbb3e4b6011a41dc73acbc23">Arcade::ISprite::get2dSize</a></div><div class="ttdeci">virtual const Vector2f &amp; get2dSize() const =0</div></div>
+<div class="ttc" id="aa00891_html_afad636fd64ba300a56998a87577cf43c"><div class="ttname"><a href="a00891.html#afad636fd64ba300a56998a87577cf43c">Arcade::ISprite::getNcurseData</a></div><div class="ttdeci">virtual const Graph::NcursesData &amp; getNcurseData() const =0</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 14 2023 21:16:13 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Mar 15 2023 18:05:09 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

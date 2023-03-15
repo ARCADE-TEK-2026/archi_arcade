@@ -1,5 +1,6 @@
-<map id="include/ISystem.hpp" name="include/ISystem.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,160,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,48,107"/>
-<area shape="rect" id="node3" href="$a00011.html" title=" " alt="" coords="72,80,208,107"/>
+<map id="include/IText.hpp" name="include/IText.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="30,5,162,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node3" href="$a00026.html" title=" " alt="" coords="88,80,227,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="122,155,193,181"/>
 </map>

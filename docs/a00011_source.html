@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/IComponents.hpp Source File</title>
+<title>Architecture Arcade: include/ICore.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,38 +67,38 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">IComponents.hpp</div>  </div>
+<div class="title">ICore.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00011.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2023</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Visual Studio Live Share (Workspace)</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** IComponents</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** ICore</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef ICOMPONENTS_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define ICOMPONENTS_HPP_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef ICORE_HPP_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #define ICORE_HPP_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="a00036.html">   11</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="a00036.html">Arcade</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">//template &lt;typename T&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="a00852.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00852.html">IComponents</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="a00852.html#a53122e41effc111b5fda6f32f5c9dc69">   15</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="a00852.html#a53122e41effc111b5fda6f32f5c9dc69">~IComponents</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00852.html#a35b2b4aaf070bca12eafe2f9efbec182">   16</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00852.html#a35b2b4aaf070bca12eafe2f9efbec182">setValue</a>(<a class="code" href="a00852.html">IComponents</a> *value) = 0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="comment">//virtual &lt;T&gt; getValue() = 0;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    };</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00037.html">   12</a></span>&#160;    <span class="keyword">namespace </span>Core {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="a00855.html">   13</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00855.html">ICore</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="a00855.html#a9394e43e057f68367f2647738f596ccc">   15</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00855.html#a9394e43e057f68367f2647738f596ccc">~ICore</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00855.html#a9fc66189ebe9d375d43daaf2230dc3b2">   16</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="a00855.html#a9fc66189ebe9d375d43daaf2230dc3b2">exec</a>(<span class="keywordtype">int</span> ac, <span class="keywordtype">char</span> **av) = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ICOMPONENTS_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aa00036_html"><div class="ttname"><a href="a00036.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> IComponents.hpp:11</div></div>
-<div class="ttc" id="aa00852_html"><div class="ttname"><a href="a00852.html">Arcade::IComponents</a></div><div class="ttdef"><b>Definition:</b> IComponents.hpp:13</div></div>
-<div class="ttc" id="aa00852_html_a35b2b4aaf070bca12eafe2f9efbec182"><div class="ttname"><a href="a00852.html#a35b2b4aaf070bca12eafe2f9efbec182">Arcade::IComponents::setValue</a></div><div class="ttdeci">virtual void setValue(IComponents *value)=0</div></div>
-<div class="ttc" id="aa00852_html_a53122e41effc111b5fda6f32f5c9dc69"><div class="ttname"><a href="a00852.html#a53122e41effc111b5fda6f32f5c9dc69">Arcade::IComponents::~IComponents</a></div><div class="ttdeci">virtual ~IComponents()=default</div></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ICORE_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aa00036_html"><div class="ttname"><a href="a00036.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ICore.hpp:11</div></div>
+<div class="ttc" id="aa00855_html"><div class="ttname"><a href="a00855.html">Arcade::Core::ICore</a></div><div class="ttdef"><b>Definition:</b> ICore.hpp:13</div></div>
+<div class="ttc" id="aa00855_html_a9394e43e057f68367f2647738f596ccc"><div class="ttname"><a href="a00855.html#a9394e43e057f68367f2647738f596ccc">Arcade::Core::ICore::~ICore</a></div><div class="ttdeci">virtual ~ICore()=default</div></div>
+<div class="ttc" id="aa00855_html_a9fc66189ebe9d375d43daaf2230dc3b2"><div class="ttname"><a href="a00855.html#a9fc66189ebe9d375d43daaf2230dc3b2">Arcade::Core::ICore::exec</a></div><div class="ttdeci">virtual int exec(int ac, char **av)=0</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 14 2023 21:16:13 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Mar 15 2023 18:05:09 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

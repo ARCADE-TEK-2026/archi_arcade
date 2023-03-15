@@ -1,0 +1,136 @@
+\hypertarget{a00891}{}\doxysection{Arcade\+::ISprite Class Reference}
+\label{a00891}\index{Arcade::ISprite@{Arcade::ISprite}}
+
+
+{\ttfamily \#include $<$ISprite.\+hpp$>$}
+
+
+
+Inheritance diagram for Arcade\+::ISprite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{a00890}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Arcade\+::ISprite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{a00889}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{a00891_a7cee84c03d660bea29c6eb6f60311a2d}{$\sim$\+ISprite}} ()=default
+\item 
+virtual const std\+::string \& \mbox{\hyperlink{a00891_a59db6ad75d267e2b76489679d2b6e5f7}{get\+Path2d}} () const =0
+\item 
+virtual const std\+::string \& \mbox{\hyperlink{a00891_a4d01d0c853766b2bd7f9449830807a65}{get\+Path3d}} () const =0
+\item 
+virtual const \mbox{\hyperlink{a00879}{Graph\+::\+Ncurses\+Data}} \& \mbox{\hyperlink{a00891_afad636fd64ba300a56998a87577cf43c}{get\+Ncurse\+Data}} () const =0
+\item 
+virtual const \mbox{\hyperlink{a00883}{Vector2f}} \& \mbox{\hyperlink{a00891_a178ce05c925d3ac7e7a3ce8c61417d41}{get2d\+Pos}} () const =0
+\item 
+virtual void \mbox{\hyperlink{a00891_ab50822c2655daaea290b7640f9e99f2e}{set2d\+Pos}} (\mbox{\hyperlink{a00883}{Vector2f}} pos)
+\item 
+virtual const \mbox{\hyperlink{a00883}{Vector2f}} \& \mbox{\hyperlink{a00891_aeb0a9e46dbb3e4b6011a41dc73acbc23}{get2d\+Size}} () const =0
+\item 
+virtual void \mbox{\hyperlink{a00891_ad18e434be9565aeae0d3d1bde549848b}{set2d\+Size}} (\mbox{\hyperlink{a00883}{Vector2f}} size)=0
+\item 
+virtual const \mbox{\hyperlink{a00887}{Vector3f}} \& \mbox{\hyperlink{a00891_a04f695382890b04669ebdd88145974c1}{get3d\+Pos}} () const =0
+\item 
+virtual void \mbox{\hyperlink{a00891_ae29d520ca20d9a58cf82fc5e3ecec3d0}{set3d\+Pos}} (\mbox{\hyperlink{a00887}{Vector3f}} pos)=0
+\item 
+virtual const \mbox{\hyperlink{a00887}{Vector3f}} \& \mbox{\hyperlink{a00891_aa75f240dd2c225ff3f901d6f1e4678ea}{get3d\+Size}} () const =0
+\item 
+virtual void \mbox{\hyperlink{a00891_a4a43f8eb6c9e88c30d8dc5bd597b9380}{set3d\+Size}} (\mbox{\hyperlink{a00887}{Vector3f}} size)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00891_a7cee84c03d660bea29c6eb6f60311a2d}\label{a00891_a7cee84c03d660bea29c6eb6f60311a2d}} 
+\index{Arcade::ISprite@{Arcade::ISprite}!````~ISprite@{$\sim$ISprite}}
+\index{````~ISprite@{$\sim$ISprite}!Arcade::ISprite@{Arcade::ISprite}}
+\doxysubsubsection{\texorpdfstring{$\sim$ISprite()}{~ISprite()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+ISprite\+::$\sim$\+ISprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00891_a178ce05c925d3ac7e7a3ce8c61417d41}\label{a00891_a178ce05c925d3ac7e7a3ce8c61417d41}} 
+\index{Arcade::ISprite@{Arcade::ISprite}!get2dPos@{get2dPos}}
+\index{get2dPos@{get2dPos}!Arcade::ISprite@{Arcade::ISprite}}
+\doxysubsubsection{\texorpdfstring{get2dPos()}{get2dPos()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{a00883}{Vector2f}}\& Arcade\+::\+ISprite\+::get2d\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{a00891_aeb0a9e46dbb3e4b6011a41dc73acbc23}\label{a00891_aeb0a9e46dbb3e4b6011a41dc73acbc23}} 
+\index{Arcade::ISprite@{Arcade::ISprite}!get2dSize@{get2dSize}}
+\index{get2dSize@{get2dSize}!Arcade::ISprite@{Arcade::ISprite}}
+\doxysubsubsection{\texorpdfstring{get2dSize()}{get2dSize()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{a00883}{Vector2f}}\& Arcade\+::\+ISprite\+::get2d\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{a00891_a04f695382890b04669ebdd88145974c1}\label{a00891_a04f695382890b04669ebdd88145974c1}} 
+\index{Arcade::ISprite@{Arcade::ISprite}!get3dPos@{get3dPos}}
+\index{get3dPos@{get3dPos}!Arcade::ISprite@{Arcade::ISprite}}
+\doxysubsubsection{\texorpdfstring{get3dPos()}{get3dPos()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{a00887}{Vector3f}}\& Arcade\+::\+ISprite\+::get3d\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{a00891_aa75f240dd2c225ff3f901d6f1e4678ea}\label{a00891_aa75f240dd2c225ff3f901d6f1e4678ea}} 
+\index{Arcade::ISprite@{Arcade::ISprite}!get3dSize@{get3dSize}}
+\index{get3dSize@{get3dSize}!Arcade::ISprite@{Arcade::ISprite}}
+\doxysubsubsection{\texorpdfstring{get3dSize()}{get3dSize()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{a00887}{Vector3f}}\& Arcade\+::\+ISprite\+::get3d\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{a00891_afad636fd64ba300a56998a87577cf43c}\label{a00891_afad636fd64ba300a56998a87577cf43c}} 
+\index{Arcade::ISprite@{Arcade::ISprite}!getNcurseData@{getNcurseData}}
+\index{getNcurseData@{getNcurseData}!Arcade::ISprite@{Arcade::ISprite}}
+\doxysubsubsection{\texorpdfstring{getNcurseData()}{getNcurseData()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{a00879}{Graph\+::\+Ncurses\+Data}}\& Arcade\+::\+ISprite\+::get\+Ncurse\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{a00891_a59db6ad75d267e2b76489679d2b6e5f7}\label{a00891_a59db6ad75d267e2b76489679d2b6e5f7}} 
+\index{Arcade::ISprite@{Arcade::ISprite}!getPath2d@{getPath2d}}
+\index{getPath2d@{getPath2d}!Arcade::ISprite@{Arcade::ISprite}}
+\doxysubsubsection{\texorpdfstring{getPath2d()}{getPath2d()}}
+{\footnotesize\ttfamily virtual const std\+::string\& Arcade\+::\+ISprite\+::get\+Path2d (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{a00891_a4d01d0c853766b2bd7f9449830807a65}\label{a00891_a4d01d0c853766b2bd7f9449830807a65}} 
+\index{Arcade::ISprite@{Arcade::ISprite}!getPath3d@{getPath3d}}
+\index{getPath3d@{getPath3d}!Arcade::ISprite@{Arcade::ISprite}}
+\doxysubsubsection{\texorpdfstring{getPath3d()}{getPath3d()}}
+{\footnotesize\ttfamily virtual const std\+::string\& Arcade\+::\+ISprite\+::get\+Path3d (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{a00891_ab50822c2655daaea290b7640f9e99f2e}\label{a00891_ab50822c2655daaea290b7640f9e99f2e}} 
+\index{Arcade::ISprite@{Arcade::ISprite}!set2dPos@{set2dPos}}
+\index{set2dPos@{set2dPos}!Arcade::ISprite@{Arcade::ISprite}}
+\doxysubsubsection{\texorpdfstring{set2dPos()}{set2dPos()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ISprite\+::set2d\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00883}{Vector2f}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{a00891_ad18e434be9565aeae0d3d1bde549848b}\label{a00891_ad18e434be9565aeae0d3d1bde549848b}} 
+\index{Arcade::ISprite@{Arcade::ISprite}!set2dSize@{set2dSize}}
+\index{set2dSize@{set2dSize}!Arcade::ISprite@{Arcade::ISprite}}
+\doxysubsubsection{\texorpdfstring{set2dSize()}{set2dSize()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ISprite\+::set2d\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00883}{Vector2f}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{a00891_ae29d520ca20d9a58cf82fc5e3ecec3d0}\label{a00891_ae29d520ca20d9a58cf82fc5e3ecec3d0}} 
+\index{Arcade::ISprite@{Arcade::ISprite}!set3dPos@{set3dPos}}
+\index{set3dPos@{set3dPos}!Arcade::ISprite@{Arcade::ISprite}}
+\doxysubsubsection{\texorpdfstring{set3dPos()}{set3dPos()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ISprite\+::set3d\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00887}{Vector3f}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{a00891_a4a43f8eb6c9e88c30d8dc5bd597b9380}\label{a00891_a4a43f8eb6c9e88c30d8dc5bd597b9380}} 
+\index{Arcade::ISprite@{Arcade::ISprite}!set3dSize@{set3dSize}}
+\index{set3dSize@{set3dSize}!Arcade::ISprite@{Arcade::ISprite}}
+\doxysubsubsection{\texorpdfstring{set3dSize()}{set3dSize()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ISprite\+::set3d\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00887}{Vector3f}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{a00029}{ISprite.\+hpp}}\end{DoxyCompactItemize}

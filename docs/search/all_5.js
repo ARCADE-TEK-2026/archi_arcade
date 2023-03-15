@@ -1,21 +1,4 @@
 var searchData=
 [
-  ['icomponents_13',['IComponents',['../a00852.html',1,'Arcade']]],
-  ['icomponents_2ehpp_14',['IComponents.hpp',['../a00011.html',1,'']]],
-  ['icore_2ehpp_15',['ICore.hpp',['../a00014.html',1,'']]],
-  ['icoremodule_16',['ICoreModule',['../a00856.html',1,'Arcade']]],
-  ['ientity_2ehpp_17',['IEntity.hpp',['../a00017.html',1,'']]],
-  ['ientitymodule_18',['IEntityModule',['../a00860.html',1,'Arcade']]],
-  ['ievent_2ehpp_19',['IEvent.hpp',['../a00020.html',1,'']]],
-  ['ieventhandler_20',['IEventHandler',['../a00868.html',1,'Arcade']]],
-  ['ieventhandler_2ehpp_21',['IEventHandler.hpp',['../a00023.html',1,'']]],
-  ['ieventmodule_22',['IEventModule',['../a00864.html',1,'Arcade']]],
-  ['igame_2ehpp_23',['IGame.hpp',['../a00026.html',1,'']]],
-  ['igamemodule_24',['IGameModule',['../a00872.html',1,'Arcade']]],
-  ['igraph_2ehpp_25',['IGraph.hpp',['../a00029.html',1,'']]],
-  ['igraphmodule_26',['IGraphModule',['../a00876.html',1,'Arcade']]],
-  ['initeventhandler_27',['initEventHandler',['../a00872.html#aa864dbbaf5531858116609dbda7af7f6',1,'Arcade::IGameModule']]],
-  ['initsystem_28',['initSystem',['../a00872.html#a7fc4124dfdc515e9092ea8168bd3c3b2',1,'Arcade::IGameModule']]],
-  ['isystem_2ehpp_29',['ISystem.hpp',['../a00032.html',1,'']]],
-  ['isystemmodule_30',['ISystemModule',['../a00880.html',1,'Arcade']]]
+  ['foreground_10',['foreground',['../a00879.html#a5054e48bd7eead2b62e4a931cb1d1293',1,'Arcade::Graph::NcursesData']]]
 ];

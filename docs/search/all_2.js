@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['eventtype_3',['eventType',['../a00036.html#abf845df5143915e382e6826c22170337',1,'Arcade']]]
+  ['color_7',['Color',['../a00875.html',1,'Arcade::Graph']]]
 ];

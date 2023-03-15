@@ -1,11 +1,21 @@
 var searchData=
 [
-  ['getcomponentlist_126',['getComponentList',['../a00864.html#aa3df0f7000198b84683e0a47a1347fbb',1,'Arcade::IEventModule']]],
-  ['getcomponents_127',['getComponents',['../a00860.html#a4a616d3751d621e4e60163bb75bbd189',1,'Arcade::IEntityModule']]],
-  ['getentities_128',['getEntities',['../a00872.html#a959442f938c37ee6f58d15bc97bd79a5',1,'Arcade::IGameModule']]],
-  ['geteventqueue_129',['getEventQueue',['../a00876.html#ac421a032c82b4fea1acf508bfe0a22b8',1,'Arcade::IGraphModule']]],
-  ['geteventtype_130',['getEventType',['../a00864.html#a507d3e97cbd66483d09980ebd5b05ab5',1,'Arcade::IEventModule']]],
-  ['getgamelibrary_131',['getGameLibrary',['../a00856.html#a8ecf7db24572d32928584253fa2e7762',1,'Arcade::ICoreModule']]],
-  ['getgraphicallibrary_132',['getGraphicalLibrary',['../a00856.html#ae2896794c5f6c07a604f523696017f03',1,'Arcade::ICoreModule']]],
-  ['getmousepos_133',['getMousePos',['../a00876.html#afd33126cd6089d48f1e421a12dde0a1f',1,'Arcade::IGraphModule']]]
+  ['get2dpos_164',['get2dPos',['../a00891.html#a178ce05c925d3ac7e7a3ce8c61417d41',1,'Arcade::ISprite']]],
+  ['get2dsize_165',['get2dSize',['../a00891.html#aeb0a9e46dbb3e4b6011a41dc73acbc23',1,'Arcade::ISprite']]],
+  ['get3dpos_166',['get3dPos',['../a00891.html#a04f695382890b04669ebdd88145974c1',1,'Arcade::ISprite']]],
+  ['get3dsize_167',['get3dSize',['../a00891.html#aa75f240dd2c225ff3f901d6f1e4678ea',1,'Arcade::ISprite']]],
+  ['getbackgroundcolor_168',['getBackgroundColor',['../a00895.html#aa4a5678b972d26ec8fd09cc6953f64a8',1,'Arcade::IText']]],
+  ['getfontpath_169',['getFontPath',['../a00895.html#ac20e37f692fd7bb7214d13b909cb30e3',1,'Arcade::IText']]],
+  ['getforegroundcolor_170',['getForegroundColor',['../a00895.html#a2d903e9056f42f1dc3749c9f9e7c6839',1,'Arcade::IText']]],
+  ['getid_171',['getId',['../a00871.html#a76a423a7109ee58f6979b33f97c58b87',1,'Arcade::IRenderComp']]],
+  ['getisplaying_172',['getIsPlaying',['../a00867.html#af2f6a84ca9809787e51f37ce15d5e82c',1,'Arcade::IMusic']]],
+  ['getloop_173',['getLoop',['../a00867.html#ac08203cb6e99ad1fb7da43c32da2a557',1,'Arcade::IMusic']]],
+  ['getncursedata_174',['getNcurseData',['../a00891.html#afad636fd64ba300a56998a87577cf43c',1,'Arcade::ISprite']]],
+  ['getpath_175',['getPath',['../a00867.html#af6327b0a7bfe59bcf870bc0fdf8def5b',1,'Arcade::IMusic']]],
+  ['getpath2d_176',['getPath2d',['../a00891.html#a59db6ad75d267e2b76489679d2b6e5f7',1,'Arcade::ISprite']]],
+  ['getpath3d_177',['getPath3d',['../a00891.html#a4d01d0c853766b2bd7f9449830807a65',1,'Arcade::ISprite']]],
+  ['getpolicesize_178',['getPoliceSize',['../a00895.html#a0810ad40c9d70c93b039dae7e5fbe4e2',1,'Arcade::IText']]],
+  ['getpos_179',['getPos',['../a00895.html#ab2352b2620f398cc552e9336aaf352fa',1,'Arcade::IText']]],
+  ['gettext_180',['getText',['../a00895.html#a23aaff86311151c32078931b8a92a70e',1,'Arcade::IText']]],
+  ['getvolume_181',['getVolume',['../a00867.html#afba80fce50088b61a3e0f750570625fe',1,'Arcade::IMusic']]]
 ];
