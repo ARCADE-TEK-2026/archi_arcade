@@ -17,7 +17,7 @@ namespace Arcade {
         class IGraph {
             public:
                 virtual ~IGraph() = default;
-                virtual std::list<UserInputType> render(std::list<IRenderComp>);
+                virtual std::list<UserInputType> render(std::list<IRenderComp>) = 0;
         };
     }
 }

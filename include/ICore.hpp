@@ -17,7 +17,7 @@ namespace Arcade {
         class ICore {
             public:
                 virtual ~ICore() = default;
-                virtual int exec(int ac, char **av);
+                virtual int exec(int ac, char **av) = 0;
         };
     }
 }

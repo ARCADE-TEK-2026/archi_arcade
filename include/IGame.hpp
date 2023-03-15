@@ -20,7 +20,7 @@ namespace Arcade {
         class IGame {
             public:
                 virtual ~IGame() = default;
-                virtual bool isEnd() = 0;
+                virtual bool isEnd() const = 0;
                 virtual std::list<IRenderComp> update(std::list<UserInputType>) = 0;
         };
     }
