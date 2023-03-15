@@ -6,9 +6,10 @@
 */
 
 #ifndef IEVENT_HPP_
-    #define IEVENT_HPP_
+#define IEVENT_HPP_
 
-namespace Arcade {
+namespace Arcade
+{
     enum UserInputType {
         MOUSE_PRESSED,
         MOUSE_MOVED,
