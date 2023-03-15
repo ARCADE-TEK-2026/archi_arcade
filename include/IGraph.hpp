@@ -9,14 +9,14 @@
 #define IGRAPHH_HPP_
 
 #include <iostream>
+#include "IEvent.hpp"
+#include "IComponents.hpp"
 
 namespace Arcade {
     class IGraphModule {
         public:
             virtual ~IGraphModule() = default;
-            virtual void getMousePos() = 0;
-            virtual void getEventQueue() = 0;
-            virtual void display(IEntityModule *) = 0;
+            virtual std::list<eventType> render(std::list<IComponent>);
     };
 }
 

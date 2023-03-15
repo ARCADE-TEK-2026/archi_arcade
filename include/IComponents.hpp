@@ -9,13 +9,8 @@
 #define ICOMPONENTS_HPP_
 
 namespace Arcade {
-    //template <typename T>
-    class IComponents {
-        public:
-            virtual ~IComponents() = default;
-            virtual void setValue(IComponents *value) = 0;
-            //virtual <T> getValue() = 0;
+    class IComponent {
     };
-}
+};
 
 #endif /* !ICOMPONENTS_HPP_ */

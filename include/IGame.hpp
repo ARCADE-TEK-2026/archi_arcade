@@ -11,17 +11,14 @@
 #include <iostream>
 #include <unordered_map>
 #include <vector>
-#include "IEntity.hpp"
-#include "ISystem.hpp"
-#include "IEventHandler.hpp"
+#include "IEvent.hpp"
 
 namespace Arcade {
     class IGameModule {
         public:
             virtual ~IGameModule() = default;
-            virtual std::unordered_map<std::string, Arcade::ISystemModule *> initSystem() = 0;
-            virtual std::vector<Arcade::IEntityModule *> getEntities() = 0;
-            virtual Arcade::IEventHandler *initEventHandler() = 0;
+            virtual bool isEnd() = 0;
+            virtual void update(std::list<eventType>) = 0;
     };
 }
 

@@ -16,10 +16,7 @@ namespace Arcade {
     class ICoreModule {
         public:
             virtual ~ICoreModule() = default;
-            virtual void update() = 0;
-            virtual Arcade::IGameModule *getGameLibrary(const std::string &) = 0;
-            virtual Arcade::IGraphModule *getGraphicalLibrary(const std::string &) = 0;
-        private:
+            virtual int exec(int ac, char **av);
     };
 }
 
