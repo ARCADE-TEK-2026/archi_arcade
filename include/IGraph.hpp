@@ -13,11 +13,13 @@
 #include "IRenderComp.hpp"
 
 namespace Arcade {
-    class IGraph {
-        public:
-            virtual ~IGraph() = default;
-            virtual std::list<UserInputType> render(std::list<IRenderComp>);
-    };
+    namespace Graph {
+        class IGraph {
+            public:
+                virtual ~IGraph() = default;
+                virtual std::list<UserInputType> render(std::list<IRenderComp>);
+        };
+    }
 }
 
 #endif /* !IGRAPHH_HPP_ */

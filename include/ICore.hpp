@@ -13,11 +13,13 @@
 #include "IGraph.hpp"
 
 namespace Arcade {
-    class ICore {
-        public:
-            virtual ~ICore() = default;
-            virtual int exec(int ac, char **av);
-    };
+    namespace Core {
+        class ICore {
+            public:
+                virtual ~ICore() = default;
+                virtual int exec(int ac, char **av);
+        };
+    }
 }
 
 #endif /* !ICORE_HPP_ */

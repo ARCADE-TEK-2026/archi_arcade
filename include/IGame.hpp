@@ -16,12 +16,14 @@
 #include "IRenderComp.hpp"
 
 namespace Arcade {
-    class IGame {
-        public:
-            virtual ~IGame() = default;
-            virtual bool isEnd() = 0;
-            virtual std::list<IRenderComp> update(std::list<UserInputType>) = 0;
-    };
+    namespace Game {
+        class IGame {
+            public:
+                virtual ~IGame() = default;
+                virtual bool isEnd() = 0;
+                virtual std::list<IRenderComp> update(std::list<UserInputType>) = 0;
+        };
+    }
 }
 
 #endif /* !IGAME_HPP_ */
