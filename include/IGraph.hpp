@@ -6,18 +6,20 @@
 */
 
 #ifndef IGRAPHH_HPP_
-#define IGRAPHH_HPP_
+    #define IGRAPHH_HPP_
 
-#include <iostream>
+    #include <list>
+    #include "IEvent.hpp"
+    #include "IRenderComp.hpp"
 
 namespace Arcade {
-    class IGraphModule {
-        public:
-            virtual ~IGraphModule() = default;
-            virtual void getMousePos() = 0;
-            virtual void getEventQueue() = 0;
-            virtual void display(IEntityModule *) = 0;
-    };
+    namespace Graph {
+        class IGraph {
+            public:
+                virtual ~IGraph() = default;
+                virtual std::list<UserInputType> render(std::list<IRenderComp>) = 0;
+        };
+    }
 }
 
 #endif /* !IGRAPHH_HPP_ */

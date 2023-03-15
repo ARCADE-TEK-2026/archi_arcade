@@ -6,23 +6,21 @@
 */
 
 #ifndef IGAME_HPP_
-#define IGAME_HPP_
+    #define IGAME_HPP_
 
-#include <iostream>
-#include <unordered_map>
-#include <vector>
-#include "IEntity.hpp"
-#include "ISystem.hpp"
-#include "IEventHandler.hpp"
+    #include <list>
+    #include "IEvent.hpp"
+    #include "IRenderComp.hpp"
 
 namespace Arcade {
-    class IGameModule {
-        public:
-            virtual ~IGameModule() = default;
-            virtual std::unordered_map<std::string, Arcade::ISystemModule *> initSystem() = 0;
-            virtual std::vector<Arcade::IEntityModule *> getEntities() = 0;
-            virtual Arcade::IEventHandler *initEventHandler() = 0;
-    };
+    namespace Game {
+        class IGame {
+            public:
+                virtual ~IGame() = default;
+                virtual bool isEnd() const = 0;
+                virtual std::list<IRenderComp> update(std::list<UserInputType>) = 0;
+        };
+    }
 }
 
 #endif /* !IGAME_HPP_ */

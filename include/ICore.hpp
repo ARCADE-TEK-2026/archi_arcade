@@ -6,21 +6,16 @@
 */
 
 #ifndef ICORE_HPP_
-#define ICORE_HPP_
-
-#include <string>
-#include "IGame.hpp"
-#include "IGraph.hpp"
+    #define ICORE_HPP_
 
 namespace Arcade {
-    class ICoreModule {
-        public:
-            virtual ~ICoreModule() = default;
-            virtual void update() = 0;
-            virtual Arcade::IGameModule *getGameLibrary(const std::string &) = 0;
-            virtual Arcade::IGraphModule *getGraphicalLibrary(const std::string &) = 0;
-        private:
-    };
+    namespace Core {
+        class ICore {
+            public:
+                virtual ~ICore() = default;
+                virtual int exec(int ac, char **av) = 0;
+        };
+    }
 }
 
 #endif /* !ICORE_HPP_ */
