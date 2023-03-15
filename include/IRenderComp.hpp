@@ -6,9 +6,10 @@
 */
 
 #ifndef IRENDERCOMP_HPP_
-#define IRENDERCOMP_HPP_
+    #define IRENDERCOMP_HPP_
 
-#include <cstddef>
+    #include <cstddef>
+
 namespace Arcade {
     class IRenderComp {
         public:

@@ -6,10 +6,7 @@
 */
 
 #ifndef IEVENT_HPP_
-#define IEVENT_HPP_
-
-#include <list>
-#include "IRenderComp.hpp"
+    #define IEVENT_HPP_
 
 namespace Arcade {
     enum UserInputType {

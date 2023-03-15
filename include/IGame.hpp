@@ -6,14 +6,11 @@
 */
 
 #ifndef IGAME_HPP_
-#define IGAME_HPP_
+    #define IGAME_HPP_
 
-#include <iostream>
-#include <list>
-#include <unordered_map>
-#include <vector>
-#include "IEvent.hpp"
-#include "IRenderComp.hpp"
+    #include <list>
+    #include "IEvent.hpp"
+    #include "IRenderComp.hpp"
 
 namespace Arcade {
     namespace Game {

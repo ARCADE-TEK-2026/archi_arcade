@@ -6,11 +6,7 @@
 */
 
 #ifndef ICORE_HPP_
-#define ICORE_HPP_
-
-#include <string>
-#include "IGame.hpp"
-#include "IGraph.hpp"
+    #define ICORE_HPP_
 
 namespace Arcade {
     namespace Core {

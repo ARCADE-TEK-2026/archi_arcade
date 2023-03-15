@@ -6,11 +6,11 @@
 */
 
 #ifndef IGRAPHH_HPP_
-#define IGRAPHH_HPP_
+    #define IGRAPHH_HPP_
 
-#include <iostream>
-#include "IEvent.hpp"
-#include "IRenderComp.hpp"
+    #include <list>
+    #include "IEvent.hpp"
+    #include "IRenderComp.hpp"
 
 namespace Arcade {
     namespace Graph {

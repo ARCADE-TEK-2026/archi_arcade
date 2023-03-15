@@ -1,8 +1,15 @@
+/*
+** EPITECH PROJECT, 2023
+** Visual Studio Live Share (Workspace)
+** File description:
+** IGraphh
+*/
 
-#pragma once
+#ifndef IMUSIC_HPP_
+    #define IMUSIC_HPP_
 
-#include <string>
-#include "IRenderComp.hpp"
+    #include <string>
+    #include "IRenderComp.hpp"
 
 namespace Arcade {
     class IMusic : public IRenderComp {
@@ -21,3 +28,5 @@ namespace Arcade {
             virtual void setVolume(float volume) = 0;
     };
 };
+
+#endif
