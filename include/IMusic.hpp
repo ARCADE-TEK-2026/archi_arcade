@@ -2,10 +2,10 @@
 #pragma once
 
 #include <string>
-#include "IComponents.hpp"
+#include "IRenderComp.hpp"
 
 namespace Arcade {
-    class IMusic : public IComponent {
+    class IMusic : public IRenderComp {
         public:
             std::string getPath();
             bool getLoop();

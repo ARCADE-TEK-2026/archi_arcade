@@ -13,9 +13,9 @@
 #include "IGraph.hpp"
 
 namespace Arcade {
-    class ICoreModule {
+    class ICore {
         public:
-            virtual ~ICoreModule() = default;
+            virtual ~ICore() = default;
             virtual int exec(int ac, char **av);
     };
 }

@@ -5,12 +5,12 @@
 ** IComponents
 */
 
-#ifndef ICOMPONENTS_HPP_
-#define ICOMPONENTS_HPP_
+#ifndef IRENDERCOMP_HPP_
+#define IRENDERCOMP_HPP_
 
 namespace Arcade {
-    class IComponent {
+    class IRenderComp {
     };
 };
 
-#endif /* !ICOMPONENTS_HPP_ */
+#endif /* !IRENDERCOMP_HPP_ */

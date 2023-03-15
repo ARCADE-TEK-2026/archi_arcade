@@ -2,13 +2,13 @@
 #pragma once
 
 #include <string>
-#include "IComponents.hpp"
+#include "IRenderComp.hpp"
 
 struct color;
 struct vector2f;
 
 namespace Arcade {
-    class IText : public IComponent {
+    class IText : public IRenderComp {
         public:
             std::string getFontPath();
             std::string getText();

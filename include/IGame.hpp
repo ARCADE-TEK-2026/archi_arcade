@@ -9,16 +9,18 @@
 #define IGAME_HPP_
 
 #include <iostream>
+#include <list>
 #include <unordered_map>
 #include <vector>
 #include "IEvent.hpp"
+#include "IRenderComp.hpp"
 
 namespace Arcade {
-    class IGameModule {
+    class IGame {
         public:
-            virtual ~IGameModule() = default;
+            virtual ~IGame() = default;
             virtual bool isEnd() = 0;
-            virtual void update(std::list<eventType>) = 0;
+            virtual std::list<IRenderComp> update(std::list<UserInputType>) = 0;
     };
 }
 

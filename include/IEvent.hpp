@@ -9,10 +9,10 @@
 #define IEVENT_HPP_
 
 #include <list>
-#include "IComponents.hpp"
+#include "IRenderComp.hpp"
 
 namespace Arcade {
-    enum eventType {
+    enum UserInputType {
         MOUSE_PRESSED,
         MOUSE_MOVED,
         KEY_A_PRESSED,
@@ -76,13 +76,6 @@ namespace Arcade {
         KEY_F10_PRESSED,
         KEY_F11_PRESSED,
         KEY_F12_PRESSED,
-    };
-
-    class IEventModule {
-        public:
-            virtual ~IEventModule() = default;
-            virtual std::list<IComponents *> getComponentList() = 0;
-            virtual eventType getEventType() = 0;
     };
 }
 

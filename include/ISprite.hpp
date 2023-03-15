@@ -2,14 +2,14 @@
 #pragma once
 
 #include <string>
-#include "IComponents.hpp"
+#include "IRenderComp.hpp"
 
 struct ncursesData;
 struct vector2f;
 struct vector3f;
 
 namespace Arcade {
-    class ISprite : public IComponent {
+    class ISprite : public IRenderComp {
         public:
             virtual std::string getPath2d();
             virtual std::string getPath3d();

@@ -10,13 +10,13 @@
 
 #include <iostream>
 #include "IEvent.hpp"
-#include "IComponents.hpp"
+#include "IRenderComp.hpp"
 
 namespace Arcade {
-    class IGraphModule {
+    class IGraph {
         public:
-            virtual ~IGraphModule() = default;
-            virtual std::list<eventType> render(std::list<IComponent>);
+            virtual ~IGraph() = default;
+            virtual std::list<UserInputType> render(std::list<IRenderComp>);
     };
 }
 
