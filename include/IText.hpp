@@ -14,8 +14,7 @@
 struct color;
 struct vector2f;
 
-namespace Arcade
-{
+namespace Arcade {
     class IText : public IRenderComp {
       public:
         virtual ~IText() = default;

@@ -12,10 +12,8 @@
 #include "IEvent.hpp"
 #include "IRenderComp.hpp"
 
-namespace Arcade
-{
-    namespace Graph
-    {
+namespace Arcade {
+    namespace Graph {
         class IGraph {
           public:
             virtual ~IGraph() = default;

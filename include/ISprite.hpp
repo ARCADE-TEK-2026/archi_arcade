@@ -11,10 +11,8 @@
 #include <string>
 #include "IRenderComp.hpp"
 
-namespace Arcade
-{
-    namespace Graph
-    {
+namespace Arcade {
+    namespace Graph {
         struct Color {
             int r;
             int g;

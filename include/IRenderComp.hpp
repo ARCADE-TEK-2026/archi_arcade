@@ -10,8 +10,7 @@
 
 #include <cstddef>
 
-namespace Arcade
-{
+namespace Arcade {
     class IRenderComp {
       public:
         virtual ~IRenderComp() = default;

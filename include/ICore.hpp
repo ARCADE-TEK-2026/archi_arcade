@@ -8,10 +8,8 @@
 #ifndef ICORE_HPP_
 #define ICORE_HPP_
 
-namespace Arcade
-{
-    namespace Core
-    {
+namespace Arcade {
+    namespace Core {
         class ICore {
           public:
             virtual ~ICore() = default;

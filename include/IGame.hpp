@@ -12,10 +12,8 @@
 #include "IEvent.hpp"
 #include "IRenderComp.hpp"
 
-namespace Arcade
-{
-    namespace Game
-    {
+namespace Arcade {
+    namespace Game {
         class IGame {
           public:
             virtual ~IGame() = default;

@@ -11,8 +11,7 @@
 #include <string>
 #include "IRenderComp.hpp"
 
-namespace Arcade
-{
+namespace Arcade {
     class IMusic : public IRenderComp {
       public:
         virtual ~IMusic() = default;
