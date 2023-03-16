@@ -35,3 +35,12 @@ documentation/docs
 documentation/latex
 documentation/uml.png
 tests/dawa
+
+# Cmake
+cmake-build-debug
+CMakeCache.txt
+CMakeFiles
+
+# Editor
+.idea
+.vscode
