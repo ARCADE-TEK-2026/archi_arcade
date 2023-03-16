@@ -2,13 +2,13 @@
 #pragma once
 
 #include <string>
-#include "IRenderComp.hpp"
+#include "IComponent.hpp"
 
 struct color;
 struct vector2f;
 
 namespace Arcade {
-    class IText : public IRenderComp {
+    class IText : public IComponent {
         public:
             virtual ~IText() = default;
 

@@ -9,10 +9,10 @@
     #define IMUSIC_HPP_
 
     #include <string>
-    #include "IRenderComp.hpp"
+    #include "IComponent.hpp"
 
 namespace Arcade {
-    class IMusic : public IRenderComp {
+    class IMusic : public IComponent {
         public:
             virtual ~IMusic() = default;
 
