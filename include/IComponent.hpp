@@ -7,20 +7,20 @@
 
 #pragma once
 
-#include <cstddef>
-
 namespace Arcade {
-    /**
-     * @brief The IComponents interface
-     *
-     * defaultComponent type to implement: TEXT, SPRITE, MUSIC
-     */
-    struct compType;
+    namespace ECS {
+        /**
+        * @brief The IComponents interface
+        *
+        * defaultComponent type to implement: TEXT, SPRITE, MUSIC
+        */
+        struct compType;
 
-    class IComponent {
-        public:
-            virtual ~IComponent() = default;
+        class IComponent {
+            public:
+                virtual ~IComponent() = default;
 
-            virtual compType getType() const = 0;
-    };
+                virtual compType getType() const = 0;
+        };
+    }
 }; // namespace Arcade

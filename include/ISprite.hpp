@@ -9,23 +9,24 @@
 
 #include <string>
 #include "GraphStruct.hpp"
+#include "ArcadeStruct.hpp"
 #include "IComponent.hpp"
 
 namespace Arcade {
     namespace Graph {
-        class ISprite : public IComponent {
+        class ISprite : Arcade::ECS::IComponent {
             public:
                 virtual ~ISprite() = default;
 
                 virtual const std::string &getPath() const = 0;
 
-                virtual const NcursesData &getNcurseData() const = 0;
+                virtual const TTYData &getNcurseData() const = 0;
 
-                virtual const Vector3f &getPos() const = 0;
-                virtual void setPos(Vector3f pos) = 0;
+                virtual const Arcade::Vector3f &getPos() const = 0;
+                virtual void setPos(Arcade::Vector3f pos) = 0;
 
-                virtual const Vector3f &getSize() const = 0;
-                virtual void setSize(Vector3f size) = 0;
+                virtual const Arcade::Vector3f &getSize() const = 0;
+                virtual void setSize(Arcade::Vector3f size) = 0;
 
                 virtual Color &getColor() const = 0;
         };

@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** Visual Studio Live Share (Workspace)
+** Arcade
 ** File description:
-** GraphStruct
+** Useful struct for the grapical lib
 */
 
 #pragma once
@@ -17,26 +17,12 @@ namespace Arcade {
                 int g;
                 int b;
         };
-        struct NcursesData {
+        struct TTYData {
             public:
                 std::string pathAsciiArt;
                 std::string defaultChar;
                 Color foreground;
                 Color background;
-        };
-
-        struct Vector2f {
-            public:
-                float x;
-                float y;
-                float z;
-        };
-
-        struct Vector3f {
-            public:
-                float x;
-                float y;
-                float z;
         };
     } // namespace Graph
 } // namespace Arcade

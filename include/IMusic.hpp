@@ -12,7 +12,7 @@
 
 namespace Arcade {
     namespace Graph {
-        class IMusic : IComponent {
+        class IMusic : Arcade::ECS::IComponent {
             public:
                 virtual ~IMusic() = default;
 
