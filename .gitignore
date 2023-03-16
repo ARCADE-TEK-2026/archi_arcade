@@ -36,3 +36,12 @@ documentation/latex
 documentation/uml.png
 tests/dawa
 .clang-format
+
+# Cmake
+cmake-build-debug
+CMakeCache.txt
+CMakeFiles
+
+# Editor
+.idea
+.vscode
