@@ -29,7 +29,7 @@ doxygen: clean-doxygen
 	touch documentation/docs/.nojekyll
 
 tests-run:
-	g++ ./tests/dawa.cpp -I include -o tests/dawa
+	g++ ./tests/test-includes.cpp -I include -o tests/dawa
 	./tests/dawa
 
 .clang-format:
