@@ -18,7 +18,8 @@ namespace Arcade {
             public:
                 virtual ~IGraph() = default;
                 virtual void run(std::size_t deltaTime,
-                std::vector<Arcade::ECS::IEntity *> &, const IEventManager &) override = 0;
+                std::vector<Arcade::ECS::IEntity *> &,
+                const IEventManager &) override = 0;
         };
     } // namespace Graph
 } // namespace Arcade

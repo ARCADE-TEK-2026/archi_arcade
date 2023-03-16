@@ -21,4 +21,4 @@ namespace Arcade {
             float y;
             float z;
     };
-}
+} // namespace Arcade

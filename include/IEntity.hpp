@@ -28,7 +28,8 @@ namespace Arcade {
                  *
                  * @return The list of components filtered
                  */
-                virtual const std::vector<IComponent *> &getComponents(Arcade::ECS::compType type) = 0;
+                virtual const std::vector<IComponent *> &getComponents(
+                Arcade::ECS::compType type) = 0;
                 /**
                  * @brief Add a component
                  *
@@ -36,5 +37,5 @@ namespace Arcade {
                  */
                 virtual void addComponent(IComponent *component) = 0;
         };
-    }
+    } // namespace ECS
 } // namespace Arcade

@@ -8,8 +8,8 @@
 #pragma once
 
 #include <string>
-#include "GraphStruct.hpp"
 #include "ArcadeStruct.hpp"
+#include "GraphStruct.hpp"
 #include "IComponent.hpp"
 
 namespace Arcade {
@@ -23,10 +23,12 @@ namespace Arcade {
                 virtual const std::string &getText() const = 0;
                 virtual void setText(std::string text) = 0;
 
-                virtual const Arcade::Graph::Color &getBackgroundColor() const = 0;
+                virtual const Arcade::Graph::Color &
+                getBackgroundColor() const = 0;
                 virtual void setBackgroundColor(Arcade::Graph::Color color) = 0;
 
-                virtual const Arcade::Graph::Color &getForegroundColor() const = 0;
+                virtual const Arcade::Graph::Color &
+                getForegroundColor() const = 0;
                 virtual void setForegroundColor(Arcade::Graph::Color color) = 0;
 
                 virtual float getPoliceSize() const = 0;

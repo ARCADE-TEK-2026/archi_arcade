@@ -135,7 +135,8 @@ namespace Arcade {
              *
              * @param mousePosition The last known mouse position
              */
-            virtual void setMousePosition(const Arcade::Vector2f &mousePosition) = 0;
+            virtual void setMousePosition(
+            const Arcade::Vector2f &mousePosition) = 0;
     };
 } // namespace Arcade
 

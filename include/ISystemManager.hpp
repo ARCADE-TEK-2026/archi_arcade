@@ -36,7 +36,7 @@ namespace Arcade {
              * @param deltaTime The time since the last update
              * @param entityList The list of entities
              */
-            virtual void update(
-            std::size_t deltaTime, std::vector<Arcade::ECS::IEntity *> entityList) = 0;
+            virtual void update(std::size_t deltaTime,
+            std::vector<Arcade::ECS::IEntity *> entityList) = 0;
     };
 } // namespace Arcade

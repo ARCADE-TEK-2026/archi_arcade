@@ -21,5 +21,5 @@ namespace Arcade {
                 virtual void run(std::size_t deltaTime,
                 std::vector<IEntity *> &, const IEventManager &) = 0;
         };
-    }
+    } // namespace ECS
 } // namespace Arcade

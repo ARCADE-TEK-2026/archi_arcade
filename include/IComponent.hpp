@@ -10,10 +10,10 @@
 namespace Arcade {
     namespace ECS {
         /**
-        * @brief The IComponents interface
-        *
-        * defaultComponent type to implement: TEXT, SPRITE, MUSIC
-        */
+         * @brief The IComponents interface
+         *
+         * defaultComponent type to implement: TEXT, SPRITE, MUSIC
+         */
         struct compType;
 
         class IComponent {
@@ -22,5 +22,5 @@ namespace Arcade {
 
                 virtual compType getType() const = 0;
         };
-    }
-}; // namespace Arcade
+    } // namespace ECS
+};    // namespace Arcade
