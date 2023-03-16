@@ -85,12 +85,12 @@ namespace Arcade {
     // };
 
     class IEventManager {
-      public:
-        virtual ~IEventManager() = default;
+        public:
+            virtual ~IEventManager() = default;
 
-        virtual bool isEventInQueue(const std::string &event) const = 0;
-        virtual void addEvent(const std::string &event) = 0;
-        virtual std::queue<std::string> &popEvent() = 0;
+            virtual bool isEventInQueue(const std::string &event) const = 0;
+            virtual void addEvent(const std::string &event) = 0;
+            virtual std::queue<std::string> &popEvent() = 0;
     };
 } // namespace Arcade
 

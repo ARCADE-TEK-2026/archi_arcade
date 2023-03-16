@@ -16,9 +16,9 @@ namespace Arcade {
          * It has a ISystemManager
          */
         class ICore {
-          public:
-            virtual ~ICore() = 0;
-            virtual void update() = 0;
+            public:
+                virtual ~ICore() = default;
+                virtual void update() = 0;
         };
     } // namespace Core
 } // namespace Arcade

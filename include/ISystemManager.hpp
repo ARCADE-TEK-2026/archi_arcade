@@ -14,11 +14,12 @@
 
 namespace Arcade {
     class ISystemManager {
-      public:
-        virtual ~ISystemManager() = default;
-        virtual void addSystem(const std::string &name, ISystem *system) = 0;
-        virtual void removeSystem(const std::string &name) = 0;
-        virtual void update(
-        std::size_t deltaTime, std::vector<IEntity *> entityList) = 0;
+        public:
+            virtual ~ISystemManager() = default;
+            virtual void addSystem(
+            const std::string &name, ISystem *system) = 0;
+            virtual void removeSystem(const std::string &name) = 0;
+            virtual void update(
+            std::size_t deltaTime, std::vector<IEntity *> entityList) = 0;
     };
 } // namespace Arcade

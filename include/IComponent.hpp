@@ -18,9 +18,9 @@ namespace Arcade {
     struct compType;
 
     class IComponent {
-      public:
-        virtual ~IComponent() = 0;
+        public:
+            virtual ~IComponent() = default;
 
-        virtual compType getType() const = 0;
+            virtual compType getType() const = 0;
     };
 }; // namespace Arcade

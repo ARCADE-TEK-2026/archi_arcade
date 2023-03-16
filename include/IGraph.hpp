@@ -14,10 +14,10 @@
 namespace Arcade {
     namespace Graph {
         class IGraph : ISystem {
-          public:
-            virtual ~IGraph() = 0;
-            virtual void run(
-            std::vector<IEntity *> &, const IEventManager &) override;
+            public:
+                virtual ~IGraph() = default;
+                virtual void run(
+                std::vector<IEntity *> &, const IEventManager &) override;
         };
     } // namespace Graph
 } // namespace Arcade
