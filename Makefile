@@ -1,5 +1,16 @@
 EXTRA_PARAMS_PLANTUML = plantuml
 
+SOURCE		=	include/ICore.hpp		\
+				include/IEvent.hpp		\
+				include/IGame.hpp		\
+				include/IGraph.hpp		\
+				include/IMusic.hpp		\
+				include/IRenderComp.hpp	\
+				include/ISprite.hpp		\
+				include/IText.hpp
+
+INC_UML		=	$(addprefix -i , $(SOURCE))
+
 clean:
 	rm -rf tests/dawa
 
@@ -13,9 +24,7 @@ clean-uml:
 fclean: clean-doxygen clean-uml clean
 
 uml: clean-uml
-	for file in $$(/bin/ls include); \
-			do echo -n '-i include/'$$file" "; done\
-		| xargs hpp2plantuml \
+	hpp2plantuml ${INC_UML} \
 		| ${EXTRA_PARAMS_PLANTUML} -pipe > documentation/uml.png
 
 doxygen: clean-doxygen
@@ -25,3 +34,9 @@ doxygen: clean-doxygen
 tests-run:
 	g++ ./tests/dawa.cpp -I include -o tests/dawa
 	./tests/dawa
+
+.clang-format:
+	curl -Lo .clang-format "https://raw.githubusercontent.com/raphaelMrci/clang-format-Epitech/main/.clang-format"
+
+format: .clang-format
+	clang-format --style=file -i ${SOURCE}
