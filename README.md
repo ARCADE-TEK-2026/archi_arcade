@@ -9,7 +9,7 @@ documentation: [docs](https://arcade-tek-2026.github.io/archi_arcade/)
 To install the archi on your project, you have to execute this line on the root of your repository.
 
 ```
-sudo bash -C "$(curl -fsSL https://raw.githubusercontent.com/raphaelMrci/archi_arcade/setup-sh/setup.sh)"
+sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/raphaelMrci/archi_arcade/setup-sh/setup.sh)"
 ```
 
 #### WARNING
