@@ -8,43 +8,26 @@
 #pragma once
 
 #include <string>
+#include "GraphStruct.hpp"
 #include "IComponent.hpp"
 
 namespace Arcade {
     namespace Graph {
-        struct Color {
-            int r;
-            int g;
-            int b;
-        };
-        struct NcursesData {
-            std::string pathAsciiArt;
-            std::string defaultChar;
-            Color foreground;
-            Color background;
-        };
-
-        struct Vector3f {
-            float x;
-            float y;
-            float z;
-        };
-
         class ISprite : public IComponent {
-            public:
-                virtual ~ISprite() = default;
+          public:
+            virtual ~ISprite() = default;
 
-                virtual const std::string& getPath() const = 0;
+            virtual const std::string &getPath() const = 0;
 
-                virtual const Graph::NcursesData& getNcurseData() const = 0;
+            virtual const NcursesData &getNcurseData() const = 0;
 
-                virtual const Vector3f& getPos() const = 0;
-                virtual void setPos(Vector3f pos) = 0;
+            virtual const Vector3f &getPos() const = 0;
+            virtual void setPos(Vector3f pos) = 0;
 
-                virtual const Vector3f& getSize() const = 0;
-                virtual void setSize(Vector3f size) = 0;
+            virtual const Vector3f &getSize() const = 0;
+            virtual void setSize(Vector3f size) = 0;
 
-                virtual Graph::Color &getColor() const = 0;
+            virtual Color &getColor() const = 0;
         };
-    }
-};
+    } // namespace Graph
+} // namespace Arcade

@@ -15,9 +15,10 @@
 namespace Arcade {
     namespace Game {
         class IGameLogic : ISystem {
-            public:
-                virtual ~IGameLogic() = default;
-                virtual void run(std::vector<IEntity *> &, const IEventManager &) = 0;
+          public:
+            virtual ~IGameLogic() = default;
+            virtual void run(
+            std::vector<IEntity *> &, const IEventManager &) = 0;
         };
-    }
-}
+    } // namespace Game
+} // namespace Arcade

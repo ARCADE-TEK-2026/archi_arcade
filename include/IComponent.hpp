@@ -11,16 +11,16 @@
 
 namespace Arcade {
     /**
-    * @brief The IComponents interface
-    * 
-    * defaultComponent type to implement: TEXT, SPRITE, MUSIC
-    */
+     * @brief The IComponents interface
+     *
+     * defaultComponent type to implement: TEXT, SPRITE, MUSIC
+     */
     struct compType;
 
     class IComponent {
-        public:
-            virtual ~IComponent() = 0;
+      public:
+        virtual ~IComponent() = 0;
 
-            virtual compType getType() const = 0;
+        virtual compType getType() const = 0;
     };
-};
+}; // namespace Arcade

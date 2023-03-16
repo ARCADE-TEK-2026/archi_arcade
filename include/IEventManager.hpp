@@ -8,11 +8,10 @@
 #ifndef IUSERINPUTMANAGER_HPP_
 #define IUSERINPUTMANAGER_HPP_
 
-#include <string>
 #include <queue>
+#include <string>
 
-namespace Arcade
-{
+namespace Arcade {
     // enum class UserInputType {
     //     MOUSE_KEY1_PRESSED,
     //     MOUSE_KEY2_PRESSED,
@@ -85,15 +84,14 @@ namespace Arcade
     //     WINDOW_MINIMIZE
     // };
 
-    class IEventManager
-    {
-        public:
-            virtual ~IEventManager() = default;
+    class IEventManager {
+      public:
+        virtual ~IEventManager() = default;
 
-            virtual bool isEventInQueue(const std::string &event) const = 0;
-            virtual void addEvent(const std::string &event) = 0;
-            virtual std::queue<std::string> &popEvent() = 0;
+        virtual bool isEventInQueue(const std::string &event) const = 0;
+        virtual void addEvent(const std::string &event) = 0;
+        virtual std::queue<std::string> &popEvent() = 0;
     };
-}
+} // namespace Arcade
 
 #endif

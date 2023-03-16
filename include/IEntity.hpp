@@ -12,8 +12,8 @@
 
 namespace Arcade {
     class IEntity {
-        public:
-            virtual ~IEntity() = 0;
-            virtual std::vector<IComponent *> &getComponents() = 0;
+      public:
+        virtual ~IEntity() = 0;
+        virtual std::vector<IComponent *> &getComponents() = 0;
     };
-}
+} // namespace Arcade

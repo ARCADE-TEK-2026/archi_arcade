@@ -1,5 +1,9 @@
 EXTRA_PARAMS_PLANTUML = plantuml
 
+SOURCE		=	$(shell find include -name "*.hpp" -print)
+
+INC_UML		=	$(addprefix -i , $(SOURCE))
+
 clean:
 	rm -rf tests/dawa
 
@@ -11,11 +15,13 @@ clean-uml:
 	rm -rf documentation/uml.png
 
 fclean: clean-doxygen clean-uml clean
+	rm -rf cmake-build-debug
+	rm -rf CMakeCache.txt
+	rm -rf CMakeFiles
+
 
 uml: clean-uml
-	for file in $$(/bin/ls include); \
-			do echo -n '-i include/'$$file" "; done\
-		| xargs hpp2plantuml \
+	hpp2plantuml ${INC_UML} \
 		| ${EXTRA_PARAMS_PLANTUML} -pipe > documentation/uml.png
 
 doxygen: clean-doxygen
@@ -25,3 +31,9 @@ doxygen: clean-doxygen
 tests-run:
 	g++ ./tests/dawa.cpp -I include -o tests/dawa
 	./tests/dawa
+
+.clang-format:
+	curl -Lo .clang-format "https://raw.githubusercontent.com/raphaelMrci/clang-format-Epitech/main/.clang-format"
+
+format: .clang-format
+	clang-format --style=file -i ${SOURCE}

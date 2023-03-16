@@ -9,13 +9,13 @@
 
 #include <vector>
 #include "IComponent.hpp"
-#include "IEventManager.hpp"
 #include "IEntity.hpp"
+#include "IEventManager.hpp"
 
 namespace Arcade {
     class ISystem {
-        public:
-            virtual ~ISystem () = 0;
-            virtual void run(std::vector<IEntity *> &, const IEventManager &) = 0;
+      public:
+        virtual ~ISystem() = 0;
+        virtual void run(std::vector<IEntity *> &, const IEventManager &) = 0;
     };
-}
+} // namespace Arcade
