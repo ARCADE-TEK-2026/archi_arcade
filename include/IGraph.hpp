@@ -17,7 +17,7 @@ namespace Arcade {
             public:
                 virtual ~IGraph() = default;
                 virtual void run(
-                std::vector<IEntity *> &, const IEventManager &) override;
+                std::vector<IEntity *> &, const IEventManager &) override = 0;
         };
     } // namespace Graph
 } // namespace Arcade
