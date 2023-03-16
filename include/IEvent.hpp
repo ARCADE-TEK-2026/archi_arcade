@@ -10,8 +10,11 @@
 
 namespace Arcade {
     enum UserInputType {
-        MOUSE_PRESSED,
-        MOUSE_MOVED,
+        MOUSE_KEY1_PRESSED,
+        MOUSE_KEY2_PRESSED,
+        MOUSE_KEY3_PRESSED,
+        MOUSE_KEY4_PRESSED,
+        MOUSE_KEY5_PRESSED,
         KEY_A_PRESSED,
         KEY_B_PRESSED,
         KEY_C_PRESSED,
@@ -73,6 +76,9 @@ namespace Arcade {
         KEY_F10_PRESSED,
         KEY_F11_PRESSED,
         KEY_F12_PRESSED,
+        WINDOW_CLOSE,
+        WINDOW_RESIZE,
+        WINDOW_MINIMIZE
     };
 }
 

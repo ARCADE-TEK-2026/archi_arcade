@@ -8,17 +8,18 @@
 #ifndef IGAME_HPP_
     #define IGAME_HPP_
 
-    #include <list>
-    #include "IEvent.hpp"
-    #include "IRenderComp.hpp"
+    #include <vector>
+    #include "IEntity.hpp"
+    #include "ISystem.hpp"
 
 namespace Arcade {
     namespace Game {
         class IGame {
             public:
-                virtual ~IGame() = default;
+                virtual ~IGame() = 0;
                 virtual bool isEnd() const = 0;
-                virtual std::list<IRenderComp> update(std::list<UserInputType>) = 0;
+                virtual std::vector<IEntity *> &getEntities() const;
+                virtual std::vector<ISystem *> &getSystems() const;
         };
     }
 }

@@ -10,12 +10,14 @@
 
     #include <cstddef>
 
-namespace Arcade {
-    class IRenderComp {
-        public:
-            virtual ~IRenderComp() = default;
+struct compType;
 
-            virtual std::size_t getId() const = 0;
+namespace Arcade {
+    class IComponent {
+        public:
+            virtual ~IComponent() = 0;
+
+            virtual compType getType() const = 0;
     };
 };
 

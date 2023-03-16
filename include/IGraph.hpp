@@ -8,16 +8,17 @@
 #ifndef IGRAPHH_HPP_
     #define IGRAPHH_HPP_
 
-    #include <list>
+    #include <vector>
     #include "IEvent.hpp"
-    #include "IRenderComp.hpp"
+    #include "IComponent.hpp"
 
 namespace Arcade {
     namespace Graph {
         class IGraph {
             public:
-                virtual ~IGraph() = default;
-                virtual std::list<UserInputType> render(std::list<IRenderComp>) = 0;
+                virtual ~IGraph() = 0;
+                virtual void render(std::vector<IComponent *>) = 0;
+                virtual std::vector<UserInputType> getUserInputs() const;
         };
     }
 }

@@ -8,12 +8,15 @@
 #ifndef ICORE_HPP_
     #define ICORE_HPP_
 
+    #include <vector>
+    #include "IEvent.hpp"
+
 namespace Arcade {
     namespace Core {
         class ICore {
             public:
-                virtual ~ICore() = default;
-                virtual int exec(int ac, char **av) = 0;
+                virtual ~ICore() = 0;
+                virtual void update() = 0;
         };
     }
 }
