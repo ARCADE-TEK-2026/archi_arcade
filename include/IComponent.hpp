@@ -5,14 +5,18 @@
 ** IComponents
 */
 
-#ifndef IRENDERCOMP_HPP_
-    #define IRENDERCOMP_HPP_
+#pragma once
 
-    #include <cstddef>
-
-struct compType;
+#include <cstddef>
 
 namespace Arcade {
+    /**
+    * @brief The IComponents interface
+    * 
+    * defaultComponent type to implement: TEXT, SPRITE, MUSIC
+    */
+    struct compType;
+
     class IComponent {
         public:
             virtual ~IComponent() = 0;
@@ -20,5 +24,3 @@ namespace Arcade {
             virtual compType getType() const = 0;
     };
 };
-
-#endif /* !IRENDERCOMP_HPP_ */

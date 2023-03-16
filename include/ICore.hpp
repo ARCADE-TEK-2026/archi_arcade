@@ -5,14 +5,16 @@
 ** ICore
 */
 
-#ifndef ICORE_HPP_
-    #define ICORE_HPP_
-
-    #include <vector>
-    #include "IEvent.hpp"
+#pragma once
 
 namespace Arcade {
     namespace Core {
+        /**
+         * @brief The Core class
+         *
+         * The Core class is the main class of the project.
+         * It has a ISystemManager
+         */
         class ICore {
             public:
                 virtual ~ICore() = 0;
@@ -20,5 +22,3 @@ namespace Arcade {
         };
     }
 }
-
-#endif /* !ICORE_HPP_ */

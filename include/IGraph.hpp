@@ -9,16 +9,15 @@
     #define IGRAPHH_HPP_
 
     #include <vector>
-    #include "IEvent.hpp"
-    #include "IComponent.hpp"
+    #include "IEventManager.hpp"
+    #include "ISystem.hpp"
 
 namespace Arcade {
     namespace Graph {
-        class IGraph {
+        class IGraph : ISystem {
             public:
                 virtual ~IGraph() = 0;
-                virtual void render(std::vector<IComponent *>) = 0;
-                virtual std::vector<UserInputType> getUserInputs() const;
+                virtual void run(std::vector<IEntity *> &, const IEventManager &) override;
         };
     }
 }

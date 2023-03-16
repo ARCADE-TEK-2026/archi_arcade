@@ -5,8 +5,7 @@
 ** IEntity
 */
 
-#ifndef IENTITY_HPP_
-#define IENTITY_HPP_
+#pragma once
 
 #include <vector>
 #include "IComponent.hpp"
@@ -18,5 +17,3 @@ namespace Arcade {
             virtual std::vector<IComponent *> &getComponents() = 0;
     };
 }
-
-#endif /* !IENTITY_HPP_ */

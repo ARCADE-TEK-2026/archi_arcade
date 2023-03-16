@@ -5,20 +5,17 @@
 ** ISystem
 */
 
-#ifndef ISYSTEM_HPP_
-#define ISYSTEM_HPP_
+#pragma once
 
 #include <vector>
 #include "IComponent.hpp"
-#include "IEvent.hpp"
+#include "IEventManager.hpp"
 #include "IEntity.hpp"
 
 namespace Arcade {
     class ISystem {
         public:
             virtual ~ISystem () = 0;
-            virtual void run(std::vector<IEntity *> &, std::vector<UserInputType> &) = 0;
+            virtual void run(std::vector<IEntity *> &, const IEventManager &) = 0;
     };
 }
-
-#endif /* !ISYSTEM_HPP_ */
