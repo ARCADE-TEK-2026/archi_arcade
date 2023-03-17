@@ -13,7 +13,7 @@ namespace Arcade {
          * @brief The Core class
          *
          * The Core class is the main class of the project.
-         * It has a ISystemManager
+         * It has a ISystemManager and a IEventManager
          */
         class ICore {
             public:
