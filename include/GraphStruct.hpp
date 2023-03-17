@@ -19,10 +19,16 @@ namespace Arcade {
         };
         struct TTYData {
             public:
-                std::string pathAsciiArt;
                 std::string defaultChar;
                 Color foreground;
                 Color background;
+        };
+        struct Rect {
+            public:
+                int left;
+                int top;
+                int width;
+                int height;
         };
     } // namespace Graph
 } // namespace Arcade

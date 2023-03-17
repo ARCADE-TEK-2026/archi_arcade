@@ -29,6 +29,10 @@ namespace Arcade {
                 virtual void setSize(Arcade::Vector3f size) = 0;
 
                 virtual Color &getColor() const = 0;
+
+                virtual Rect &getRect() const = 0;
+
+                virtual float &getScale() const = 0;
         };
     } // namespace Graph
 } // namespace Arcade
