@@ -14,13 +14,13 @@ namespace Arcade {
          *
          * defaultComponent type to implement: TEXT, SPRITE, MUSIC
          */
-        struct compType;
+        struct CompType;
 
         class IComponent {
             public:
                 virtual ~IComponent() = default;
 
-                virtual compType getType() const = 0;
+                virtual CompType getType() const = 0;
         };
     } // namespace ECS
 };    // namespace Arcade

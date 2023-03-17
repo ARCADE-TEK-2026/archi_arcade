@@ -7,6 +7,7 @@
 
 #pragma once
 
+#include <cstddef>
 #include <vector>
 #include "IComponent.hpp"
 
@@ -15,6 +16,12 @@ namespace Arcade {
         class IEntity {
             public:
                 virtual ~IEntity() = default;
+                /**
+                 * @brief Get the entity id
+                 *
+                 * @return The entity id
+                 */
+                virtual std::size_t getId() const = 0;
                 /**
                  * @brief Get all components
                  *
@@ -28,8 +35,7 @@ namespace Arcade {
                  *
                  * @return The list of components filtered
                  */
-                virtual const std::vector<IComponent *> &getComponents(
-                Arcade::ECS::compType type) = 0;
+                virtual const std::vector<IComponent *> &getComponents(CompType type) = 0;
                 /**
                  * @brief Add a component
                  *

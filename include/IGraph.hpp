@@ -8,7 +8,7 @@
 #pragma once
 
 #include <cstddef>
-#include <vector>
+#include "IEntityManager.hpp"
 #include "IEventManager.hpp"
 #include "ISystem.hpp"
 
@@ -17,9 +17,8 @@ namespace Arcade {
         class IGraph : Arcade::ECS::ISystem {
             public:
                 virtual ~IGraph() = default;
-                virtual void run(std::size_t deltaTime,
-                std::vector<Arcade::ECS::IEntity *> &,
-                const IEventManager &) override = 0;
+                virtual void run(std::size_t deltaTime, Arcade::ECS::IEntityManager &,
+                Arcade::IEventManager &) override = 0;
         };
     } // namespace Graph
 } // namespace Arcade

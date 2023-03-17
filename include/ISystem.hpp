@@ -8,9 +8,8 @@
 #pragma once
 
 #include <cstddef>
-#include <vector>
 #include "IComponent.hpp"
-#include "IEntity.hpp"
+#include "IEntityManager.hpp"
 #include "IEventManager.hpp"
 
 namespace Arcade {
@@ -18,8 +17,8 @@ namespace Arcade {
         class ISystem {
             public:
                 virtual ~ISystem() = default;
-                virtual void run(std::size_t deltaTime,
-                std::vector<IEntity *> &, const IEventManager &) = 0;
+                virtual void run(std::size_t deltaTime, IEntityManager &,
+                Arcade::IEventManager &) = 0;
         };
     } // namespace ECS
 } // namespace Arcade
