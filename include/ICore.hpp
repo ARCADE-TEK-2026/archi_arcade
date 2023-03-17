@@ -10,9 +10,9 @@
 namespace Arcade {
     namespace Core {
         /**
-         * @brief The Core class
+         * @brief The ICore class
          *
-         * The Core class is the main class of the project.
+         * The ICore class is the main class of the project.
          * It has a ISystemManager
          */
         class ICore {

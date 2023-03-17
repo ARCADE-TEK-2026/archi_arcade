@@ -17,6 +17,10 @@ namespace Arcade {
         class IGraph : Arcade::ECS::ISystem {
             public:
                 virtual ~IGraph() = default;
+
+                /**
+                * @brief Run the graphical system implementation
+                */
                 virtual void run(std::size_t deltaTime, Arcade::ECS::IEntityManager &,
                 Arcade::IEventManager &) override = 0;
         };
