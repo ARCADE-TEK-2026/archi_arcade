@@ -1,6 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$a00871.html" title=" " alt="" coords="5,56,168,83"/>
-<area shape="rect" id="node2" href="$a00867.html" title=" " alt="" coords="216,5,333,32"/>
-<area shape="rect" id="node3" href="$a00891.html" title=" " alt="" coords="216,56,333,83"/>
-<area shape="rect" id="node4" href="$a00895.html" title=" " alt="" coords="221,107,328,133"/>
+<area shape="rect" id="node1" href="$a00930.html" title="The ISystem interface." alt="" coords="5,31,167,57"/>
+<area shape="rect" id="node2" href="$a00914.html" title="The IGameLogic interface." alt="" coords="215,5,413,32"/>
+<area shape="rect" id="node3" href="$a00918.html" title="The IGraph interface." alt="" coords="231,56,397,83"/>
 </map>

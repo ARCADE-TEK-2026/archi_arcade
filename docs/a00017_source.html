@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/IGame.hpp Source File</title>
+<title>Architecture Arcade: include/IComponent.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,46 +67,38 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">IGame.hpp</div>  </div>
+<div class="title">IComponent.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00017.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2023</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Visual Studio Live Share (Workspace)</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** IGame</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** IComponents</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef IGAME_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define IGAME_HPP_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00014.html">IEvent.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00026.html">IRenderComp.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00036.html">Arcade</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00038.html">   16</a></span>&#160;    <span class="keyword">namespace </span>Game {</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="a00859.html">   17</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00859.html">IGame</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;          <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00859.html#a06be0f634dab52a955d5d80c13e24725">   19</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="a00859.html#a06be0f634dab52a955d5d80c13e24725">~IGame</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00859.html#a5e669227baf1519061b040c1e7f0d1f4">   20</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00859.html#a5e669227baf1519061b040c1e7f0d1f4">isEnd</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00859.html#a8c406801b07dcbfe488c770d07a3638d">   21</a></span>&#160;            <span class="keyword">virtual</span> std::list&lt;IRenderComp&gt; <a class="code" href="a00859.html#a8c406801b07dcbfe488c770d07a3638d">update</a>(std::list&lt;UserInputType&gt;) = 0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        };</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    } <span class="comment">// namespace Game</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;} <span class="comment">// namespace Arcade</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !IGAME_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aa00014_html"><div class="ttname"><a href="a00014.html">IEvent.hpp</a></div></div>
-<div class="ttc" id="aa00026_html"><div class="ttname"><a href="a00026.html">IRenderComp.hpp</a></div></div>
-<div class="ttc" id="aa00036_html"><div class="ttname"><a href="a00036.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ICore.hpp:11</div></div>
-<div class="ttc" id="aa00859_html"><div class="ttname"><a href="a00859.html">Arcade::Game::IGame</a></div><div class="ttdef"><b>Definition:</b> IGame.hpp:17</div></div>
-<div class="ttc" id="aa00859_html_a06be0f634dab52a955d5d80c13e24725"><div class="ttname"><a href="a00859.html#a06be0f634dab52a955d5d80c13e24725">Arcade::Game::IGame::~IGame</a></div><div class="ttdeci">virtual ~IGame()=default</div></div>
-<div class="ttc" id="aa00859_html_a5e669227baf1519061b040c1e7f0d1f4"><div class="ttname"><a href="a00859.html#a5e669227baf1519061b040c1e7f0d1f4">Arcade::Game::IGame::isEnd</a></div><div class="ttdeci">virtual bool isEnd() const =0</div></div>
-<div class="ttc" id="aa00859_html_a8c406801b07dcbfe488c770d07a3638d"><div class="ttname"><a href="a00859.html#a8c406801b07dcbfe488c770d07a3638d">Arcade::Game::IGame::update</a></div><div class="ttdeci">virtual std::list&lt; IRenderComp &gt; update(std::list&lt; UserInputType &gt;)=0</div></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00054.html">Arcade</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="a00056.html">   11</a></span>&#160;    <span class="keyword">namespace </span>ECS {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">struct </span>CompType;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00894.html">   19</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00894.html">IComponent</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00894.html#aefffd7ac3398e0ff565166fd26c70593">   21</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00894.html#aefffd7ac3398e0ff565166fd26c70593">~IComponent</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00894.html#a7c3bc882bfd7bebcc17e7968e6f009fb">   28</a></span>&#160;                <span class="keyword">virtual</span> CompType <a class="code" href="a00894.html#a7c3bc882bfd7bebcc17e7968e6f009fb">getType</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        };</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    } <span class="comment">// namespace ECS</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};    <span class="comment">// namespace Arcade</span></div>
+<div class="ttc" id="aa00054_html"><div class="ttname"><a href="a00054.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
+<div class="ttc" id="aa00894_html"><div class="ttname"><a href="a00894.html">Arcade::ECS::IComponent</a></div><div class="ttdef"><b>Definition:</b> IComponent.hpp:19</div></div>
+<div class="ttc" id="aa00894_html_a7c3bc882bfd7bebcc17e7968e6f009fb"><div class="ttname"><a href="a00894.html#a7c3bc882bfd7bebcc17e7968e6f009fb">Arcade::ECS::IComponent::getType</a></div><div class="ttdeci">virtual CompType getType() const =0</div><div class="ttdoc">Get the type of the component.</div></div>
+<div class="ttc" id="aa00894_html_aefffd7ac3398e0ff565166fd26c70593"><div class="ttname"><a href="a00894.html#aefffd7ac3398e0ff565166fd26c70593">Arcade::ECS::IComponent::~IComponent</a></div><div class="ttdeci">virtual ~IComponent()=default</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 16 2023 16:56:56 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Mar 18 2023 15:11:06 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

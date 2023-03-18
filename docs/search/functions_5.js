@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update_196',['update',['../a00859.html#a8c406801b07dcbfe488c770d07a3638d',1,'Arcade::Game::IGame']]]
+  ['popevent_170',['popEvent',['../a00910.html#a96b27771b7c05b9e2da3cfd5ddc75b35',1,'Arcade::ECS::IEventManager']]]
 ];

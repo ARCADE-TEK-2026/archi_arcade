@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/IEvent.hpp File Reference</title>
+<title>Architecture Arcade: include/GraphStruct.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,166 +67,55 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">IEvent.hpp File Reference</div>  </div>
+<div class="title">GraphStruct.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for GraphStruct.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015.png" border="0" usemap="#ainclude_2GraphStruct_8hpp" alt=""/></div>
+<map name="ainclude_2GraphStruct_8hpp" id="ainclude_2GraphStruct_8hpp">
+<area shape="rect" title=" " alt="" coords="5,5,184,32"/>
+<area shape="rect" title=" " alt="" coords="65,80,124,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00016.png" border="0" usemap="#ainclude_2IEvent_8hppdep" alt=""/></div>
-<map name="ainclude_2IEvent_8hppdep" id="ainclude_2IEvent_8hppdep">
-<area shape="rect" title=" " alt="" coords="90,5,233,32"/>
-<area shape="rect" href="a00017.html" title=" " alt="" coords="5,80,149,107"/>
-<area shape="rect" href="a00020.html" title=" " alt="" coords="173,80,317,107"/>
+<div class="center"><img src="a00016.png" border="0" usemap="#ainclude_2GraphStruct_8hppdep" alt=""/></div>
+<map name="ainclude_2GraphStruct_8hppdep" id="ainclude_2GraphStruct_8hppdep">
+<area shape="rect" title=" " alt="" coords="67,5,246,32"/>
+<area shape="rect" href="a00041.html" title=" " alt="" coords="5,80,148,107"/>
+<area shape="rect" href="a00050.html" title=" " alt="" coords="172,80,304,107"/>
 </map>
 </div>
 </div>
 <p><a href="a00014_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00036"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html">Arcade</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00882.html">Arcade::Graph::Color</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00886.html">Arcade::Graph::TTYData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00890.html">Arcade::Graph::Rect</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a327438c107b143d6168dbe2b194df4fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fb">Arcade::UserInputType</a> { <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba868ac6749b0e2c167d0d3fa10d4eeb63">Arcade::MOUSE_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbafdf9bdaa4ff30c2d58a845c3e7126510">Arcade::MOUSE_MOVED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba021429970d72b88bcc877710ed4a56ed">Arcade::KEY_A_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba52f7de1fd1564f70666af4ca2a286da2">Arcade::KEY_B_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba4f3e21b825048c5adeffe0d0c7c93ebd">Arcade::KEY_C_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba1210a640c8222bab31be68e969fbca5f">Arcade::KEY_D_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba9869d217410a8f18033469fd62027518">Arcade::KEY_E_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba52e2a932029a1e987702498217895115">Arcade::KEY_F_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba96096d0355c360f4d56fa4ff1c8b652e">Arcade::KEY_G_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbacf033843cd2076030a8a0967f50c4185">Arcade::KEY_H_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba9682e1d7acd760f7ae4cee95ec1ddf18">Arcade::KEY_I_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbafa72f89071fbb57defe677fb3507186f">Arcade::KEY_J_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbaf09d5e44479c9a13650802ec1f39c288">Arcade::KEY_K_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba093f5818834d20a9c8a5ca9dd6b38d9c">Arcade::KEY_L_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba1bce9e4db548765e50bbd930d2b46b66">Arcade::KEY_M_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba2e3e87c9a0aadc94d3b2c95ec15a7658">Arcade::KEY_N_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba706c49a741f42c71a223fa806a371982">Arcade::KEY_O_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbac2e006cbc956fc44c666cd416e0c06bb">Arcade::KEY_P_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba870001bab4db45dea53657e8f16e57f3">Arcade::KEY_Q_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba401ca602a83063dd511691c85dff341b">Arcade::KEY_R_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba2633d8bbc25a1a06aa39bef0445dff2d">Arcade::KEY_S_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba83a07015559604b9001d5f2647fa802d">Arcade::KEY_T_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbab68d2422ebb4c656a6ad677ead4b4f2a">Arcade::KEY_U_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba1fb600da1d225014b75a0158ee686f36">Arcade::KEY_V_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba461cec84654b599e51de502f676c768f">Arcade::KEY_W_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbaddefc1f166df864fefa99a2a737f7a2b">Arcade::KEY_X_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbaebbe67201b686da4c07f4c91aea654b6">Arcade::KEY_Y_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba7cd058c6ea9a56f1d073ddcdcedaed3e">Arcade::KEY_Z_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba62b1bc865d89fbb827982c36522eaa13">Arcade::KEY_0_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba79b70a4e7c2ecd9791bc8a06146f97de">Arcade::KEY_1_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba7b825a3419125123e4705f26e9f02479">Arcade::KEY_2_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba6fd1915995f14aa95d92946530521f7f">Arcade::KEY_3_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba7f90be182f0652c4404569ef2fd5b803">Arcade::KEY_4_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba619cadc2f30e2fd9d73f278e19f53cba">Arcade::KEY_5_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba070af890ebd1a73d0750926f4ec8ca5d">Arcade::KEY_6_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba94530aebb43f12d33eae166fccf25fb8">Arcade::KEY_7_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba05c83f37ba27d9e7de8002583f48d6ec">Arcade::KEY_8_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba896e43f37eb0cbd8c95066a0c500b36e">Arcade::KEY_9_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba3f2c55ca068b4e1b217e8dbe261d7665">Arcade::KEY_SPACE_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbaba78ae7336420f4ee5a9ad016a8bbe53">Arcade::KEY_ENTER_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba32d26298b210815f1c24bee013db85ab">Arcade::KEY_ESC_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba3e73c2018a69fffb54c65790359792e4">Arcade::KEY_UP_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba8d8a7f361bedba82ac3195ca6e850f45">Arcade::KEY_DOWN_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba06c43111732891ec7535ea4cdf8d7415">Arcade::KEY_LEFT_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba38b46196cf85fa670a1bf5c698587aae">Arcade::KEY_RIGHT_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba2452eab051bbe376c2ca389a9204c2e1">Arcade::KEY_TAB_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba28e3d04bd0be47df1c5f3eb014df0af6">Arcade::KEY_BACKSPACE_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba0468c2866929052beda754d947f3a5d8">Arcade::KEY_DELETE_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbabfd64b11946f2900976648071b2d82aa">Arcade::KEY_SHIFT_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbaaf5c8d2dc5dad547298104e82970ecc5">Arcade::KEY_CTRL_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba9525ac27ffb175afbd82c2f0772ffd7f">Arcade::KEY_ALT_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba8a550c4f6f6d3d43574ee4abf8442f37">Arcade::KEY_F1_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbaf167f8f449a8ea04d3bcc9eb00c4cc36">Arcade::KEY_F2_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba73d2bece50c4c8fde8656f47a5e4b65f">Arcade::KEY_F3_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbad224ac4acf333176f04c80f0a9c19982">Arcade::KEY_F4_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbaba2341f877def1dc3b8e0e7286f91579">Arcade::KEY_F5_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba3f79b016247a836fdd3e1d66d0f9019e">Arcade::KEY_F6_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbaad8f60ae0bdddcb0a38b567062057ca9">Arcade::KEY_F7_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbaa163e6b88b952658c78c0270de103f8c">Arcade::KEY_F8_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbafabcc38a6cd5af59f3236b70fb7a3abc">Arcade::KEY_F9_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fba18d864321f33a9fe869f22c6bdb31d54">Arcade::KEY_F10_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbafc826d0a41b83d5080864a9332bae2a0">Arcade::KEY_F11_PRESSED</a>
-, <br />
-&#160;&#160;<a class="el" href="a00036.html#a327438c107b143d6168dbe2b194df4fbadf2a5d83bf336fc02a8a7dd43538af16">Arcade::KEY_F12_PRESSED</a>
-<br />
- }</td></tr>
-<tr class="separator:a327438c107b143d6168dbe2b194df4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00054"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html">Arcade</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00055"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html">Arcade::Graph</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 16 2023 16:56:56 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Mar 18 2023 15:11:06 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

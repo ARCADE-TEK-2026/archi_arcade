@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['foreground_207',['foreground',['../a00879.html#a5054e48bd7eead2b62e4a931cb1d1293',1,'Arcade::Graph::NcursesData']]]
+  ['foreground_199',['foreground',['../a00886.html#ab25fd97c6b846592c54905b062ba4d6a',1,'Arcade::Graph::TTYData']]]
 ];

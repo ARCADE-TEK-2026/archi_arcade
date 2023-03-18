@@ -1,0 +1,5 @@
+<map id="Arcade::ECS::ISystem" name="Arcade::ECS::ISystem">
+<area shape="rect" id="node1" title="The ISystem interface." alt="" coords="67,5,389,141"/>
+<area shape="rect" id="node2" href="$a00914.html" title="The IGameLogic interface." alt="" coords="5,189,216,355"/>
+<area shape="rect" id="node3" href="$a00918.html" title="The IGraph interface." alt="" coords="240,197,451,347"/>
+</map>

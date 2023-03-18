@@ -1,4 +1,8 @@
-<map id="include/IRenderComp.hpp" name="include/IRenderComp.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,195,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="65,80,135,107"/>
+<map id="include/IEntityManager.hpp" name="include/IEntityManager.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,204,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="17,155,94,181"/>
+<area shape="rect" id="node3" href="$a00023.html" title=" " alt="" coords="109,80,199,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="119,155,189,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="213,155,276,181"/>
+<area shape="rect" id="node6" href="$a00017.html" title=" " alt="" coords="300,155,429,181"/>
 </map>

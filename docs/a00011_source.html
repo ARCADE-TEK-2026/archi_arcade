@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/ICore.hpp Source File</title>
+<title>Architecture Arcade: include/ArcadeStruct.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,38 +67,44 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">ICore.hpp</div>  </div>
+<div class="title">ArcadeStruct.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00011.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2023</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Visual Studio Live Share (Workspace)</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Arcade</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** ICore</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** Useful struct for all the project</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef ICORE_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define ICORE_HPP_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="a00036.html">   11</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="a00036.html">Arcade</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00037.html">   12</a></span>&#160;    <span class="keyword">namespace </span>Core {</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="a00855.html">   13</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00855.html">ICore</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;          <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="a00855.html#a9394e43e057f68367f2647738f596ccc">   15</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="a00855.html#a9394e43e057f68367f2647738f596ccc">~ICore</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00855.html#a9fc66189ebe9d375d43daaf2230dc3b2">   16</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="a00855.html#a9fc66189ebe9d375d43daaf2230dc3b2">exec</a>(<span class="keywordtype">int</span> ac, <span class="keywordtype">char</span> **av) = 0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        };</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    } <span class="comment">// namespace Core</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <span class="comment">// namespace Arcade</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !ICORE_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aa00036_html"><div class="ttname"><a href="a00036.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ICore.hpp:11</div></div>
-<div class="ttc" id="aa00855_html"><div class="ttname"><a href="a00855.html">Arcade::Core::ICore</a></div><div class="ttdef"><b>Definition:</b> ICore.hpp:13</div></div>
-<div class="ttc" id="aa00855_html_a9394e43e057f68367f2647738f596ccc"><div class="ttname"><a href="a00855.html#a9394e43e057f68367f2647738f596ccc">Arcade::Core::ICore::~ICore</a></div><div class="ttdeci">virtual ~ICore()=default</div></div>
-<div class="ttc" id="aa00855_html_a9fc66189ebe9d375d43daaf2230dc3b2"><div class="ttname"><a href="a00855.html#a9fc66189ebe9d375d43daaf2230dc3b2">Arcade::Core::ICore::exec</a></div><div class="ttdeci">virtual int exec(int ac, char **av)=0</div></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="a00054.html">   10</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="a00054.html">Arcade</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="a00874.html">   11</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00874.html">Vector2f</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="a00874.html#af557defcffc95fa93218721668570ee8">   13</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="a00874.html#af557defcffc95fa93218721668570ee8">x</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00874.html#abdd122772c584069e597edfce415f6e6">   14</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="a00874.html#abdd122772c584069e597edfce415f6e6">y</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    };</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="a00878.html">   17</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="a00878.html">Vector3f</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00878.html#a2e8a2bc339493b62bebcbbd95a24dfc4">   19</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="a00878.html#a2e8a2bc339493b62bebcbbd95a24dfc4">x</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00878.html#ad282c1d3a2a7981a7465c7a012104afa">   20</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="a00878.html#ad282c1d3a2a7981a7465c7a012104afa">y</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00878.html#a06ad3f5015e5da73c9ed6c503130c5ea">   21</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="a00878.html#a06ad3f5015e5da73c9ed6c503130c5ea">z</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} <span class="comment">// namespace Arcade</span></div>
+<div class="ttc" id="aa00054_html"><div class="ttname"><a href="a00054.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
+<div class="ttc" id="aa00874_html"><div class="ttname"><a href="a00874.html">Arcade::Vector2f</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:11</div></div>
+<div class="ttc" id="aa00874_html_abdd122772c584069e597edfce415f6e6"><div class="ttname"><a href="a00874.html#abdd122772c584069e597edfce415f6e6">Arcade::Vector2f::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:14</div></div>
+<div class="ttc" id="aa00874_html_af557defcffc95fa93218721668570ee8"><div class="ttname"><a href="a00874.html#af557defcffc95fa93218721668570ee8">Arcade::Vector2f::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:13</div></div>
+<div class="ttc" id="aa00878_html"><div class="ttname"><a href="a00878.html">Arcade::Vector3f</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:17</div></div>
+<div class="ttc" id="aa00878_html_a06ad3f5015e5da73c9ed6c503130c5ea"><div class="ttname"><a href="a00878.html#a06ad3f5015e5da73c9ed6c503130c5ea">Arcade::Vector3f::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:21</div></div>
+<div class="ttc" id="aa00878_html_a2e8a2bc339493b62bebcbbd95a24dfc4"><div class="ttname"><a href="a00878.html#a2e8a2bc339493b62bebcbbd95a24dfc4">Arcade::Vector3f::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:19</div></div>
+<div class="ttc" id="aa00878_html_ad282c1d3a2a7981a7465c7a012104afa"><div class="ttname"><a href="a00878.html#ad282c1d3a2a7981a7465c7a012104afa">Arcade::Vector3f::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 16 2023 16:56:56 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Mar 18 2023 15:11:06 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -1,0 +1,96 @@
+\hypertarget{a00906}{}\doxysection{Arcade\+::ECS\+::IEntity\+Manager Class Reference}
+\label{a00906}\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+
+
+Manage the creation of entities and their access.  
+
+
+
+
+{\ttfamily \#include $<$IEntity\+Manager.\+hpp$>$}
+
+
+
+Collaboration diagram for Arcade\+::ECS\+::IEntity\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{a00904}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{a00906_ac73d41d0058aa9c36115abfa9b8daa61}{$\sim$\+IEntity\+Manager}} ()=default
+\item 
+virtual \mbox{\hyperlink{a00902}{IEntity}} \& \mbox{\hyperlink{a00906_a863a130b3211829514e28cb11c8b397e}{create\+Entity}} ()=0
+\begin{DoxyCompactList}\small\item\em Add an entity to the manager. \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00902}{IEntity}} $>$ $>$ \& \mbox{\hyperlink{a00906_ab22f404ae91b5fd8119479895b584d44}{get\+Entities}} () const =0
+\begin{DoxyCompactList}\small\item\em Get all entities created by this manager. \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00902}{IEntity}} $>$ $>$ \& \mbox{\hyperlink{a00906_a11a00d3674654abf84622200ba68408a}{get\+Entities\+By\+Component\+Type}} (Comp\+Type comp) const =0
+\begin{DoxyCompactList}\small\item\em Get all entities created by this manager that have at least one component of type Comp\+Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manage the creation of entities and their access. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00906_ac73d41d0058aa9c36115abfa9b8daa61}\label{a00906_ac73d41d0058aa9c36115abfa9b8daa61}} 
+\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!````~IEntityManager@{$\sim$IEntityManager}}
+\index{````~IEntityManager@{$\sim$IEntityManager}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$IEntityManager()}{~IEntityManager()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+ECS\+::\+IEntity\+Manager\+::$\sim$\+IEntity\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00906_a863a130b3211829514e28cb11c8b397e}\label{a00906_a863a130b3211829514e28cb11c8b397e}} 
+\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!createEntity@{createEntity}}
+\index{createEntity@{createEntity}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+\doxysubsubsection{\texorpdfstring{createEntity()}{createEntity()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{a00902}{IEntity}}\& Arcade\+::\+ECS\+::\+IEntity\+Manager\+::create\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add an entity to the manager. 
+
+\begin{DoxyReturn}{Returns}
+The entity created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00906_ab22f404ae91b5fd8119479895b584d44}\label{a00906_ab22f404ae91b5fd8119479895b584d44}} 
+\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!getEntities@{getEntities}}
+\index{getEntities@{getEntities}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+\doxysubsubsection{\texorpdfstring{getEntities()}{getEntities()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{a00902}{IEntity}}$>$ $>$\& Arcade\+::\+ECS\+::\+IEntity\+Manager\+::get\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get all entities created by this manager. 
+
+\begin{DoxyReturn}{Returns}
+A vector of all entities created by this manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00906_a11a00d3674654abf84622200ba68408a}\label{a00906_a11a00d3674654abf84622200ba68408a}} 
+\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!getEntitiesByComponentType@{getEntitiesByComponentType}}
+\index{getEntitiesByComponentType@{getEntitiesByComponentType}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+\doxysubsubsection{\texorpdfstring{getEntitiesByComponentType()}{getEntitiesByComponentType()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{a00902}{IEntity}}$>$ $>$\& Arcade\+::\+ECS\+::\+IEntity\+Manager\+::get\+Entities\+By\+Component\+Type (\begin{DoxyParamCaption}\item[{Comp\+Type}]{comp }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get all entities created by this manager that have at least one component of type Comp\+Type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comp} & The component type to check in each entity\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vector 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{a00026}{IEntity\+Manager.\+hpp}}\end{DoxyCompactItemize}

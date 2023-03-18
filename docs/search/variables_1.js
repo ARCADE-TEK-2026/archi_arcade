@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['defaultchar_206',['defaultChar',['../a00879.html#afde83c3292b0cba7eb06f3191c58b7de',1,'Arcade::Graph::NcursesData']]]
+  ['defaultchar_198',['defaultChar',['../a00886.html#a402a79668ca86b5436e88395ac6d3725',1,'Arcade::Graph::TTYData']]]
 ];

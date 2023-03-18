@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['uml_2edox_125',['uml.dox',['../a00005.html',1,'']]],
-  ['update_126',['update',['../a00859.html#a8c406801b07dcbfe488c770d07a3638d',1,'Arcade::Game::IGame']]],
-  ['userinputtype_127',['UserInputType',['../a00036.html#a327438c107b143d6168dbe2b194df4fb',1,'Arcade']]]
+  ['uml_2edox_85',['uml.dox',['../a00005.html',1,'']]],
+  ['update_86',['update',['../a00898.html#a17a428f9b23f031e08cd1229614c3391',1,'Arcade::Core::ICore::update()'],['../a00934.html#a0731598c67b1485074352be703abdb59',1,'Arcade::ECS::ISystemManager::update()']]]
 ];

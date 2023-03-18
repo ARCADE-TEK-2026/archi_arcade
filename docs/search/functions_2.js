@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isend_182',['isEnd',['../a00859.html#a5e669227baf1519061b040c1e7f0d1f4',1,'Arcade::Game::IGame']]]
+  ['eventsisempty_147',['eventsIsEmpty',['../a00910.html#a44173fcb4d4c5cfc3f672474264ec27b',1,'Arcade::ECS::IEventManager']]]
 ];

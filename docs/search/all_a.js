@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ncursesdata_109',['NcursesData',['../a00879.html',1,'Arcade::Graph']]]
+  ['popevent_68',['popEvent',['../a00910.html#a96b27771b7c05b9e2da3cfd5ddc75b35',1,'Arcade::ECS::IEventManager']]]
 ];
