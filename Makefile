@@ -21,7 +21,7 @@ fclean: clean-doxygen clean-uml clean
 
 
 uml: clean-uml
-	hpp2plantuml ${INC_UML} \
+	hpp2plantuml -d ${INC_UML} \
 		| ${EXTRA_PARAMS_PLANTUML} -pipe > documentation/uml.png
 
 doxygen: clean-doxygen
