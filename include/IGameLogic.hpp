@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** Visual Studio Live Share (Workspace)
 ** File description:
-** IGraphh
+** ISystem
 */
 
 #pragma once
@@ -13,19 +13,18 @@
 #include "ISystem.hpp"
 
 namespace Arcade {
-    namespace Graph {
+    namespace Game {
         /**
-         * @brief The IGraph interface
+         * @brief The IGameLogic interface
          *
-         * System of the graphic lib will inherits from this
+         * System of the game will inherits from this
          */
-        class IGraph : Arcade::ECS::ISystem {
+        class IGameLogic : Arcade::ECS::ISystem {
             public:
-                virtual ~IGraph() = default;
-
+                virtual ~IGameLogic() = default;
                 virtual void run(std::size_t deltaTime,
                 Arcade::ECS::IEntityManager &,
                 Arcade::ECS::IEventManager &) override = 0;
         };
-    } // namespace Graph
+    } // namespace Game
 } // namespace Arcade

@@ -5,59 +5,84 @@
 ** ISprite
 */
 
-#ifndef ISPRITE_HPP_
-#define ISPRITE_HPP_
+#pragma once
 
 #include <string>
-#include "IRenderComp.hpp"
+#include "ArcadeStruct.hpp"
+#include "GraphStruct.hpp"
+#include "IComponent.hpp"
 
 namespace Arcade {
     namespace Graph {
-        struct Color {
-            int r;
-            int g;
-            int b;
-        };
-        struct NcursesData {
-            std::string pathAsciiArt;
-            std::string defaultChar;
-            Color foreground;
-            Color background;
+        /**
+         * @brief The ISprite class.
+         *
+         * The ISprite interface is the class where you can manipulate your
+         * sprites.
+         * ATTENTION: This class is of CompType SPRITE
+         */
+        class ISprite : Arcade::ECS::IComponent {
+            public:
+                virtual ~ISprite() = default;
+
+                /**
+                 * @brief Get the path of the Sprite
+                 *
+                 * @return The path of the Sprite
+                 */
+                virtual const std::string &getPath() const = 0;
+
+                /**
+                 * @brief Get the data to print when it's TTY.
+                 *
+                 * @return The TTY data.
+                 */
+                virtual const TTYData &getNcurseData() const = 0;
+
+                /**
+                 * @brief Get the sprite position in 3Dimension.
+                 *
+                 * The positions data are in percentages.
+                 *
+                 * @return The path of the Sprite.
+                 */
+                virtual const Arcade::Vector3f &getPos() const = 0;
+                /**
+                 * @brief Set the sprite position in 3Dimension.
+                 */
+                virtual void setPos(Arcade::Vector3f pos) = 0;
+
+                /**
+                 * @brief Get the sprite size in 3Dimension.
+                 *
+                 * The size data is in percentages.
+                 *
+                 * @return The path of the Sprite.
+                 */
+                virtual const Arcade::Vector3f &getSize() const = 0;
+                /**
+                 * @brief Set the sprite size in 3Dimension.
+                 */
+                virtual void setSize(Arcade::Vector3f size) = 0;
+
+                /**
+                 * @brief Get the sprite Color.
+                 *
+                 * @return The Color data
+                 */
+                virtual Color &getColor() const = 0;
+                /**
+                 * @brief Get the sprite rectangle.
+                 *
+                 * @return The Rect data.
+                 */
+                virtual Rect &getRect() const = 0;
+                /**
+                 * @brief Get the sprite Scale.
+                 *
+                 * @return The Scale data.
+                 */
+                virtual float &getScale() const = 0;
         };
     } // namespace Graph
-
-    struct Vector2f {
-        float x;
-        float y;
-    };
-
-    struct Vector3f {
-        float x;
-        float y;
-    };
-
-    class ISprite : public IRenderComp {
-      public:
-        virtual ~ISprite() = default;
-
-        virtual const std::string &getPath2d() const = 0;
-
-        virtual const std::string &getPath3d() const = 0;
-
-        virtual const Graph::NcursesData &getNcurseData() const = 0;
-
-        virtual const Vector2f &get2dPos() const = 0;
-        virtual void set2dPos(Vector2f pos);
-
-        virtual const Vector2f &get2dSize() const = 0;
-        virtual void set2dSize(Vector2f size) = 0;
-
-        virtual const Vector3f &get3dPos() const = 0;
-        virtual void set3dPos(Vector3f pos) = 0;
-
-        virtual const Vector3f &get3dSize() const = 0;
-        virtual void set3dSize(Vector3f size) = 0;
-    };
-}; // namespace Arcade
-
-#endif /* !ISPRITE_HPP_ */
+} // namespace Arcade

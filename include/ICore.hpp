@@ -5,17 +5,20 @@
 ** ICore
 */
 
-#ifndef ICORE_HPP_
-#define ICORE_HPP_
+#pragma once
 
 namespace Arcade {
     namespace Core {
+        /**
+         * @brief The ICore class
+         *
+         * The ICore class is the main class of the project.
+         * It has a ISystemManager and a IEventManager
+         */
         class ICore {
-          public:
-            virtual ~ICore() = default;
-            virtual int exec(int ac, char **av) = 0;
+            public:
+                virtual ~ICore() = default;
+                virtual void update() = 0;
         };
     } // namespace Core
 } // namespace Arcade
-
-#endif /* !ICORE_HPP_ */

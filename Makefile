@@ -1,13 +1,6 @@
 EXTRA_PARAMS_PLANTUML = plantuml
 
-SOURCE		=	include/ICore.hpp		\
-				include/IEvent.hpp		\
-				include/IGame.hpp		\
-				include/IGraph.hpp		\
-				include/IMusic.hpp		\
-				include/IRenderComp.hpp	\
-				include/ISprite.hpp		\
-				include/IText.hpp
+SOURCE		=	$(shell find include -name "*.hpp" -print)
 
 INC_UML		=	$(addprefix -i , $(SOURCE))
 
@@ -22,9 +15,13 @@ clean-uml:
 	rm -rf documentation/uml.png
 
 fclean: clean-doxygen clean-uml clean
+	rm -rf cmake-build-debug
+	rm -rf CMakeCache.txt
+	rm -rf CMakeFiles
+
 
 uml: clean-uml
-	hpp2plantuml ${INC_UML} \
+	hpp2plantuml -d ${INC_UML} \
 		| ${EXTRA_PARAMS_PLANTUML} -pipe > documentation/uml.png
 
 doxygen: clean-doxygen
@@ -32,7 +29,7 @@ doxygen: clean-doxygen
 	touch documentation/docs/.nojekyll
 
 tests-run:
-	g++ ./tests/dawa.cpp -I include -o tests/dawa
+	g++ ./tests/test-includes.cpp -I include -o tests/dawa
 	./tests/dawa
 
 .clang-format:
