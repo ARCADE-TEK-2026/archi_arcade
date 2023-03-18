@@ -18,6 +18,7 @@ namespace Arcade {
          * @brief The IText class
          *
          * The IText class is the class where you can manipulate text.
+         * ATTENTION: This class is of CompType TEXT
          */
         class IText : Arcade::ECS::IComponent {
             public:

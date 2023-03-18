@@ -19,6 +19,7 @@ namespace Arcade {
          *
          * The ISprite interface is the class where you can manipulate your
          * sprites.
+         * ATTENTION: This class is of CompType SPRITE
          */
         class ISprite : Arcade::ECS::IComponent {
             public:

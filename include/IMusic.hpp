@@ -17,6 +17,7 @@ namespace Arcade {
          *
          * The IMusic class is the class where you can manipulate Sounds and
          * Musics.
+         * ATTENTION: This class is of CompType MUSIC
          */
         class IMusic : Arcade::ECS::IComponent {
             public:
