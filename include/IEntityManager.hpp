@@ -30,15 +30,18 @@ namespace Arcade {
                  *
                  * @return A vector of all entities created by this manager
                  */
-                virtual const std::vector<std::unique_ptr<IEntity>> &getEntities() const = 0;
+                virtual const std::vector<std::unique_ptr<IEntity>> &
+                getEntities() const = 0;
                 /**
-                 * @brief Get all entities created by this manager that have at least one component of type CompType
+                 * @brief Get all entities created by this manager that have at
+                 * least one component of type CompType
                  *
                  * @param comp The component type to check in each entity
                  *
                  * @return The vector
                  */
-                virtual const std::vector<std::unique_ptr<IEntity>> &getEntitiesByComponentType(CompType comp) const = 0;
+                virtual const std::vector<std::unique_ptr<IEntity>> &
+                getEntitiesByComponentType(CompType comp) const = 0;
         };
-    }
-}
+    } // namespace ECS
+} // namespace Arcade

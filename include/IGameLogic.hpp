@@ -22,7 +22,8 @@ namespace Arcade {
         class IGameLogic : Arcade::ECS::ISystem {
             public:
                 virtual ~IGameLogic() = default;
-                virtual void run(std::size_t deltaTime, Arcade::ECS::IEntityManager &,
+                virtual void run(std::size_t deltaTime,
+                Arcade::ECS::IEntityManager &,
                 Arcade::ECS::IEventManager &) override = 0;
         };
     } // namespace Game

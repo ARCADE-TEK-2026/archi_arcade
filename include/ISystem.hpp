@@ -24,8 +24,8 @@ namespace Arcade {
                 virtual ~ISystem() = default;
 
                 /**
-                * @brief Run the system implementation
-                */
+                 * @brief Run the system implementation
+                 */
                 virtual void run(std::size_t deltaTime, IEntityManager &,
                 Arcade::ECS::IEventManager &) = 0;
         };

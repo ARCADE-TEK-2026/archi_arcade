@@ -21,11 +21,11 @@ namespace Arcade {
                 virtual ~IComponent() = default;
 
                 /**
-                * @brief Get the type of the component.
-                *
-                * @return The component type (CompType)
-                */
+                 * @brief Get the type of the component.
+                 *
+                 * @return The component type (CompType)
+                 */
                 virtual CompType getType() const = 0;
         };
     } // namespace ECS
-}; // namespace Arcade
+};    // namespace Arcade

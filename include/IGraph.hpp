@@ -23,7 +23,8 @@ namespace Arcade {
             public:
                 virtual ~IGraph() = default;
 
-                virtual void run(std::size_t deltaTime, Arcade::ECS::IEntityManager &,
+                virtual void run(std::size_t deltaTime,
+                Arcade::ECS::IEntityManager &,
                 Arcade::ECS::IEventManager &) override = 0;
         };
     } // namespace Graph

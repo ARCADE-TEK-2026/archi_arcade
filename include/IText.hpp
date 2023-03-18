@@ -43,7 +43,7 @@ namespace Arcade {
 
                 /**
                  * @brief Get the background color.
-                 * 
+                 *
                  * @return The background color.
                  */
                 virtual const Arcade::Graph::Color &
@@ -55,7 +55,7 @@ namespace Arcade {
 
                 /**
                  * @brief Get the foreground color.
-                 * 
+                 *
                  * @return The foreground color.
                  */
                 virtual const Arcade::Graph::Color &
@@ -67,7 +67,7 @@ namespace Arcade {
 
                 /**
                  * @brief Get the police size.
-                 * 
+                 *
                  * @return The police size.
                  */
                 virtual float getPoliceSize() const = 0;
@@ -78,9 +78,9 @@ namespace Arcade {
 
                 /**
                  * @brief Get the text position.
-                 * 
+                 *
                  * The positions data are in percentages.
-                 * 
+                 *
                  * @return The text position.
                  */
                 virtual const Arcade::Vector2f &getPos() const = 0;

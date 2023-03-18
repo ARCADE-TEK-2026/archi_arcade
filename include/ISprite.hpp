@@ -17,7 +17,8 @@ namespace Arcade {
         /**
          * @brief The ISprite class.
          *
-         * The ISprite interface is the class where you can manipulate your sprites.
+         * The ISprite interface is the class where you can manipulate your
+         * sprites.
          */
         class ISprite : Arcade::ECS::IComponent {
             public:
@@ -41,7 +42,7 @@ namespace Arcade {
                  * @brief Get the sprite position in 3Dimension.
                  *
                  * The positions data are in percentages.
-                 * 
+                 *
                  * @return The path of the Sprite.
                  */
                 virtual const Arcade::Vector3f &getPos() const = 0;
@@ -54,7 +55,7 @@ namespace Arcade {
                  * @brief Get the sprite size in 3Dimension.
                  *
                  * The size data is in percentages.
-                 * 
+                 *
                  * @return The path of the Sprite.
                  */
                 virtual const Arcade::Vector3f &getSize() const = 0;

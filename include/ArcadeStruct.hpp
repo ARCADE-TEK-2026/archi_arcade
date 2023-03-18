@@ -12,7 +12,6 @@ namespace Arcade {
         public:
             float x;
             float y;
-            float z;
     };
 
     struct Vector3f {
