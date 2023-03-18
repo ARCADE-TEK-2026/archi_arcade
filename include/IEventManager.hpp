@@ -5,8 +5,7 @@
 ** ISystem
 */
 
-#ifndef IUSERINPUTMANAGER_HPP_
-#define IUSERINPUTMANAGER_HPP_
+#pragma once
 
 #include <queue>
 #include <string>
@@ -141,5 +140,3 @@ namespace Arcade {
         };
     }
 } // namespace Arcade
-
-#endif

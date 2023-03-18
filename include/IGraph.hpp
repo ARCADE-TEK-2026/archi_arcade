@@ -14,15 +14,17 @@
 
 namespace Arcade {
     namespace Graph {
+        /**
+         * @brief The IGraph interface
+         *
+         * System of the graphic lib will inherits from this
+         */
         class IGraph : Arcade::ECS::ISystem {
             public:
                 virtual ~IGraph() = default;
 
-                /**
-                * @brief Run the graphical system implementation
-                */
                 virtual void run(std::size_t deltaTime, Arcade::ECS::IEntityManager &,
-                Arcade::IEventManager &) override = 0;
+                Arcade::ECS::IEventManager &) override = 0;
         };
     } // namespace Graph
 } // namespace Arcade

@@ -75,7 +75,7 @@ namespace Arcade {
                  * @brief Set the police size.
                  */
                 virtual void setPoliceSize(float size) = 0;
-                
+
                 /**
                  * @brief Get the text position.
                  * 

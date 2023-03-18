@@ -14,11 +14,16 @@
 
 namespace Arcade {
     namespace Game {
+        /**
+         * @brief The IGameLogic interface
+         *
+         * System of the game will inherits from this
+         */
         class IGameLogic : Arcade::ECS::ISystem {
             public:
                 virtual ~IGameLogic() = default;
                 virtual void run(std::size_t deltaTime, Arcade::ECS::IEntityManager &,
-                Arcade::IEventManager &) override = 0;
+                Arcade::ECS::IEventManager &) override = 0;
         };
     } // namespace Game
 } // namespace Arcade

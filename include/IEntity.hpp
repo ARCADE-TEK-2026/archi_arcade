@@ -8,11 +8,15 @@
 #pragma once
 
 #include <cstddef>
+#include <memory>
 #include <vector>
 #include "IComponent.hpp"
 
 namespace Arcade {
     namespace ECS {
+        /**
+         * @brief The IEntity interface
+         */
         class IEntity {
             public:
                 virtual ~IEntity() = default;
@@ -27,7 +31,7 @@ namespace Arcade {
                  *
                  * @return The list of components
                  */
-                virtual const std::vector<IComponent *> &getComponents() = 0;
+                virtual const std::vector<std::unique_ptr<IComponent>> &getComponents() = 0;
                 /**
                  * @brief Get all components of type `compType`
                  *
@@ -35,13 +39,13 @@ namespace Arcade {
                  *
                  * @return The list of components filtered
                  */
-                virtual const std::vector<IComponent *> &getComponents(CompType type) = 0;
+                virtual const std::vector<std::unique_ptr<IComponent>> &getComponents(CompType type) = 0;
                 /**
                  * @brief Add a component
                  *
                  * @param component The component to add
                  */
-                virtual void addComponent(IComponent *component) = 0;
+                virtual void addComponent(std::unique_ptr<IComponent> component) = 0;
         };
     } // namespace ECS
 } // namespace Arcade

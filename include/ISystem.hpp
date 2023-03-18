@@ -14,6 +14,11 @@
 
 namespace Arcade {
     namespace ECS {
+        /**
+         * @brief The ISystem interface
+         *
+         * Systems will inherits from this
+         */
         class ISystem {
             public:
                 virtual ~ISystem() = default;
@@ -22,7 +27,7 @@ namespace Arcade {
                 * @brief Run the system implementation
                 */
                 virtual void run(std::size_t deltaTime, IEntityManager &,
-                Arcade::IEventManager &) = 0;
+                Arcade::ECS::IEventManager &) = 0;
         };
     } // namespace ECS
 } // namespace Arcade
