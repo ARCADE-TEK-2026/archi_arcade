@@ -49,6 +49,18 @@ namespace Arcade {
                  */
                 virtual void addComponent(
                 std::unique_ptr<IComponent> component) = 0;
+                /**
+                 * @brief Remove a component
+                 *
+                 * @param std::size_t The component id to remove
+                 */
+                virtual void removeComponent(std::size_t id) = 0;
+                /**
+                 * @brief Remove all components of type `CompType`
+                 *
+                 * @param type The type of component to remove
+                 */
+                virtual void removeComponents(CompType type) = 0;
         };
     } // namespace ECS
 } // namespace Arcade

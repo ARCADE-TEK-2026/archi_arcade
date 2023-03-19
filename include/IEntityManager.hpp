@@ -42,6 +42,16 @@ namespace Arcade {
                  */
                 virtual const std::vector<std::unique_ptr<IEntity>> &
                 getEntitiesByComponentType(CompType comp) const = 0;
+                /**
+                 * @brief Remove an entity from the manager
+                 *
+                 * @param std::unique_ptr<IEntity> The entity to remove
+                 */
+                virtual void removeEntity(std::unique_ptr<IEntity>) = 0;
+                /**
+                 * @brief Remove all entities from the manager
+                 */
+                virtual void removeAllEntities() = 0;
         };
     } // namespace ECS
 } // namespace Arcade
