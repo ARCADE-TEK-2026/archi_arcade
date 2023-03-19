@@ -10,6 +10,8 @@ To install the archi on your project, you have to execute this line on the root 
 
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ARCADE-TEK-2026/archi_arcade/main/setup.sh)"
+# then, you will be able to only update the archi using the folowing command:
+./update-archi.sh
 ```
 
 #### WARNING
