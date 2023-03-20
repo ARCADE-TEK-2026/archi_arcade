@@ -9,7 +9,7 @@
 #pragma once
 
 #include <string>
-#include "../Game/ISceneManager.hpp"
+#include "ISceneManager.hpp"
 
 namespace Arcade {
     namespace Core {

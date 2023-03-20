@@ -8,8 +8,8 @@
 #pragma once
 
 #include <string>
-#include "../ArcadeStruct.hpp"
-#include "../ECS/IComponent.hpp"
+#include "ArcadeStruct.hpp"
+#include "IComponent.hpp"
 #include "GraphStruct.hpp"
 
 namespace Arcade {

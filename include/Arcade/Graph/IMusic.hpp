@@ -8,7 +8,7 @@
 #pragma once
 
 #include <string>
-#include "../ECS/IComponent.hpp"
+#include "IComponent.hpp"
 
 namespace Arcade {
     namespace Graph {

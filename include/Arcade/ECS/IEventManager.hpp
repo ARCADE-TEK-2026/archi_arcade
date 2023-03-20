@@ -9,7 +9,7 @@
 
 #include <queue>
 #include <string>
-#include "../ArcadeStruct.hpp"
+#include "ArcadeStruct.hpp"
 
 namespace Arcade {
     namespace ECS {
