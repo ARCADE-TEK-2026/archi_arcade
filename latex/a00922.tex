@@ -34,6 +34,8 @@ Collaboration diagram for Arcade\+::Graph\+::IMusic\+:
 \item 
 virtual \mbox{\hyperlink{a00922_ac90ebfffe808f4c35424623464bd9a13}{$\sim$\+IMusic}} ()=default
 \item 
+virtual const std\+::string \& \mbox{\hyperlink{a00922_abfa0eaa2fd543a008e6de16014306046}{get\+Id}} () const override=0
+\begin{DoxyCompactList}\small\item\em Get the id of the component. \end{DoxyCompactList}\item 
 virtual const std\+::string \& \mbox{\hyperlink{a00922_ac76f4292f434d8014275e33d8fb1a6a8}{get\+Path}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the path of the Music. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{a00922_a0b3bd03acd44024955d9f1deb2e59068}{get\+Loop}} () const =0
@@ -66,6 +68,23 @@ The \mbox{\hyperlink{a00922}{IMusic}} class is the class where you can manipulat
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00922_abfa0eaa2fd543a008e6de16014306046}\label{a00922_abfa0eaa2fd543a008e6de16014306046}} 
+\index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!getId@{getId}}
+\index{getId@{getId}!Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily virtual const std\+::string\& Arcade\+::\+Graph\+::\+IMusic\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Get the id of the component. 
+
+\begin{DoxyReturn}{Returns}
+The component id 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{a00894_aaceb3652b7065250f57375469c7e0898}{Arcade\+::\+ECS\+::\+IComponent}}.
+
 \mbox{\Hypertarget{a00922_a8057d8416ffac81d0baae609d2ac0c09}\label{a00922_a8057d8416ffac81d0baae609d2ac0c09}} 
 \index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!getIsPlaying@{getIsPlaying}}
 \index{getIsPlaying@{getIsPlaying}!Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}

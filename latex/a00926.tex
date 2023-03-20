@@ -16,7 +16,7 @@ Inheritance diagram for Arcade\+::Graph\+::ISprite\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=237pt]{a00925}
+\includegraphics[height=550pt]{a00925}
 \end{center}
 \end{figure}
 
@@ -26,7 +26,7 @@ Collaboration diagram for Arcade\+::Graph\+::ISprite\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=237pt]{a00924}
+\includegraphics[height=550pt]{a00924}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -34,6 +34,8 @@ Collaboration diagram for Arcade\+::Graph\+::ISprite\+:
 \item 
 virtual \mbox{\hyperlink{a00926_aced7a803b1241053e029ba2a27ea20d3}{$\sim$\+ISprite}} ()=default
 \item 
+virtual const std\+::string \& \mbox{\hyperlink{a00926_a5b6f4234c747de30802331f69ae3bc98}{get\+Id}} () const override=0
+\begin{DoxyCompactList}\small\item\em Get the id of the component. \end{DoxyCompactList}\item 
 virtual const std\+::string \& \mbox{\hyperlink{a00926_aa586aac80c73cff6e595d568f0569708}{get\+Path}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the path of the Sprite. \end{DoxyCompactList}\item 
 virtual const \mbox{\hyperlink{a00886}{TTYData}} \& \mbox{\hyperlink{a00926_a25f28e8279bc9e8a4ed0561cfccbabd0}{get\+Ncurse\+Data}} () const =0
@@ -83,6 +85,23 @@ Get the sprite \mbox{\hyperlink{a00882}{Color}}.
 \begin{DoxyReturn}{Returns}
 The \mbox{\hyperlink{a00882}{Color}} data 
 \end{DoxyReturn}
+\mbox{\Hypertarget{a00926_a5b6f4234c747de30802331f69ae3bc98}\label{a00926_a5b6f4234c747de30802331f69ae3bc98}} 
+\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!getId@{getId}}
+\index{getId@{getId}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily virtual const std\+::string\& Arcade\+::\+Graph\+::\+ISprite\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Get the id of the component. 
+
+\begin{DoxyReturn}{Returns}
+The component id 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{a00894_aaceb3652b7065250f57375469c7e0898}{Arcade\+::\+ECS\+::\+IComponent}}.
+
 \mbox{\Hypertarget{a00926_a25f28e8279bc9e8a4ed0561cfccbabd0}\label{a00926_a25f28e8279bc9e8a4ed0561cfccbabd0}} 
 \index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!getNcurseData@{getNcurseData}}
 \index{getNcurseData@{getNcurseData}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}

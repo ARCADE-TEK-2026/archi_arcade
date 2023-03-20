@@ -16,7 +16,7 @@ Collaboration diagram for Arcade\+::ECS\+::IEntity\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=244pt]{a00900}
+\includegraphics[width=265pt]{a00900}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -24,14 +24,18 @@ Collaboration diagram for Arcade\+::ECS\+::IEntity\+:
 \item 
 virtual \mbox{\hyperlink{a00902_a2112acabd726dc9377fc267d71286381}{$\sim$\+IEntity}} ()=default
 \item 
-virtual std\+::size\+\_\+t \mbox{\hyperlink{a00902_a1c13e49947c67b5cb74e6f90822a76b8}{get\+Id}} () const =0
+virtual std\+::string \mbox{\hyperlink{a00902_a19dbef678c86a5dad566644f38de569d}{get\+Id}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the entity id. \end{DoxyCompactList}\item 
 virtual const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00894}{IComponent}} $>$ $>$ \& \mbox{\hyperlink{a00902_a4e5e29d1f67b5e00aeb9463eb381c688}{get\+Components}} ()=0
 \begin{DoxyCompactList}\small\item\em Get all components. \end{DoxyCompactList}\item 
 virtual const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00894}{IComponent}} $>$ $>$ \& \mbox{\hyperlink{a00902_a60d82ca07e4ab56b1d57ca03b9f8ae36}{get\+Components}} (Comp\+Type type)=0
 \begin{DoxyCompactList}\small\item\em Get all components of type {\ttfamily comp\+Type} \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{a00902_a6688b4c25087bf34d88c0485c4ccfe1f}{add\+Component}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00894}{IComponent}} $>$ component)=0
-\begin{DoxyCompactList}\small\item\em Add a component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Add a component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00902_ae1b0864f76fa9ad515adb5514bc8e43f}{remove\+Component}} (std\+::string id)=0
+\begin{DoxyCompactList}\small\item\em Remove a component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00902_abddaeef7a17806c4502c61952e3b4ee2}{remove\+Components}} (Comp\+Type type)=0
+\begin{DoxyCompactList}\small\item\em Remove all components of type {\ttfamily Comp\+Type} \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -93,11 +97,11 @@ Get all components of type {\ttfamily comp\+Type}
 \begin{DoxyReturn}{Returns}
 The list of components filtered 
 \end{DoxyReturn}
-\mbox{\Hypertarget{a00902_a1c13e49947c67b5cb74e6f90822a76b8}\label{a00902_a1c13e49947c67b5cb74e6f90822a76b8}} 
+\mbox{\Hypertarget{a00902_a19dbef678c86a5dad566644f38de569d}\label{a00902_a19dbef678c86a5dad566644f38de569d}} 
 \index{Arcade::ECS::IEntity@{Arcade::ECS::IEntity}!getId@{getId}}
 \index{getId@{getId}!Arcade::ECS::IEntity@{Arcade::ECS::IEntity}}
 \doxysubsubsection{\texorpdfstring{getId()}{getId()}}
-{\footnotesize\ttfamily virtual std\+::size\+\_\+t Arcade\+::\+ECS\+::\+IEntity\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual std\+::string Arcade\+::\+ECS\+::\+IEntity\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -106,6 +110,36 @@ Get the entity id.
 \begin{DoxyReturn}{Returns}
 The entity id 
 \end{DoxyReturn}
+\mbox{\Hypertarget{a00902_ae1b0864f76fa9ad515adb5514bc8e43f}\label{a00902_ae1b0864f76fa9ad515adb5514bc8e43f}} 
+\index{Arcade::ECS::IEntity@{Arcade::ECS::IEntity}!removeComponent@{removeComponent}}
+\index{removeComponent@{removeComponent}!Arcade::ECS::IEntity@{Arcade::ECS::IEntity}}
+\doxysubsubsection{\texorpdfstring{removeComponent()}{removeComponent()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEntity\+::remove\+Component (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove a component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & The component id to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00902_abddaeef7a17806c4502c61952e3b4ee2}\label{a00902_abddaeef7a17806c4502c61952e3b4ee2}} 
+\index{Arcade::ECS::IEntity@{Arcade::ECS::IEntity}!removeComponents@{removeComponents}}
+\index{removeComponents@{removeComponents}!Arcade::ECS::IEntity@{Arcade::ECS::IEntity}}
+\doxysubsubsection{\texorpdfstring{removeComponents()}{removeComponents()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEntity\+::remove\+Components (\begin{DoxyParamCaption}\item[{Comp\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove all components of type {\ttfamily Comp\+Type} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of component to remove \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

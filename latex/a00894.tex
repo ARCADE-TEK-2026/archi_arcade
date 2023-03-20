@@ -30,7 +30,9 @@ Collaboration diagram for Arcade\+::ECS\+::IComponent\+:
 virtual \mbox{\hyperlink{a00894_aefffd7ac3398e0ff565166fd26c70593}{$\sim$\+IComponent}} ()=default
 \item 
 virtual Comp\+Type \mbox{\hyperlink{a00894_a7c3bc882bfd7bebcc17e7968e6f009fb}{get\+Type}} () const =0
-\begin{DoxyCompactList}\small\item\em Get the type of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the type of the component. \end{DoxyCompactList}\item 
+virtual const std\+::string \& \mbox{\hyperlink{a00894_aaceb3652b7065250f57375469c7e0898}{get\+Id}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the id of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -43,6 +45,23 @@ virtual Comp\+Type \mbox{\hyperlink{a00894_a7c3bc882bfd7bebcc17e7968e6f009fb}{ge
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00894_aaceb3652b7065250f57375469c7e0898}\label{a00894_aaceb3652b7065250f57375469c7e0898}} 
+\index{Arcade::ECS::IComponent@{Arcade::ECS::IComponent}!getId@{getId}}
+\index{getId@{getId}!Arcade::ECS::IComponent@{Arcade::ECS::IComponent}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily virtual const std\+::string\& Arcade\+::\+ECS\+::\+IComponent\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the id of the component. 
+
+\begin{DoxyReturn}{Returns}
+The component id 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{a00938_aae2bd69ad80c1f19dfce9524b34f9145}{Arcade\+::\+Graph\+::\+IText}}, \mbox{\hyperlink{a00926_a5b6f4234c747de30802331f69ae3bc98}{Arcade\+::\+Graph\+::\+ISprite}}, and \mbox{\hyperlink{a00922_abfa0eaa2fd543a008e6de16014306046}{Arcade\+::\+Graph\+::\+IMusic}}.
+
 \mbox{\Hypertarget{a00894_a7c3bc882bfd7bebcc17e7968e6f009fb}\label{a00894_a7c3bc882bfd7bebcc17e7968e6f009fb}} 
 \index{Arcade::ECS::IComponent@{Arcade::ECS::IComponent}!getType@{getType}}
 \index{getType@{getType}!Arcade::ECS::IComponent@{Arcade::ECS::IComponent}}

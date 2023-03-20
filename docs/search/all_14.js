@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['_7eicomponent_95',['~IComponent',['../a00894.html#aefffd7ac3398e0ff565166fd26c70593',1,'Arcade::ECS::IComponent']]],
-  ['_7eicore_96',['~ICore',['../a00898.html#a9394e43e057f68367f2647738f596ccc',1,'Arcade::Core::ICore']]],
-  ['_7eientity_97',['~IEntity',['../a00902.html#a2112acabd726dc9377fc267d71286381',1,'Arcade::ECS::IEntity']]],
-  ['_7eientitymanager_98',['~IEntityManager',['../a00906.html#ac73d41d0058aa9c36115abfa9b8daa61',1,'Arcade::ECS::IEntityManager']]],
-  ['_7eieventmanager_99',['~IEventManager',['../a00910.html#a2523607e48ced247a844e53c060fb001',1,'Arcade::ECS::IEventManager']]],
-  ['_7eigamelogic_100',['~IGameLogic',['../a00914.html#aeeab140fd99aaabece093e7bba3b9d1c',1,'Arcade::Game::IGameLogic']]],
-  ['_7eigraph_101',['~IGraph',['../a00918.html#a139728476e6a5b4bb63aad91dd6f0567',1,'Arcade::Graph::IGraph']]],
-  ['_7eimusic_102',['~IMusic',['../a00922.html#ac90ebfffe808f4c35424623464bd9a13',1,'Arcade::Graph::IMusic']]],
-  ['_7eisprite_103',['~ISprite',['../a00926.html#aced7a803b1241053e029ba2a27ea20d3',1,'Arcade::Graph::ISprite']]],
-  ['_7eisystem_104',['~ISystem',['../a00930.html#a8a8d72403aef61fbc75ead3c3c2fdb3c',1,'Arcade::ECS::ISystem']]],
-  ['_7eisystemmanager_105',['~ISystemManager',['../a00934.html#a60867e72f13bcb4b9b58046c58adb0f5',1,'Arcade::ECS::ISystemManager']]],
-  ['_7eitext_106',['~IText',['../a00938.html#a296732412a63d684f2bfbb25ca57d460',1,'Arcade::Graph::IText']]]
+  ['_7eicomponent_99',['~IComponent',['../a00894.html#aefffd7ac3398e0ff565166fd26c70593',1,'Arcade::ECS::IComponent']]],
+  ['_7eicore_100',['~ICore',['../a00898.html#a9394e43e057f68367f2647738f596ccc',1,'Arcade::Core::ICore']]],
+  ['_7eientity_101',['~IEntity',['../a00902.html#a2112acabd726dc9377fc267d71286381',1,'Arcade::ECS::IEntity']]],
+  ['_7eientitymanager_102',['~IEntityManager',['../a00906.html#ac73d41d0058aa9c36115abfa9b8daa61',1,'Arcade::ECS::IEntityManager']]],
+  ['_7eieventmanager_103',['~IEventManager',['../a00910.html#a2523607e48ced247a844e53c060fb001',1,'Arcade::ECS::IEventManager']]],
+  ['_7eigamelogic_104',['~IGameLogic',['../a00914.html#aeeab140fd99aaabece093e7bba3b9d1c',1,'Arcade::Game::IGameLogic']]],
+  ['_7eigraph_105',['~IGraph',['../a00918.html#a139728476e6a5b4bb63aad91dd6f0567',1,'Arcade::Graph::IGraph']]],
+  ['_7eimusic_106',['~IMusic',['../a00922.html#ac90ebfffe808f4c35424623464bd9a13',1,'Arcade::Graph::IMusic']]],
+  ['_7eisprite_107',['~ISprite',['../a00926.html#aced7a803b1241053e029ba2a27ea20d3',1,'Arcade::Graph::ISprite']]],
+  ['_7eisystem_108',['~ISystem',['../a00930.html#a8a8d72403aef61fbc75ead3c3c2fdb3c',1,'Arcade::ECS::ISystem']]],
+  ['_7eisystemmanager_109',['~ISystemManager',['../a00934.html#a60867e72f13bcb4b9b58046c58adb0f5',1,'Arcade::ECS::ISystemManager']]],
+  ['_7eitext_110',['~IText',['../a00938.html#a296732412a63d684f2bfbb25ca57d460',1,'Arcade::Graph::IText']]]
 ];

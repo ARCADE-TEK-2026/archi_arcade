@@ -34,6 +34,8 @@ Collaboration diagram for Arcade\+::Graph\+::IText\+:
 \item 
 virtual \mbox{\hyperlink{a00938_a296732412a63d684f2bfbb25ca57d460}{$\sim$\+IText}} ()=default
 \item 
+virtual const std\+::string \& \mbox{\hyperlink{a00938_aae2bd69ad80c1f19dfce9524b34f9145}{get\+Id}} () const override=0
+\begin{DoxyCompactList}\small\item\em Get the id of the component. \end{DoxyCompactList}\item 
 virtual const std\+::string \& \mbox{\hyperlink{a00938_a39516e3a9494be3aab6242675e8cc679}{get\+Font\+Path}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the path of the text font. \end{DoxyCompactList}\item 
 virtual const std\+::string \& \mbox{\hyperlink{a00938_a11ff001fef920abf7ddb72de35dc3b5d}{get\+Text}} () const =0
@@ -113,6 +115,23 @@ Get the foreground color.
 \begin{DoxyReturn}{Returns}
 The foreground color. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{a00938_aae2bd69ad80c1f19dfce9524b34f9145}\label{a00938_aae2bd69ad80c1f19dfce9524b34f9145}} 
+\index{Arcade::Graph::IText@{Arcade::Graph::IText}!getId@{getId}}
+\index{getId@{getId}!Arcade::Graph::IText@{Arcade::Graph::IText}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily virtual const std\+::string\& Arcade\+::\+Graph\+::\+IText\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Get the id of the component. 
+
+\begin{DoxyReturn}{Returns}
+The component id 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{a00894_aaceb3652b7065250f57375469c7e0898}{Arcade\+::\+ECS\+::\+IComponent}}.
+
 \mbox{\Hypertarget{a00938_a101df2f0f7e648452e6ea7c93df66ac3}\label{a00938_a101df2f0f7e648452e6ea7c93df66ac3}} 
 \index{Arcade::Graph::IText@{Arcade::Graph::IText}!getPoliceSize@{getPoliceSize}}
 \index{getPoliceSize@{getPoliceSize}!Arcade::Graph::IText@{Arcade::Graph::IText}}

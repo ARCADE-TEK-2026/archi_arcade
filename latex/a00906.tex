@@ -29,7 +29,11 @@ virtual \mbox{\hyperlink{a00902}{IEntity}} \& \mbox{\hyperlink{a00906_a863a130b3
 virtual const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00902}{IEntity}} $>$ $>$ \& \mbox{\hyperlink{a00906_ab22f404ae91b5fd8119479895b584d44}{get\+Entities}} () const =0
 \begin{DoxyCompactList}\small\item\em Get all entities created by this manager. \end{DoxyCompactList}\item 
 virtual const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00902}{IEntity}} $>$ $>$ \& \mbox{\hyperlink{a00906_a11a00d3674654abf84622200ba68408a}{get\+Entities\+By\+Component\+Type}} (Comp\+Type comp) const =0
-\begin{DoxyCompactList}\small\item\em Get all entities created by this manager that have at least one component of type Comp\+Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get all entities created by this manager that have at least one component of type Comp\+Type. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00906_ab5ac03ceb0c63e3a9c0c1996ac6a1e4c}{remove\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00902}{IEntity}} $>$)=0
+\begin{DoxyCompactList}\small\item\em Remove an entity from the manager. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00906_a6542722832aa9bd45b62b92d5c35201e}{remove\+All\+Entities}} ()=0
+\begin{DoxyCompactList}\small\item\em Remove all entities from the manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -89,6 +93,31 @@ Get all entities created by this manager that have at least one component of typ
 \begin{DoxyReturn}{Returns}
 The vector 
 \end{DoxyReturn}
+\mbox{\Hypertarget{a00906_a6542722832aa9bd45b62b92d5c35201e}\label{a00906_a6542722832aa9bd45b62b92d5c35201e}} 
+\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!removeAllEntities@{removeAllEntities}}
+\index{removeAllEntities@{removeAllEntities}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+\doxysubsubsection{\texorpdfstring{removeAllEntities()}{removeAllEntities()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEntity\+Manager\+::remove\+All\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove all entities from the manager. 
+
+\mbox{\Hypertarget{a00906_ab5ac03ceb0c63e3a9c0c1996ac6a1e4c}\label{a00906_ab5ac03ceb0c63e3a9c0c1996ac6a1e4c}} 
+\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!removeEntity@{removeEntity}}
+\index{removeEntity@{removeEntity}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+\doxysubsubsection{\texorpdfstring{removeEntity()}{removeEntity()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEntity\+Manager\+::remove\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00902}{IEntity}} $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove an entity from the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::unique\+\_\+ptr$<$\+IEntity$>$} & The entity to remove \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

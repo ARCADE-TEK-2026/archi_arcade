@@ -83,8 +83,8 @@ Inheritance diagram for Arcade::Graph::ISprite:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00925.png" border="0" usemap="#aArcade_1_1Graph_1_1ISprite_inherit__map" alt="Inheritance graph"/></div>
 <map name="aArcade_1_1Graph_1_1ISprite_inherit__map" id="aArcade_1_1Graph_1_1ISprite_inherit__map">
-<area shape="rect" title="The ISprite class." alt="" coords="5,175,215,560"/>
-<area shape="rect" href="a00894.html" title=" " alt="" coords="7,5,213,127"/>
+<area shape="rect" title="The ISprite class." alt="" coords="5,204,215,633"/>
+<area shape="rect" href="a00894.html" title=" " alt="" coords="7,5,213,156"/>
 </map>
 </div>
 <div class="dynheader">
@@ -92,8 +92,8 @@ Collaboration diagram for Arcade::Graph::ISprite:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00924.png" border="0" usemap="#aArcade_1_1Graph_1_1ISprite_coll__map" alt="Collaboration graph"/></div>
 <map name="aArcade_1_1Graph_1_1ISprite_coll__map" id="aArcade_1_1Graph_1_1ISprite_coll__map">
-<area shape="rect" title="The ISprite class." alt="" coords="5,175,215,560"/>
-<area shape="rect" href="a00894.html" title=" " alt="" coords="7,5,213,127"/>
+<area shape="rect" title="The ISprite class." alt="" coords="5,204,215,633"/>
+<area shape="rect" href="a00894.html" title=" " alt="" coords="7,5,213,156"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -101,6 +101,9 @@ Collaboration diagram for Arcade::Graph::ISprite:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aced7a803b1241053e029ba2a27ea20d3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00926.html#aced7a803b1241053e029ba2a27ea20d3">~ISprite</a> ()=default</td></tr>
 <tr class="separator:aced7a803b1241053e029ba2a27ea20d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6f4234c747de30802331f69ae3bc98"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00926.html#a5b6f4234c747de30802331f69ae3bc98">getId</a> () const override=0</td></tr>
+<tr class="memdesc:a5b6f4234c747de30802331f69ae3bc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the id of the component.  <a href="a00926.html#a5b6f4234c747de30802331f69ae3bc98">More...</a><br /></td></tr>
+<tr class="separator:a5b6f4234c747de30802331f69ae3bc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa586aac80c73cff6e595d568f0569708"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00926.html#aa586aac80c73cff6e595d568f0569708">getPath</a> () const =0</td></tr>
 <tr class="memdesc:aa586aac80c73cff6e595d568f0569708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the path of the Sprite.  <a href="a00926.html#aa586aac80c73cff6e595d568f0569708">More...</a><br /></td></tr>
 <tr class="separator:aa586aac80c73cff6e595d568f0569708"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,6 +196,36 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Get the sprite <a class="el" href="a00882.html">Color</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="a00882.html">Color</a> data </dd></dl>
+
+</div>
+</div>
+<a id="a5b6f4234c747de30802331f69ae3bc98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6f4234c747de30802331f69ae3bc98">&#9670;&nbsp;</a></span>getId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; Arcade::Graph::ISprite::getId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the id of the component. </p>
+<dl class="section return"><dt>Returns</dt><dd>The component id </dd></dl>
+
+<p>Implements <a class="el" href="a00894.html#aaceb3652b7065250f57375469c7e0898">Arcade::ECS::IComponent</a>.</p>
 
 </div>
 </div>
@@ -428,7 +461,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 13:16:50 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 20 2023 18:25:00 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

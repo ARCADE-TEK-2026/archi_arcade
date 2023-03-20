@@ -8,7 +8,7 @@ var searchData=
   ['getentitiesbycomponenttype_25',['getEntitiesByComponentType',['../a00906.html#a11a00d3674654abf84622200ba68408a',1,'Arcade::ECS::IEntityManager']]],
   ['getfontpath_26',['getFontPath',['../a00938.html#a39516e3a9494be3aab6242675e8cc679',1,'Arcade::Graph::IText']]],
   ['getforegroundcolor_27',['getForegroundColor',['../a00938.html#ab13e117e766981863e9816dde7aa4440',1,'Arcade::Graph::IText']]],
-  ['getid_28',['getId',['../a00902.html#a1c13e49947c67b5cb74e6f90822a76b8',1,'Arcade::ECS::IEntity']]],
+  ['getid_28',['getId',['../a00894.html#aaceb3652b7065250f57375469c7e0898',1,'Arcade::ECS::IComponent::getId()'],['../a00902.html#a19dbef678c86a5dad566644f38de569d',1,'Arcade::ECS::IEntity::getId()'],['../a00922.html#abfa0eaa2fd543a008e6de16014306046',1,'Arcade::Graph::IMusic::getId()'],['../a00926.html#a5b6f4234c747de30802331f69ae3bc98',1,'Arcade::Graph::ISprite::getId()'],['../a00938.html#aae2bd69ad80c1f19dfce9524b34f9145',1,'Arcade::Graph::IText::getId()']]],
   ['getisplaying_29',['getIsPlaying',['../a00922.html#a8057d8416ffac81d0baae609d2ac0c09',1,'Arcade::Graph::IMusic']]],
   ['getloop_30',['getLoop',['../a00922.html#a0b3bd03acd44024955d9f1deb2e59068',1,'Arcade::Graph::IMusic']]],
   ['getmouseposition_31',['getMousePosition',['../a00910.html#a6aa99b36ab45651d9eed367671ca3259',1,'Arcade::ECS::IEventManager']]],
