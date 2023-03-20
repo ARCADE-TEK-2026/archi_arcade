@@ -9,6 +9,7 @@
 
 #include <cstddef>
 #include <memory>
+#include <string>
 #include <vector>
 #include "IComponent.hpp"
 
@@ -25,7 +26,7 @@ namespace Arcade {
                  *
                  * @return The entity id
                  */
-                virtual std::size_t getId() const = 0;
+                virtual std::string getId() const = 0;
                 /**
                  * @brief Get all components
                  *
@@ -52,9 +53,9 @@ namespace Arcade {
                 /**
                  * @brief Remove a component
                  *
-                 * @param std::size_t The component id to remove
+                 * @param std::string The component id to remove
                  */
-                virtual void removeComponent(std::size_t id) = 0;
+                virtual void removeComponent(std::string id) = 0;
                 /**
                  * @brief Remove all components of type `CompType`
                  *

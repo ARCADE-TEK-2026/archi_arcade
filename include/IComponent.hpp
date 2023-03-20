@@ -8,6 +8,8 @@
 #pragma once
 
 #include <cstddef>
+#include <string>
+
 namespace Arcade {
     namespace ECS {
         /**
@@ -32,7 +34,7 @@ namespace Arcade {
                  *
                  * @return The component id
                  */
-                virtual std::size_t getId() const = 0;
+                virtual const std::string &getId() const = 0;
         };
     } // namespace ECS
 };    // namespace Arcade
