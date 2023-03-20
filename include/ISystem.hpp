@@ -14,7 +14,7 @@ namespace Arcade {
     namespace Core {
         class IDisplayModule;
         class IGameModule;
-    }
+    } // namespace Core
 
     namespace ECS {
         /**
@@ -29,7 +29,10 @@ namespace Arcade {
                 /**
                  * @brief Run the system implementation
                  */
-                virtual void run(std::size_t deltaTime, Arcade::ECS::IEventManager &, Arcade::Core::IDisplayModule &displayModule, Arcade::Core::IGameModule &gameModule) = 0;
+                virtual void run(std::size_t deltaTime,
+                Arcade::ECS::IEventManager &,
+                Arcade::Core::IDisplayModule &displayModule,
+                Arcade::Core::IGameModule &gameModule) = 0;
                 /**
                  * @brief Close the system implementation
                  */
