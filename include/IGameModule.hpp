@@ -3,7 +3,7 @@
 ** Archi Arcade Promo 2026 Toulouse
 ** File description:
 ** GameModule that will be passed to all systems, implemented in the core (it
-*contains the Scene Manager created in the game lib)
+** contains the Scene Manager created in the game lib)
 */
 
 #pragma once
