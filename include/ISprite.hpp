@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** Visual Studio Live Share (Workspace)
+** Archi Arcade Promo 2026 Toulouse
 ** File description:
-** ISprite
+** A sprite child of components that will be understood by the graphic library
 */
 
 #pragma once
