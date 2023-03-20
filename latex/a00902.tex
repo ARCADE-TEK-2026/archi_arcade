@@ -16,7 +16,7 @@ Collaboration diagram for Arcade\+::ECS\+::IEntity\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=265pt]{a00900}
+\includegraphics[width=313pt]{a00900}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -26,7 +26,7 @@ virtual \mbox{\hyperlink{a00902_a2112acabd726dc9377fc267d71286381}{$\sim$\+IEnti
 \item 
 virtual std\+::string \mbox{\hyperlink{a00902_a19dbef678c86a5dad566644f38de569d}{get\+Id}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the entity id. \end{DoxyCompactList}\item 
-virtual const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00894}{IComponent}} $>$ $>$ \& \mbox{\hyperlink{a00902_a4e5e29d1f67b5e00aeb9463eb381c688}{get\+Components}} ()=0
+virtual const std\+::map$<$ Comp\+Type, std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00894}{IComponent}} $>$ $>$ $>$ \& \mbox{\hyperlink{a00902_a8fe017d8bfbffd06d120834d6e8c8b59}{get\+Components}} ()=0
 \begin{DoxyCompactList}\small\item\em Get all components. \end{DoxyCompactList}\item 
 virtual const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00894}{IComponent}} $>$ $>$ \& \mbox{\hyperlink{a00902_a60d82ca07e4ab56b1d57ca03b9f8ae36}{get\+Components}} (Comp\+Type type)=0
 \begin{DoxyCompactList}\small\item\em Get all components of type {\ttfamily comp\+Type} \end{DoxyCompactList}\item 
@@ -66,11 +66,11 @@ Add a component.
 {\em component} & The component to add \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{a00902_a4e5e29d1f67b5e00aeb9463eb381c688}\label{a00902_a4e5e29d1f67b5e00aeb9463eb381c688}} 
+\mbox{\Hypertarget{a00902_a8fe017d8bfbffd06d120834d6e8c8b59}\label{a00902_a8fe017d8bfbffd06d120834d6e8c8b59}} 
 \index{Arcade::ECS::IEntity@{Arcade::ECS::IEntity}!getComponents@{getComponents}}
 \index{getComponents@{getComponents}!Arcade::ECS::IEntity@{Arcade::ECS::IEntity}}
 \doxysubsubsection{\texorpdfstring{getComponents()}{getComponents()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{a00894}{IComponent}}$>$ $>$\& Arcade\+::\+ECS\+::\+IEntity\+::get\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual const std\+::map$<$Comp\+Type, std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{a00894}{IComponent}}$>$ $>$ $>$\& Arcade\+::\+ECS\+::\+IEntity\+::get\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
