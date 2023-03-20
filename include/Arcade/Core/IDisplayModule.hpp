@@ -31,7 +31,7 @@ namespace Arcade {
                  * @brief Change the current active graphical library to the
                  * given graphical library
                  *
-                 * @param libGraphicPath The graphical library name (only the
+                 * @param libGraphicName The graphical library name (only the
                  * libname without .so)
                  *
                  * @return True if the graphical library was changed, false

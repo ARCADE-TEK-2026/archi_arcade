@@ -31,7 +31,7 @@ namespace Arcade {
                 /**
                  * @brief Change the current active game to the given game
                  *
-                 * @param pathGame The game filename to change to (without .so)
+                 * @param gameName The game filename to change to (without .so)
                  *
                  * @return True if the game was changed, false otherwise
                  */
