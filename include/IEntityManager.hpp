@@ -8,6 +8,7 @@
 #pragma once
 
 #include <memory>
+#include <string>
 #include "IEntity.hpp"
 
 namespace Arcade {
@@ -45,9 +46,9 @@ namespace Arcade {
                 /**
                  * @brief Remove an entity from the manager
                  *
-                 * @param std::unique_ptr<IEntity> The entity to remove
+                 * @param id The entity id to remove
                  */
-                virtual void removeEntity(std::unique_ptr<IEntity>) = 0;
+                virtual void removeEntity(std::string id) = 0;
                 /**
                  * @brief Remove all entities from the manager
                  */
