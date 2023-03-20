@@ -7,9 +7,11 @@
 
 #pragma once
 
+
 #include <cstddef>
 #include <map>
 #include <memory>
+#include <string>
 #include <vector>
 #include "IComponent.hpp"
 
@@ -26,7 +28,7 @@ namespace Arcade {
                  *
                  * @return The entity id
                  */
-                virtual std::size_t getId() const = 0;
+                virtual std::string getId() const = 0;
                 /**
                  * @brief Get all components
                  *
@@ -50,6 +52,18 @@ namespace Arcade {
                  */
                 virtual void addComponent(
                 std::unique_ptr<IComponent> component) = 0;
+                /**
+                 * @brief Remove a component
+                 *
+                 * @param std::string The component id to remove
+                 */
+                virtual void removeComponent(std::string id) = 0;
+                /**
+                 * @brief Remove all components of type `CompType`
+                 *
+                 * @param type The type of component to remove
+                 */
+                virtual void removeComponents(CompType type) = 0;
         };
     } // namespace ECS
 } // namespace Arcade

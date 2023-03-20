@@ -25,6 +25,8 @@ namespace Arcade {
             public:
                 virtual ~ISprite() = default;
 
+                virtual const std::string &getId() const override = 0;
+
                 /**
                  * @brief Get the path of the Sprite
                  *

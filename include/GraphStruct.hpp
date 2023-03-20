@@ -16,6 +16,7 @@ namespace Arcade {
                 int r;
                 int g;
                 int b;
+                int a;
         };
         struct TTYData {
             public:

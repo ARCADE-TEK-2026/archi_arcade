@@ -23,6 +23,8 @@ namespace Arcade {
             public:
                 virtual ~IMusic() = default;
 
+                virtual const std::string &getId() const override = 0;
+
                 /**
                  * @brief Get the path of the Music.
                  *
