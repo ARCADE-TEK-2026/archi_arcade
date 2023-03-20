@@ -8,7 +8,7 @@
 #pragma once
 
 namespace Arcade {
-    namespace ICore {
+    namespace Core {
         /**
          * @brief The ICore class
          *
