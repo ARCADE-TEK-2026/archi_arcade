@@ -58,5 +58,5 @@ extern "C"
      * All shared lib must have this function
      *
      */
-    libType getType();
+    LibType getType();
 }
