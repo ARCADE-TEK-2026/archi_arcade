@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** Visual Studio Live Share (Workspace)
+** Archi Arcade Promo 2026 Toulouse
 ** File description:
-** IEntity
+** Entity is the most little thing in the ECS (you can add component to it)
 */
 
 #pragma once

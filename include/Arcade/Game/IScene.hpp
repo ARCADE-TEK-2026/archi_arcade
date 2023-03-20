@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** Visual Studio Live Share (Workspace)
+** Archi Arcade Promo 2026 Toulouse
 ** File description:
-** ISystem
+** Scene are regroupments of entities and systems
 */
 
 #pragma once
@@ -12,6 +12,9 @@
 
 namespace Arcade {
     namespace Game {
+        /**
+         * @brief The IScene interface
+         */
         class IScene {
             public:
                 virtual ~IScene() = default;

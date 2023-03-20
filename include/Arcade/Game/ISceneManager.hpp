@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** Visual Studio Live Share (Workspace)
+** Archi Arcade Promo 2026 Toulouse
 ** File description:
-** ISystem
+** Scene manager interface
 */
 
 #pragma once
@@ -12,6 +12,9 @@
 
 namespace Arcade {
     namespace Game {
+        /**
+         * @brief Scene manager interface
+         */
         class ISceneManager {
             public:
                 virtual ~ISceneManager() = default;
