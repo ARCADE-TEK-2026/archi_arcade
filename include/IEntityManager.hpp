@@ -30,7 +30,7 @@ namespace Arcade {
                  *
                  * @return A vector of all entities created by this manager
                  */
-                virtual const std::vector<std::unique_ptr<IEntity>> &
+                virtual const std::vector<std::shared_ptr<IEntity>> &
                 getEntities() const = 0;
                 /**
                  * @brief Get all entities created by this manager that have at
@@ -40,7 +40,7 @@ namespace Arcade {
                  *
                  * @return The vector
                  */
-                virtual const std::vector<std::unique_ptr<IEntity>> &
+                virtual std::unique_ptr<std::vector<std::shared_ptr<IEntity>>>
                 getEntitiesByComponentType(CompType comp) const = 0;
         };
     } // namespace ECS
