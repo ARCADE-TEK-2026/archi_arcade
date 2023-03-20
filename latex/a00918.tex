@@ -35,7 +35,9 @@ Collaboration diagram for Arcade\+::Graph\+::IGraph\+:
 virtual \mbox{\hyperlink{a00918_a139728476e6a5b4bb63aad91dd6f0567}{$\sim$\+IGraph}} ()=default
 \item 
 virtual void \mbox{\hyperlink{a00918_a3227668746a7264f37047d5cb938cd98}{run}} (std\+::size\+\_\+t delta\+Time, \mbox{\hyperlink{a00906}{Arcade\+::\+ECS\+::\+IEntity\+Manager}} \&, \mbox{\hyperlink{a00910}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&) override=0
-\begin{DoxyCompactList}\small\item\em Run the system implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Run the system implementation. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00918_a2fbc2686c435e27eae59e09c14541e5b}{close}} () override=0
+\begin{DoxyCompactList}\small\item\em Close the system implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -54,6 +56,20 @@ System of the graphic lib will inherits from this
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00918_a2fbc2686c435e27eae59e09c14541e5b}\label{a00918_a2fbc2686c435e27eae59e09c14541e5b}} 
+\index{Arcade::Graph::IGraph@{Arcade::Graph::IGraph}!close@{close}}
+\index{close@{close}!Arcade::Graph::IGraph@{Arcade::Graph::IGraph}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IGraph\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Close the system implementation. 
+
+
+
+Implements \mbox{\hyperlink{a00930_ace6ce33909ed5250419f94c931a0cd6a}{Arcade\+::\+ECS\+::\+ISystem}}.
+
 \mbox{\Hypertarget{a00918_a3227668746a7264f37047d5cb938cd98}\label{a00918_a3227668746a7264f37047d5cb938cd98}} 
 \index{Arcade::Graph::IGraph@{Arcade::Graph::IGraph}!run@{run}}
 \index{run@{run}!Arcade::Graph::IGraph@{Arcade::Graph::IGraph}}

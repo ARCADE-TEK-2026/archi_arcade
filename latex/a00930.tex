@@ -35,7 +35,9 @@ Collaboration diagram for Arcade\+::ECS\+::ISystem\+:
 virtual \mbox{\hyperlink{a00930_a8a8d72403aef61fbc75ead3c3c2fdb3c}{$\sim$\+ISystem}} ()=default
 \item 
 virtual void \mbox{\hyperlink{a00930_a936d48e32acccce355580505de710bd1}{run}} (std\+::size\+\_\+t delta\+Time, \mbox{\hyperlink{a00906}{IEntity\+Manager}} \&, \mbox{\hyperlink{a00910}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&)=0
-\begin{DoxyCompactList}\small\item\em Run the system implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Run the system implementation. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00930_ace6ce33909ed5250419f94c931a0cd6a}{close}} ()=0
+\begin{DoxyCompactList}\small\item\em Close the system implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -53,6 +55,20 @@ Systems will inherits from this
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00930_ace6ce33909ed5250419f94c931a0cd6a}\label{a00930_ace6ce33909ed5250419f94c931a0cd6a}} 
+\index{Arcade::ECS::ISystem@{Arcade::ECS::ISystem}!close@{close}}
+\index{close@{close}!Arcade::ECS::ISystem@{Arcade::ECS::ISystem}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+ISystem\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Close the system implementation. 
+
+
+
+Implemented in \mbox{\hyperlink{a00918_a2fbc2686c435e27eae59e09c14541e5b}{Arcade\+::\+Graph\+::\+IGraph}}, and \mbox{\hyperlink{a00914_afcaecf4cc4d3156861f23621d8d031ea}{Arcade\+::\+Game\+::\+IGame\+Logic}}.
+
 \mbox{\Hypertarget{a00930_a936d48e32acccce355580505de710bd1}\label{a00930_a936d48e32acccce355580505de710bd1}} 
 \index{Arcade::ECS::ISystem@{Arcade::ECS::ISystem}!run@{run}}
 \index{run@{run}!Arcade::ECS::ISystem@{Arcade::ECS::ISystem}}
