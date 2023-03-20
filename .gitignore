@@ -34,6 +34,8 @@
 documentation/docs
 documentation/latex
 documentation/uml.png
+documentation/uml.svg
+uml.puml
 tests/dawa
 .clang-format
 
