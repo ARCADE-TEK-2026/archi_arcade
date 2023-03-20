@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** Archi Arcade Promo 2026 Toulouse
 ** File description:
-** entity is the most little thing in the ECS (you can add component to it)
+** Entity is the most little thing in the ECS (you can add component to it)
 */
 
 #pragma once
