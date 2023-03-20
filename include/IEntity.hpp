@@ -33,8 +33,9 @@ namespace Arcade {
                  *
                  * @return The list of components
                  */
-                virtual const std::map < CompType,
-                std::vector<std::unique_ptr<IComponent>> &getComponents() = 0;
+                virtual const std::map<CompType,
+                std::vector<std::unique_ptr<IComponent>>> &
+                getComponents() = 0;
                 /**
                  * @brief Get all components of type `compType`
                  *
