@@ -10,6 +10,7 @@
 #include <cstddef>
 #include <memory>
 #include <vector>
+#include <map>
 #include "IComponent.hpp"
 
 namespace Arcade {
@@ -31,7 +32,7 @@ namespace Arcade {
                  *
                  * @return The list of components
                  */
-                virtual const std::vector<std::unique_ptr<IComponent>> &
+                virtual const std::map<CompType, std::vector<std::unique_ptr<IComponent>> &
                 getComponents() = 0;
                 /**
                  * @brief Get all components of type `compType`
