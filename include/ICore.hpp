@@ -15,8 +15,10 @@ namespace Arcade {
          * The ICore class is the main class of the project.
          * It has a ISystemManager and a IEventManager
          *
-         * In constructor, Core must call checkName and checkLibType in each
-         * shared lib in lib/ and build a map of type/name
+         * The core need to create a vector of availible graphical library and
+         * game library using the default entryPoint defined in `Api.hpp`
+         * (getType, getName) This will be passed to IGameModule and
+         * IDisplayModule as vector of std::string
          */
         class ICore {
             public:
