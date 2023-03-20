@@ -7,7 +7,7 @@
 
 #pragma once
 
-#include "ISystemManager.hpp"
+#include "../ECS/ISystemManager.hpp"
 
 namespace Arcade {
     namespace Core {

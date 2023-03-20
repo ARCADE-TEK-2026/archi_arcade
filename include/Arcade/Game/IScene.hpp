@@ -7,8 +7,8 @@
 
 #pragma once
 
-#include "IEntityManager.hpp"
-#include "ISystemManager.hpp"
+#include "../ECS/IEntityManager.hpp"
+#include "../ECS/ISystemManager.hpp"
 
 namespace Arcade {
     namespace Game {

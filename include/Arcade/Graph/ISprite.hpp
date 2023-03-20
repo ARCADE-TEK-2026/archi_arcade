@@ -8,9 +8,9 @@
 #pragma once
 
 #include <string>
-#include "ArcadeStruct.hpp"
+#include "../ArcadeStruct.hpp"
 #include "GraphStruct.hpp"
-#include "IComponent.hpp"
+#include "../ECS/IComponent.hpp"
 
 namespace Arcade {
     namespace Graph {

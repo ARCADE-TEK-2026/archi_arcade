@@ -7,8 +7,8 @@
 
 #pragma once
 
-#include "ISceneManager.hpp"
-#include "ISystemManager.hpp"
+#include "Arcade/Game/ISceneManager.hpp"
+#include "Arcade/ECS/ISystemManager.hpp"
 
 #ifdef _WIN32
     #define EXPORT __declspec(dllexport)
