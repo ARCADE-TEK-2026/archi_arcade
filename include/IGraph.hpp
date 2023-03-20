@@ -26,7 +26,7 @@ namespace Arcade {
                 virtual void run(std::size_t deltaTime,
                 Arcade::ECS::IEntityManager &,
                 Arcade::ECS::IEventManager &) override = 0;
-                virtual void close() = 0;
+                virtual void close() override = 0;
         };
     } // namespace Graph
 } // namespace Arcade
