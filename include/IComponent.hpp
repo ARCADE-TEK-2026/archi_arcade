@@ -16,7 +16,7 @@ namespace Arcade {
          *
          * defaultComponent type to implement: TEXT, SPRITE, MUSIC
          */
-        struct CompType;
+        enum class CompType;
 
         class IComponent {
             public:
