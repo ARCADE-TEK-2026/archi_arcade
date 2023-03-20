@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** Archi Arcade Promo 2026 Toulouse
 ** File description:
-** scene are regroupments of entities and systems
+** Scene are regroupments of entities and systems
 */
 
 #pragma once
