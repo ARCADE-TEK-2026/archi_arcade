@@ -9,8 +9,8 @@
 
 #include <string>
 #include "../ArcadeStruct.hpp"
-#include "GraphStruct.hpp"
 #include "../ECS/IComponent.hpp"
+#include "GraphStruct.hpp"
 
 namespace Arcade {
     namespace Graph {
