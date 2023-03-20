@@ -30,11 +30,11 @@ namespace Arcade {
                 /**
                  * @brief Change the current active game to the given game
                  *
-                 * @param pathGame The path of the game to change to (.so)
+                 * @param pathGame The game filename to change to (without .so)
                  *
                  * @return True if the game was changed, false otherwise
                  */
-                virtual bool changeGame(const std::string &pathGame) = 0;
+                virtual bool changeGame(const std::string &gameName) = 0;
         };
     } // namespace Core
 } // namespace Arcade
