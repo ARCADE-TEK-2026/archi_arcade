@@ -7,13 +7,13 @@
 
 #pragma once
 
-#include "ISystemManager.hpp"
 #include "ISceneManager.hpp"
+#include "ISystemManager.hpp"
 
 #ifdef _WIN32
-#define EXPORT __declspec(dllexport)
+    #define EXPORT __declspec(dllexport)
 #else
-#define EXPORT
+    #define EXPORT
 #endif
 
 enum class libType { GRAPH, GAME };
