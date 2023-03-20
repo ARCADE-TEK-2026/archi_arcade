@@ -16,10 +16,10 @@
     #define EXPORT
 #endif
 
-enum class libType { GRAPH, GAME };
-
 extern "C"
 {
+    enum class LibType { GRAPH, GAME };
+
     /**
      * @brief game shared lib main entry point to get scenes
      *
