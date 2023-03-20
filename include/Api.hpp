@@ -8,6 +8,7 @@
 #pragma once
 
 #include "ISystemManager.hpp"
+#include "ISceneManager.hpp"
 
 enum class libType { GRAPH, GAME };
 
@@ -21,7 +22,7 @@ extern "C"
      * All game shared lib must have this function
      *
      */
-    // std::unique_ptr<ISceneManager> &
+    std::unique_ptr<Arcade::Game::ISceneManager> getScenes();
 
     /**
      * @brief graph shared lib main entry point to get systems
