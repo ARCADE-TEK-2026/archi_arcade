@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2023
-** Arcade
+** Archi Arcade Promo 2026 Toulouse
 ** File description:
 ** Useful struct for the grapical lib
 */

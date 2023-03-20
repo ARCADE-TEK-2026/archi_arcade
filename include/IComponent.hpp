@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** Visual Studio Live Share (Workspace)
+** Archi Arcade Promo 2026 Toulouse
 ** File description:
-** IComponents
+** Components that will be added to entity
 */
 
 #pragma once
