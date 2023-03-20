@@ -7,8 +7,8 @@
 
 #pragma once
 
-#include "ISystemManager.hpp"
 #include "ISceneManager.hpp"
+#include "ISystemManager.hpp"
 
 #ifdef _WIN32
     #define EXPORT __declspec(dllexport)
