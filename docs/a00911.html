@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: Member List</title>
+<title>Architecture Arcade: Arcade::Core::IDisplayModule Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,25 +62,174 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00054.html">Arcade</a></li><li class="navelem"><a class="el" href="a00058.html">Game</a></li><li class="navelem"><a class="el" href="a00914.html">IGameLogic</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00063.html">Arcade</a></li><li class="navelem"><a class="el" href="a00066.html">Core</a></li><li class="navelem"><a class="el" href="a00911.html">IDisplayModule</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00908.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Arcade::Game::IGameLogic Member List</div>  </div>
+<div class="title">Arcade::Core::IDisplayModule Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00914.html">Arcade::Game::IGameLogic</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00914.html#afcaecf4cc4d3156861f23621d8d031ea">close</a>() override=0</td><td class="entry"><a class="el" href="a00914.html">Arcade::Game::IGameLogic</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00914.html#a7597795306ec301dddff24679a68b423">run</a>(std::size_t deltaTime, Arcade::ECS::IEntityManager &amp;, Arcade::ECS::IEventManager &amp;) override=0</td><td class="entry"><a class="el" href="a00914.html">Arcade::Game::IGameLogic</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00914.html#aeeab140fd99aaabece093e7bba3b9d1c">~IGameLogic</a>()=default</td><td class="entry"><a class="el" href="a00914.html">Arcade::Game::IGameLogic</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00930.html#a8a8d72403aef61fbc75ead3c3c2fdb3c">~ISystem</a>()=default</td><td class="entry"><a class="el" href="a00930.html">Arcade::ECS::ISystem</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">virtual</span></td></tr>
-</table></div><!-- contents -->
+<p>The <a class="el" href="a00911.html" title="The IDisplayModule interface.">IDisplayModule</a> interface.  
+ <a href="a00911.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00026_source.html">IDisplayModule.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Arcade::Core::IDisplayModule:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00909.png" border="0" usemap="#aArcade_1_1Core_1_1IDisplayModule_coll__map" alt="Collaboration graph"/></div>
+<map name="aArcade_1_1Core_1_1IDisplayModule_coll__map" id="aArcade_1_1Core_1_1IDisplayModule_coll__map">
+<area shape="rect" title="The IDisplayModule interface." alt="" coords="5,5,236,200"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab0dca340871523283d3f52af4053032a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00911.html#ab0dca340871523283d3f52af4053032a">~IDisplayModule</a> ()=default</td></tr>
+<tr class="separator:ab0dca340871523283d3f52af4053032a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b1ef123e3cfa811d043a1e5e287175"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00951.html">ECS::ISystemManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00911.html#ad8b1ef123e3cfa811d043a1e5e287175">getSystemManager</a> ()=0</td></tr>
+<tr class="memdesc:ad8b1ef123e3cfa811d043a1e5e287175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system manager of the current graphical library.  <a href="a00911.html#ad8b1ef123e3cfa811d043a1e5e287175">More...</a><br /></td></tr>
+<tr class="separator:ad8b1ef123e3cfa811d043a1e5e287175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec7f6b8d343e6825ee75c5c3c3e2225"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00911.html#aeec7f6b8d343e6825ee75c5c3c3e2225">changeGaphicLib</a> (const std::string &amp;libGraphicName)=0</td></tr>
+<tr class="memdesc:aeec7f6b8d343e6825ee75c5c3c3e2225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current active graphical library to the given graphical library.  <a href="a00911.html#aeec7f6b8d343e6825ee75c5c3c3e2225">More...</a><br /></td></tr>
+<tr class="separator:aeec7f6b8d343e6825ee75c5c3c3e2225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac404cd7f958e1601997128d688c41881"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00911.html#ac404cd7f958e1601997128d688c41881">changeGaphicLib</a> ()=0</td></tr>
+<tr class="memdesc:ac404cd7f958e1601997128d688c41881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current active graphical library to the next one.  <a href="a00911.html#ac404cd7f958e1601997128d688c41881">More...</a><br /></td></tr>
+<tr class="separator:ac404cd7f958e1601997128d688c41881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="a00911.html" title="The IDisplayModule interface.">IDisplayModule</a> interface. </p>
+<p>The <a class="el" href="a00911.html" title="The IDisplayModule interface.">IDisplayModule</a> is passed to all systems </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab0dca340871523283d3f52af4053032a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0dca340871523283d3f52af4053032a">&#9670;&nbsp;</a></span>~IDisplayModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Arcade::Core::IDisplayModule::~IDisplayModule </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac404cd7f958e1601997128d688c41881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac404cd7f958e1601997128d688c41881">&#9670;&nbsp;</a></span>changeGaphicLib() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Arcade::Core::IDisplayModule::changeGaphicLib </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Change the current active graphical library to the next one. </p>
+<p>(because the epitech subject says we can switch to the next graphical library in the folder of availible graphical library)</p>
+<dl class="section return"><dt>Returns</dt><dd>True if the graphical library was changed, false </dd></dl>
+
+</div>
+</div>
+<a id="aeec7f6b8d343e6825ee75c5c3c3e2225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec7f6b8d343e6825ee75c5c3c3e2225">&#9670;&nbsp;</a></span>changeGaphicLib() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Arcade::Core::IDisplayModule::changeGaphicLib </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>libGraphicName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Change the current active graphical library to the given graphical library. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">libGraphicName</td><td>The graphical library name (only the libname without .so)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the graphical library was changed, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ad8b1ef123e3cfa811d043a1e5e287175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b1ef123e3cfa811d043a1e5e287175">&#9670;&nbsp;</a></span>getSystemManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00951.html">ECS::ISystemManager</a>&amp; Arcade::Core::IDisplayModule::getSystemManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the system manager of the current graphical library. </p>
+<dl class="section return"><dt>Returns</dt><dd>The system manager of the current graphical library </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>include/<a class="el" href="a00026_source.html">IDisplayModule.hpp</a></li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 18:37:25 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 20 2023 23:03:54 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -1,22 +1,121 @@
-\hypertarget{a00011}{}\doxysection{include/\+Arcade\+Struct.hpp File Reference}
-\label{a00011}\index{include/ArcadeStruct.hpp@{include/ArcadeStruct.hpp}}
-This graph shows which files directly or indirectly include this file\+:
+\hypertarget{a00011}{}\doxysection{include/\+Api.hpp File Reference}
+\label{a00011}\index{include/Api.hpp@{include/Api.hpp}}
+{\ttfamily \#include \char`\"{}IScene\+Manager.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ISystem\+Manager.\+hpp\char`\"{}}\newline
+Include dependency graph for Api.\+hpp\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{a00013}
+\includegraphics[width=350pt]{a00012}
 \end{center}
 \end{figure}
-\doxysubsection*{Classes}
+\doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{a00874}{Arcade\+::\+Vector2f}}
-\item 
-struct \mbox{\hyperlink{a00878}{Arcade\+::\+Vector3f}}
+\#define \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Namespaces}
+\doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
- \mbox{\hyperlink{a00054}{Arcade}}
+enum class \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}} \{ \newline
+\mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487}{GRAPH}}
+, \newline
+\mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13}{GAME}}
+ \}
 \end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00939}{Arcade\+::\+Game\+::\+IScene\+Manager}} $>$ \mbox{\hyperlink{a00011_a182ec86f83648772eeee4a66996d8f25}{get\+Scenes}} ()
+\begin{DoxyCompactList}\small\item\em The game shared lib main entry point to get scenes. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00951}{Arcade\+::\+ECS\+::\+ISystem\+Manager}} $>$ \mbox{\hyperlink{a00011_ae165d25fc17828ee8ca15df4dac728c2}{get\+Systems}} ()
+\begin{DoxyCompactList}\small\item\em The Graph shared lib main entry point to get systems. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{a00011_ac0fc966d4386ddb71d99361e3fccb311}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em The Shared lib entry point to get lib name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}} \mbox{\hyperlink{a00011_a19760a91ea6abfcf31fb434c6a121162}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em The Shared lib entry point to get lib type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{a00011_a3472d8cdbb788d5f1815b3522595bc49}\label{a00011_a3472d8cdbb788d5f1815b3522595bc49}} 
+\index{Api.hpp@{Api.hpp}!EXPORT@{EXPORT}}
+\index{EXPORT@{EXPORT}!Api.hpp@{Api.hpp}}
+\doxysubsubsection{\texorpdfstring{EXPORT}{EXPORT}}
+{\footnotesize\ttfamily \#define EXPORT}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{a00011_a6bd8133fc17124d3215b7fc6edecf616}\label{a00011_a6bd8133fc17124d3215b7fc6edecf616}} 
+\index{Api.hpp@{Api.hpp}!LibType@{LibType}}
+\index{LibType@{LibType}!Api.hpp@{Api.hpp}}
+\doxysubsubsection{\texorpdfstring{LibType}{LibType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRAPH@{GRAPH}!Api.hpp@{Api.hpp}}\index{Api.hpp@{Api.hpp}!GRAPH@{GRAPH}}}\mbox{\Hypertarget{a00011_a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487}\label{a00011_a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487}} 
+GRAPH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME@{GAME}!Api.hpp@{Api.hpp}}\index{Api.hpp@{Api.hpp}!GAME@{GAME}}}\mbox{\Hypertarget{a00011_a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13}\label{a00011_a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13}} 
+GAME&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{a00011_ac0fc966d4386ddb71d99361e3fccb311}\label{a00011_ac0fc966d4386ddb71d99361e3fccb311}} 
+\index{Api.hpp@{Api.hpp}!getName@{getName}}
+\index{getName@{getName}!Api.hpp@{Api.hpp}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The Shared lib entry point to get lib name. 
+
+\begin{DoxyReturn}{Returns}
+Lib\textquotesingle{}s name in std\+::string
+\end{DoxyReturn}
+All shared lib must have this function \mbox{\Hypertarget{a00011_a182ec86f83648772eeee4a66996d8f25}\label{a00011_a182ec86f83648772eeee4a66996d8f25}} 
+\index{Api.hpp@{Api.hpp}!getScenes@{getScenes}}
+\index{getScenes@{getScenes}!Api.hpp@{Api.hpp}}
+\doxysubsubsection{\texorpdfstring{getScenes()}{getScenes()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{a00939}{Arcade\+::\+Game\+::\+IScene\+Manager}}$>$ get\+Scenes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The game shared lib main entry point to get scenes. 
+
+\begin{DoxyReturn}{Returns}
+A unique\+\_\+ptr on IScene\+Manager instance
+\end{DoxyReturn}
+All game shared lib must have this function \mbox{\Hypertarget{a00011_ae165d25fc17828ee8ca15df4dac728c2}\label{a00011_ae165d25fc17828ee8ca15df4dac728c2}} 
+\index{Api.hpp@{Api.hpp}!getSystems@{getSystems}}
+\index{getSystems@{getSystems}!Api.hpp@{Api.hpp}}
+\doxysubsubsection{\texorpdfstring{getSystems()}{getSystems()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{a00951}{Arcade\+::\+ECS\+::\+ISystem\+Manager}}$>$ get\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The Graph shared lib main entry point to get systems. 
+
+\begin{DoxyReturn}{Returns}
+A unique\+\_\+ptr on ISystem\+Manager instance
+\end{DoxyReturn}
+All graph shared lib must have this function \mbox{\Hypertarget{a00011_a19760a91ea6abfcf31fb434c6a121162}\label{a00011_a19760a91ea6abfcf31fb434c6a121162}} 
+\index{Api.hpp@{Api.hpp}!getType@{getType}}
+\index{getType@{getType}!Api.hpp@{Api.hpp}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}} get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The Shared lib entry point to get lib type. 
+
+\begin{DoxyReturn}{Returns}
+Lib\+Type enum
+\end{DoxyReturn}
+All shared lib must have this function 

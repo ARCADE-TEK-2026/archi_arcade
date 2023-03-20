@@ -1,0 +1,95 @@
+\hypertarget{a00951}{}\doxysection{Arcade\+::ECS\+::ISystem\+Manager Class Reference}
+\label{a00951}\index{Arcade::ECS::ISystemManager@{Arcade::ECS::ISystemManager}}
+
+
+{\ttfamily \#include $<$ISystem\+Manager.\+hpp$>$}
+
+
+
+Collaboration diagram for Arcade\+::ECS\+::ISystem\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{a00949}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{a00951_a60867e72f13bcb4b9b58046c58adb0f5}{$\sim$\+ISystem\+Manager}} ()=default
+\item 
+virtual void \mbox{\hyperlink{a00951_a70c01e9c68714f136fe9be0905a1c34f}{add\+System}} (const std\+::string \&name, \mbox{\hyperlink{a00947}{Arcade\+::\+ECS\+::\+ISystem}} $\ast$system)=0
+\begin{DoxyCompactList}\small\item\em Add a system to the system manager. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00951_a1b1050fb958386f47e312c8c62bf2802}{remove\+System}} (const std\+::string \&name)=0
+\begin{DoxyCompactList}\small\item\em Remove a system from the system manager. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00951_a0731598c67b1485074352be703abdb59}{update}} (std\+::size\+\_\+t delta\+Time, \mbox{\hyperlink{a00919}{Arcade\+::\+ECS\+::\+IEntity\+Manager}} \&entity\+Manager, \mbox{\hyperlink{a00923}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&event\+Manager)=0
+\begin{DoxyCompactList}\small\item\em Update all systems of the system manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00951_a60867e72f13bcb4b9b58046c58adb0f5}\label{a00951_a60867e72f13bcb4b9b58046c58adb0f5}} 
+\index{Arcade::ECS::ISystemManager@{Arcade::ECS::ISystemManager}!````~ISystemManager@{$\sim$ISystemManager}}
+\index{````~ISystemManager@{$\sim$ISystemManager}!Arcade::ECS::ISystemManager@{Arcade::ECS::ISystemManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ISystemManager()}{~ISystemManager()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+ECS\+::\+ISystem\+Manager\+::$\sim$\+ISystem\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00951_a70c01e9c68714f136fe9be0905a1c34f}\label{a00951_a70c01e9c68714f136fe9be0905a1c34f}} 
+\index{Arcade::ECS::ISystemManager@{Arcade::ECS::ISystemManager}!addSystem@{addSystem}}
+\index{addSystem@{addSystem}!Arcade::ECS::ISystemManager@{Arcade::ECS::ISystemManager}}
+\doxysubsubsection{\texorpdfstring{addSystem()}{addSystem()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+ISystem\+Manager\+::add\+System (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{a00947}{Arcade\+::\+ECS\+::\+ISystem}} $\ast$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add a system to the system manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the system \\
+\hline
+{\em system} & The system to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00951_a1b1050fb958386f47e312c8c62bf2802}\label{a00951_a1b1050fb958386f47e312c8c62bf2802}} 
+\index{Arcade::ECS::ISystemManager@{Arcade::ECS::ISystemManager}!removeSystem@{removeSystem}}
+\index{removeSystem@{removeSystem}!Arcade::ECS::ISystemManager@{Arcade::ECS::ISystemManager}}
+\doxysubsubsection{\texorpdfstring{removeSystem()}{removeSystem()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+ISystem\+Manager\+::remove\+System (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove a system from the system manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the system to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00951_a0731598c67b1485074352be703abdb59}\label{a00951_a0731598c67b1485074352be703abdb59}} 
+\index{Arcade::ECS::ISystemManager@{Arcade::ECS::ISystemManager}!update@{update}}
+\index{update@{update}!Arcade::ECS::ISystemManager@{Arcade::ECS::ISystemManager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+ISystem\+Manager\+::update (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{delta\+Time,  }\item[{\mbox{\hyperlink{a00919}{Arcade\+::\+ECS\+::\+IEntity\+Manager}} \&}]{entity\+Manager,  }\item[{\mbox{\hyperlink{a00923}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&}]{event\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update all systems of the system manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The time since the last update \\
+\hline
+{\em entity\+Manager} & The list of entities \\
+\hline
+{\em event\+Manager} & The list of events \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{a00056}{ISystem\+Manager.\+hpp}}\end{DoxyCompactItemize}

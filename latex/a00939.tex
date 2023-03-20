@@ -1,0 +1,97 @@
+\hypertarget{a00939}{}\doxysection{Arcade\+::Game\+::IScene\+Manager Class Reference}
+\label{a00939}\index{Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}}
+
+
+Scene manager interface.  
+
+
+
+
+{\ttfamily \#include $<$IScene\+Manager.\+hpp$>$}
+
+
+
+Collaboration diagram for Arcade\+::Game\+::IScene\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{a00937}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{a00939_a851f556ff0ab66ff377bcba8b34a5a9f}{$\sim$\+IScene\+Manager}} ()=default
+\item 
+virtual void \mbox{\hyperlink{a00939_a896913596057a8c4e5dbdd72093a730b}{register\+Scene}} (const std\+::string \&scene\+Name, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00935}{IScene}} $>$ scene)=0
+\begin{DoxyCompactList}\small\item\em Add a scene to the scene manager. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00935}{IScene}} $>$ \& \mbox{\hyperlink{a00939_ae9e4d02109ca0b23f12ad6f1b2966d36}{get\+Current\+Scene}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the current active scene. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00939_a847f3b7edc12ba7d66f303ca7996a0b7}{change\+Scene}} (const std\+::string \&scene\+Name)=0
+\begin{DoxyCompactList}\small\item\em Change the current active scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Scene manager interface. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00939_a851f556ff0ab66ff377bcba8b34a5a9f}\label{a00939_a851f556ff0ab66ff377bcba8b34a5a9f}} 
+\index{Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}!````~ISceneManager@{$\sim$ISceneManager}}
+\index{````~ISceneManager@{$\sim$ISceneManager}!Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ISceneManager()}{~ISceneManager()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+Game\+::\+IScene\+Manager\+::$\sim$\+IScene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00939_a847f3b7edc12ba7d66f303ca7996a0b7}\label{a00939_a847f3b7edc12ba7d66f303ca7996a0b7}} 
+\index{Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}!changeScene@{changeScene}}
+\index{changeScene@{changeScene}!Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}}
+\doxysubsubsection{\texorpdfstring{changeScene()}{changeScene()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Game\+::\+IScene\+Manager\+::change\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Change the current active scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & The name of the scene to change to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00939_ae9e4d02109ca0b23f12ad6f1b2966d36}\label{a00939_ae9e4d02109ca0b23f12ad6f1b2966d36}} 
+\index{Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}!getCurrentScene@{getCurrentScene}}
+\index{getCurrentScene@{getCurrentScene}!Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentScene()}{getCurrentScene()}}
+{\footnotesize\ttfamily virtual std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{a00935}{IScene}}$>$\& Arcade\+::\+Game\+::\+IScene\+Manager\+::get\+Current\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the current active scene. 
+
+\begin{DoxyReturn}{Returns}
+The current active scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00939_a896913596057a8c4e5dbdd72093a730b}\label{a00939_a896913596057a8c4e5dbdd72093a730b}} 
+\index{Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}!registerScene@{registerScene}}
+\index{registerScene@{registerScene}!Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}}
+\doxysubsubsection{\texorpdfstring{registerScene()}{registerScene()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Game\+::\+IScene\+Manager\+::register\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00935}{IScene}} $>$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add a scene to the scene manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & The name of the scene \\
+\hline
+{\em scene} & The scene to add \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{a00047}{IScene\+Manager.\+hpp}}\end{DoxyCompactItemize}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/IEntityManager.hpp Source File</title>
+<title>Architecture Arcade: include/IDisplayModule.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,51 +67,45 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">IEntityManager.hpp</div>  </div>
+<div class="title">IDisplayModule.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00026.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2023</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Visual Studio Live Share (Workspace)</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Archi Arcade Promo 2026 Toulouse</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** IEntityManager</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** DisplayModule that let systems get this interface as parameter</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00023.html">IEntity.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00054.html">Arcade</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">namespace </span>ECS {</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00906.html">   18</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00906.html">IEntityManager</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00906.html#ac73d41d0058aa9c36115abfa9b8daa61">   20</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00906.html#ac73d41d0058aa9c36115abfa9b8daa61">~IEntityManager</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00906.html#a863a130b3211829514e28cb11c8b397e">   27</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00902.html">IEntity</a> &amp;<a class="code" href="a00906.html#a863a130b3211829514e28cb11c8b397e">createEntity</a>() = 0;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> std::vector&lt;std::shared_ptr&lt;IEntity&gt;&gt; &amp;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="a00906.html#a3e71da94c3897512ff8dd4ac946ed4be">   34</a></span>&#160;                <a class="code" href="a00906.html#a3e71da94c3897512ff8dd4ac946ed4be">getEntities</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keyword">virtual</span> std::unique_ptr&lt;std::vector&lt;std::shared_ptr&lt;IEntity&gt;&gt;&gt;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00906.html#a8838321771a4c664f711661435bbf170">   44</a></span>&#160;                <a class="code" href="a00906.html#a8838321771a4c664f711661435bbf170">getEntitiesByComponentType</a>(CompType comp) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00906.html#ab5ac03ceb0c63e3a9c0c1996ac6a1e4c">   50</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00906.html#ab5ac03ceb0c63e3a9c0c1996ac6a1e4c">removeEntity</a>(std::unique_ptr&lt;IEntity&gt;) = 0;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="a00906.html#a6542722832aa9bd45b62b92d5c35201e">   54</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00906.html#a6542722832aa9bd45b62b92d5c35201e">removeAllEntities</a>() = 0;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        };</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    } <span class="comment">// namespace ECS</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// namespace Arcade</span></div>
-<div class="ttc" id="aa00023_html"><div class="ttname"><a href="a00023.html">IEntity.hpp</a></div></div>
-<div class="ttc" id="aa00054_html"><div class="ttname"><a href="a00054.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
-<div class="ttc" id="aa00902_html"><div class="ttname"><a href="a00902.html">Arcade::ECS::IEntity</a></div><div class="ttdoc">The IEntity interface.</div><div class="ttdef"><b>Definition:</b> IEntity.hpp:22</div></div>
-<div class="ttc" id="aa00906_html"><div class="ttname"><a href="a00906.html">Arcade::ECS::IEntityManager</a></div><div class="ttdoc">Manage the creation of entities and their access.</div><div class="ttdef"><b>Definition:</b> IEntityManager.hpp:18</div></div>
-<div class="ttc" id="aa00906_html_a3e71da94c3897512ff8dd4ac946ed4be"><div class="ttname"><a href="a00906.html#a3e71da94c3897512ff8dd4ac946ed4be">Arcade::ECS::IEntityManager::getEntities</a></div><div class="ttdeci">virtual const std::vector&lt; std::shared_ptr&lt; IEntity &gt; &gt; &amp; getEntities() const =0</div><div class="ttdoc">Get all entities created by this manager.</div></div>
-<div class="ttc" id="aa00906_html_a6542722832aa9bd45b62b92d5c35201e"><div class="ttname"><a href="a00906.html#a6542722832aa9bd45b62b92d5c35201e">Arcade::ECS::IEntityManager::removeAllEntities</a></div><div class="ttdeci">virtual void removeAllEntities()=0</div><div class="ttdoc">Remove all entities from the manager.</div></div>
-<div class="ttc" id="aa00906_html_a863a130b3211829514e28cb11c8b397e"><div class="ttname"><a href="a00906.html#a863a130b3211829514e28cb11c8b397e">Arcade::ECS::IEntityManager::createEntity</a></div><div class="ttdeci">virtual IEntity &amp; createEntity()=0</div><div class="ttdoc">Add an entity to the manager.</div></div>
-<div class="ttc" id="aa00906_html_a8838321771a4c664f711661435bbf170"><div class="ttname"><a href="a00906.html#a8838321771a4c664f711661435bbf170">Arcade::ECS::IEntityManager::getEntitiesByComponentType</a></div><div class="ttdeci">virtual std::unique_ptr&lt; std::vector&lt; std::shared_ptr&lt; IEntity &gt; &gt; &gt; getEntitiesByComponentType(CompType comp) const =0</div><div class="ttdoc">Get all entities created by this manager that have at least one component of type CompType.</div></div>
-<div class="ttc" id="aa00906_html_ab5ac03ceb0c63e3a9c0c1996ac6a1e4c"><div class="ttname"><a href="a00906.html#ab5ac03ceb0c63e3a9c0c1996ac6a1e4c">Arcade::ECS::IEntityManager::removeEntity</a></div><div class="ttdeci">virtual void removeEntity(std::unique_ptr&lt; IEntity &gt;)=0</div><div class="ttdoc">Remove an entity from the manager.</div></div>
-<div class="ttc" id="aa00906_html_ac73d41d0058aa9c36115abfa9b8daa61"><div class="ttname"><a href="a00906.html#ac73d41d0058aa9c36115abfa9b8daa61">Arcade::ECS::IEntityManager::~IEntityManager</a></div><div class="ttdeci">virtual ~IEntityManager()=default</div></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00056.html">ISystemManager.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00063.html">Arcade</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">namespace </span>Core {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00911.html">   19</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00911.html">IDisplayModule</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00911.html#ab0dca340871523283d3f52af4053032a">   21</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00911.html#ab0dca340871523283d3f52af4053032a">~IDisplayModule</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00911.html#ad8b1ef123e3cfa811d043a1e5e287175">   29</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00951.html">ECS::ISystemManager</a> &amp;<a class="code" href="a00911.html#ad8b1ef123e3cfa811d043a1e5e287175">getSystemManager</a>() = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00911.html#aeec7f6b8d343e6825ee75c5c3c3e2225">   40</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00911.html#aeec7f6b8d343e6825ee75c5c3c3e2225">changeGaphicLib</a>(</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keyword">const</span> std::string &amp;libGraphicName) = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00911.html#ac404cd7f958e1601997128d688c41881">   52</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00911.html#ac404cd7f958e1601997128d688c41881">changeGaphicLib</a>() = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    } <span class="comment">// namespace Core</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// namespace Arcade</span></div>
+<div class="ttc" id="aa00056_html"><div class="ttname"><a href="a00056.html">ISystemManager.hpp</a></div></div>
+<div class="ttc" id="aa00063_html"><div class="ttname"><a href="a00063.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
+<div class="ttc" id="aa00911_html"><div class="ttname"><a href="a00911.html">Arcade::Core::IDisplayModule</a></div><div class="ttdoc">The IDisplayModule interface.</div><div class="ttdef"><b>Definition:</b> IDisplayModule.hpp:19</div></div>
+<div class="ttc" id="aa00911_html_ab0dca340871523283d3f52af4053032a"><div class="ttname"><a href="a00911.html#ab0dca340871523283d3f52af4053032a">Arcade::Core::IDisplayModule::~IDisplayModule</a></div><div class="ttdeci">virtual ~IDisplayModule()=default</div></div>
+<div class="ttc" id="aa00911_html_ac404cd7f958e1601997128d688c41881"><div class="ttname"><a href="a00911.html#ac404cd7f958e1601997128d688c41881">Arcade::Core::IDisplayModule::changeGaphicLib</a></div><div class="ttdeci">virtual bool changeGaphicLib()=0</div><div class="ttdoc">Change the current active graphical library to the next one.</div></div>
+<div class="ttc" id="aa00911_html_ad8b1ef123e3cfa811d043a1e5e287175"><div class="ttname"><a href="a00911.html#ad8b1ef123e3cfa811d043a1e5e287175">Arcade::Core::IDisplayModule::getSystemManager</a></div><div class="ttdeci">virtual ECS::ISystemManager &amp; getSystemManager()=0</div><div class="ttdoc">Get the system manager of the current graphical library.</div></div>
+<div class="ttc" id="aa00911_html_aeec7f6b8d343e6825ee75c5c3c3e2225"><div class="ttname"><a href="a00911.html#aeec7f6b8d343e6825ee75c5c3c3e2225">Arcade::Core::IDisplayModule::changeGaphicLib</a></div><div class="ttdeci">virtual bool changeGaphicLib(const std::string &amp;libGraphicName)=0</div><div class="ttdoc">Change the current active graphical library to the given graphical library.</div></div>
+<div class="ttc" id="aa00951_html"><div class="ttname"><a href="a00951.html">Arcade::ECS::ISystemManager</a></div><div class="ttdef"><b>Definition:</b> ISystemManager.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 18:37:25 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 20 2023 23:03:54 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

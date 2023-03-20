@@ -1,0 +1,83 @@
+\hypertarget{a00927}{}\doxysection{Arcade\+::Core\+::IGame\+Module Class Reference}
+\label{a00927}\index{Arcade::Core::IGameModule@{Arcade::Core::IGameModule}}
+
+
+The \mbox{\hyperlink{a00927}{IGame\+Module}} interface.  
+
+
+
+
+{\ttfamily \#include $<$IGame\+Module.\+hpp$>$}
+
+
+
+Collaboration diagram for Arcade\+::Core\+::IGame\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{a00925}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{a00927_ab7d3e415dd4afd3ca2238a61c8e5ea02}{$\sim$\+IGame\+Module}} ()=default
+\item 
+virtual \mbox{\hyperlink{a00939}{Arcade\+::\+Game\+::\+IScene\+Manager}} \& \mbox{\hyperlink{a00927_ad56aa31cb0ebb77aa965d74660d37811}{get\+Scene\+Manager}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the scene manager of the current game. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{a00927_a6edd79d041e5bac4b35a3476017d00f2}{change\+Game}} (const std\+::string \&game\+Name)=0
+\begin{DoxyCompactList}\small\item\em Change the current active game to the given game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{a00927}{IGame\+Module}} interface. 
+
+The \mbox{\hyperlink{a00927}{IGame\+Module}} is passed to all systems 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00927_ab7d3e415dd4afd3ca2238a61c8e5ea02}\label{a00927_ab7d3e415dd4afd3ca2238a61c8e5ea02}} 
+\index{Arcade::Core::IGameModule@{Arcade::Core::IGameModule}!````~IGameModule@{$\sim$IGameModule}}
+\index{````~IGameModule@{$\sim$IGameModule}!Arcade::Core::IGameModule@{Arcade::Core::IGameModule}}
+\doxysubsubsection{\texorpdfstring{$\sim$IGameModule()}{~IGameModule()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+Core\+::\+IGame\+Module\+::$\sim$\+IGame\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00927_a6edd79d041e5bac4b35a3476017d00f2}\label{a00927_a6edd79d041e5bac4b35a3476017d00f2}} 
+\index{Arcade::Core::IGameModule@{Arcade::Core::IGameModule}!changeGame@{changeGame}}
+\index{changeGame@{changeGame}!Arcade::Core::IGameModule@{Arcade::Core::IGameModule}}
+\doxysubsubsection{\texorpdfstring{changeGame()}{changeGame()}}
+{\footnotesize\ttfamily virtual bool Arcade\+::\+Core\+::\+IGame\+Module\+::change\+Game (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{game\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Change the current active game to the given game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & The game filename to change to (without .so)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the game was changed, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00927_ad56aa31cb0ebb77aa965d74660d37811}\label{a00927_ad56aa31cb0ebb77aa965d74660d37811}} 
+\index{Arcade::Core::IGameModule@{Arcade::Core::IGameModule}!getSceneManager@{getSceneManager}}
+\index{getSceneManager@{getSceneManager}!Arcade::Core::IGameModule@{Arcade::Core::IGameModule}}
+\doxysubsubsection{\texorpdfstring{getSceneManager()}{getSceneManager()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{a00939}{Arcade\+::\+Game\+::\+IScene\+Manager}}\& Arcade\+::\+Core\+::\+IGame\+Module\+::get\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the scene manager of the current game. 
+
+\begin{DoxyReturn}{Returns}
+The scene manager of the current game 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{a00038}{IGame\+Module.\+hpp}}\end{DoxyCompactItemize}

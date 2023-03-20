@@ -1,4 +1,3 @@
-<map id="Arcade::Graph::IMusic" name="Arcade::Graph::IMusic">
-<area shape="rect" id="node1" title="The IMusic class." alt="" coords="7,204,210,531"/>
-<area shape="rect" id="node2" href="$a00894.html" title=" " alt="" coords="5,5,212,156"/>
+<map id="Arcade::ECS::IEventManager" name="Arcade::ECS::IEventManager">
+<area shape="rect" id="node1" title="The IEventManager interface." alt="" coords="5,5,312,317"/>
 </map>

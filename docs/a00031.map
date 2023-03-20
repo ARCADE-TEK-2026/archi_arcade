@@ -1,7 +1,10 @@
-<map id="include/IEventManager.hpp" name="include/IEventManager.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="207,5,406,32"/>
-<area shape="rect" id="node2" href="$a00032.html" title=" " alt="" coords="5,155,184,181"/>
-<area shape="rect" id="node3" href="$a00035.html" title=" " alt="" coords="208,155,352,181"/>
-<area shape="rect" id="node4" href="$a00044.html" title=" " alt="" coords="172,80,327,107"/>
-<area shape="rect" id="node5" href="$a00047.html" title=" " alt="" coords="376,155,587,181"/>
+<map id="include/IEntity.hpp" name="include/IEntity.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="141,5,283,32"/>
+<area shape="rect" id="node2" href="$a00032.html" title=" " alt="" coords="113,80,311,107"/>
+<area shape="rect" id="node3" href="$a00044.html" title=" " alt="" coords="72,229,216,256"/>
+<area shape="rect" id="node7" href="$a00056.html" title=" " alt="" coords="179,155,389,181"/>
+<area shape="rect" id="node4" href="$a00047.html" title=" " alt="" coords="44,304,244,331"/>
+<area shape="rect" id="node5" href="$a00011.html" title=" " alt="" coords="221,379,344,405"/>
+<area shape="rect" id="node6" href="$a00038.html" title=" " alt="" coords="5,379,197,405"/>
+<area shape="rect" id="node8" href="$a00026.html" title=" " alt="" coords="320,229,523,256"/>
 </map>

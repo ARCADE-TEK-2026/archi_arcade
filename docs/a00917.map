@@ -1,4 +1,3 @@
-<map id="Arcade::Graph::IGraph" name="Arcade::Graph::IGraph">
-<area shape="rect" id="node1" title="The IGraph interface." alt="" coords="61,204,272,384"/>
-<area shape="rect" id="node2" href="$a00930.html" title="The ISystem interface." alt="" coords="5,5,328,156"/>
+<map id="Arcade::ECS::IEntityManager" name="Arcade::ECS::IEntityManager">
+<area shape="rect" id="node1" title="Manage the creation of entities and their access." alt="" coords="5,5,268,303"/>
 </map>
