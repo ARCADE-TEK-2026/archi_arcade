@@ -18,7 +18,6 @@ namespace Arcade {
          * In constructor, Core must call checkName and checkLibType in each
          * shared lib in lib/ and build a map of type/name
          */
-        enum class libType { GRAPH, GAME };
         class ICore {
             public:
                 virtual ~ICore() = default;
