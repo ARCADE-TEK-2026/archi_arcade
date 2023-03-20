@@ -10,6 +10,12 @@
 #include "ISystemManager.hpp"
 #include "ISceneManager.hpp"
 
+#ifdef _WIN32
+#define EXPORT __declspec(dllexport)
+#else
+#define EXPORT
+#endif
+
 enum class libType { GRAPH, GAME };
 
 extern "C"
