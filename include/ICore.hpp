@@ -14,13 +14,11 @@ namespace Arcade {
          *
          * The ICore class is the main class of the project.
          * It has a ISystemManager and a IEventManager
-         * 
-         * In constructor, Core must call checkName and checkLibType in each shared lib in lib/ and build a map of type/name
+         *
+         * In constructor, Core must call checkName and checkLibType in each
+         * shared lib in lib/ and build a map of type/name
          */
-        enum class libType {
-            GRAPH,
-            GAME
-        };
+        enum class libType { GRAPH, GAME };
         class ICore {
             public:
                 virtual ~ICore() = default;
