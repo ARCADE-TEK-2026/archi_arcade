@@ -18,7 +18,6 @@ namespace Arcade {
         class ICore {
             public:
                 virtual ~ICore() = default;
-                virtual void update() = 0;
         };
     } // namespace Core
 } // namespace Arcade
