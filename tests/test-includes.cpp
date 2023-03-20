@@ -13,6 +13,7 @@
 #include "../include/ISystem.hpp"
 #include "../include/ISystemManager.hpp"
 #include "../include/IText.hpp"
+#include "../include/Api.hpp"
 
 int main(int ac, char **av)
 {
