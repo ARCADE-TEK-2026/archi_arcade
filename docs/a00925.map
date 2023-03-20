@@ -1,3 +1,3 @@
-<map id="Arcade::Core::IGameModule" name="Arcade::Core::IGameModule">
-<area shape="rect" id="node1" title="The IGameModule interface." alt="" coords="5,5,300,156"/>
+<map id="Arcade::Game::IScene" name="Arcade::Game::IScene">
+<area shape="rect" id="node1" title="The IScene interface." alt="" coords="5,5,232,171"/>
 </map>

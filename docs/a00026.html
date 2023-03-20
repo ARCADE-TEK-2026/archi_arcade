@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/IDisplayModule.hpp File Reference</title>
+<title>Architecture Arcade: include/Arcade/ECS/IComponent.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4dfcdfd0f1f897aca432108a19677038.html">Arcade</a></li><li class="navelem"><a class="el" href="dir_f33418ab7739082dfc9cb8d90b753f42.html">ECS</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,29 +70,36 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">IDisplayModule.hpp File Reference</div>  </div>
+<div class="title">IComponent.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00056_source.html">ISystemManager.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for IDisplayModule.hpp:</div>
+Include dependency graph for IComponent.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00027.png" border="0" usemap="#ainclude_2IDisplayModule_8hpp" alt=""/></div>
-<map name="ainclude_2IDisplayModule_8hpp" id="ainclude_2IDisplayModule_8hpp">
-<area shape="rect" title=" " alt="" coords="465,5,667,32"/>
-<area shape="rect" href="a00056.html" title=" " alt="" coords="487,80,645,107"/>
-<area shape="rect" title=" " alt="" coords="458,379,517,405"/>
-<area shape="rect" title=" " alt="" coords="5,304,68,331"/>
-<area shape="rect" href="a00032.html" title=" " alt="" coords="292,155,440,181"/>
-<area shape="rect" href="a00035.html" title=" " alt="" coords="598,229,745,256"/>
-<area shape="rect" href="a00053.html" title=" " alt="" coords="515,155,617,181"/>
-<area shape="rect" title=" " alt="" coords="93,304,170,331"/>
-<area shape="rect" href="a00029.html" title=" " alt="" coords="265,229,355,256"/>
-<area shape="rect" title=" " alt="" coords="525,304,596,331"/>
-<area shape="rect" title=" " alt="" coords="399,304,450,331"/>
-<area shape="rect" href="a00020.html" title=" " alt="" coords="245,304,375,331"/>
-<area shape="rect" title=" " alt="" coords="829,304,892,331"/>
-<area shape="rect" href="a00014.html" title=" " alt="" coords="671,304,805,331"/>
+<div class="center"><img src="a00027.png" border="0" usemap="#ainclude_2Arcade_2ECS_2IComponent_8hpp" alt=""/></div>
+<map name="ainclude_2Arcade_2ECS_2IComponent_8hpp" id="ainclude_2Arcade_2ECS_2IComponent_8hpp">
+<area shape="rect" title=" " alt="" coords="5,5,152,47"/>
+<area shape="rect" title=" " alt="" coords="49,95,108,121"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00028.png" border="0" usemap="#ainclude_2Arcade_2ECS_2IComponent_8hppdep" alt=""/></div>
+<map name="ainclude_2Arcade_2ECS_2IComponent_8hppdep" id="ainclude_2Arcade_2ECS_2IComponent_8hppdep">
+<area shape="rect" title=" " alt="" coords="401,5,548,47"/>
+<area shape="rect" href="a00029.html" title=" " alt="" coords="131,95,277,136"/>
+<area shape="rect" href="a00053.html" title=" " alt="" coords="302,95,463,136"/>
+<area shape="rect" href="a00056.html" title=" " alt="" coords="487,95,649,136"/>
+<area shape="rect" href="a00059.html" title=" " alt="" coords="673,95,834,136"/>
+<area shape="rect" href="a00032.html" title=" " alt="" coords="128,184,280,225"/>
+<area shape="rect" href="a00041.html" title=" " alt="" coords="64,273,227,315"/>
+<area shape="rect" href="a00044.html" title=" " alt="" coords="215,363,377,404"/>
+<area shape="rect" href="a00011.html" title=" " alt="" coords="5,549,128,575"/>
+<area shape="rect" href="a00020.html" title=" " alt="" coords="36,363,191,404"/>
+<area shape="rect" href="a00047.html" title=" " alt="" coords="181,452,342,493"/>
+<area shape="rect" href="a00023.html" title=" " alt="" coords="185,541,337,583"/>
 </map>
 </div>
 </div>
@@ -100,21 +107,20 @@ Include dependency graph for IDisplayModule.hpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00911.html">Arcade::Core::IDisplayModule</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="a00911.html" title="The IDisplayModule interface.">IDisplayModule</a> interface.  <a href="a00911.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00903.html">Arcade::ECS::IComponent</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:a00063"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html">Arcade</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00066"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00066.html">Arcade::Core</a></td></tr>
+<tr class="memitem:a00065"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html">Arcade::ECS</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 23:03:54 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 20 2023 23:21:45 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

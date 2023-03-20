@@ -1,3 +1,4 @@
-<map id="Arcade::ECS::ISystemManager" name="Arcade::ECS::ISystemManager">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,265,244"/>
+<map id="Arcade::Graph::ISprite" name="Arcade::Graph::ISprite">
+<area shape="rect" id="node1" title="The ISprite class." alt="" coords="5,204,215,633"/>
+<area shape="rect" id="node2" href="$a00903.html" title=" " alt="" coords="7,5,213,156"/>
 </map>

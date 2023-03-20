@@ -1,3 +1,4 @@
-<map id="Arcade::Game::IScene" name="Arcade::Game::IScene">
-<area shape="rect" id="node1" title="The IScene interface." alt="" coords="5,5,232,171"/>
+<map id="Arcade::Graph::Color" name="Arcade::Graph::Color">
+<area shape="rect" id="node1" title=" " alt="" coords="5,189,161,267"/>
+<area shape="rect" id="node2" title=" " alt="" coords="64,5,103,83"/>
 </map>

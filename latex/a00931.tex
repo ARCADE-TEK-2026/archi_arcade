@@ -1,174 +1,97 @@
-\hypertarget{a00931}{}\doxysection{Arcade\+::Graph\+::IMusic Class Reference}
-\label{a00931}\index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}
+\hypertarget{a00931}{}\doxysection{Arcade\+::Game\+::IScene\+Manager Class Reference}
+\label{a00931}\index{Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}}
 
 
-The \mbox{\hyperlink{a00931}{IMusic}} class.  
-
-
-
-
-{\ttfamily \#include $<$IMusic.\+hpp$>$}
+Scene manager interface.  
 
 
 
-Inheritance diagram for Arcade\+::Graph\+::IMusic\+:
+
+{\ttfamily \#include $<$IScene\+Manager.\+hpp$>$}
+
+
+
+Collaboration diagram for Arcade\+::Game\+::IScene\+Manager\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=235pt]{a00930}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Arcade\+::Graph\+::IMusic\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=235pt]{a00929}
+\includegraphics[width=277pt]{a00929}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{a00931_ac90ebfffe808f4c35424623464bd9a13}{$\sim$\+IMusic}} ()=default
+virtual \mbox{\hyperlink{a00931_a851f556ff0ab66ff377bcba8b34a5a9f}{$\sim$\+IScene\+Manager}} ()=default
 \item 
-virtual const std\+::string \& \mbox{\hyperlink{a00931_abfa0eaa2fd543a008e6de16014306046}{get\+Id}} () const override=0
-\begin{DoxyCompactList}\small\item\em Get the id of the component. \end{DoxyCompactList}\item 
-virtual const std\+::string \& \mbox{\hyperlink{a00931_ac76f4292f434d8014275e33d8fb1a6a8}{get\+Path}} () const =0
-\begin{DoxyCompactList}\small\item\em Get the path of the Music. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{a00931_a0b3bd03acd44024955d9f1deb2e59068}{get\+Loop}} () const =0
-\begin{DoxyCompactList}\small\item\em Check if the music is looping. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00931_a999ca7b3b535bd2c2ee5e63b50c7c9ba}{set\+Loop}} (bool loop)=0
-\begin{DoxyCompactList}\small\item\em Set the loop data. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{a00931_a8057d8416ffac81d0baae609d2ac0c09}{get\+Is\+Playing}} () const =0
-\begin{DoxyCompactList}\small\item\em Check if the music is currently played. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00931_a86834eb38ff839874a2f5f33fa4989fb}{set\+Is\+Playing}} (bool is\+Playing)=0
-\begin{DoxyCompactList}\small\item\em Set the Is\+Playing data. \end{DoxyCompactList}\item 
-virtual float \mbox{\hyperlink{a00931_a53ae25638120337856a5862661ef9084}{get\+Volume}} () const =0
-\begin{DoxyCompactList}\small\item\em Get the Volume data. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00931_a4905117cdb647cc715dfd8751c6f247e}{set\+Volume}} (float volume)=0
-\begin{DoxyCompactList}\small\item\em Get the Volume data. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
+virtual void \mbox{\hyperlink{a00931_a896913596057a8c4e5dbdd72093a730b}{register\+Scene}} (const std\+::string \&scene\+Name, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00927}{IScene}} $>$ scene)=0
+\begin{DoxyCompactList}\small\item\em Add a scene to the scene manager. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00927}{IScene}} $>$ \& \mbox{\hyperlink{a00931_ae9e4d02109ca0b23f12ad6f1b2966d36}{get\+Current\+Scene}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the current active scene. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00931_a847f3b7edc12ba7d66f303ca7996a0b7}{change\+Scene}} (const std\+::string \&scene\+Name)=0
+\begin{DoxyCompactList}\small\item\em Change the current active scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-The \mbox{\hyperlink{a00931}{IMusic}} class. 
-
-The \mbox{\hyperlink{a00931}{IMusic}} class is the class where you can manipulate Sounds and Musics. ATTENTION\+: This class is of Comp\+Type MUSIC 
+Scene manager interface. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{a00931_ac90ebfffe808f4c35424623464bd9a13}\label{a00931_ac90ebfffe808f4c35424623464bd9a13}} 
-\index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!````~IMusic@{$\sim$IMusic}}
-\index{````~IMusic@{$\sim$IMusic}!Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}
-\doxysubsubsection{\texorpdfstring{$\sim$IMusic()}{~IMusic()}}
-{\footnotesize\ttfamily virtual Arcade\+::\+Graph\+::\+IMusic\+::$\sim$\+IMusic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+\mbox{\Hypertarget{a00931_a851f556ff0ab66ff377bcba8b34a5a9f}\label{a00931_a851f556ff0ab66ff377bcba8b34a5a9f}} 
+\index{Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}!````~ISceneManager@{$\sim$ISceneManager}}
+\index{````~ISceneManager@{$\sim$ISceneManager}!Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ISceneManager()}{~ISceneManager()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+Game\+::\+IScene\+Manager\+::$\sim$\+IScene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{a00931_abfa0eaa2fd543a008e6de16014306046}\label{a00931_abfa0eaa2fd543a008e6de16014306046}} 
-\index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!getId@{getId}}
-\index{getId@{getId}!Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}
-\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
-{\footnotesize\ttfamily virtual const std\+::string\& Arcade\+::\+Graph\+::\+IMusic\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{a00931_a847f3b7edc12ba7d66f303ca7996a0b7}\label{a00931_a847f3b7edc12ba7d66f303ca7996a0b7}} 
+\index{Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}!changeScene@{changeScene}}
+\index{changeScene@{changeScene}!Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}}
+\doxysubsubsection{\texorpdfstring{changeScene()}{changeScene()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Game\+::\+IScene\+Manager\+::change\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Get the id of the component. 
-
-\begin{DoxyReturn}{Returns}
-The component id 
-\end{DoxyReturn}
+Change the current active scene. 
 
 
-Implements \mbox{\hyperlink{a00903_aaceb3652b7065250f57375469c7e0898}{Arcade\+::\+ECS\+::\+IComponent}}.
-
-\mbox{\Hypertarget{a00931_a8057d8416ffac81d0baae609d2ac0c09}\label{a00931_a8057d8416ffac81d0baae609d2ac0c09}} 
-\index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!getIsPlaying@{getIsPlaying}}
-\index{getIsPlaying@{getIsPlaying}!Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}
-\doxysubsubsection{\texorpdfstring{getIsPlaying()}{getIsPlaying()}}
-{\footnotesize\ttfamily virtual bool Arcade\+::\+Graph\+::\+IMusic\+::get\+Is\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & The name of the scene to change to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00931_ae9e4d02109ca0b23f12ad6f1b2966d36}\label{a00931_ae9e4d02109ca0b23f12ad6f1b2966d36}} 
+\index{Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}!getCurrentScene@{getCurrentScene}}
+\index{getCurrentScene@{getCurrentScene}!Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentScene()}{getCurrentScene()}}
+{\footnotesize\ttfamily virtual std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{a00927}{IScene}}$>$\& Arcade\+::\+Game\+::\+IScene\+Manager\+::get\+Current\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Check if the music is currently played. 
+Get the current active scene. 
 
 \begin{DoxyReturn}{Returns}
-The Is\+Playing data. 
+The current active scene 
 \end{DoxyReturn}
-\mbox{\Hypertarget{a00931_a0b3bd03acd44024955d9f1deb2e59068}\label{a00931_a0b3bd03acd44024955d9f1deb2e59068}} 
-\index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!getLoop@{getLoop}}
-\index{getLoop@{getLoop}!Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}
-\doxysubsubsection{\texorpdfstring{getLoop()}{getLoop()}}
-{\footnotesize\ttfamily virtual bool Arcade\+::\+Graph\+::\+IMusic\+::get\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{a00931_a896913596057a8c4e5dbdd72093a730b}\label{a00931_a896913596057a8c4e5dbdd72093a730b}} 
+\index{Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}!registerScene@{registerScene}}
+\index{registerScene@{registerScene}!Arcade::Game::ISceneManager@{Arcade::Game::ISceneManager}}
+\doxysubsubsection{\texorpdfstring{registerScene()}{registerScene()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Game\+::\+IScene\+Manager\+::register\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00927}{IScene}} $>$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Check if the music is looping. 
-
-\begin{DoxyReturn}{Returns}
-The Loop data. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{a00931_ac76f4292f434d8014275e33d8fb1a6a8}\label{a00931_ac76f4292f434d8014275e33d8fb1a6a8}} 
-\index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!getPath@{getPath}}
-\index{getPath@{getPath}!Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}
-\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
-{\footnotesize\ttfamily virtual const std\+::string\& Arcade\+::\+Graph\+::\+IMusic\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+Add a scene to the scene manager. 
 
 
-
-Get the path of the Music. 
-
-\begin{DoxyReturn}{Returns}
-The path of the Music. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{a00931_a53ae25638120337856a5862661ef9084}\label{a00931_a53ae25638120337856a5862661ef9084}} 
-\index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!getVolume@{getVolume}}
-\index{getVolume@{getVolume}!Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}
-\doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}}
-{\footnotesize\ttfamily virtual float Arcade\+::\+Graph\+::\+IMusic\+::get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get the Volume data. 
-
-\begin{DoxyReturn}{Returns}
-The Volume data. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{a00931_a86834eb38ff839874a2f5f33fa4989fb}\label{a00931_a86834eb38ff839874a2f5f33fa4989fb}} 
-\index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!setIsPlaying@{setIsPlaying}}
-\index{setIsPlaying@{setIsPlaying}!Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}
-\doxysubsubsection{\texorpdfstring{setIsPlaying()}{setIsPlaying()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IMusic\+::set\+Is\+Playing (\begin{DoxyParamCaption}\item[{bool}]{is\+Playing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Set the Is\+Playing data. 
-
-\mbox{\Hypertarget{a00931_a999ca7b3b535bd2c2ee5e63b50c7c9ba}\label{a00931_a999ca7b3b535bd2c2ee5e63b50c7c9ba}} 
-\index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!setLoop@{setLoop}}
-\index{setLoop@{setLoop}!Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}
-\doxysubsubsection{\texorpdfstring{setLoop()}{setLoop()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IMusic\+::set\+Loop (\begin{DoxyParamCaption}\item[{bool}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Set the loop data. 
-
-\mbox{\Hypertarget{a00931_a4905117cdb647cc715dfd8751c6f247e}\label{a00931_a4905117cdb647cc715dfd8751c6f247e}} 
-\index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!setVolume@{setVolume}}
-\index{setVolume@{setVolume}!Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}
-\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IMusic\+::set\+Volume (\begin{DoxyParamCaption}\item[{float}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get the Volume data. 
-
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & The name of the scene \\
+\hline
+{\em scene} & The scene to add \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/\mbox{\hyperlink{a00041}{IMusic.\+hpp}}\end{DoxyCompactItemize}
+include/\+Arcade/\+Game/\mbox{\hyperlink{a00047}{IScene\+Manager.\+hpp}}\end{DoxyCompactItemize}

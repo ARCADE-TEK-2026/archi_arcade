@@ -1,100 +1,125 @@
-\hypertarget{a00911}{}\doxysection{Arcade\+::Core\+::IDisplay\+Module Class Reference}
-\label{a00911}\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
+\hypertarget{a00911}{}\doxysection{Arcade\+::ECS\+::IEntity\+Manager Class Reference}
+\label{a00911}\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
 
 
-The \mbox{\hyperlink{a00911}{IDisplay\+Module}} interface.  
-
-
-
-
-{\ttfamily \#include $<$IDisplay\+Module.\+hpp$>$}
+Manage the creation of entities and their access.  
 
 
 
-Collaboration diagram for Arcade\+::Core\+::IDisplay\+Module\+:
+
+{\ttfamily \#include $<$IEntity\+Manager.\+hpp$>$}
+
+
+
+Collaboration diagram for Arcade\+::ECS\+::IEntity\+Manager\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=253pt]{a00909}
+\includegraphics[width=277pt]{a00909}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{a00911_ab0dca340871523283d3f52af4053032a}{$\sim$\+IDisplay\+Module}} ()=default
+virtual \mbox{\hyperlink{a00911_ac73d41d0058aa9c36115abfa9b8daa61}{$\sim$\+IEntity\+Manager}} ()=default
 \item 
-virtual \mbox{\hyperlink{a00951}{ECS\+::\+ISystem\+Manager}} \& \mbox{\hyperlink{a00911_ad8b1ef123e3cfa811d043a1e5e287175}{get\+System\+Manager}} ()=0
-\begin{DoxyCompactList}\small\item\em Get the system manager of the current graphical library. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{a00911_aeec7f6b8d343e6825ee75c5c3c3e2225}{change\+Gaphic\+Lib}} (const std\+::string \&lib\+Graphic\+Name)=0
-\begin{DoxyCompactList}\small\item\em Change the current active graphical library to the given graphical library. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{a00911_ac404cd7f958e1601997128d688c41881}{change\+Gaphic\+Lib}} ()=0
-\begin{DoxyCompactList}\small\item\em Change the current active graphical library to the next one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual \mbox{\hyperlink{a00907}{IEntity}} \& \mbox{\hyperlink{a00911_a863a130b3211829514e28cb11c8b397e}{create\+Entity}} ()=0
+\begin{DoxyCompactList}\small\item\em Add an entity to the manager. \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00907}{IEntity}} $>$ $>$ \& \mbox{\hyperlink{a00911_a3e71da94c3897512ff8dd4ac946ed4be}{get\+Entities}} () const =0
+\begin{DoxyCompactList}\small\item\em Get all entities created by this manager. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00907}{IEntity}} $>$ $>$ $>$ \mbox{\hyperlink{a00911_a8838321771a4c664f711661435bbf170}{get\+Entities\+By\+Component\+Type}} (Comp\+Type comp) const =0
+\begin{DoxyCompactList}\small\item\em Get all entities created by this manager that have at least one component of type Comp\+Type. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00911_a4ecaa745c626995efdab0859d9d02e4d}{remove\+Entity}} (std\+::string id)=0
+\begin{DoxyCompactList}\small\item\em Remove an entity from the manager. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00911_a6542722832aa9bd45b62b92d5c35201e}{remove\+All\+Entities}} ()=0
+\begin{DoxyCompactList}\small\item\em Remove all entities from the manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-The \mbox{\hyperlink{a00911}{IDisplay\+Module}} interface. 
-
-The \mbox{\hyperlink{a00911}{IDisplay\+Module}} is passed to all systems 
+Manage the creation of entities and their access. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{a00911_ab0dca340871523283d3f52af4053032a}\label{a00911_ab0dca340871523283d3f52af4053032a}} 
-\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!````~IDisplayModule@{$\sim$IDisplayModule}}
-\index{````~IDisplayModule@{$\sim$IDisplayModule}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
-\doxysubsubsection{\texorpdfstring{$\sim$IDisplayModule()}{~IDisplayModule()}}
-{\footnotesize\ttfamily virtual Arcade\+::\+Core\+::\+IDisplay\+Module\+::$\sim$\+IDisplay\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+\mbox{\Hypertarget{a00911_ac73d41d0058aa9c36115abfa9b8daa61}\label{a00911_ac73d41d0058aa9c36115abfa9b8daa61}} 
+\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!````~IEntityManager@{$\sim$IEntityManager}}
+\index{````~IEntityManager@{$\sim$IEntityManager}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$IEntityManager()}{~IEntityManager()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+ECS\+::\+IEntity\+Manager\+::$\sim$\+IEntity\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{a00911_ac404cd7f958e1601997128d688c41881}\label{a00911_ac404cd7f958e1601997128d688c41881}} 
-\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!changeGaphicLib@{changeGaphicLib}}
-\index{changeGaphicLib@{changeGaphicLib}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
-\doxysubsubsection{\texorpdfstring{changeGaphicLib()}{changeGaphicLib()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual bool Arcade\+::\+Core\+::\+IDisplay\+Module\+::change\+Gaphic\+Lib (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{a00911_a863a130b3211829514e28cb11c8b397e}\label{a00911_a863a130b3211829514e28cb11c8b397e}} 
+\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!createEntity@{createEntity}}
+\index{createEntity@{createEntity}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+\doxysubsubsection{\texorpdfstring{createEntity()}{createEntity()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{a00907}{IEntity}}\& Arcade\+::\+ECS\+::\+IEntity\+Manager\+::create\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Change the current active graphical library to the next one. 
-
-(because the epitech subject says we can switch to the next graphical library in the folder of availible graphical library)
+Add an entity to the manager. 
 
 \begin{DoxyReturn}{Returns}
-True if the graphical library was changed, false 
+The entity created 
 \end{DoxyReturn}
-\mbox{\Hypertarget{a00911_aeec7f6b8d343e6825ee75c5c3c3e2225}\label{a00911_aeec7f6b8d343e6825ee75c5c3c3e2225}} 
-\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!changeGaphicLib@{changeGaphicLib}}
-\index{changeGaphicLib@{changeGaphicLib}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
-\doxysubsubsection{\texorpdfstring{changeGaphicLib()}{changeGaphicLib()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual bool Arcade\+::\+Core\+::\+IDisplay\+Module\+::change\+Gaphic\+Lib (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lib\+Graphic\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{a00911_a3e71da94c3897512ff8dd4ac946ed4be}\label{a00911_a3e71da94c3897512ff8dd4ac946ed4be}} 
+\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!getEntities@{getEntities}}
+\index{getEntities@{getEntities}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+\doxysubsubsection{\texorpdfstring{getEntities()}{getEntities()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00907}{IEntity}}$>$ $>$\& Arcade\+::\+ECS\+::\+IEntity\+Manager\+::get\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Change the current active graphical library to the given graphical library. 
+Get all entities created by this manager. 
+
+\begin{DoxyReturn}{Returns}
+A vector of all entities created by this manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00911_a8838321771a4c664f711661435bbf170}\label{a00911_a8838321771a4c664f711661435bbf170}} 
+\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!getEntitiesByComponentType@{getEntitiesByComponentType}}
+\index{getEntitiesByComponentType@{getEntitiesByComponentType}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+\doxysubsubsection{\texorpdfstring{getEntitiesByComponentType()}{getEntitiesByComponentType()}}
+{\footnotesize\ttfamily virtual std\+::unique\+\_\+ptr$<$std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00907}{IEntity}}$>$ $>$ $>$ Arcade\+::\+ECS\+::\+IEntity\+Manager\+::get\+Entities\+By\+Component\+Type (\begin{DoxyParamCaption}\item[{Comp\+Type}]{comp }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get all entities created by this manager that have at least one component of type Comp\+Type. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em lib\+Graphic\+Name} & The graphical library name (only the libname without .so)\\
+{\em comp} & The component type to check in each entity\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-True if the graphical library was changed, false otherwise 
+The vector 
 \end{DoxyReturn}
-\mbox{\Hypertarget{a00911_ad8b1ef123e3cfa811d043a1e5e287175}\label{a00911_ad8b1ef123e3cfa811d043a1e5e287175}} 
-\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!getSystemManager@{getSystemManager}}
-\index{getSystemManager@{getSystemManager}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
-\doxysubsubsection{\texorpdfstring{getSystemManager()}{getSystemManager()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{a00951}{ECS\+::\+ISystem\+Manager}}\& Arcade\+::\+Core\+::\+IDisplay\+Module\+::get\+System\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{a00911_a6542722832aa9bd45b62b92d5c35201e}\label{a00911_a6542722832aa9bd45b62b92d5c35201e}} 
+\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!removeAllEntities@{removeAllEntities}}
+\index{removeAllEntities@{removeAllEntities}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+\doxysubsubsection{\texorpdfstring{removeAllEntities()}{removeAllEntities()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEntity\+Manager\+::remove\+All\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Get the system manager of the current graphical library. 
+Remove all entities from the manager. 
 
-\begin{DoxyReturn}{Returns}
-The system manager of the current graphical library 
-\end{DoxyReturn}
+\mbox{\Hypertarget{a00911_a4ecaa745c626995efdab0859d9d02e4d}\label{a00911_a4ecaa745c626995efdab0859d9d02e4d}} 
+\index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!removeEntity@{removeEntity}}
+\index{removeEntity@{removeEntity}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
+\doxysubsubsection{\texorpdfstring{removeEntity()}{removeEntity()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEntity\+Manager\+::remove\+Entity (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove an entity from the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The entity id to remove \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/\mbox{\hyperlink{a00026}{IDisplay\+Module.\+hpp}}\end{DoxyCompactItemize}
+include/\+Arcade/\+ECS/\mbox{\hyperlink{a00032}{IEntity\+Manager.\+hpp}}\end{DoxyCompactItemize}

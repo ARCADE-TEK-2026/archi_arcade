@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/ISystem.hpp Source File</title>
+<title>Architecture Arcade: include/Arcade/Graph/IMusic.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,58 +62,64 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4dfcdfd0f1f897aca432108a19677038.html">Arcade</a></li><li class="navelem"><a class="el" href="dir_d77565ea6211f6e1326b4b0870bd965c.html">Graph</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">ISystem.hpp</div>  </div>
+<div class="title">IMusic.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00053.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2023</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Archi Arcade Promo 2026 Toulouse</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** Systems are function that will run in every frame using the `run` method</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** A music child of components that will be understood by the graphic library</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00035.html">IEventManager.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00026.html">IComponent.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00063.html">Arcade</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">namespace </span>Core {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">class </span>IDisplayModule;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">class </span>IGameModule;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    } <span class="comment">// namespace Core</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">namespace </span>ECS {</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00947.html">   25</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00947.html">ISystem</a> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00947.html#a8a8d72403aef61fbc75ead3c3c2fdb3c">   27</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00947.html#a8a8d72403aef61fbc75ead3c3c2fdb3c">~ISystem</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00947.html#ad2d6d8764095c527c7b5d3b5a174132e">   32</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00947.html#ad2d6d8764095c527c7b5d3b5a174132e">run</a>(std::size_t deltaTime,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <a class="code" href="a00923.html">Arcade::ECS::IEventManager</a> &amp;,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <a class="code" href="a00911.html">Arcade::Core::IDisplayModule</a> &amp;displayModule,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <a class="code" href="a00927.html">Arcade::Core::IGameModule</a> &amp;gameModule) = 0;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00947.html#ace6ce33909ed5250419f94c931a0cd6a">   39</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00947.html#ace6ce33909ed5250419f94c931a0cd6a">close</a>() = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    } <span class="comment">// namespace ECS</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace Arcade</span></div>
-<div class="ttc" id="aa00035_html"><div class="ttname"><a href="a00035.html">IEventManager.hpp</a></div></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">namespace </span>Graph {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00947.html">   22</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00947.html">IMusic</a> : <a class="code" href="a00903.html">Arcade::ECS::IComponent</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00947.html#ac90ebfffe808f4c35424623464bd9a13">   24</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00947.html#ac90ebfffe808f4c35424623464bd9a13">~IMusic</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00947.html#abfa0eaa2fd543a008e6de16014306046">   26</a></span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> std::string &amp;<a class="code" href="a00947.html#abfa0eaa2fd543a008e6de16014306046">getId</a>() <span class="keyword">const override</span> = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00947.html#ac76f4292f434d8014275e33d8fb1a6a8">   33</a></span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> std::string &amp;<a class="code" href="a00947.html#ac76f4292f434d8014275e33d8fb1a6a8">getPath</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00947.html#a0b3bd03acd44024955d9f1deb2e59068">   40</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00947.html#a0b3bd03acd44024955d9f1deb2e59068">getLoop</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00947.html#a999ca7b3b535bd2c2ee5e63b50c7c9ba">   44</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00947.html#a999ca7b3b535bd2c2ee5e63b50c7c9ba">setLoop</a>(<span class="keywordtype">bool</span> loop) = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00947.html#a8057d8416ffac81d0baae609d2ac0c09">   51</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00947.html#a8057d8416ffac81d0baae609d2ac0c09">getIsPlaying</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="a00947.html#a86834eb38ff839874a2f5f33fa4989fb">   55</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00947.html#a86834eb38ff839874a2f5f33fa4989fb">setIsPlaying</a>(<span class="keywordtype">bool</span> isPlaying) = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00947.html#a53ae25638120337856a5862661ef9084">   62</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="a00947.html#a53ae25638120337856a5862661ef9084">getVolume</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00947.html#a4905117cdb647cc715dfd8751c6f247e">   66</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00947.html#a4905117cdb647cc715dfd8751c6f247e">setVolume</a>(<span class="keywordtype">float</span> volume) = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        };</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    } <span class="comment">// namespace Graph</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// namespace Arcade</span></div>
+<div class="ttc" id="aa00026_html"><div class="ttname"><a href="a00026.html">IComponent.hpp</a></div></div>
 <div class="ttc" id="aa00063_html"><div class="ttname"><a href="a00063.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
-<div class="ttc" id="aa00911_html"><div class="ttname"><a href="a00911.html">Arcade::Core::IDisplayModule</a></div><div class="ttdoc">The IDisplayModule interface.</div><div class="ttdef"><b>Definition:</b> IDisplayModule.hpp:19</div></div>
-<div class="ttc" id="aa00923_html"><div class="ttname"><a href="a00923.html">Arcade::ECS::IEventManager</a></div><div class="ttdoc">The IEventManager interface.</div><div class="ttdef"><b>Definition:</b> IEventManager.hpp:92</div></div>
-<div class="ttc" id="aa00927_html"><div class="ttname"><a href="a00927.html">Arcade::Core::IGameModule</a></div><div class="ttdoc">The IGameModule interface.</div><div class="ttdef"><b>Definition:</b> IGameModule.hpp:21</div></div>
-<div class="ttc" id="aa00947_html"><div class="ttname"><a href="a00947.html">Arcade::ECS::ISystem</a></div><div class="ttdoc">The ISystem interface.</div><div class="ttdef"><b>Definition:</b> ISystem.hpp:25</div></div>
-<div class="ttc" id="aa00947_html_a8a8d72403aef61fbc75ead3c3c2fdb3c"><div class="ttname"><a href="a00947.html#a8a8d72403aef61fbc75ead3c3c2fdb3c">Arcade::ECS::ISystem::~ISystem</a></div><div class="ttdeci">virtual ~ISystem()=default</div></div>
-<div class="ttc" id="aa00947_html_ace6ce33909ed5250419f94c931a0cd6a"><div class="ttname"><a href="a00947.html#ace6ce33909ed5250419f94c931a0cd6a">Arcade::ECS::ISystem::close</a></div><div class="ttdeci">virtual void close()=0</div><div class="ttdoc">Close the system implementation.</div></div>
-<div class="ttc" id="aa00947_html_ad2d6d8764095c527c7b5d3b5a174132e"><div class="ttname"><a href="a00947.html#ad2d6d8764095c527c7b5d3b5a174132e">Arcade::ECS::ISystem::run</a></div><div class="ttdeci">virtual void run(std::size_t deltaTime, Arcade::ECS::IEventManager &amp;, Arcade::Core::IDisplayModule &amp;displayModule, Arcade::Core::IGameModule &amp;gameModule)=0</div><div class="ttdoc">Run the system implementation.</div></div>
+<div class="ttc" id="aa00903_html"><div class="ttname"><a href="a00903.html">Arcade::ECS::IComponent</a></div><div class="ttdef"><b>Definition:</b> IComponent.hpp:21</div></div>
+<div class="ttc" id="aa00947_html"><div class="ttname"><a href="a00947.html">Arcade::Graph::IMusic</a></div><div class="ttdoc">The IMusic class.</div><div class="ttdef"><b>Definition:</b> IMusic.hpp:22</div></div>
+<div class="ttc" id="aa00947_html_a0b3bd03acd44024955d9f1deb2e59068"><div class="ttname"><a href="a00947.html#a0b3bd03acd44024955d9f1deb2e59068">Arcade::Graph::IMusic::getLoop</a></div><div class="ttdeci">virtual bool getLoop() const =0</div><div class="ttdoc">Check if the music is looping.</div></div>
+<div class="ttc" id="aa00947_html_a4905117cdb647cc715dfd8751c6f247e"><div class="ttname"><a href="a00947.html#a4905117cdb647cc715dfd8751c6f247e">Arcade::Graph::IMusic::setVolume</a></div><div class="ttdeci">virtual void setVolume(float volume)=0</div><div class="ttdoc">Get the Volume data.</div></div>
+<div class="ttc" id="aa00947_html_a53ae25638120337856a5862661ef9084"><div class="ttname"><a href="a00947.html#a53ae25638120337856a5862661ef9084">Arcade::Graph::IMusic::getVolume</a></div><div class="ttdeci">virtual float getVolume() const =0</div><div class="ttdoc">Get the Volume data.</div></div>
+<div class="ttc" id="aa00947_html_a8057d8416ffac81d0baae609d2ac0c09"><div class="ttname"><a href="a00947.html#a8057d8416ffac81d0baae609d2ac0c09">Arcade::Graph::IMusic::getIsPlaying</a></div><div class="ttdeci">virtual bool getIsPlaying() const =0</div><div class="ttdoc">Check if the music is currently played.</div></div>
+<div class="ttc" id="aa00947_html_a86834eb38ff839874a2f5f33fa4989fb"><div class="ttname"><a href="a00947.html#a86834eb38ff839874a2f5f33fa4989fb">Arcade::Graph::IMusic::setIsPlaying</a></div><div class="ttdeci">virtual void setIsPlaying(bool isPlaying)=0</div><div class="ttdoc">Set the IsPlaying data.</div></div>
+<div class="ttc" id="aa00947_html_a999ca7b3b535bd2c2ee5e63b50c7c9ba"><div class="ttname"><a href="a00947.html#a999ca7b3b535bd2c2ee5e63b50c7c9ba">Arcade::Graph::IMusic::setLoop</a></div><div class="ttdeci">virtual void setLoop(bool loop)=0</div><div class="ttdoc">Set the loop data.</div></div>
+<div class="ttc" id="aa00947_html_abfa0eaa2fd543a008e6de16014306046"><div class="ttname"><a href="a00947.html#abfa0eaa2fd543a008e6de16014306046">Arcade::Graph::IMusic::getId</a></div><div class="ttdeci">virtual const std::string &amp; getId() const override=0</div><div class="ttdoc">Get the id of the component.</div></div>
+<div class="ttc" id="aa00947_html_ac76f4292f434d8014275e33d8fb1a6a8"><div class="ttname"><a href="a00947.html#ac76f4292f434d8014275e33d8fb1a6a8">Arcade::Graph::IMusic::getPath</a></div><div class="ttdeci">virtual const std::string &amp; getPath() const =0</div><div class="ttdoc">Get the path of the Music.</div></div>
+<div class="ttc" id="aa00947_html_ac90ebfffe808f4c35424623464bd9a13"><div class="ttname"><a href="a00947.html#ac90ebfffe808f4c35424623464bd9a13">Arcade::Graph::IMusic::~IMusic</a></div><div class="ttdeci">virtual ~IMusic()=default</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 23:03:54 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 20 2023 23:21:45 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

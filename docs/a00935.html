@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: Arcade::Game::IScene Class Reference</title>
+<title>Architecture Arcade: Arcade::Graph::Color Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,197 +62,104 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00063.html">Arcade</a></li><li class="navelem"><a class="el" href="a00067.html">Game</a></li><li class="navelem"><a class="el" href="a00935.html">IScene</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00063.html">Arcade</a></li><li class="navelem"><a class="el" href="a00067.html">Graph</a></li><li class="navelem"><a class="el" href="a00935.html">Color</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a00932.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Arcade::Game::IScene Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Arcade::Graph::Color Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="a00935.html" title="The IScene interface.">IScene</a> interface.  
- <a href="a00935.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00044_source.html">IScene.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00050_source.html">GraphStruct.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for Arcade::Game::IScene:</div>
+Collaboration diagram for Arcade::Graph::Color:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00933.png" border="0" usemap="#aArcade_1_1Game_1_1IScene_coll__map" alt="Collaboration graph"/></div>
-<map name="aArcade_1_1Game_1_1IScene_coll__map" id="aArcade_1_1Game_1_1IScene_coll__map">
-<area shape="rect" title="The IScene interface." alt="" coords="5,5,232,171"/>
+<div class="center"><img src="a00933.png" border="0" usemap="#aArcade_1_1Graph_1_1Color_coll__map" alt="Collaboration graph"/></div>
+<map name="aArcade_1_1Graph_1_1Color_coll__map" id="aArcade_1_1Graph_1_1Color_coll__map">
+<area shape="rect" title=" " alt="" coords="5,189,161,267"/>
+<area shape="rect" title=" " alt="" coords="64,5,103,83"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ad3a1a2300d0d4d4d68b42658eb141bee"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00935.html#ad3a1a2300d0d4d4d68b42658eb141bee">~IScene</a> ()=default</td></tr>
-<tr class="separator:ad3a1a2300d0d4d4d68b42658eb141bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f08d928f1aca809677a28d54b43ce34"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00935.html#a2f08d928f1aca809677a28d54b43ce34">init</a> ()</td></tr>
-<tr class="memdesc:a2f08d928f1aca809677a28d54b43ce34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the scene.  <a href="a00935.html#a2f08d928f1aca809677a28d54b43ce34">More...</a><br /></td></tr>
-<tr class="separator:a2f08d928f1aca809677a28d54b43ce34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69a2bdefaef1a022a895ae7e713a6227"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00935.html#a69a2bdefaef1a022a895ae7e713a6227">close</a> ()</td></tr>
-<tr class="memdesc:a69a2bdefaef1a022a895ae7e713a6227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the scene.  <a href="a00935.html#a69a2bdefaef1a022a895ae7e713a6227">More...</a><br /></td></tr>
-<tr class="separator:a69a2bdefaef1a022a895ae7e713a6227"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52ea9a265a25ea1fa9b6fb99613482f7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00919.html">ECS::IEntityManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00935.html#a52ea9a265a25ea1fa9b6fb99613482f7">getEntityManager</a> ()=0</td></tr>
-<tr class="memdesc:a52ea9a265a25ea1fa9b6fb99613482f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the entity manager of the scene.  <a href="a00935.html#a52ea9a265a25ea1fa9b6fb99613482f7">More...</a><br /></td></tr>
-<tr class="separator:a52ea9a265a25ea1fa9b6fb99613482f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22aba455b5280ad115ba7583f6563715"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00951.html">ECS::ISystemManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00935.html#a22aba455b5280ad115ba7583f6563715">getSystemManager</a> ()=0</td></tr>
-<tr class="memdesc:a22aba455b5280ad115ba7583f6563715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system manager of the scene.  <a href="a00935.html#a22aba455b5280ad115ba7583f6563715">More...</a><br /></td></tr>
-<tr class="separator:a22aba455b5280ad115ba7583f6563715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ab01b045ccd33e59b8f914e849176fdc5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00935.html#ab01b045ccd33e59b8f914e849176fdc5">r</a></td></tr>
+<tr class="separator:ab01b045ccd33e59b8f914e849176fdc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb17ee7862551379901ccc6ef7533d19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00935.html#abb17ee7862551379901ccc6ef7533d19">g</a></td></tr>
+<tr class="separator:abb17ee7862551379901ccc6ef7533d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad27410851699269c3d51fdeb6bd0f25d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00935.html#ad27410851699269c3d51fdeb6bd0f25d">b</a></td></tr>
+<tr class="separator:ad27410851699269c3d51fdeb6bd0f25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755b9912b9694d73fac90b28425ffb6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00935.html#a755b9912b9694d73fac90b28425ffb6d">a</a></td></tr>
+<tr class="separator:a755b9912b9694d73fac90b28425ffb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="a00935.html" title="The IScene interface.">IScene</a> interface. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad3a1a2300d0d4d4d68b42658eb141bee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3a1a2300d0d4d4d68b42658eb141bee">&#9670;&nbsp;</a></span>~IScene()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a755b9912b9694d73fac90b28425ffb6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a755b9912b9694d73fac90b28425ffb6d">&#9670;&nbsp;</a></span>a</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Arcade::Game::IScene::~IScene </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">int Arcade::Graph::Color::a</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a69a2bdefaef1a022a895ae7e713a6227"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69a2bdefaef1a022a895ae7e713a6227">&#9670;&nbsp;</a></span>close()</h2>
+<a id="ad27410851699269c3d51fdeb6bd0f25d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad27410851699269c3d51fdeb6bd0f25d">&#9670;&nbsp;</a></span>b</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Arcade::Game::IScene::close </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">int Arcade::Graph::Color::b</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Close the scene. </p>
-<p>It exists because we don't want to destroy all the scene (we might still need it, but we want to dealocate some resource maybe ?) </p>
-
 </div>
 </div>
-<a id="a52ea9a265a25ea1fa9b6fb99613482f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52ea9a265a25ea1fa9b6fb99613482f7">&#9670;&nbsp;</a></span>getEntityManager()</h2>
+<a id="abb17ee7862551379901ccc6ef7533d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb17ee7862551379901ccc6ef7533d19">&#9670;&nbsp;</a></span>g</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a00919.html">ECS::IEntityManager</a>&amp; Arcade::Game::IScene::getEntityManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">int Arcade::Graph::Color::g</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Get the entity manager of the scene. </p>
-<dl class="section return"><dt>Returns</dt><dd>The entity manager of the scene </dd></dl>
-
 </div>
 </div>
-<a id="a22aba455b5280ad115ba7583f6563715"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22aba455b5280ad115ba7583f6563715">&#9670;&nbsp;</a></span>getSystemManager()</h2>
+<a id="ab01b045ccd33e59b8f914e849176fdc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab01b045ccd33e59b8f914e849176fdc5">&#9670;&nbsp;</a></span>r</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a00951.html">ECS::ISystemManager</a>&amp; Arcade::Game::IScene::getSystemManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">int Arcade::Graph::Color::r</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Get the system manager of the scene. </p>
-<dl class="section return"><dt>Returns</dt><dd>The system manager of the scene </dd></dl>
-
 </div>
 </div>
-<a id="a2f08d928f1aca809677a28d54b43ce34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f08d928f1aca809677a28d54b43ce34">&#9670;&nbsp;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool Arcade::Game::IScene::init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create the scene. </p>
-<p>It exists because we don't want to create all entities/component at startup time but when the scene is activated</p>
-<dl class="section return"><dt>Returns</dt><dd>True if the scene was created, false otherwise </dd></dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="a00044_source.html">IScene.hpp</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>include/Arcade/Graph/<a class="el" href="a00050_source.html">GraphStruct.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 23:03:54 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 20 2023 23:21:45 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

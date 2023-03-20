@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: Arcade::Core::ICore Class Reference</title>
+<title>Architecture Arcade: Arcade::ECS::IEntity Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00063.html">Arcade</a></li><li class="navelem"><a class="el" href="a00066.html">Core</a></li><li class="navelem"><a class="el" href="a00907.html">ICore</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00063.html">Arcade</a></li><li class="navelem"><a class="el" href="a00065.html">ECS</a></li><li class="navelem"><a class="el" href="a00907.html">IEntity</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,35 +70,51 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a00904.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Arcade::Core::ICore Class Reference</div>  </div>
+<div class="title">Arcade::ECS::IEntity Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="a00907.html" title="The ICore class.">ICore</a> class.  
+<p>The <a class="el" href="a00907.html" title="The IEntity interface.">IEntity</a> interface.  
  <a href="a00907.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00023_source.html">ICore.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00029_source.html">IEntity.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for Arcade::Core::ICore:</div>
+Collaboration diagram for Arcade::ECS::IEntity:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00905.png" border="0" usemap="#aArcade_1_1Core_1_1ICore_coll__map" alt="Collaboration graph"/></div>
-<map name="aArcade_1_1Core_1_1ICore_coll__map" id="aArcade_1_1Core_1_1ICore_coll__map">
-<area shape="rect" title="The ICore class." alt="" coords="5,5,200,83"/>
+<div class="center"><img src="a00905.png" border="0" usemap="#aArcade_1_1ECS_1_1IEntity_coll__map" alt="Collaboration graph"/></div>
+<map name="aArcade_1_1ECS_1_1IEntity_coll__map" id="aArcade_1_1ECS_1_1IEntity_coll__map">
+<area shape="rect" title="The IEntity interface." alt="" coords="5,5,316,361"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9394e43e057f68367f2647738f596ccc"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00907.html#a9394e43e057f68367f2647738f596ccc">~ICore</a> ()=default</td></tr>
-<tr class="separator:a9394e43e057f68367f2647738f596ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2112acabd726dc9377fc267d71286381"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00907.html#a2112acabd726dc9377fc267d71286381">~IEntity</a> ()=default</td></tr>
+<tr class="separator:a2112acabd726dc9377fc267d71286381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19dbef678c86a5dad566644f38de569d"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00907.html#a19dbef678c86a5dad566644f38de569d">getId</a> () const =0</td></tr>
+<tr class="memdesc:a19dbef678c86a5dad566644f38de569d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the entity id.  <a href="a00907.html#a19dbef678c86a5dad566644f38de569d">More...</a><br /></td></tr>
+<tr class="separator:a19dbef678c86a5dad566644f38de569d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe017d8bfbffd06d120834d6e8c8b59"><td class="memItemLeft" align="right" valign="top">virtual const std::map&lt; CompType, std::vector&lt; std::unique_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt; &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00907.html#a8fe017d8bfbffd06d120834d6e8c8b59">getComponents</a> ()=0</td></tr>
+<tr class="memdesc:a8fe017d8bfbffd06d120834d6e8c8b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all components.  <a href="a00907.html#a8fe017d8bfbffd06d120834d6e8c8b59">More...</a><br /></td></tr>
+<tr class="separator:a8fe017d8bfbffd06d120834d6e8c8b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d82ca07e4ab56b1d57ca03b9f8ae36"><td class="memItemLeft" align="right" valign="top">virtual const std::vector&lt; std::unique_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00907.html#a60d82ca07e4ab56b1d57ca03b9f8ae36">getComponents</a> (CompType type)=0</td></tr>
+<tr class="memdesc:a60d82ca07e4ab56b1d57ca03b9f8ae36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all components of type <code>compType</code>  <a href="a00907.html#a60d82ca07e4ab56b1d57ca03b9f8ae36">More...</a><br /></td></tr>
+<tr class="separator:a60d82ca07e4ab56b1d57ca03b9f8ae36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6688b4c25087bf34d88c0485c4ccfe1f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00907.html#a6688b4c25087bf34d88c0485c4ccfe1f">addComponent</a> (std::unique_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt; component)=0</td></tr>
+<tr class="memdesc:a6688b4c25087bf34d88c0485c4ccfe1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a component.  <a href="a00907.html#a6688b4c25087bf34d88c0485c4ccfe1f">More...</a><br /></td></tr>
+<tr class="separator:a6688b4c25087bf34d88c0485c4ccfe1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b0864f76fa9ad515adb5514bc8e43f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00907.html#ae1b0864f76fa9ad515adb5514bc8e43f">removeComponent</a> (std::string id)=0</td></tr>
+<tr class="memdesc:ae1b0864f76fa9ad515adb5514bc8e43f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a component.  <a href="a00907.html#ae1b0864f76fa9ad515adb5514bc8e43f">More...</a><br /></td></tr>
+<tr class="separator:ae1b0864f76fa9ad515adb5514bc8e43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abddaeef7a17806c4502c61952e3b4ee2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00907.html#abddaeef7a17806c4502c61952e3b4ee2">removeComponents</a> (CompType type)=0</td></tr>
+<tr class="memdesc:abddaeef7a17806c4502c61952e3b4ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all components of type <code>CompType</code>  <a href="a00907.html#abddaeef7a17806c4502c61952e3b4ee2">More...</a><br /></td></tr>
+<tr class="separator:abddaeef7a17806c4502c61952e3b4ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="a00907.html" title="The ICore class.">ICore</a> class. </p>
-<p>The <a class="el" href="a00907.html" title="The ICore class.">ICore</a> class is the main class of the project. It has a ISystemManager and a IEventManager</p>
-<p>The core need to create a vector of availible graphical library and game library using the default entryPoint defined in <code><a class="el" href="a00011.html">Api.hpp</a></code> (getType, getName) This will be passed to <a class="el" href="a00927.html" title="The IGameModule interface.">IGameModule</a> and <a class="el" href="a00911.html" title="The IDisplayModule interface.">IDisplayModule</a> as vector of std::string </p>
+<div class="textblock"><p>The <a class="el" href="a00907.html" title="The IEntity interface.">IEntity</a> interface. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9394e43e057f68367f2647738f596ccc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9394e43e057f68367f2647738f596ccc">&#9670;&nbsp;</a></span>~ICore()</h2>
+<a id="a2112acabd726dc9377fc267d71286381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2112acabd726dc9377fc267d71286381">&#9670;&nbsp;</a></span>~IEntity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -107,7 +123,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Arcade::Core::ICore::~ICore </td>
+          <td class="memname">virtual Arcade::ECS::IEntity::~IEntity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -122,13 +138,207 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6688b4c25087bf34d88c0485c4ccfe1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6688b4c25087bf34d88c0485c4ccfe1f">&#9670;&nbsp;</a></span>addComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Arcade::ECS::IEntity::addComponent </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt;&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">component</td><td>The component to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8fe017d8bfbffd06d120834d6e8c8b59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe017d8bfbffd06d120834d6e8c8b59">&#9670;&nbsp;</a></span>getComponents() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::map&lt;CompType, std::vector&lt;std::unique_ptr&lt;<a class="el" href="a00903.html">IComponent</a>&gt; &gt; &gt;&amp; Arcade::ECS::IEntity::getComponents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all components. </p>
+<dl class="section return"><dt>Returns</dt><dd>The list of components </dd></dl>
+
+</div>
+</div>
+<a id="a60d82ca07e4ab56b1d57ca03b9f8ae36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60d82ca07e4ab56b1d57ca03b9f8ae36">&#9670;&nbsp;</a></span>getComponents() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::vector&lt;std::unique_ptr&lt;<a class="el" href="a00903.html">IComponent</a>&gt; &gt;&amp; Arcade::ECS::IEntity::getComponents </td>
+          <td>(</td>
+          <td class="paramtype">CompType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all components of type <code>compType</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of component to get</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list of components filtered </dd></dl>
+
+</div>
+</div>
+<a id="a19dbef678c86a5dad566644f38de569d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19dbef678c86a5dad566644f38de569d">&#9670;&nbsp;</a></span>getId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Arcade::ECS::IEntity::getId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the entity id. </p>
+<dl class="section return"><dt>Returns</dt><dd>The entity id </dd></dl>
+
+</div>
+</div>
+<a id="ae1b0864f76fa9ad515adb5514bc8e43f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b0864f76fa9ad515adb5514bc8e43f">&#9670;&nbsp;</a></span>removeComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Arcade::ECS::IEntity::removeComponent </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove a component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">std::string</td><td>The component id to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abddaeef7a17806c4502c61952e3b4ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abddaeef7a17806c4502c61952e3b4ee2">&#9670;&nbsp;</a></span>removeComponents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Arcade::ECS::IEntity::removeComponents </td>
+          <td>(</td>
+          <td class="paramtype">CompType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove all components of type <code>CompType</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of component to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="a00023_source.html">ICore.hpp</a></li>
+<li>include/Arcade/ECS/<a class="el" href="a00029_source.html">IEntity.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 23:03:54 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 20 2023 23:21:45 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

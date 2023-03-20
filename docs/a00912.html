@@ -62,28 +62,29 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00063.html">Arcade</a></li><li class="navelem"><a class="el" href="a00065.html">ECS</a></li><li class="navelem"><a class="el" href="a00915.html">IEntity</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00063.html">Arcade</a></li><li class="navelem"><a class="el" href="a00065.html">ECS</a></li><li class="navelem"><a class="el" href="a00915.html">IEventManager</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Arcade::ECS::IEntity Member List</div>  </div>
+<div class="title">Arcade::ECS::IEventManager Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00915.html">Arcade::ECS::IEntity</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00915.html">Arcade::ECS::IEventManager</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00915.html#a6688b4c25087bf34d88c0485c4ccfe1f">addComponent</a>(std::unique_ptr&lt; IComponent &gt; component)=0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEntity</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00915.html#a8fe017d8bfbffd06d120834d6e8c8b59">getComponents</a>()=0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEntity</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00915.html#a60d82ca07e4ab56b1d57ca03b9f8ae36">getComponents</a>(CompType type)=0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEntity</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00915.html#a19dbef678c86a5dad566644f38de569d">getId</a>() const =0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEntity</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00915.html#ae1b0864f76fa9ad515adb5514bc8e43f">removeComponent</a>(std::string id)=0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEntity</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00915.html#abddaeef7a17806c4502c61952e3b4ee2">removeComponents</a>(CompType type)=0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEntity</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00915.html#a2112acabd726dc9377fc267d71286381">~IEntity</a>()=default</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEntity</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00915.html#a1a33a449aaf8c3193dd536b6a66f77a6">addEvent</a>(const std::string &amp;event)=0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEventManager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00915.html#a31d98f0497d5712053e1bf53f01325e0">clearEvents</a>()=0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEventManager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00915.html#a44173fcb4d4c5cfc3f672474264ec27b">eventsIsEmpty</a>() const =0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEventManager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00915.html#a6aa99b36ab45651d9eed367671ca3259">getMousePosition</a>() const =0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEventManager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00915.html#a6684b915d085da2ce1d03701caaf5e41">isEventInQueue</a>(const std::string &amp;event) const =0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEventManager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00915.html#a96b27771b7c05b9e2da3cfd5ddc75b35">popEvent</a>()=0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEventManager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00915.html#acb7d32bbeabb07f606f11047022de1b5">setMousePosition</a>(const Arcade::Vector2f &amp;mousePosition)=0</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEventManager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00915.html#a2523607e48ced247a844e53c060fb001">~IEventManager</a>()=default</td><td class="entry"><a class="el" href="a00915.html">Arcade::ECS::IEventManager</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 23:03:54 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 20 2023 23:21:45 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

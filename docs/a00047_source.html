@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/ISceneManager.hpp Source File</title>
+<title>Architecture Arcade: include/Arcade/Game/ISceneManager.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4dfcdfd0f1f897aca432108a19677038.html">Arcade</a></li><li class="navelem"><a class="el" href="dir_2d62a961a5408d569097ae4442906481.html">Game</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,28 +84,28 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00063.html">Arcade</a> {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">namespace </span>Game {</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00939.html">   18</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00939.html">ISceneManager</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00931.html">   18</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00931.html">ISceneManager</a> {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00939.html#a851f556ff0ab66ff377bcba8b34a5a9f">   20</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00939.html#a851f556ff0ab66ff377bcba8b34a5a9f">~ISceneManager</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00931.html#a851f556ff0ab66ff377bcba8b34a5a9f">   20</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00931.html#a851f556ff0ab66ff377bcba8b34a5a9f">~ISceneManager</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00939.html#a896913596057a8c4e5dbdd72093a730b">   28</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00939.html#a896913596057a8c4e5dbdd72093a730b">registerScene</a>(<span class="keyword">const</span> std::string &amp;sceneName,</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00931.html#a896913596057a8c4e5dbdd72093a730b">   28</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00931.html#a896913596057a8c4e5dbdd72093a730b">registerScene</a>(<span class="keyword">const</span> std::string &amp;sceneName,</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                std::unique_ptr&lt;IScene&gt; scene) = 0;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00939.html#ae9e4d02109ca0b23f12ad6f1b2966d36">   35</a></span>&#160;                <span class="keyword">virtual</span> std::unique_ptr&lt;IScene&gt; &amp;<a class="code" href="a00939.html#ae9e4d02109ca0b23f12ad6f1b2966d36">getCurrentScene</a>() = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00939.html#a847f3b7edc12ba7d66f303ca7996a0b7">   41</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00939.html#a847f3b7edc12ba7d66f303ca7996a0b7">changeScene</a>(<span class="keyword">const</span> std::string &amp;sceneName) = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00931.html#ae9e4d02109ca0b23f12ad6f1b2966d36">   35</a></span>&#160;                <span class="keyword">virtual</span> std::unique_ptr&lt;IScene&gt; &amp;<a class="code" href="a00931.html#ae9e4d02109ca0b23f12ad6f1b2966d36">getCurrentScene</a>() = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00931.html#a847f3b7edc12ba7d66f303ca7996a0b7">   41</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00931.html#a847f3b7edc12ba7d66f303ca7996a0b7">changeScene</a>(<span class="keyword">const</span> std::string &amp;sceneName) = 0;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        };</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    } <span class="comment">// namespace Game</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <span class="comment">// namespace Arcade</span></div>
 <div class="ttc" id="aa00044_html"><div class="ttname"><a href="a00044.html">IScene.hpp</a></div></div>
 <div class="ttc" id="aa00063_html"><div class="ttname"><a href="a00063.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
-<div class="ttc" id="aa00939_html"><div class="ttname"><a href="a00939.html">Arcade::Game::ISceneManager</a></div><div class="ttdoc">Scene manager interface.</div><div class="ttdef"><b>Definition:</b> ISceneManager.hpp:18</div></div>
-<div class="ttc" id="aa00939_html_a847f3b7edc12ba7d66f303ca7996a0b7"><div class="ttname"><a href="a00939.html#a847f3b7edc12ba7d66f303ca7996a0b7">Arcade::Game::ISceneManager::changeScene</a></div><div class="ttdeci">virtual void changeScene(const std::string &amp;sceneName)=0</div><div class="ttdoc">Change the current active scene.</div></div>
-<div class="ttc" id="aa00939_html_a851f556ff0ab66ff377bcba8b34a5a9f"><div class="ttname"><a href="a00939.html#a851f556ff0ab66ff377bcba8b34a5a9f">Arcade::Game::ISceneManager::~ISceneManager</a></div><div class="ttdeci">virtual ~ISceneManager()=default</div></div>
-<div class="ttc" id="aa00939_html_a896913596057a8c4e5dbdd72093a730b"><div class="ttname"><a href="a00939.html#a896913596057a8c4e5dbdd72093a730b">Arcade::Game::ISceneManager::registerScene</a></div><div class="ttdeci">virtual void registerScene(const std::string &amp;sceneName, std::unique_ptr&lt; IScene &gt; scene)=0</div><div class="ttdoc">Add a scene to the scene manager.</div></div>
-<div class="ttc" id="aa00939_html_ae9e4d02109ca0b23f12ad6f1b2966d36"><div class="ttname"><a href="a00939.html#ae9e4d02109ca0b23f12ad6f1b2966d36">Arcade::Game::ISceneManager::getCurrentScene</a></div><div class="ttdeci">virtual std::unique_ptr&lt; IScene &gt; &amp; getCurrentScene()=0</div><div class="ttdoc">Get the current active scene.</div></div>
+<div class="ttc" id="aa00931_html"><div class="ttname"><a href="a00931.html">Arcade::Game::ISceneManager</a></div><div class="ttdoc">Scene manager interface.</div><div class="ttdef"><b>Definition:</b> ISceneManager.hpp:18</div></div>
+<div class="ttc" id="aa00931_html_a847f3b7edc12ba7d66f303ca7996a0b7"><div class="ttname"><a href="a00931.html#a847f3b7edc12ba7d66f303ca7996a0b7">Arcade::Game::ISceneManager::changeScene</a></div><div class="ttdeci">virtual void changeScene(const std::string &amp;sceneName)=0</div><div class="ttdoc">Change the current active scene.</div></div>
+<div class="ttc" id="aa00931_html_a851f556ff0ab66ff377bcba8b34a5a9f"><div class="ttname"><a href="a00931.html#a851f556ff0ab66ff377bcba8b34a5a9f">Arcade::Game::ISceneManager::~ISceneManager</a></div><div class="ttdeci">virtual ~ISceneManager()=default</div></div>
+<div class="ttc" id="aa00931_html_a896913596057a8c4e5dbdd72093a730b"><div class="ttname"><a href="a00931.html#a896913596057a8c4e5dbdd72093a730b">Arcade::Game::ISceneManager::registerScene</a></div><div class="ttdeci">virtual void registerScene(const std::string &amp;sceneName, std::unique_ptr&lt; IScene &gt; scene)=0</div><div class="ttdoc">Add a scene to the scene manager.</div></div>
+<div class="ttc" id="aa00931_html_ae9e4d02109ca0b23f12ad6f1b2966d36"><div class="ttname"><a href="a00931.html#ae9e4d02109ca0b23f12ad6f1b2966d36">Arcade::Game::ISceneManager::getCurrentScene</a></div><div class="ttdeci">virtual std::unique_ptr&lt; IScene &gt; &amp; getCurrentScene()=0</div><div class="ttdoc">Get the current active scene.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 23:03:54 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 20 2023 23:21:45 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

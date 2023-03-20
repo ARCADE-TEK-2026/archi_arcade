@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: Arcade::ECS::IEntity Class Reference</title>
+<title>Architecture Arcade: Arcade::ECS::IEventManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00063.html">Arcade</a></li><li class="navelem"><a class="el" href="a00065.html">ECS</a></li><li class="navelem"><a class="el" href="a00915.html">IEntity</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00063.html">Arcade</a></li><li class="navelem"><a class="el" href="a00065.html">ECS</a></li><li class="navelem"><a class="el" href="a00915.html">IEventManager</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,51 +70,55 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a00912.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Arcade::ECS::IEntity Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Arcade::ECS::IEventManager Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="a00915.html" title="The IEntity interface.">IEntity</a> interface.  
+<p>The <a class="el" href="a00915.html" title="The IEventManager interface.">IEventManager</a> interface.  
  <a href="a00915.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00029_source.html">IEntity.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00035_source.html">IEventManager.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for Arcade::ECS::IEntity:</div>
+Collaboration diagram for Arcade::ECS::IEventManager:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00913.png" border="0" usemap="#aArcade_1_1ECS_1_1IEntity_coll__map" alt="Collaboration graph"/></div>
-<map name="aArcade_1_1ECS_1_1IEntity_coll__map" id="aArcade_1_1ECS_1_1IEntity_coll__map">
-<area shape="rect" title="The IEntity interface." alt="" coords="5,5,316,361"/>
+<div class="center"><img src="a00913.png" border="0" usemap="#aArcade_1_1ECS_1_1IEventManager_coll__map" alt="Collaboration graph"/></div>
+<map name="aArcade_1_1ECS_1_1IEventManager_coll__map" id="aArcade_1_1ECS_1_1IEventManager_coll__map">
+<area shape="rect" title="The IEventManager interface." alt="" coords="5,5,312,317"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2112acabd726dc9377fc267d71286381"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a2112acabd726dc9377fc267d71286381">~IEntity</a> ()=default</td></tr>
-<tr class="separator:a2112acabd726dc9377fc267d71286381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19dbef678c86a5dad566644f38de569d"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a19dbef678c86a5dad566644f38de569d">getId</a> () const =0</td></tr>
-<tr class="memdesc:a19dbef678c86a5dad566644f38de569d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the entity id.  <a href="a00915.html#a19dbef678c86a5dad566644f38de569d">More...</a><br /></td></tr>
-<tr class="separator:a19dbef678c86a5dad566644f38de569d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fe017d8bfbffd06d120834d6e8c8b59"><td class="memItemLeft" align="right" valign="top">virtual const std::map&lt; CompType, std::vector&lt; std::unique_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt; &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a8fe017d8bfbffd06d120834d6e8c8b59">getComponents</a> ()=0</td></tr>
-<tr class="memdesc:a8fe017d8bfbffd06d120834d6e8c8b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all components.  <a href="a00915.html#a8fe017d8bfbffd06d120834d6e8c8b59">More...</a><br /></td></tr>
-<tr class="separator:a8fe017d8bfbffd06d120834d6e8c8b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d82ca07e4ab56b1d57ca03b9f8ae36"><td class="memItemLeft" align="right" valign="top">virtual const std::vector&lt; std::unique_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a60d82ca07e4ab56b1d57ca03b9f8ae36">getComponents</a> (CompType type)=0</td></tr>
-<tr class="memdesc:a60d82ca07e4ab56b1d57ca03b9f8ae36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all components of type <code>compType</code>  <a href="a00915.html#a60d82ca07e4ab56b1d57ca03b9f8ae36">More...</a><br /></td></tr>
-<tr class="separator:a60d82ca07e4ab56b1d57ca03b9f8ae36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6688b4c25087bf34d88c0485c4ccfe1f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a6688b4c25087bf34d88c0485c4ccfe1f">addComponent</a> (std::unique_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt; component)=0</td></tr>
-<tr class="memdesc:a6688b4c25087bf34d88c0485c4ccfe1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a component.  <a href="a00915.html#a6688b4c25087bf34d88c0485c4ccfe1f">More...</a><br /></td></tr>
-<tr class="separator:a6688b4c25087bf34d88c0485c4ccfe1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1b0864f76fa9ad515adb5514bc8e43f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#ae1b0864f76fa9ad515adb5514bc8e43f">removeComponent</a> (std::string id)=0</td></tr>
-<tr class="memdesc:ae1b0864f76fa9ad515adb5514bc8e43f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a component.  <a href="a00915.html#ae1b0864f76fa9ad515adb5514bc8e43f">More...</a><br /></td></tr>
-<tr class="separator:ae1b0864f76fa9ad515adb5514bc8e43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abddaeef7a17806c4502c61952e3b4ee2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#abddaeef7a17806c4502c61952e3b4ee2">removeComponents</a> (CompType type)=0</td></tr>
-<tr class="memdesc:abddaeef7a17806c4502c61952e3b4ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all components of type <code>CompType</code>  <a href="a00915.html#abddaeef7a17806c4502c61952e3b4ee2">More...</a><br /></td></tr>
-<tr class="separator:abddaeef7a17806c4502c61952e3b4ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2523607e48ced247a844e53c060fb001"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a2523607e48ced247a844e53c060fb001">~IEventManager</a> ()=default</td></tr>
+<tr class="separator:a2523607e48ced247a844e53c060fb001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44173fcb4d4c5cfc3f672474264ec27b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a44173fcb4d4c5cfc3f672474264ec27b">eventsIsEmpty</a> () const =0</td></tr>
+<tr class="memdesc:a44173fcb4d4c5cfc3f672474264ec27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is no event trigered.  <a href="a00915.html#a44173fcb4d4c5cfc3f672474264ec27b">More...</a><br /></td></tr>
+<tr class="separator:a44173fcb4d4c5cfc3f672474264ec27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6684b915d085da2ce1d03701caaf5e41"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a6684b915d085da2ce1d03701caaf5e41">isEventInQueue</a> (const std::string &amp;event) const =0</td></tr>
+<tr class="memdesc:a6684b915d085da2ce1d03701caaf5e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an event was trigered.  <a href="a00915.html#a6684b915d085da2ce1d03701caaf5e41">More...</a><br /></td></tr>
+<tr class="separator:a6684b915d085da2ce1d03701caaf5e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a33a449aaf8c3193dd536b6a66f77a6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a1a33a449aaf8c3193dd536b6a66f77a6">addEvent</a> (const std::string &amp;event)=0</td></tr>
+<tr class="memdesc:a1a33a449aaf8c3193dd536b6a66f77a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an event to list of trigered events.  <a href="a00915.html#a1a33a449aaf8c3193dd536b6a66f77a6">More...</a><br /></td></tr>
+<tr class="separator:a1a33a449aaf8c3193dd536b6a66f77a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b27771b7c05b9e2da3cfd5ddc75b35"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a96b27771b7c05b9e2da3cfd5ddc75b35">popEvent</a> ()=0</td></tr>
+<tr class="memdesc:a96b27771b7c05b9e2da3cfd5ddc75b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an event from list of trigered events and return it.  <a href="a00915.html#a96b27771b7c05b9e2da3cfd5ddc75b35">More...</a><br /></td></tr>
+<tr class="separator:a96b27771b7c05b9e2da3cfd5ddc75b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d98f0497d5712053e1bf53f01325e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a31d98f0497d5712053e1bf53f01325e0">clearEvents</a> ()=0</td></tr>
+<tr class="memdesc:a31d98f0497d5712053e1bf53f01325e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all events from list of trigered events.  <a href="a00915.html#a31d98f0497d5712053e1bf53f01325e0">More...</a><br /></td></tr>
+<tr class="separator:a31d98f0497d5712053e1bf53f01325e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa99b36ab45651d9eed367671ca3259"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="a00883.html">Arcade::Vector2f</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a6aa99b36ab45651d9eed367671ca3259">getMousePosition</a> () const =0</td></tr>
+<tr class="memdesc:a6aa99b36ab45651d9eed367671ca3259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last known mouse position.  <a href="a00915.html#a6aa99b36ab45651d9eed367671ca3259">More...</a><br /></td></tr>
+<tr class="separator:a6aa99b36ab45651d9eed367671ca3259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7d32bbeabb07f606f11047022de1b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#acb7d32bbeabb07f606f11047022de1b5">setMousePosition</a> (const <a class="el" href="a00883.html">Arcade::Vector2f</a> &amp;mousePosition)=0</td></tr>
+<tr class="memdesc:acb7d32bbeabb07f606f11047022de1b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the last known mouse position.  <a href="a00915.html#acb7d32bbeabb07f606f11047022de1b5">More...</a><br /></td></tr>
+<tr class="separator:acb7d32bbeabb07f606f11047022de1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="a00915.html" title="The IEntity interface.">IEntity</a> interface. </p>
+<div class="textblock"><p>The <a class="el" href="a00915.html" title="The IEventManager interface.">IEventManager</a> interface. </p>
+<p>One EventManager to manage all events some events can be created by systems (because events are string) but some events are reserved by IGraph system: "MOUSE_KEY1_PRESSED" "MOUSE_KEY2_PRESSED" "MOUSE_KEY3_PRESSED" "MOUSE_KEY4_PRESSED" "MOUSE_KEY5_PRESSED" "KEY_A_PRESSED" "KEY_B_PRESSED" "KEY_C_PRESSED" "KEY_D_PRESSED" "KEY_E_PRESSED" "KEY_F_PRESSED" "KEY_G_PRESSED" "KEY_H_PRESSED" "KEY_I_PRESSED" "KEY_J_PRESSED" "KEY_K_PRESSED" "KEY_L_PRESSED" "KEY_M_PRESSED" "KEY_N_PRESSED" "KEY_O_PRESSED" "KEY_P_PRESSED" "KEY_Q_PRESSED" "KEY_R_PRESSED" "KEY_S_PRESSED" "KEY_T_PRESSED" "KEY_U_PRESSED" "KEY_V_PRESSED" "KEY_W_PRESSED" "KEY_X_PRESSED" "KEY_Y_PRESSED" "KEY_Z_PRESSED" "KEY_0_PRESSED" "KEY_1_PRESSED" "KEY_2_PRESSED" "KEY_3_PRESSED" "KEY_4_PRESSED" "KEY_5_PRESSED" "KEY_6_PRESSED" "KEY_7_PRESSED" "KEY_8_PRESSED" "KEY_9_PRESSED" "KEY_SPACE_PRESSED" "KEY_ENTER_PRESSED" "KEY_ESC_PRESSED" "KEY_UP_PRESSED" "KEY_DOWN_PRESSED" "KEY_LEFT_PRESSED" "KEY_RIGHT_PRESSED" "KEY_TAB_PRESSED" "KEY_BACKSPACE_PRESSED" "KEY_DELETE_PRESSED" "KEY_SHIFT_PRESSED" "KEY_CTRL_PRESSED" "KEY_ALT_PRESSED" "KEY_F1_PRESSED" "KEY_F2_PRESSED" "KEY_F3_PRESSED" "KEY_F4_PRESSED" "KEY_F5_PRESSED" "KEY_F6_PRESSED" "KEY_F7_PRESSED" "KEY_F8_PRESSED" "KEY_F9_PRESSED" "KEY_F10_PRESSED" "KEY_F11_PRESSED" "KEY_F12_PRESSED" "WINDOW_CLOSE" "WINDOW_RESIZE" "WINDOW_MINIMIZE" </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2112acabd726dc9377fc267d71286381"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2112acabd726dc9377fc267d71286381">&#9670;&nbsp;</a></span>~IEntity()</h2>
+<a id="a2523607e48ced247a844e53c060fb001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2523607e48ced247a844e53c060fb001">&#9670;&nbsp;</a></span>~IEventManager()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,7 +127,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Arcade::ECS::IEntity::~IEntity </td>
+          <td class="memname">virtual Arcade::ECS::IEventManager::~IEventManager </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -139,8 +143,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6688b4c25087bf34d88c0485c4ccfe1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6688b4c25087bf34d88c0485c4ccfe1f">&#9670;&nbsp;</a></span>addComponent()</h2>
+<a id="a1a33a449aaf8c3193dd536b6a66f77a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a33a449aaf8c3193dd536b6a66f77a6">&#9670;&nbsp;</a></span>addEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,10 +153,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Arcade::ECS::IEntity::addComponent </td>
+          <td class="memname">virtual void Arcade::ECS::IEventManager::addEvent </td>
           <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt;&#160;</td>
-          <td class="paramname"><em>component</em></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -163,18 +167,18 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Add a component. </p>
+<p>Add an event to list of trigered events. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">component</td><td>The component to add </td></tr>
+    <tr><td class="paramname">event</td><td>The event to add </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a8fe017d8bfbffd06d120834d6e8c8b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fe017d8bfbffd06d120834d6e8c8b59">&#9670;&nbsp;</a></span>getComponents() <span class="overload">[1/2]</span></h2>
+<a id="a31d98f0497d5712053e1bf53f01325e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d98f0497d5712053e1bf53f01325e0">&#9670;&nbsp;</a></span>clearEvents()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,7 +187,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const std::map&lt;CompType, std::vector&lt;std::unique_ptr&lt;<a class="el" href="a00903.html">IComponent</a>&gt; &gt; &gt;&amp; Arcade::ECS::IEntity::getComponents </td>
+          <td class="memname">virtual void Arcade::ECS::IEventManager::clearEvents </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -196,13 +200,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get all components. </p>
-<dl class="section return"><dt>Returns</dt><dd>The list of components </dd></dl>
+<p>Remove all events from list of trigered events. </p>
 
 </div>
 </div>
-<a id="a60d82ca07e4ab56b1d57ca03b9f8ae36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60d82ca07e4ab56b1d57ca03b9f8ae36">&#9670;&nbsp;</a></span>getComponents() <span class="overload">[2/2]</span></h2>
+<a id="a44173fcb4d4c5cfc3f672474264ec27b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44173fcb4d4c5cfc3f672474264ec27b">&#9670;&nbsp;</a></span>eventsIsEmpty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,42 +214,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const std::vector&lt;std::unique_ptr&lt;<a class="el" href="a00903.html">IComponent</a>&gt; &gt;&amp; Arcade::ECS::IEntity::getComponents </td>
-          <td>(</td>
-          <td class="paramtype">CompType&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get all components of type <code>compType</code> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>The type of component to get</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The list of components filtered </dd></dl>
-
-</div>
-</div>
-<a id="a19dbef678c86a5dad566644f38de569d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19dbef678c86a5dad566644f38de569d">&#9670;&nbsp;</a></span>getId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::string Arcade::ECS::IEntity::getId </td>
+          <td class="memname">virtual bool Arcade::ECS::IEventManager::eventsIsEmpty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -259,13 +227,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the entity id. </p>
-<dl class="section return"><dt>Returns</dt><dd>The entity id </dd></dl>
+<p>Check if there is no event trigered. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if there is no event trigered </dd></dl>
 
 </div>
 </div>
-<a id="ae1b0864f76fa9ad515adb5514bc8e43f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1b0864f76fa9ad515adb5514bc8e43f">&#9670;&nbsp;</a></span>removeComponent()</h2>
+<a id="a6aa99b36ab45651d9eed367671ca3259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aa99b36ab45651d9eed367671ca3259">&#9670;&nbsp;</a></span>getMousePosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -274,11 +242,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Arcade::ECS::IEntity::removeComponent </td>
+          <td class="memname">virtual const <a class="el" href="a00883.html">Arcade::Vector2f</a>&amp; Arcade::ECS::IEventManager::getMousePosition </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -288,18 +255,48 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remove a component. </p>
+<p>Get the last known mouse position. </p>
+<dl class="section return"><dt>Returns</dt><dd>The last known mouse position </dd></dl>
+
+</div>
+</div>
+<a id="a6684b915d085da2ce1d03701caaf5e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6684b915d085da2ce1d03701caaf5e41">&#9670;&nbsp;</a></span>isEventInQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Arcade::ECS::IEventManager::isEventInQueue </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if an event was trigered. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">std::string</td><td>The component id to remove </td></tr>
+    <tr><td class="paramname">event</td><td>The event to check</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the event was trigered, false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="abddaeef7a17806c4502c61952e3b4ee2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abddaeef7a17806c4502c61952e3b4ee2">&#9670;&nbsp;</a></span>removeComponents()</h2>
+<a id="a96b27771b7c05b9e2da3cfd5ddc75b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96b27771b7c05b9e2da3cfd5ddc75b35">&#9670;&nbsp;</a></span>popEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,10 +305,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Arcade::ECS::IEntity::removeComponents </td>
+          <td class="memname">virtual const std::string&amp; Arcade::ECS::IEventManager::popEvent </td>
           <td>(</td>
-          <td class="paramtype">CompType&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -322,10 +318,39 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remove all components of type <code>CompType</code> </p>
+<p>Remove an event from list of trigered events and return it. </p>
+<dl class="section return"><dt>Returns</dt><dd>The event that was removed </dd></dl>
+
+</div>
+</div>
+<a id="acb7d32bbeabb07f606f11047022de1b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7d32bbeabb07f606f11047022de1b5">&#9670;&nbsp;</a></span>setMousePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Arcade::ECS::IEventManager::setMousePosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00883.html">Arcade::Vector2f</a> &amp;&#160;</td>
+          <td class="paramname"><em>mousePosition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the last known mouse position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>The type of component to remove </td></tr>
+    <tr><td class="paramname">mousePosition</td><td>The last known mouse position </td></tr>
   </table>
   </dd>
 </dl>
@@ -333,12 +358,12 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="a00029_source.html">IEntity.hpp</a></li>
+<li>include/Arcade/ECS/<a class="el" href="a00035_source.html">IEventManager.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 23:03:54 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 20 2023 23:21:45 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

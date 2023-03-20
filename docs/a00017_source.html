@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/GraphStruct.hpp Source File</title>
+<title>Architecture Arcade: include/Arcade/Core/ICore.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,68 +62,38 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4dfcdfd0f1f897aca432108a19677038.html">Arcade</a></li><li class="navelem"><a class="el" href="dir_409050ad8f9208b163b69d38ff887ede.html">Core</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">GraphStruct.hpp</div>  </div>
+<div class="title">ICore.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00017.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2023</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Archi Arcade Promo 2026 Toulouse</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** Useful struct for the grapical lib</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** Core interface (in the arcade binary)</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00063.html">Arcade</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="a00064.html">   13</a></span>&#160;    <span class="keyword">namespace </span>Graph {</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00891.html">   14</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="a00891.html">Color</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00891.html#ab01b045ccd33e59b8f914e849176fdc5">   16</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00891.html#ab01b045ccd33e59b8f914e849176fdc5">r</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="a00891.html#abb17ee7862551379901ccc6ef7533d19">   17</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00891.html#abb17ee7862551379901ccc6ef7533d19">g</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00891.html#ad27410851699269c3d51fdeb6bd0f25d">   18</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00891.html#ad27410851699269c3d51fdeb6bd0f25d">b</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00891.html#a755b9912b9694d73fac90b28425ffb6d">   19</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00891.html#a755b9912b9694d73fac90b28425ffb6d">a</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        };</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00895.html">   21</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="a00895.html">TTYData</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00895.html#a402a79668ca86b5436e88395ac6d3725">   23</a></span>&#160;                std::string <a class="code" href="a00895.html#a402a79668ca86b5436e88395ac6d3725">defaultChar</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00895.html#ab25fd97c6b846592c54905b062ba4d6a">   24</a></span>&#160;                <a class="code" href="a00891.html">Color</a> <a class="code" href="a00895.html#ab25fd97c6b846592c54905b062ba4d6a">foreground</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00895.html#a54ea7d24c1502d1d1f5c50e582747459">   25</a></span>&#160;                <a class="code" href="a00891.html">Color</a> <a class="code" href="a00895.html#a54ea7d24c1502d1d1f5c50e582747459">background</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00063.html">Arcade</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="a00064.html">   11</a></span>&#160;    <span class="keyword">namespace </span>Core {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00891.html">   23</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00891.html">ICore</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00891.html#a9394e43e057f68367f2647738f596ccc">   25</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00891.html#a9394e43e057f68367f2647738f596ccc">~ICore</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        };</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00899.html">   27</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="a00899.html">Rect</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00899.html#a642d417324ca3e68cb0cbe64082c30b3">   29</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00899.html#a642d417324ca3e68cb0cbe64082c30b3">left</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00899.html#a322373137724c4345f9ee3c307163842">   30</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00899.html#a322373137724c4345f9ee3c307163842">top</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00899.html#ac634695fdf9377bc101f76f50c161493">   31</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00899.html#ac634695fdf9377bc101f76f50c161493">width</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00899.html#a2b143385e8684c52e5bb1dc7c9824873">   32</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00899.html#a2b143385e8684c52e5bb1dc7c9824873">height</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        };</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    } <span class="comment">// namespace Graph</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <span class="comment">// namespace Arcade</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    } <span class="comment">// namespace Core</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="comment">// namespace Arcade</span></div>
 <div class="ttc" id="aa00063_html"><div class="ttname"><a href="a00063.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
-<div class="ttc" id="aa00891_html"><div class="ttname"><a href="a00891.html">Arcade::Graph::Color</a></div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:14</div></div>
-<div class="ttc" id="aa00891_html_a755b9912b9694d73fac90b28425ffb6d"><div class="ttname"><a href="a00891.html#a755b9912b9694d73fac90b28425ffb6d">Arcade::Graph::Color::a</a></div><div class="ttdeci">int a</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:19</div></div>
-<div class="ttc" id="aa00891_html_ab01b045ccd33e59b8f914e849176fdc5"><div class="ttname"><a href="a00891.html#ab01b045ccd33e59b8f914e849176fdc5">Arcade::Graph::Color::r</a></div><div class="ttdeci">int r</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:16</div></div>
-<div class="ttc" id="aa00891_html_abb17ee7862551379901ccc6ef7533d19"><div class="ttname"><a href="a00891.html#abb17ee7862551379901ccc6ef7533d19">Arcade::Graph::Color::g</a></div><div class="ttdeci">int g</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:17</div></div>
-<div class="ttc" id="aa00891_html_ad27410851699269c3d51fdeb6bd0f25d"><div class="ttname"><a href="a00891.html#ad27410851699269c3d51fdeb6bd0f25d">Arcade::Graph::Color::b</a></div><div class="ttdeci">int b</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:18</div></div>
-<div class="ttc" id="aa00895_html"><div class="ttname"><a href="a00895.html">Arcade::Graph::TTYData</a></div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:21</div></div>
-<div class="ttc" id="aa00895_html_a402a79668ca86b5436e88395ac6d3725"><div class="ttname"><a href="a00895.html#a402a79668ca86b5436e88395ac6d3725">Arcade::Graph::TTYData::defaultChar</a></div><div class="ttdeci">std::string defaultChar</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:23</div></div>
-<div class="ttc" id="aa00895_html_a54ea7d24c1502d1d1f5c50e582747459"><div class="ttname"><a href="a00895.html#a54ea7d24c1502d1d1f5c50e582747459">Arcade::Graph::TTYData::background</a></div><div class="ttdeci">Color background</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:25</div></div>
-<div class="ttc" id="aa00895_html_ab25fd97c6b846592c54905b062ba4d6a"><div class="ttname"><a href="a00895.html#ab25fd97c6b846592c54905b062ba4d6a">Arcade::Graph::TTYData::foreground</a></div><div class="ttdeci">Color foreground</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:24</div></div>
-<div class="ttc" id="aa00899_html"><div class="ttname"><a href="a00899.html">Arcade::Graph::Rect</a></div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:27</div></div>
-<div class="ttc" id="aa00899_html_a2b143385e8684c52e5bb1dc7c9824873"><div class="ttname"><a href="a00899.html#a2b143385e8684c52e5bb1dc7c9824873">Arcade::Graph::Rect::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:32</div></div>
-<div class="ttc" id="aa00899_html_a322373137724c4345f9ee3c307163842"><div class="ttname"><a href="a00899.html#a322373137724c4345f9ee3c307163842">Arcade::Graph::Rect::top</a></div><div class="ttdeci">int top</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:30</div></div>
-<div class="ttc" id="aa00899_html_a642d417324ca3e68cb0cbe64082c30b3"><div class="ttname"><a href="a00899.html#a642d417324ca3e68cb0cbe64082c30b3">Arcade::Graph::Rect::left</a></div><div class="ttdeci">int left</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:29</div></div>
-<div class="ttc" id="aa00899_html_ac634695fdf9377bc101f76f50c161493"><div class="ttname"><a href="a00899.html#ac634695fdf9377bc101f76f50c161493">Arcade::Graph::Rect::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:31</div></div>
+<div class="ttc" id="aa00891_html"><div class="ttname"><a href="a00891.html">Arcade::Core::ICore</a></div><div class="ttdoc">The ICore class.</div><div class="ttdef"><b>Definition:</b> ICore.hpp:23</div></div>
+<div class="ttc" id="aa00891_html_a9394e43e057f68367f2647738f596ccc"><div class="ttname"><a href="a00891.html#a9394e43e057f68367f2647738f596ccc">Arcade::Core::ICore::~ICore</a></div><div class="ttdeci">virtual ~ICore()=default</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 23:03:54 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 20 2023 23:21:45 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
