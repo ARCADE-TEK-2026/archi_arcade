@@ -12,6 +12,9 @@
 
 namespace Arcade {
     namespace Game {
+        /**
+         * @brief The IScene interface
+         */
         class IScene {
             public:
                 virtual ~IScene() = default;
