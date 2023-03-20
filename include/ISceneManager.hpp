@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** Archi Arcade Promo 2026 Toulouse
 ** File description:
-** scene manager interface
+** Scene manager interface
 */
 
 #pragma once
@@ -12,6 +12,9 @@
 
 namespace Arcade {
     namespace Game {
+        /**
+         * @brief Scene manager interface
+         */
         class ISceneManager {
             public:
                 virtual ~ISceneManager() = default;

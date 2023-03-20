@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** Archi Arcade Promo 2026 Toulouse
 ** File description:
-** systems are function that will run in every frame using the `run` method
+** Systems are function that will run in every frame using the `run` method
 */
 
 #pragma once
