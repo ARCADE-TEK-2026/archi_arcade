@@ -37,7 +37,7 @@ namespace Arcade {
                  * Throw on error
                  *
                  */
-                virtual void changeGaphicLib(
+                virtual void changeGraphicLib(
                 const std::string &libGraphicName) = 0;
                 /**
                  * @brief Change the current active graphical library to the
@@ -50,7 +50,7 @@ namespace Arcade {
                  * Throw on error
                  *
                  */
-                virtual void changeGaphicLib() = 0;
+                virtual void changeGraphicLib() = 0;
         };
     } // namespace Core
 } // namespace Arcade
