@@ -9,7 +9,10 @@
 
 #include <queue>
 #include <string>
+#include <optional>
+#include <memory>
 #include "ArcadeStruct.hpp"
+#include "IComponent.hpp"
 
 namespace Arcade {
     namespace ECS {
@@ -104,22 +107,15 @@ namespace Arcade {
                  *
                  * @param event The event to check
                  *
-                 * @return True if the event was trigered, false otherwise
+                 * @return std::nullopt if there is no such event trigered else the std::optional passed as parameter of `addEvent` method
                  */
-                virtual bool isEventInQueue(const std::string &event) const = 0;
+                virtual std::optional<std::optional<std::shared_ptr<IComponent> &>> isEventInQueue(const std::string &event) const = 0;
                 /**
                  * @brief Add an event to list of trigered events
                  *
                  * @param event The event to add
                  */
-                virtual void addEvent(const std::string &event) = 0;
-                /**
-                 * @brief Remove an event from list of trigered events and
-                 * return it
-                 *
-                 * @return The event that was removed
-                 */
-                virtual const std::string &popEvent() = 0;
+                virtual void addEvent(const std::string &event, std::optional<std::shared_ptr<IComponent>>) = 0;
                 /**
                  * @brief Remove all events from list of trigered events
                  */
