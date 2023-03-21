@@ -21,7 +21,6 @@ namespace Arcade {
         class IGameModule {
             public:
                 virtual ~IGameModule() = default;
-
                 /**
                  * @brief Get the scene manager of the current game
                  *

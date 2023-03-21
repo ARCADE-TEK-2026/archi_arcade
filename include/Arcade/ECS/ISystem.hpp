@@ -25,7 +25,6 @@ namespace Arcade {
         class ISystem {
             public:
                 virtual ~ISystem() = default;
-
                 /**
                  * @brief Run the system implementation
                  */
