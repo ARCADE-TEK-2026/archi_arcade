@@ -37,7 +37,7 @@ namespace Arcade {
                  * @return True if the graphical library was changed, false
                  * otherwise
                  */
-                virtual bool changeGaphicLib(
+                virtual bool changeGraphicLib(
                 const std::string &libGraphicName) = 0;
                 /**
                  * @brief Change the current active graphical library to the
@@ -49,7 +49,7 @@ namespace Arcade {
                  *
                  * @return True if the graphical library was changed, false
                  */
-                virtual bool changeGaphicLib() = 0;
+                virtual bool changeGraphicLib() = 0;
         };
     } // namespace Core
 } // namespace Arcade

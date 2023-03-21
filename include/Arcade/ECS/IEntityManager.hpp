@@ -23,9 +23,11 @@ namespace Arcade {
                 /**
                  * @brief Add an entity to the manager
                  *
+                 * @param id The id of the entity
+                 *
                  * @return The entity created
                  */
-                virtual IEntity &createEntity() = 0;
+                virtual IEntity &createEntity(const std::string &id) = 0;
                 /**
                  * @brief Get all entities created by this manager
                  *
