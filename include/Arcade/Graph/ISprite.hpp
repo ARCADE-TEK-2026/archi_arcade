@@ -77,7 +77,7 @@ namespace Arcade {
                 /**
                  * @brief Set the sprite Color.
                  */
-                virtual void setColor(Color color) = 0;
+                virtual void setColor(Color &color) = 0;
                 /**
                  * @brief Get the sprite rectangle.
                  *
@@ -87,7 +87,7 @@ namespace Arcade {
                 /**
                  * @brief Set the sprite rectangle.
                  */
-                virtual void setRect(Rect rect) = 0;
+                virtual void setRect(Rect &rect) = 0;
                 /**
                  * @brief Get the sprite Scale.
                  *
@@ -97,7 +97,7 @@ namespace Arcade {
                 /**
                  * @brief Set the sprite Scale.
                  */
-                virtual void setScale(float scale) = 0;
+                virtual void setScale(float &scale) = 0;
         };
     } // namespace Graph
 } // namespace Arcade
