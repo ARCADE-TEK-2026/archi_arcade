@@ -115,7 +115,7 @@ namespace Arcade {
                  */
                 virtual std::pair<bool,
                 std::optional<std::shared_ptr<IComponent>>>
-                isEventInList(const std::string &event) const = 0;
+                isEventTriggered(const std::string &event) const = 0;
                 /**
                  * @brief Add an event to list of trigered events
                  *
