@@ -40,7 +40,8 @@ namespace Arcade {
                 virtual void changeGame(const std::string &gameName) = 0;
 
                 /**
-                 * @brief Change the current active game to the next
+                 * @brief Change the current active game to the next (in a
+                 * cyclic way)
                  *
                  * Throw on error
                  *
