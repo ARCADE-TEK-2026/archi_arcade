@@ -83,7 +83,7 @@ Collaboration diagram for Arcade::ECS::IEventManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00913.png" border="0" usemap="#aArcade_1_1ECS_1_1IEventManager_coll__map" alt="Collaboration graph"/></div>
 <map name="aArcade_1_1ECS_1_1IEventManager_coll__map" id="aArcade_1_1ECS_1_1IEventManager_coll__map">
-<area shape="rect" title="The IEventManager interface." alt="" coords="5,5,312,361"/>
+<area shape="rect" title="The IEventManager interface." alt="" coords="5,5,312,391"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -94,9 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a44173fcb4d4c5cfc3f672474264ec27b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a44173fcb4d4c5cfc3f672474264ec27b">eventsIsEmpty</a> () const =0</td></tr>
 <tr class="memdesc:a44173fcb4d4c5cfc3f672474264ec27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is no event trigered.  <a href="a00915.html#a44173fcb4d4c5cfc3f672474264ec27b">More...</a><br /></td></tr>
 <tr class="separator:a44173fcb4d4c5cfc3f672474264ec27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa7920f418e991d714fee9646b418bc3"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; bool, std::optional&lt; std::shared_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#afa7920f418e991d714fee9646b418bc3">isEventTriggered</a> (const std::string &amp;event) const =0</td></tr>
-<tr class="memdesc:afa7920f418e991d714fee9646b418bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an event was trigered.  <a href="a00915.html#afa7920f418e991d714fee9646b418bc3">More...</a><br /></td></tr>
-<tr class="separator:afa7920f418e991d714fee9646b418bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27008aeda61d5c649e5471e6dcd8469d"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; bool, std::vector&lt; std::optional&lt; std::shared_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a27008aeda61d5c649e5471e6dcd8469d">isEventTriggered</a> (const std::string &amp;event) const =0</td></tr>
+<tr class="memdesc:a27008aeda61d5c649e5471e6dcd8469d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an event was trigered.  <a href="a00915.html#a27008aeda61d5c649e5471e6dcd8469d">More...</a><br /></td></tr>
+<tr class="separator:a27008aeda61d5c649e5471e6dcd8469d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf449d25b4d7586b33d563e61689f5e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#acf449d25b4d7586b33d563e61689f5e8">addEvent</a> (const std::string &amp;event, std::optional&lt; std::shared_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt;&gt; component=std::nullopt)=0</td></tr>
 <tr class="memdesc:acf449d25b4d7586b33d563e61689f5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an event to list of trigered events.  <a href="a00915.html#acf449d25b4d7586b33d563e61689f5e8">More...</a><br /></td></tr>
 <tr class="separator:acf449d25b4d7586b33d563e61689f5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,8 +270,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afa7920f418e991d714fee9646b418bc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa7920f418e991d714fee9646b418bc3">&#9670;&nbsp;</a></span>isEventTriggered()</h2>
+<a id="a27008aeda61d5c649e5471e6dcd8469d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27008aeda61d5c649e5471e6dcd8469d">&#9670;&nbsp;</a></span>isEventTriggered()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,7 +280,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::pair&lt;bool, std::optional&lt;std::shared_ptr&lt;<a class="el" href="a00903.html">IComponent</a>&gt; &gt; &gt; Arcade::ECS::IEventManager::isEventTriggered </td>
+          <td class="memname">virtual std::pair&lt;bool, std::vector&lt;std::optional&lt;std::shared_ptr&lt;<a class="el" href="a00903.html">IComponent</a>&gt; &gt; &gt; &gt; Arcade::ECS::IEventManager::isEventTriggered </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>event</em></td><td>)</td>
@@ -301,7 +301,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pair of bool (True if the event was trigered, False if the event was not trigered) and std::optional&lt;std::shared_ptr&lt;IComponent&gt;&gt; (The parameter passed as parameter to <code>addEvent</code> method) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pair of bool (True if the event was trigered, False if the event was not trigered) and std::vector&lt;std::optional&lt;std::shared_ptr&lt;IComponent&gt;&gt;&gt; (list of the parameter passed as parameter to <code>addEvent</code> method) Why a vector of optional? Because event of same type can be trigered more than one time in one frame </dd></dl>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 21:30:15 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 22:44:44 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
