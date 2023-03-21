@@ -34,10 +34,10 @@ namespace Arcade {
                  * @param libGraphicName The graphical library name (only the
                  * libname without .so)
                  *
-                 * @return True if the graphical library was changed, false
-                 * otherwise
+                 * Throw on error
+                 *
                  */
-                virtual bool changeGaphicLib(
+                virtual void changeGaphicLib(
                 const std::string &libGraphicName) = 0;
                 /**
                  * @brief Change the current active graphical library to the
@@ -47,9 +47,10 @@ namespace Arcade {
                  * graphical library in the folder of availible graphical
                  * library)
                  *
-                 * @return True if the graphical library was changed, false
+                 * Throw on error
+                 *
                  */
-                virtual bool changeGaphicLib() = 0;
+                virtual void changeGaphicLib() = 0;
         };
     } // namespace Core
 } // namespace Arcade

@@ -33,9 +33,10 @@ namespace Arcade {
                  *
                  * @param gameName The game filename to change to (without .so)
                  *
-                 * @return True if the game was changed, false otherwise
+                 * Throw on error
+                 *
                  */
-                virtual bool changeGame(const std::string &gameName) = 0;
+                virtual void changeGame(const std::string &gameName) = 0;
         };
     } // namespace Core
 } // namespace Arcade
