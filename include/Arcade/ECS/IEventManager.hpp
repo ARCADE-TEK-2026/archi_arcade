@@ -92,6 +92,8 @@ namespace Arcade {
          * "WINDOW_CLOSE"
          * "WINDOW_RESIZE"
          * "WINDOW_MINIMIZE"
+         * 
+         * "GAME_END" Is the event create by game system to tell core to quit game
          */
         class IEventManager {
             public:
