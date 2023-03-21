@@ -3,6 +3,7 @@ PLANTUML_PUML			=	uml.puml
 PLANTUML_TARGET			=	$(PLANTUML_PUML:%.puml=%.svg)
 
 SOURCE		=	$(shell find include -name "*.hpp" -print)
+INC_HEADER	=	$(addprefix -I , $(shell find include -type d -print))
 
 INC_UML		=	$(addprefix -i , $(SOURCE))
 
@@ -10,7 +11,7 @@ clean:
 	rm -rf tests/dawa
 
 clean-doxygen:
-	rm -rf documentation/html
+	rm -rf documentation/docs
 	rm -rf documentation/latex
 
 clean-uml:
@@ -32,7 +33,7 @@ doxygen: clean-doxygen
 	touch documentation/docs/.nojekyll
 
 tests-run:
-	g++ ./tests/test-includes.cpp -I include -o tests/dawa
+	g++ ./tests/test-includes.cpp ${INC_HEADER} -std=c++20 -o tests/dawa
 	./tests/dawa
 
 .clang-format:
