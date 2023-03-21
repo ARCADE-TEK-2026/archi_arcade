@@ -16,6 +16,10 @@
     #define EXPORT
 #endif
 
+/**
+ * Each Graph lib must have a system calling EventManager setMousePosition
+ */
+
 extern "C"
 {
     enum class LibType { GRAPH, GAME };

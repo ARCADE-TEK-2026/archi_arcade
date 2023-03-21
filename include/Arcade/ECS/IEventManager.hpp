@@ -7,11 +7,11 @@
 
 #pragma once
 
+#include <memory>
+#include <optional>
 #include <queue>
 #include <string>
-#include <optional>
 #include <tuple>
-#include <memory>
 #include "ArcadeStruct.hpp"
 #include "IComponent.hpp"
 
@@ -109,17 +109,23 @@ namespace Arcade {
                  * @param event The event to check
                  *
                  * @return A pair of
-                 * bool (True if the event was trigered, False if the event was not trigered)
-                 * and std::optional<std::shared_ptr<IComponent>> (The parameter passed as parameter to `addEvent` method)
+                 * bool (True if the event was trigered, False if the event was
+                 * not trigered) and std::optional<std::shared_ptr<IComponent>>
+                 * (The parameter passed as parameter to `addEvent` method)
                  */
-                virtual std::pair<bool, std::optional<std::shared_ptr<IComponent>>> isEventInQueue(const std::string &event) const = 0;
+                virtual std::pair<bool,
+                std::optional<std::shared_ptr<IComponent>>>
+                isEventInQueue(const std::string &event) const = 0;
                 /**
                  * @brief Add an event to list of trigered events
                  *
                  * @param event The event to add
-                 * @param component The component to add as optional parameter with the event
+                 * @param component The component to add as optional parameter
+                 * with the event
                  */
-                virtual void addEvent(const std::string &event, std::optional<std::shared_ptr<IComponent>> component = std::nullopt) = 0;
+                virtual void addEvent(const std::string &event,
+                std::optional<std::shared_ptr<IComponent>> component =
+                std::nullopt) = 0;
                 /**
                  * @brief Remove all events from list of trigered events
                  */
