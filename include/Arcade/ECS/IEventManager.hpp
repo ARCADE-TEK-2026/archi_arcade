@@ -92,6 +92,7 @@ namespace Arcade {
          * "WINDOW_CLOSE"
          * "WINDOW_RESIZE"
          * "WINDOW_MINIMIZE"
+         * "GAME_END"
          */
         class IEventManager {
             public:
