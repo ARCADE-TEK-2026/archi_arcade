@@ -28,6 +28,7 @@ namespace Arcade {
                  * @return The scene manager of the current game
                  */
                 virtual Arcade::Game::ISceneManager &getSceneManager() = 0;
+
                 /**
                  * @brief Change the current active game to the given game
                  *
@@ -37,6 +38,14 @@ namespace Arcade {
                  *
                  */
                 virtual void changeGame(const std::string &gameName) = 0;
+
+                /**
+                 * @brief Change the current active game to the next
+                 *
+                 * Throw on error
+                 *
+                 */
+                virtual void changeGame() = 0;
         };
     } // namespace Core
 } // namespace Arcade

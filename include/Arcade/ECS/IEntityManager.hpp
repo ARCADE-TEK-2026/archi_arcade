@@ -19,7 +19,6 @@ namespace Arcade {
         class IEntityManager {
             public:
                 virtual ~IEntityManager() = default;
-
                 /**
                  * @brief Add an entity to the manager
                  *
