@@ -13,6 +13,7 @@ git clone "$SOURCE_REPO_URL" "$SOURCE_CLONE_FOLDER"
 mkdir -p "$TARGET_INCLUDE_FOLDER"
 cp -r "$SOURCE_INCLUDE_FOLDER/"* "$TARGET_INCLUDE_FOLDER"
 cp "$SOURCE_SETUP_SCRIPT" "$TARGET_SETUP_SCRIPT"
+chmod +x "$TARGET_SETUP_SCRIPT"
 rm -rf __tmp
 
 # Add a gitignore file if it doesn't exist
