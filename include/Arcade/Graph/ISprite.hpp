@@ -98,10 +98,6 @@ namespace Arcade {
                 /**
                  * @brief Set the sprite rectangle.
                  */
-                virtual void setRect(Rect &rect) = 0;
-                /**
-                 * @brief Set the sprite rectangle.
-                 */
                 virtual void setRect(const Rect &rect) = 0;
                 /**
                  * @brief Get the sprite Scale.
