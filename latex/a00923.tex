@@ -11,7 +11,7 @@ Collaboration diagram for Arcade\+::ECS\+::ISystem\+Manager\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=275pt]{a00921}
+\includegraphics[width=328pt]{a00921}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -23,7 +23,7 @@ virtual void \mbox{\hyperlink{a00923_a70c01e9c68714f136fe9be0905a1c34f}{add\+Sys
 \begin{DoxyCompactList}\small\item\em Add a system to the system manager. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{a00923_a1b1050fb958386f47e312c8c62bf2802}{remove\+System}} (const std\+::string \&name)=0
 \begin{DoxyCompactList}\small\item\em Remove a system from the system manager. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00923_a0731598c67b1485074352be703abdb59}{update}} (std\+::size\+\_\+t delta\+Time, \mbox{\hyperlink{a00911}{Arcade\+::\+ECS\+::\+IEntity\+Manager}} \&entity\+Manager, \mbox{\hyperlink{a00915}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&event\+Manager)=0
+virtual void \mbox{\hyperlink{a00923_ab43c83834d0e48e9270dd4af328be26c}{update}} (std\+::size\+\_\+t delta\+Time, \mbox{\hyperlink{a00915}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&event\+Manager, \mbox{\hyperlink{a00895}{Arcade\+::\+Core\+::\+IDisplay\+Module}} \&display\+Module, \mbox{\hyperlink{a00899}{Arcade\+::\+Core\+::\+IGame\+Module}} \&game\+Module)=0
 \begin{DoxyCompactList}\small\item\em Update all systems of the system manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -69,11 +69,11 @@ Remove a system from the system manager.
 {\em name} & The name of the system to remove \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{a00923_a0731598c67b1485074352be703abdb59}\label{a00923_a0731598c67b1485074352be703abdb59}} 
+\mbox{\Hypertarget{a00923_ab43c83834d0e48e9270dd4af328be26c}\label{a00923_ab43c83834d0e48e9270dd4af328be26c}} 
 \index{Arcade::ECS::ISystemManager@{Arcade::ECS::ISystemManager}!update@{update}}
 \index{update@{update}!Arcade::ECS::ISystemManager@{Arcade::ECS::ISystemManager}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+ISystem\+Manager\+::update (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{delta\+Time,  }\item[{\mbox{\hyperlink{a00911}{Arcade\+::\+ECS\+::\+IEntity\+Manager}} \&}]{entity\+Manager,  }\item[{\mbox{\hyperlink{a00915}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&}]{event\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+ISystem\+Manager\+::update (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{delta\+Time,  }\item[{\mbox{\hyperlink{a00915}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&}]{event\+Manager,  }\item[{\mbox{\hyperlink{a00895}{Arcade\+::\+Core\+::\+IDisplay\+Module}} \&}]{display\+Module,  }\item[{\mbox{\hyperlink{a00899}{Arcade\+::\+Core\+::\+IGame\+Module}} \&}]{game\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 

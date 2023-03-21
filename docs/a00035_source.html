@@ -81,38 +81,37 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;optional&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00014.html">ArcadeStruct.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00026.html">IComponent.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00063.html">Arcade</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">namespace </span>ECS {</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="a00915.html">   99</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00915.html">IEventManager</a> {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="a00915.html#a2523607e48ced247a844e53c060fb001">  101</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00915.html#a2523607e48ced247a844e53c060fb001">~IEventManager</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="a00915.html#a44173fcb4d4c5cfc3f672474264ec27b">  108</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00915.html#a44173fcb4d4c5cfc3f672474264ec27b">eventsIsEmpty</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keyword">virtual</span> std::pair&lt;bool,</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                std::optional&lt;std::shared_ptr&lt;IComponent&gt;&gt;&gt;</div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="a00915.html#afa7920f418e991d714fee9646b418bc3">  121</a></span>&#160;                <a class="code" href="a00915.html#afa7920f418e991d714fee9646b418bc3">isEventTriggered</a>(<span class="keyword">const</span> std::string &amp;event) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="a00915.html#acf449d25b4d7586b33d563e61689f5e8">  129</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00915.html#acf449d25b4d7586b33d563e61689f5e8">addEvent</a>(<span class="keyword">const</span> std::string &amp;event,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                std::optional&lt;std::shared_ptr&lt;IComponent&gt;&gt; component =</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                std::nullopt) = 0;</div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="a00915.html#a31d98f0497d5712053e1bf53f01325e0">  135</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00915.html#a31d98f0497d5712053e1bf53f01325e0">clearEvents</a>() = 0;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="a00915.html#a6aa99b36ab45651d9eed367671ca3259">  142</a></span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="a00883.html">Arcade::Vector2f</a> &amp;<a class="code" href="a00915.html#a6aa99b36ab45651d9eed367671ca3259">getMousePosition</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="a00915.html#acb7d32bbeabb07f606f11047022de1b5">  148</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00915.html#acb7d32bbeabb07f606f11047022de1b5">setMousePosition</a>(</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                <span class="keyword">const</span> <a class="code" href="a00883.html">Arcade::Vector2f</a> &amp;mousePosition) = 0;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        };</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    } <span class="comment">// namespace ECS</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;} <span class="comment">// namespace Arcade</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00014.html">ArcadeStruct.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00026.html">IComponent.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00063.html">Arcade</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">namespace </span>ECS {</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="a00915.html">  102</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00915.html">IEventManager</a> {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="a00915.html#a2523607e48ced247a844e53c060fb001">  104</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00915.html#a2523607e48ced247a844e53c060fb001">~IEventManager</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="a00915.html#a44173fcb4d4c5cfc3f672474264ec27b">  111</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00915.html#a44173fcb4d4c5cfc3f672474264ec27b">eventsIsEmpty</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="keyword">virtual</span> std::pair&lt;bool,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                std::optional&lt;std::shared_ptr&lt;IComponent&gt;&gt;&gt;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="a00915.html#afa7920f418e991d714fee9646b418bc3">  124</a></span>&#160;                <a class="code" href="a00915.html#afa7920f418e991d714fee9646b418bc3">isEventTriggered</a>(<span class="keyword">const</span> std::string &amp;event) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="a00915.html#acf449d25b4d7586b33d563e61689f5e8">  132</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00915.html#acf449d25b4d7586b33d563e61689f5e8">addEvent</a>(<span class="keyword">const</span> std::string &amp;event,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                std::optional&lt;std::shared_ptr&lt;IComponent&gt;&gt; component =</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                std::nullopt) = 0;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="a00915.html#a31d98f0497d5712053e1bf53f01325e0">  138</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00915.html#a31d98f0497d5712053e1bf53f01325e0">clearEvents</a>() = 0;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="a00915.html#a6aa99b36ab45651d9eed367671ca3259">  145</a></span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="a00883.html">Arcade::Vector2f</a> &amp;<a class="code" href="a00915.html#a6aa99b36ab45651d9eed367671ca3259">getMousePosition</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="a00915.html#acb7d32bbeabb07f606f11047022de1b5">  151</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00915.html#acb7d32bbeabb07f606f11047022de1b5">setMousePosition</a>(</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <span class="keyword">const</span> <a class="code" href="a00883.html">Arcade::Vector2f</a> &amp;mousePosition) = 0;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        };</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    } <span class="comment">// namespace ECS</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;} <span class="comment">// namespace Arcade</span></div>
 <div class="ttc" id="aa00014_html"><div class="ttname"><a href="a00014.html">ArcadeStruct.hpp</a></div></div>
 <div class="ttc" id="aa00026_html"><div class="ttname"><a href="a00026.html">IComponent.hpp</a></div></div>
 <div class="ttc" id="aa00063_html"><div class="ttname"><a href="a00063.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
 <div class="ttc" id="aa00883_html"><div class="ttname"><a href="a00883.html">Arcade::Vector2f</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:11</div></div>
-<div class="ttc" id="aa00915_html"><div class="ttname"><a href="a00915.html">Arcade::ECS::IEventManager</a></div><div class="ttdoc">The IEventManager interface.</div><div class="ttdef"><b>Definition:</b> IEventManager.hpp:99</div></div>
+<div class="ttc" id="aa00915_html"><div class="ttname"><a href="a00915.html">Arcade::ECS::IEventManager</a></div><div class="ttdoc">The IEventManager interface.</div><div class="ttdef"><b>Definition:</b> IEventManager.hpp:102</div></div>
 <div class="ttc" id="aa00915_html_a2523607e48ced247a844e53c060fb001"><div class="ttname"><a href="a00915.html#a2523607e48ced247a844e53c060fb001">Arcade::ECS::IEventManager::~IEventManager</a></div><div class="ttdeci">virtual ~IEventManager()=default</div></div>
 <div class="ttc" id="aa00915_html_a31d98f0497d5712053e1bf53f01325e0"><div class="ttname"><a href="a00915.html#a31d98f0497d5712053e1bf53f01325e0">Arcade::ECS::IEventManager::clearEvents</a></div><div class="ttdeci">virtual void clearEvents()=0</div><div class="ttdoc">Remove all events from list of trigered events.</div></div>
 <div class="ttc" id="aa00915_html_a44173fcb4d4c5cfc3f672474264ec27b"><div class="ttname"><a href="a00915.html#a44173fcb4d4c5cfc3f672474264ec27b">Arcade::ECS::IEventManager::eventsIsEmpty</a></div><div class="ttdeci">virtual bool eventsIsEmpty() const =0</div><div class="ttdoc">Check if there is no event trigered.</div></div>
@@ -123,7 +122,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 18:35:08 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 21:30:15 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

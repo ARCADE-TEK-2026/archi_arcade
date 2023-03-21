@@ -93,28 +93,30 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00923.html#a70c01e9c68714f136fe9be0905a1c34f">   27</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00923.html#a70c01e9c68714f136fe9be0905a1c34f">addSystem</a>(</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keyword">const</span> std::string &amp;name, <a class="code" href="a00919.html">Arcade::ECS::ISystem</a> *system) = 0;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="a00923.html#a1b1050fb958386f47e312c8c62bf2802">   34</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00923.html#a1b1050fb958386f47e312c8c62bf2802">removeSystem</a>(<span class="keyword">const</span> std::string &amp;name) = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a00923.html#a0731598c67b1485074352be703abdb59">   42</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00923.html#a0731598c67b1485074352be703abdb59">update</a>(std::size_t deltaTime,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <a class="code" href="a00911.html">Arcade::ECS::IEntityManager</a> &amp;entityManager,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <a class="code" href="a00915.html">Arcade::ECS::IEventManager</a> &amp;eventManager) = 0;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        };</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    } <span class="comment">// namespace ECS</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace Arcade</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a00923.html#ab43c83834d0e48e9270dd4af328be26c">   42</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00923.html#ab43c83834d0e48e9270dd4af328be26c">update</a>(std::size_t deltaTime,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <a class="code" href="a00915.html">Arcade::ECS::IEventManager</a> &amp;eventManager,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <a class="code" href="a00895.html">Arcade::Core::IDisplayModule</a> &amp;displayModule,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <a class="code" href="a00899.html">Arcade::Core::IGameModule</a> &amp;gameModule) = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        };</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    } <span class="comment">// namespace ECS</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace Arcade</span></div>
 <div class="ttc" id="aa00032_html"><div class="ttname"><a href="a00032.html">IEntityManager.hpp</a></div></div>
 <div class="ttc" id="aa00035_html"><div class="ttname"><a href="a00035.html">IEventManager.hpp</a></div></div>
 <div class="ttc" id="aa00038_html"><div class="ttname"><a href="a00038.html">ISystem.hpp</a></div></div>
 <div class="ttc" id="aa00063_html"><div class="ttname"><a href="a00063.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
-<div class="ttc" id="aa00911_html"><div class="ttname"><a href="a00911.html">Arcade::ECS::IEntityManager</a></div><div class="ttdoc">Manage the creation of entities and their access.</div><div class="ttdef"><b>Definition:</b> IEntityManager.hpp:19</div></div>
-<div class="ttc" id="aa00915_html"><div class="ttname"><a href="a00915.html">Arcade::ECS::IEventManager</a></div><div class="ttdoc">The IEventManager interface.</div><div class="ttdef"><b>Definition:</b> IEventManager.hpp:99</div></div>
+<div class="ttc" id="aa00895_html"><div class="ttname"><a href="a00895.html">Arcade::Core::IDisplayModule</a></div><div class="ttdoc">The IDisplayModule interface.</div><div class="ttdef"><b>Definition:</b> IDisplayModule.hpp:19</div></div>
+<div class="ttc" id="aa00899_html"><div class="ttname"><a href="a00899.html">Arcade::Core::IGameModule</a></div><div class="ttdoc">The IGameModule interface.</div><div class="ttdef"><b>Definition:</b> IGameModule.hpp:21</div></div>
+<div class="ttc" id="aa00915_html"><div class="ttname"><a href="a00915.html">Arcade::ECS::IEventManager</a></div><div class="ttdoc">The IEventManager interface.</div><div class="ttdef"><b>Definition:</b> IEventManager.hpp:102</div></div>
 <div class="ttc" id="aa00919_html"><div class="ttname"><a href="a00919.html">Arcade::ECS::ISystem</a></div><div class="ttdoc">The ISystem interface.</div><div class="ttdef"><b>Definition:</b> ISystem.hpp:25</div></div>
 <div class="ttc" id="aa00923_html"><div class="ttname"><a href="a00923.html">Arcade::ECS::ISystemManager</a></div><div class="ttdef"><b>Definition:</b> ISystemManager.hpp:18</div></div>
-<div class="ttc" id="aa00923_html_a0731598c67b1485074352be703abdb59"><div class="ttname"><a href="a00923.html#a0731598c67b1485074352be703abdb59">Arcade::ECS::ISystemManager::update</a></div><div class="ttdeci">virtual void update(std::size_t deltaTime, Arcade::ECS::IEntityManager &amp;entityManager, Arcade::ECS::IEventManager &amp;eventManager)=0</div><div class="ttdoc">Update all systems of the system manager.</div></div>
 <div class="ttc" id="aa00923_html_a1b1050fb958386f47e312c8c62bf2802"><div class="ttname"><a href="a00923.html#a1b1050fb958386f47e312c8c62bf2802">Arcade::ECS::ISystemManager::removeSystem</a></div><div class="ttdeci">virtual void removeSystem(const std::string &amp;name)=0</div><div class="ttdoc">Remove a system from the system manager.</div></div>
 <div class="ttc" id="aa00923_html_a60867e72f13bcb4b9b58046c58adb0f5"><div class="ttname"><a href="a00923.html#a60867e72f13bcb4b9b58046c58adb0f5">Arcade::ECS::ISystemManager::~ISystemManager</a></div><div class="ttdeci">virtual ~ISystemManager()=default</div></div>
 <div class="ttc" id="aa00923_html_a70c01e9c68714f136fe9be0905a1c34f"><div class="ttname"><a href="a00923.html#a70c01e9c68714f136fe9be0905a1c34f">Arcade::ECS::ISystemManager::addSystem</a></div><div class="ttdeci">virtual void addSystem(const std::string &amp;name, Arcade::ECS::ISystem *system)=0</div><div class="ttdoc">Add a system to the system manager.</div></div>
+<div class="ttc" id="aa00923_html_ab43c83834d0e48e9270dd4af328be26c"><div class="ttname"><a href="a00923.html#ab43c83834d0e48e9270dd4af328be26c">Arcade::ECS::ISystemManager::update</a></div><div class="ttdeci">virtual void update(std::size_t deltaTime, Arcade::ECS::IEventManager &amp;eventManager, Arcade::Core::IDisplayModule &amp;displayModule, Arcade::Core::IGameModule &amp;gameModule)=0</div><div class="ttdoc">Update all systems of the system manager.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 18:35:08 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 21:30:15 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

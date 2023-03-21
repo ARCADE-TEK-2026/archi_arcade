@@ -80,7 +80,7 @@ Collaboration diagram for Arcade::ECS::ISystemManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00921.png" border="0" usemap="#aArcade_1_1ECS_1_1ISystemManager_coll__map" alt="Collaboration graph"/></div>
 <map name="aArcade_1_1ECS_1_1ISystemManager_coll__map" id="aArcade_1_1ECS_1_1ISystemManager_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,265,244"/>
+<area shape="rect" title=" " alt="" coords="5,5,336,259"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -94,9 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b1050fb958386f47e312c8c62bf2802"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00923.html#a1b1050fb958386f47e312c8c62bf2802">removeSystem</a> (const std::string &amp;name)=0</td></tr>
 <tr class="memdesc:a1b1050fb958386f47e312c8c62bf2802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a system from the system manager.  <a href="a00923.html#a1b1050fb958386f47e312c8c62bf2802">More...</a><br /></td></tr>
 <tr class="separator:a1b1050fb958386f47e312c8c62bf2802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0731598c67b1485074352be703abdb59"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00923.html#a0731598c67b1485074352be703abdb59">update</a> (std::size_t deltaTime, <a class="el" href="a00911.html">Arcade::ECS::IEntityManager</a> &amp;entityManager, <a class="el" href="a00915.html">Arcade::ECS::IEventManager</a> &amp;eventManager)=0</td></tr>
-<tr class="memdesc:a0731598c67b1485074352be703abdb59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all systems of the system manager.  <a href="a00923.html#a0731598c67b1485074352be703abdb59">More...</a><br /></td></tr>
-<tr class="separator:a0731598c67b1485074352be703abdb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43c83834d0e48e9270dd4af328be26c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00923.html#ab43c83834d0e48e9270dd4af328be26c">update</a> (std::size_t deltaTime, <a class="el" href="a00915.html">Arcade::ECS::IEventManager</a> &amp;eventManager, <a class="el" href="a00895.html">Arcade::Core::IDisplayModule</a> &amp;displayModule, <a class="el" href="a00899.html">Arcade::Core::IGameModule</a> &amp;gameModule)=0</td></tr>
+<tr class="memdesc:ab43c83834d0e48e9270dd4af328be26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all systems of the system manager.  <a href="a00923.html#ab43c83834d0e48e9270dd4af328be26c">More...</a><br /></td></tr>
+<tr class="separator:ab43c83834d0e48e9270dd4af328be26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a60867e72f13bcb4b9b58046c58adb0f5"></a>
@@ -204,8 +204,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0731598c67b1485074352be703abdb59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0731598c67b1485074352be703abdb59">&#9670;&nbsp;</a></span>update()</h2>
+<a id="ab43c83834d0e48e9270dd4af328be26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab43c83834d0e48e9270dd4af328be26c">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,14 +222,20 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00911.html">Arcade::ECS::IEntityManager</a> &amp;&#160;</td>
-          <td class="paramname"><em>entityManager</em>, </td>
+          <td class="paramtype"><a class="el" href="a00915.html">Arcade::ECS::IEventManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>eventManager</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00915.html">Arcade::ECS::IEventManager</a> &amp;&#160;</td>
-          <td class="paramname"><em>eventManager</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00895.html">Arcade::Core::IDisplayModule</a> &amp;&#160;</td>
+          <td class="paramname"><em>displayModule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00899.html">Arcade::Core::IGameModule</a> &amp;&#160;</td>
+          <td class="paramname"><em>gameModule</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -262,7 +268,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 18:35:08 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 21:30:15 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
