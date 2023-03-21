@@ -59,7 +59,8 @@ namespace Arcade {
                 /**
                  * @brief Set the background color.
                  */
-                virtual void setBackgroundColor(Arcade::Graph::Color &color) = 0;
+                virtual void setBackgroundColor(
+                Arcade::Graph::Color &color) = 0;
                 /**
                  * @brief Get the foreground color.
                  *
@@ -70,7 +71,8 @@ namespace Arcade {
                 /**
                  * @brief Set the foreground color.
                  */
-                virtual void setForegroundColor(Arcade::Graph::Color &color) = 0;
+                virtual void setForegroundColor(
+                Arcade::Graph::Color &color) = 0;
                 /**
                  * @brief Get the police size.
                  *
