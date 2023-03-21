@@ -115,7 +115,7 @@ namespace Arcade {
                  *
                  * @param event The event to add
                  */
-                virtual void addEvent(const std::string &event, std::optional<std::shared_ptr<IComponent>>) = 0;
+                virtual void addEvent(const std::string &event, std::optional<std::shared_ptr<IComponent>> = std::nullopt) = 0;
                 /**
                  * @brief Remove all events from list of trigered events
                  */
