@@ -19,7 +19,6 @@ namespace Arcade {
         class IDisplayModule {
             public:
                 virtual ~IDisplayModule() = default;
-
                 /**
                  * @brief Get the system manager of the current graphical
                  * library
