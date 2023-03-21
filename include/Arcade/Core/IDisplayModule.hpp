@@ -19,7 +19,6 @@ namespace Arcade {
         class IDisplayModule {
             public:
                 virtual ~IDisplayModule() = default;
-
                 /**
                  * @brief Get the system manager of the current graphical
                  * library
@@ -41,7 +40,7 @@ namespace Arcade {
                 const std::string &libGraphicName) = 0;
                 /**
                  * @brief Change the current active graphical library to the
-                 * next one
+                 * next one (in a cyclic way)
                  *
                  * (because the epitech subject says we can switch to the next
                  * graphical library in the folder of availible graphical
