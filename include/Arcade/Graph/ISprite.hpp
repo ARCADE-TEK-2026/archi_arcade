@@ -39,7 +39,13 @@ namespace Arcade {
                  *
                  * @return The TTY data.
                  */
-                virtual const TTYData &getNcurseData() const = 0;
+                virtual const TTYData &getTTYData() const = 0;
+                /**
+                 * @brief Set tty data
+                 *
+                 * @param ttyData The TTY data.
+                 */
+                virtual void setTTYData(const TTYData &ttyData) = 0;
 
                 /**
                  * @brief Get the sprite position in 3Dimension.

@@ -112,7 +112,7 @@ namespace Arcade {
                  * bool (True if the event was trigered, False if the event was not trigered)
                  * and std::optional<std::shared_ptr<IComponent>> (The parameter passed as parameter to `addEvent` method)
                  */
-                virtual std::pair<bool, std::optional<std::shared_ptr<IComponent> &>> isEventInQueue(const std::string &event) const = 0;
+                virtual std::pair<bool, std::optional<std::shared_ptr<IComponent>>> isEventInQueue(const std::string &event) const = 0;
                 /**
                  * @brief Add an event to list of trigered events
                  *
