@@ -83,8 +83,8 @@ Inheritance diagram for Arcade::Graph::ISprite:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00950.png" border="0" usemap="#aArcade_1_1Graph_1_1ISprite_inherit__map" alt="Inheritance graph"/></div>
 <map name="aArcade_1_1Graph_1_1ISprite_inherit__map" id="aArcade_1_1Graph_1_1ISprite_inherit__map">
-<area shape="rect" title="The ISprite class." alt="" coords="5,204,215,633"/>
-<area shape="rect" href="a00903.html" title=" " alt="" coords="7,5,213,156"/>
+<area shape="rect" title="The ISprite class." alt="" coords="5,204,213,663"/>
+<area shape="rect" href="a00903.html" title=" " alt="" coords="6,5,213,156"/>
 </map>
 </div>
 <div class="dynheader">
@@ -92,8 +92,8 @@ Collaboration diagram for Arcade::Graph::ISprite:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00949.png" border="0" usemap="#aArcade_1_1Graph_1_1ISprite_coll__map" alt="Collaboration graph"/></div>
 <map name="aArcade_1_1Graph_1_1ISprite_coll__map" id="aArcade_1_1Graph_1_1ISprite_coll__map">
-<area shape="rect" title="The ISprite class." alt="" coords="5,204,215,633"/>
-<area shape="rect" href="a00903.html" title=" " alt="" coords="7,5,213,156"/>
+<area shape="rect" title="The ISprite class." alt="" coords="5,204,213,663"/>
+<area shape="rect" href="a00903.html" title=" " alt="" coords="6,5,213,156"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -107,9 +107,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa586aac80c73cff6e595d568f0569708"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#aa586aac80c73cff6e595d568f0569708">getPath</a> () const =0</td></tr>
 <tr class="memdesc:aa586aac80c73cff6e595d568f0569708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the path of the Sprite.  <a href="a00951.html#aa586aac80c73cff6e595d568f0569708">More...</a><br /></td></tr>
 <tr class="separator:aa586aac80c73cff6e595d568f0569708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25f28e8279bc9e8a4ed0561cfccbabd0"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="a00939.html">TTYData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a25f28e8279bc9e8a4ed0561cfccbabd0">getNcurseData</a> () const =0</td></tr>
-<tr class="memdesc:a25f28e8279bc9e8a4ed0561cfccbabd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data to print when it's TTY.  <a href="a00951.html#a25f28e8279bc9e8a4ed0561cfccbabd0">More...</a><br /></td></tr>
-<tr class="separator:a25f28e8279bc9e8a4ed0561cfccbabd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b935bc6e7d9ab690b565333a5dd2bfc"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="a00939.html">TTYData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a6b935bc6e7d9ab690b565333a5dd2bfc">getTTYData</a> () const =0</td></tr>
+<tr class="memdesc:a6b935bc6e7d9ab690b565333a5dd2bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data to print when it's TTY.  <a href="a00951.html#a6b935bc6e7d9ab690b565333a5dd2bfc">More...</a><br /></td></tr>
+<tr class="separator:a6b935bc6e7d9ab690b565333a5dd2bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3695920d35aa0608cbf94a56aa091b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#ae3695920d35aa0608cbf94a56aa091b9">setTTYData</a> (const <a class="el" href="a00939.html">TTYData</a> &amp;ttyData)=0</td></tr>
+<tr class="memdesc:ae3695920d35aa0608cbf94a56aa091b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set tty data.  <a href="a00951.html#ae3695920d35aa0608cbf94a56aa091b9">More...</a><br /></td></tr>
+<tr class="separator:ae3695920d35aa0608cbf94a56aa091b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a426a1e9d628579f41b2eca84ec94d067"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="a00887.html">Arcade::Vector3f</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a426a1e9d628579f41b2eca84ec94d067">getPos</a> () const =0</td></tr>
 <tr class="memdesc:a426a1e9d628579f41b2eca84ec94d067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sprite position in 3Dimension.  <a href="a00951.html#a426a1e9d628579f41b2eca84ec94d067">More...</a><br /></td></tr>
 <tr class="separator:a426a1e9d628579f41b2eca84ec94d067"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,34 +229,6 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The component id </dd></dl>
 
 <p>Implements <a class="el" href="a00903.html#aaceb3652b7065250f57375469c7e0898">Arcade::ECS::IComponent</a>.</p>
-
-</div>
-</div>
-<a id="a25f28e8279bc9e8a4ed0561cfccbabd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25f28e8279bc9e8a4ed0561cfccbabd0">&#9670;&nbsp;</a></span>getNcurseData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const <a class="el" href="a00939.html">TTYData</a>&amp; Arcade::Graph::ISprite::getNcurseData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the data to print when it's TTY. </p>
-<dl class="section return"><dt>Returns</dt><dd>The TTY data. </dd></dl>
 
 </div>
 </div>
@@ -399,6 +374,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a6b935bc6e7d9ab690b565333a5dd2bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b935bc6e7d9ab690b565333a5dd2bfc">&#9670;&nbsp;</a></span>getTTYData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="a00939.html">TTYData</a>&amp; Arcade::Graph::ISprite::getTTYData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the data to print when it's TTY. </p>
+<dl class="section return"><dt>Returns</dt><dd>The TTY data. </dd></dl>
+
+</div>
+</div>
 <a id="a999555363198aa3e807c2a3cba1c058b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a999555363198aa3e807c2a3cba1c058b">&#9670;&nbsp;</a></span>setPos()</h2>
 
@@ -455,13 +458,47 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae3695920d35aa0608cbf94a56aa091b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3695920d35aa0608cbf94a56aa091b9">&#9670;&nbsp;</a></span>setTTYData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Arcade::Graph::ISprite::setTTYData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00939.html">TTYData</a> &amp;&#160;</td>
+          <td class="paramname"><em>ttyData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set tty data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ttyData</td><td>The TTY data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/Arcade/Graph/<a class="el" href="a00056_source.html">ISprite.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 14:47:07 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 16:16:12 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

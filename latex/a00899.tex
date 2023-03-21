@@ -26,7 +26,7 @@ virtual \mbox{\hyperlink{a00899_ab7d3e415dd4afd3ca2238a61c8e5ea02}{$\sim$\+IGame
 \item 
 virtual \mbox{\hyperlink{a00931}{Arcade\+::\+Game\+::\+IScene\+Manager}} \& \mbox{\hyperlink{a00899_ad56aa31cb0ebb77aa965d74660d37811}{get\+Scene\+Manager}} ()=0
 \begin{DoxyCompactList}\small\item\em Get the scene manager of the current game. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{a00899_a6edd79d041e5bac4b35a3476017d00f2}{change\+Game}} (const std\+::string \&game\+Name)=0
+virtual void \mbox{\hyperlink{a00899_a59cbe079208324c0b0090af9d5ca1ed0}{change\+Game}} (const std\+::string \&game\+Name)=0
 \begin{DoxyCompactList}\small\item\em Change the current active game to the given game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -45,11 +45,11 @@ The \mbox{\hyperlink{a00899}{IGame\+Module}} is passed to all systems
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{a00899_a6edd79d041e5bac4b35a3476017d00f2}\label{a00899_a6edd79d041e5bac4b35a3476017d00f2}} 
+\mbox{\Hypertarget{a00899_a59cbe079208324c0b0090af9d5ca1ed0}\label{a00899_a59cbe079208324c0b0090af9d5ca1ed0}} 
 \index{Arcade::Core::IGameModule@{Arcade::Core::IGameModule}!changeGame@{changeGame}}
 \index{changeGame@{changeGame}!Arcade::Core::IGameModule@{Arcade::Core::IGameModule}}
 \doxysubsubsection{\texorpdfstring{changeGame()}{changeGame()}}
-{\footnotesize\ttfamily virtual bool Arcade\+::\+Core\+::\+IGame\+Module\+::change\+Game (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{game\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Core\+::\+IGame\+Module\+::change\+Game (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{game\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -60,10 +60,7 @@ Change the current active game to the given game.
 {\em game\+Name} & The game filename to change to (without .so)\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if the game was changed, false otherwise 
-\end{DoxyReturn}
-\mbox{\Hypertarget{a00899_ad56aa31cb0ebb77aa965d74660d37811}\label{a00899_ad56aa31cb0ebb77aa965d74660d37811}} 
+Throw on error \mbox{\Hypertarget{a00899_ad56aa31cb0ebb77aa965d74660d37811}\label{a00899_ad56aa31cb0ebb77aa965d74660d37811}} 
 \index{Arcade::Core::IGameModule@{Arcade::Core::IGameModule}!getSceneManager@{getSceneManager}}
 \index{getSceneManager@{getSceneManager}!Arcade::Core::IGameModule@{Arcade::Core::IGameModule}}
 \doxysubsubsection{\texorpdfstring{getSceneManager()}{getSceneManager()}}

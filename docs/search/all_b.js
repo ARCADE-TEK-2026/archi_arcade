@@ -9,5 +9,6 @@ var searchData=
   ['setpos_105',['setPos',['../a00951.html#a999555363198aa3e807c2a3cba1c058b',1,'Arcade::Graph::ISprite::setPos()'],['../a00955.html#a56817f87f9425155e4e6b47f20116605',1,'Arcade::Graph::IText::setPos()']]],
   ['setsize_106',['setSize',['../a00951.html#ac97cde53b3df000e1777e0871623a976',1,'Arcade::Graph::ISprite']]],
   ['settext_107',['setText',['../a00955.html#ad20654b448adb46f4a640efd152137be',1,'Arcade::Graph::IText']]],
-  ['setvolume_108',['setVolume',['../a00947.html#a4905117cdb647cc715dfd8751c6f247e',1,'Arcade::Graph::IMusic']]]
+  ['setttydata_108',['setTTYData',['../a00951.html#ae3695920d35aa0608cbf94a56aa091b9',1,'Arcade::Graph::ISprite']]],
+  ['setvolume_109',['setVolume',['../a00947.html#a4905117cdb647cc715dfd8751c6f247e',1,'Arcade::Graph::IMusic']]]
 ];

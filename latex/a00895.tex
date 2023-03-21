@@ -26,9 +26,9 @@ virtual \mbox{\hyperlink{a00895_ab0dca340871523283d3f52af4053032a}{$\sim$\+IDisp
 \item 
 virtual \mbox{\hyperlink{a00923}{ECS\+::\+ISystem\+Manager}} \& \mbox{\hyperlink{a00895_ad8b1ef123e3cfa811d043a1e5e287175}{get\+System\+Manager}} ()=0
 \begin{DoxyCompactList}\small\item\em Get the system manager of the current graphical library. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{a00895_a2d6093dd2989a9441aa671d5b01c4663}{change\+Graphic\+Lib}} (const std\+::string \&lib\+Graphic\+Name)=0
+virtual void \mbox{\hyperlink{a00895_aa2d6035f73c69e76403b4e114db97ca1}{change\+Graphic\+Lib}} (const std\+::string \&lib\+Graphic\+Name)=0
 \begin{DoxyCompactList}\small\item\em Change the current active graphical library to the given graphical library. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{a00895_a087e08ef15a6d0d0c018c5a5c57e040a}{change\+Graphic\+Lib}} ()=0
+virtual void \mbox{\hyperlink{a00895_ac0cbd83c3f4809caa19a6ffd59f68e18}{change\+Graphic\+Lib}} ()=0
 \begin{DoxyCompactList}\small\item\em Change the current active graphical library to the next one. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -47,11 +47,11 @@ The \mbox{\hyperlink{a00895}{IDisplay\+Module}} is passed to all systems
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{a00895_a087e08ef15a6d0d0c018c5a5c57e040a}\label{a00895_a087e08ef15a6d0d0c018c5a5c57e040a}} 
+\mbox{\Hypertarget{a00895_ac0cbd83c3f4809caa19a6ffd59f68e18}\label{a00895_ac0cbd83c3f4809caa19a6ffd59f68e18}} 
 \index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!changeGraphicLib@{changeGraphicLib}}
 \index{changeGraphicLib@{changeGraphicLib}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
 \doxysubsubsection{\texorpdfstring{changeGraphicLib()}{changeGraphicLib()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual bool Arcade\+::\+Core\+::\+IDisplay\+Module\+::change\+Graphic\+Lib (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Core\+::\+IDisplay\+Module\+::change\+Graphic\+Lib (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -59,14 +59,11 @@ Change the current active graphical library to the next one.
 
 (because the epitech subject says we can switch to the next graphical library in the folder of availible graphical library)
 
-\begin{DoxyReturn}{Returns}
-True if the graphical library was changed, false 
-\end{DoxyReturn}
-\mbox{\Hypertarget{a00895_a2d6093dd2989a9441aa671d5b01c4663}\label{a00895_a2d6093dd2989a9441aa671d5b01c4663}} 
+Throw on error \mbox{\Hypertarget{a00895_aa2d6035f73c69e76403b4e114db97ca1}\label{a00895_aa2d6035f73c69e76403b4e114db97ca1}} 
 \index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!changeGraphicLib@{changeGraphicLib}}
 \index{changeGraphicLib@{changeGraphicLib}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
 \doxysubsubsection{\texorpdfstring{changeGraphicLib()}{changeGraphicLib()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual bool Arcade\+::\+Core\+::\+IDisplay\+Module\+::change\+Graphic\+Lib (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lib\+Graphic\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Core\+::\+IDisplay\+Module\+::change\+Graphic\+Lib (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lib\+Graphic\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -77,10 +74,7 @@ Change the current active graphical library to the given graphical library.
 {\em lib\+Graphic\+Name} & The graphical library name (only the libname without .so)\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if the graphical library was changed, false otherwise 
-\end{DoxyReturn}
-\mbox{\Hypertarget{a00895_ad8b1ef123e3cfa811d043a1e5e287175}\label{a00895_ad8b1ef123e3cfa811d043a1e5e287175}} 
+Throw on error \mbox{\Hypertarget{a00895_ad8b1ef123e3cfa811d043a1e5e287175}\label{a00895_ad8b1ef123e3cfa811d043a1e5e287175}} 
 \index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!getSystemManager@{getSystemManager}}
 \index{getSystemManager@{getSystemManager}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
 \doxysubsubsection{\texorpdfstring{getSystemManager()}{getSystemManager()}}

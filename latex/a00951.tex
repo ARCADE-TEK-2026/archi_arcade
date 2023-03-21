@@ -38,8 +38,10 @@ virtual const std\+::string \& \mbox{\hyperlink{a00951_a5b6f4234c747de30802331f6
 \begin{DoxyCompactList}\small\item\em Get the id of the component. \end{DoxyCompactList}\item 
 virtual const std\+::string \& \mbox{\hyperlink{a00951_aa586aac80c73cff6e595d568f0569708}{get\+Path}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the path of the Sprite. \end{DoxyCompactList}\item 
-virtual const \mbox{\hyperlink{a00939}{TTYData}} \& \mbox{\hyperlink{a00951_a25f28e8279bc9e8a4ed0561cfccbabd0}{get\+Ncurse\+Data}} () const =0
+virtual const \mbox{\hyperlink{a00939}{TTYData}} \& \mbox{\hyperlink{a00951_a6b935bc6e7d9ab690b565333a5dd2bfc}{get\+TTYData}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the data to print when it\textquotesingle{}s TTY. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00951_ae3695920d35aa0608cbf94a56aa091b9}{set\+TTYData}} (const \mbox{\hyperlink{a00939}{TTYData}} \&tty\+Data)=0
+\begin{DoxyCompactList}\small\item\em Set tty data. \end{DoxyCompactList}\item 
 virtual const \mbox{\hyperlink{a00887}{Arcade\+::\+Vector3f}} \& \mbox{\hyperlink{a00951_a426a1e9d628579f41b2eca84ec94d067}{get\+Pos}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the sprite position in 3Dimension. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{a00951_a999555363198aa3e807c2a3cba1c058b}{set\+Pos}} (\mbox{\hyperlink{a00887}{Arcade\+::\+Vector3f}} pos)=0
@@ -102,19 +104,6 @@ The component id
 
 Implements \mbox{\hyperlink{a00903_aaceb3652b7065250f57375469c7e0898}{Arcade\+::\+ECS\+::\+IComponent}}.
 
-\mbox{\Hypertarget{a00951_a25f28e8279bc9e8a4ed0561cfccbabd0}\label{a00951_a25f28e8279bc9e8a4ed0561cfccbabd0}} 
-\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!getNcurseData@{getNcurseData}}
-\index{getNcurseData@{getNcurseData}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
-\doxysubsubsection{\texorpdfstring{getNcurseData()}{getNcurseData()}}
-{\footnotesize\ttfamily virtual const \mbox{\hyperlink{a00939}{TTYData}}\& Arcade\+::\+Graph\+::\+ISprite\+::get\+Ncurse\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get the data to print when it\textquotesingle{}s TTY. 
-
-\begin{DoxyReturn}{Returns}
-The TTY data. 
-\end{DoxyReturn}
 \mbox{\Hypertarget{a00951_aa586aac80c73cff6e595d568f0569708}\label{a00951_aa586aac80c73cff6e595d568f0569708}} 
 \index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!getPath@{getPath}}
 \index{getPath@{getPath}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
@@ -184,6 +173,19 @@ The size data is in percentages.
 \begin{DoxyReturn}{Returns}
 The path of the Sprite. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{a00951_a6b935bc6e7d9ab690b565333a5dd2bfc}\label{a00951_a6b935bc6e7d9ab690b565333a5dd2bfc}} 
+\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!getTTYData@{getTTYData}}
+\index{getTTYData@{getTTYData}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+\doxysubsubsection{\texorpdfstring{getTTYData()}{getTTYData()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{a00939}{TTYData}}\& Arcade\+::\+Graph\+::\+ISprite\+::get\+TTYData (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the data to print when it\textquotesingle{}s TTY. 
+
+\begin{DoxyReturn}{Returns}
+The TTY data. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{a00951_a999555363198aa3e807c2a3cba1c058b}\label{a00951_a999555363198aa3e807c2a3cba1c058b}} 
 \index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!setPos@{setPos}}
 \index{setPos@{setPos}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
@@ -204,6 +206,21 @@ Set the sprite position in 3Dimension.
 
 Set the sprite size in 3Dimension. 
 
+\mbox{\Hypertarget{a00951_ae3695920d35aa0608cbf94a56aa091b9}\label{a00951_ae3695920d35aa0608cbf94a56aa091b9}} 
+\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!setTTYData@{setTTYData}}
+\index{setTTYData@{setTTYData}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+\doxysubsubsection{\texorpdfstring{setTTYData()}{setTTYData()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+ISprite\+::set\+TTYData (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a00939}{TTYData}} \&}]{tty\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set tty data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tty\+Data} & The TTY data. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

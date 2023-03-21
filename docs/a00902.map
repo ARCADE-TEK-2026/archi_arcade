@@ -1,6 +1,6 @@
 <map id="Arcade::ECS::IComponent" name="Arcade::ECS::IComponent">
-<area shape="rect" id="node1" title=" " alt="" coords="234,5,441,156"/>
+<area shape="rect" id="node1" title=" " alt="" coords="233,5,439,156"/>
 <area shape="rect" id="node2" href="$a00947.html" title="The IMusic class." alt="" coords="5,307,208,633"/>
-<area shape="rect" id="node3" href="$a00951.html" title="The ISprite class." alt="" coords="233,255,442,685"/>
-<area shape="rect" id="node4" href="$a00955.html" title="The IText class." alt="" coords="467,204,693,736"/>
+<area shape="rect" id="node3" href="$a00951.html" title="The ISprite class." alt="" coords="232,241,440,699"/>
+<area shape="rect" id="node4" href="$a00955.html" title="The IText class." alt="" coords="464,204,691,736"/>
 </map>
