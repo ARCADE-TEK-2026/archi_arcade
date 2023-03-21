@@ -88,21 +88,21 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">   16</a></span>&#160;<span class="preprocessor">    #define EXPORT</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">   21</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a> { <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487">GRAPH</a>, <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13">GAME</a> };</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00011.html#a182ec86f83648772eeee4a66996d8f25">   31</a></span>&#160;    std::unique_ptr&lt;Arcade::Game::ISceneManager&gt; <a class="code" href="a00011.html#a182ec86f83648772eeee4a66996d8f25">getScenes</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00011.html#ae165d25fc17828ee8ca15df4dac728c2">   41</a></span>&#160;    std::unique_ptr&lt;Arcade::ECS::ISystemManager&gt; <a class="code" href="a00011.html#ae165d25fc17828ee8ca15df4dac728c2">getSystems</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="a00011.html#ac0fc966d4386ddb71d99361e3fccb311">   51</a></span>&#160;    std::string <a class="code" href="a00011.html#ac0fc966d4386ddb71d99361e3fccb311">getName</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00011.html#a19760a91ea6abfcf31fb434c6a121162">   61</a></span>&#160;    <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a> <a class="code" href="a00011.html#a19760a91ea6abfcf31fb434c6a121162">getType</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">   26</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a> { <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487">GRAPH</a>, <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13">GAME</a> };</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00011.html#a182ec86f83648772eeee4a66996d8f25">   36</a></span>&#160;    std::unique_ptr&lt;Arcade::Game::ISceneManager&gt; <a class="code" href="a00011.html#a182ec86f83648772eeee4a66996d8f25">getScenes</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00011.html#ae165d25fc17828ee8ca15df4dac728c2">   46</a></span>&#160;    std::unique_ptr&lt;Arcade::ECS::ISystemManager&gt; <a class="code" href="a00011.html#ae165d25fc17828ee8ca15df4dac728c2">getSystems</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00011.html#ac0fc966d4386ddb71d99361e3fccb311">   56</a></span>&#160;    std::string <a class="code" href="a00011.html#ac0fc966d4386ddb71d99361e3fccb311">getName</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00011.html#a19760a91ea6abfcf31fb434c6a121162">   66</a></span>&#160;    <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a> <a class="code" href="a00011.html#a19760a91ea6abfcf31fb434c6a121162">getType</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 <div class="ttc" id="aa00011_html_a182ec86f83648772eeee4a66996d8f25"><div class="ttname"><a href="a00011.html#a182ec86f83648772eeee4a66996d8f25">getScenes</a></div><div class="ttdeci">std::unique_ptr&lt; Arcade::Game::ISceneManager &gt; getScenes()</div><div class="ttdoc">The game shared lib main entry point to get scenes.</div></div>
 <div class="ttc" id="aa00011_html_a19760a91ea6abfcf31fb434c6a121162"><div class="ttname"><a href="a00011.html#a19760a91ea6abfcf31fb434c6a121162">getType</a></div><div class="ttdeci">LibType getType()</div><div class="ttdoc">The Shared lib entry point to get lib type.</div></div>
-<div class="ttc" id="aa00011_html_a6bd8133fc17124d3215b7fc6edecf616"><div class="ttname"><a href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a></div><div class="ttdeci">LibType</div><div class="ttdef"><b>Definition:</b> Api.hpp:21</div></div>
+<div class="ttc" id="aa00011_html_a6bd8133fc17124d3215b7fc6edecf616"><div class="ttname"><a href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a></div><div class="ttdeci">LibType</div><div class="ttdef"><b>Definition:</b> Api.hpp:26</div></div>
 <div class="ttc" id="aa00011_html_a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13"><div class="ttname"><a href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13">LibType::GAME</a></div><div class="ttdeci">@ GAME</div></div>
 <div class="ttc" id="aa00011_html_a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487"><div class="ttname"><a href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487">LibType::GRAPH</a></div><div class="ttdeci">@ GRAPH</div></div>
 <div class="ttc" id="aa00011_html_ac0fc966d4386ddb71d99361e3fccb311"><div class="ttname"><a href="a00011.html#ac0fc966d4386ddb71d99361e3fccb311">getName</a></div><div class="ttdeci">std::string getName()</div><div class="ttdoc">The Shared lib entry point to get lib name.</div></div>
@@ -112,7 +112,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 16:16:12 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 18:35:08 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

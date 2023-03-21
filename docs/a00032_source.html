@@ -88,17 +88,16 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00911.html">   19</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00911.html">IEntityManager</a> {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00911.html#ac73d41d0058aa9c36115abfa9b8daa61">   21</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00911.html#ac73d41d0058aa9c36115abfa9b8daa61">~IEntityManager</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00911.html#a018b7eb67da2e67515ad8fe957fd8c30">   30</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00907.html">IEntity</a> &amp;<a class="code" href="a00911.html#a018b7eb67da2e67515ad8fe957fd8c30">createEntity</a>(<span class="keyword">const</span> std::string &amp;<span class="keywordtype">id</span>) = 0;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> std::vector&lt;std::shared_ptr&lt;IEntity&gt;&gt; &amp;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00911.html#a3e71da94c3897512ff8dd4ac946ed4be">   37</a></span>&#160;                <a class="code" href="a00911.html#a3e71da94c3897512ff8dd4ac946ed4be">getEntities</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keyword">virtual</span> std::unique_ptr&lt;std::vector&lt;std::shared_ptr&lt;IEntity&gt;&gt;&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00911.html#a8838321771a4c664f711661435bbf170">   47</a></span>&#160;                <a class="code" href="a00911.html#a8838321771a4c664f711661435bbf170">getEntitiesByComponentType</a>(CompType comp) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00911.html#a4ecaa745c626995efdab0859d9d02e4d">   53</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00911.html#a4ecaa745c626995efdab0859d9d02e4d">removeEntity</a>(std::string <span class="keywordtype">id</span>) = 0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00911.html#a6542722832aa9bd45b62b92d5c35201e">   57</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00911.html#a6542722832aa9bd45b62b92d5c35201e">removeAllEntities</a>() = 0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        };</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    } <span class="comment">// namespace ECS</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <span class="comment">// namespace Arcade</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00911.html#a018b7eb67da2e67515ad8fe957fd8c30">   29</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00907.html">IEntity</a> &amp;<a class="code" href="a00911.html#a018b7eb67da2e67515ad8fe957fd8c30">createEntity</a>(<span class="keyword">const</span> std::string &amp;<span class="keywordtype">id</span>) = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> std::vector&lt;std::shared_ptr&lt;IEntity&gt;&gt; &amp;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00911.html#a3e71da94c3897512ff8dd4ac946ed4be">   36</a></span>&#160;                <a class="code" href="a00911.html#a3e71da94c3897512ff8dd4ac946ed4be">getEntities</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keyword">virtual</span> std::unique_ptr&lt;std::vector&lt;std::shared_ptr&lt;IEntity&gt;&gt;&gt;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00911.html#a8838321771a4c664f711661435bbf170">   46</a></span>&#160;                <a class="code" href="a00911.html#a8838321771a4c664f711661435bbf170">getEntitiesByComponentType</a>(CompType comp) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00911.html#a4ecaa745c626995efdab0859d9d02e4d">   52</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00911.html#a4ecaa745c626995efdab0859d9d02e4d">removeEntity</a>(std::string <span class="keywordtype">id</span>) = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00911.html#a6542722832aa9bd45b62b92d5c35201e">   56</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00911.html#a6542722832aa9bd45b62b92d5c35201e">removeAllEntities</a>() = 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    } <span class="comment">// namespace ECS</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <span class="comment">// namespace Arcade</span></div>
 <div class="ttc" id="aa00029_html"><div class="ttname"><a href="a00029.html">IEntity.hpp</a></div></div>
 <div class="ttc" id="aa00063_html"><div class="ttname"><a href="a00063.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
 <div class="ttc" id="aa00907_html"><div class="ttname"><a href="a00907.html">Arcade::ECS::IEntity</a></div><div class="ttdoc">The IEntity interface.</div><div class="ttdef"><b>Definition:</b> IEntity.hpp:22</div></div>
@@ -112,7 +111,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 16:16:12 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 18:35:08 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

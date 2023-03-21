@@ -21,7 +21,7 @@ var searchData=
   ['iscene_2ehpp_76',['IScene.hpp',['../a00044.html',1,'']]],
   ['iscenemanager_77',['ISceneManager',['../a00931.html',1,'Arcade::Game']]],
   ['iscenemanager_2ehpp_78',['ISceneManager.hpp',['../a00047.html',1,'']]],
-  ['iseventinqueue_79',['isEventInQueue',['../a00915.html#a7e735d574dc3a30ccc55b789302d8012',1,'Arcade::ECS::IEventManager']]],
+  ['iseventtriggered_79',['isEventTriggered',['../a00915.html#afa7920f418e991d714fee9646b418bc3',1,'Arcade::ECS::IEventManager']]],
   ['isprite_80',['ISprite',['../a00951.html',1,'Arcade::Graph']]],
   ['isprite_2ehpp_81',['ISprite.hpp',['../a00056.html',1,'']]],
   ['isystem_82',['ISystem',['../a00919.html',1,'Arcade::ECS']]],

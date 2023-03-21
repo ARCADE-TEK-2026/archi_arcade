@@ -83,7 +83,7 @@ Inheritance diagram for Arcade::Graph::ISprite:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00950.png" border="0" usemap="#aArcade_1_1Graph_1_1ISprite_inherit__map" alt="Inheritance graph"/></div>
 <map name="aArcade_1_1Graph_1_1ISprite_inherit__map" id="aArcade_1_1Graph_1_1ISprite_inherit__map">
-<area shape="rect" title="The ISprite class." alt="" coords="5,204,213,663"/>
+<area shape="rect" title="The ISprite class." alt="" coords="5,204,213,780"/>
 <area shape="rect" href="a00903.html" title=" " alt="" coords="6,5,213,156"/>
 </map>
 </div>
@@ -92,7 +92,7 @@ Collaboration diagram for Arcade::Graph::ISprite:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00949.png" border="0" usemap="#aArcade_1_1Graph_1_1ISprite_coll__map" alt="Collaboration graph"/></div>
 <map name="aArcade_1_1Graph_1_1ISprite_coll__map" id="aArcade_1_1Graph_1_1ISprite_coll__map">
-<area shape="rect" title="The ISprite class." alt="" coords="5,204,213,663"/>
+<area shape="rect" title="The ISprite class." alt="" coords="5,204,213,780"/>
 <area shape="rect" href="a00903.html" title=" " alt="" coords="6,5,213,156"/>
 </map>
 </div>
@@ -102,11 +102,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aced7a803b1241053e029ba2a27ea20d3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#aced7a803b1241053e029ba2a27ea20d3">~ISprite</a> ()=default</td></tr>
 <tr class="separator:aced7a803b1241053e029ba2a27ea20d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b6f4234c747de30802331f69ae3bc98"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a5b6f4234c747de30802331f69ae3bc98">getId</a> () const override=0</td></tr>
-<tr class="memdesc:a5b6f4234c747de30802331f69ae3bc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the id of the component.  <a href="a00951.html#a5b6f4234c747de30802331f69ae3bc98">More...</a><br /></td></tr>
+<tr class="memdesc:a5b6f4234c747de30802331f69ae3bc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Id object.  <a href="a00951.html#a5b6f4234c747de30802331f69ae3bc98">More...</a><br /></td></tr>
 <tr class="separator:a5b6f4234c747de30802331f69ae3bc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa586aac80c73cff6e595d568f0569708"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#aa586aac80c73cff6e595d568f0569708">getPath</a> () const =0</td></tr>
 <tr class="memdesc:aa586aac80c73cff6e595d568f0569708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the path of the Sprite.  <a href="a00951.html#aa586aac80c73cff6e595d568f0569708">More...</a><br /></td></tr>
 <tr class="separator:aa586aac80c73cff6e595d568f0569708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc0cd6e413320afe1dd1ae8f8b460ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a8dc0cd6e413320afe1dd1ae8f8b460ff">setPath</a> (const std::string &amp;path)=0</td></tr>
+<tr class="memdesc:a8dc0cd6e413320afe1dd1ae8f8b460ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the path of the Sprite  <a href="a00951.html#a8dc0cd6e413320afe1dd1ae8f8b460ff">More...</a><br /></td></tr>
+<tr class="separator:a8dc0cd6e413320afe1dd1ae8f8b460ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b935bc6e7d9ab690b565333a5dd2bfc"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="a00939.html">TTYData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a6b935bc6e7d9ab690b565333a5dd2bfc">getTTYData</a> () const =0</td></tr>
 <tr class="memdesc:a6b935bc6e7d9ab690b565333a5dd2bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data to print when it's TTY.  <a href="a00951.html#a6b935bc6e7d9ab690b565333a5dd2bfc">More...</a><br /></td></tr>
 <tr class="separator:a6b935bc6e7d9ab690b565333a5dd2bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,15 +128,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac97cde53b3df000e1777e0871623a976"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#ac97cde53b3df000e1777e0871623a976">setSize</a> (<a class="el" href="a00887.html">Arcade::Vector3f</a> size)=0</td></tr>
 <tr class="memdesc:ac97cde53b3df000e1777e0871623a976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sprite size in 3Dimension.  <a href="a00951.html#ac97cde53b3df000e1777e0871623a976">More...</a><br /></td></tr>
 <tr class="separator:ac97cde53b3df000e1777e0871623a976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ae99e3b233319a2204a99a71a7f3f2c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00935.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a5ae99e3b233319a2204a99a71a7f3f2c">getColor</a> () const =0</td></tr>
-<tr class="memdesc:a5ae99e3b233319a2204a99a71a7f3f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sprite <a class="el" href="a00935.html">Color</a>.  <a href="a00951.html#a5ae99e3b233319a2204a99a71a7f3f2c">More...</a><br /></td></tr>
-<tr class="separator:a5ae99e3b233319a2204a99a71a7f3f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a445af1d5b8e51f3ce1bbc3b2cece9e3d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00943.html">Rect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a445af1d5b8e51f3ce1bbc3b2cece9e3d">getRect</a> () const =0</td></tr>
-<tr class="memdesc:a445af1d5b8e51f3ce1bbc3b2cece9e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sprite rectangle.  <a href="a00951.html#a445af1d5b8e51f3ce1bbc3b2cece9e3d">More...</a><br /></td></tr>
-<tr class="separator:a445af1d5b8e51f3ce1bbc3b2cece9e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ab1106071f14007cedbc74f1a88d92e"><td class="memItemLeft" align="right" valign="top">virtual float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a0ab1106071f14007cedbc74f1a88d92e">getScale</a> () const =0</td></tr>
-<tr class="memdesc:a0ab1106071f14007cedbc74f1a88d92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sprite Scale.  <a href="a00951.html#a0ab1106071f14007cedbc74f1a88d92e">More...</a><br /></td></tr>
-<tr class="separator:a0ab1106071f14007cedbc74f1a88d92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b089ae153c1591212579b7fba69fa8"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="a00935.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#aa9b089ae153c1591212579b7fba69fa8">getColor</a> () const =0</td></tr>
+<tr class="memdesc:aa9b089ae153c1591212579b7fba69fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sprite <a class="el" href="a00935.html">Color</a>.  <a href="a00951.html#aa9b089ae153c1591212579b7fba69fa8">More...</a><br /></td></tr>
+<tr class="separator:aa9b089ae153c1591212579b7fba69fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7ac32a8f06771e0d2b121b51f7a720"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a8f7ac32a8f06771e0d2b121b51f7a720">setColor</a> (const <a class="el" href="a00935.html">Color</a> &amp;color)=0</td></tr>
+<tr class="memdesc:a8f7ac32a8f06771e0d2b121b51f7a720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sprite <a class="el" href="a00935.html">Color</a>.  <a href="a00951.html#a8f7ac32a8f06771e0d2b121b51f7a720">More...</a><br /></td></tr>
+<tr class="separator:a8f7ac32a8f06771e0d2b121b51f7a720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a408ea79cda40859bc65e43e9241cf268"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="a00943.html">Rect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a408ea79cda40859bc65e43e9241cf268">getRect</a> () const =0</td></tr>
+<tr class="memdesc:a408ea79cda40859bc65e43e9241cf268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sprite rectangle.  <a href="a00951.html#a408ea79cda40859bc65e43e9241cf268">More...</a><br /></td></tr>
+<tr class="separator:a408ea79cda40859bc65e43e9241cf268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d448285845a98e95dd3cb51778bc5f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a8d448285845a98e95dd3cb51778bc5f4">setRect</a> (const <a class="el" href="a00943.html">Rect</a> &amp;rect)=0</td></tr>
+<tr class="memdesc:a8d448285845a98e95dd3cb51778bc5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sprite rectangle.  <a href="a00951.html#a8d448285845a98e95dd3cb51778bc5f4">More...</a><br /></td></tr>
+<tr class="separator:a8d448285845a98e95dd3cb51778bc5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294329cbb7370fd4aa87cac41e509731"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a294329cbb7370fd4aa87cac41e509731">getScale</a> () const =0</td></tr>
+<tr class="memdesc:a294329cbb7370fd4aa87cac41e509731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sprite Scale.  <a href="a00951.html#a294329cbb7370fd4aa87cac41e509731">More...</a><br /></td></tr>
+<tr class="separator:a294329cbb7370fd4aa87cac41e509731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b7b5e30f64163e036e8ec87083d5b58"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00951.html#a0b7b5e30f64163e036e8ec87083d5b58">setScale</a> (float scale)=0</td></tr>
+<tr class="memdesc:a0b7b5e30f64163e036e8ec87083d5b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sprite Scale.  <a href="a00951.html#a0b7b5e30f64163e036e8ec87083d5b58">More...</a><br /></td></tr>
+<tr class="separator:a0b7b5e30f64163e036e8ec87083d5b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -146,7 +158,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="a00951.html" title="The ISprite class.">ISprite</a> class. </p>
-<p>The <a class="el" href="a00951.html" title="The ISprite class.">ISprite</a> interface is the class where you can manipulate your sprites. ATTENTION: This class is of CompType SPRITE </p>
+<p>The <a class="el" href="a00951.html" title="The ISprite class.">ISprite</a> interface is the class where you can manipulate your sprites. ATTENTION: This class is of CompType SPRITE ATTENTION: You must have a parameter in your constructor in order to set his id. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aced7a803b1241053e029ba2a27ea20d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aced7a803b1241053e029ba2a27ea20d3">&#9670;&nbsp;</a></span>~ISprite()</h2>
@@ -174,8 +186,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5ae99e3b233319a2204a99a71a7f3f2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ae99e3b233319a2204a99a71a7f3f2c">&#9670;&nbsp;</a></span>getColor()</h2>
+<a id="aa9b089ae153c1591212579b7fba69fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b089ae153c1591212579b7fba69fa8">&#9670;&nbsp;</a></span>getColor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +196,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a00935.html">Color</a>&amp; Arcade::Graph::ISprite::getColor </td>
+          <td class="memname">virtual const <a class="el" href="a00935.html">Color</a>&amp; Arcade::Graph::ISprite::getColor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -225,8 +237,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the id of the component. </p>
-<dl class="section return"><dt>Returns</dt><dd>The component id </dd></dl>
+<p>Get the Id object. </p>
+<dl class="section return"><dt>Returns</dt><dd>The Id of the Sprite. </dd></dl>
 
 <p>Implements <a class="el" href="a00903.html#aaceb3652b7065250f57375469c7e0898">Arcade::ECS::IComponent</a>.</p>
 
@@ -289,8 +301,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a445af1d5b8e51f3ce1bbc3b2cece9e3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a445af1d5b8e51f3ce1bbc3b2cece9e3d">&#9670;&nbsp;</a></span>getRect()</h2>
+<a id="a408ea79cda40859bc65e43e9241cf268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a408ea79cda40859bc65e43e9241cf268">&#9670;&nbsp;</a></span>getRect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,7 +311,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a00943.html">Rect</a>&amp; Arcade::Graph::ISprite::getRect </td>
+          <td class="memname">virtual const <a class="el" href="a00943.html">Rect</a>&amp; Arcade::Graph::ISprite::getRect </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -317,8 +329,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0ab1106071f14007cedbc74f1a88d92e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ab1106071f14007cedbc74f1a88d92e">&#9670;&nbsp;</a></span>getScale()</h2>
+<a id="a294329cbb7370fd4aa87cac41e509731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a294329cbb7370fd4aa87cac41e509731">&#9670;&nbsp;</a></span>getScale()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual float&amp; Arcade::Graph::ISprite::getScale </td>
+          <td class="memname">virtual float Arcade::Graph::ISprite::getScale </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -402,6 +414,62 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a8f7ac32a8f06771e0d2b121b51f7a720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7ac32a8f06771e0d2b121b51f7a720">&#9670;&nbsp;</a></span>setColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Arcade::Graph::ISprite::setColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00935.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the sprite <a class="el" href="a00935.html">Color</a>. </p>
+
+</div>
+</div>
+<a id="a8dc0cd6e413320afe1dd1ae8f8b460ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dc0cd6e413320afe1dd1ae8f8b460ff">&#9670;&nbsp;</a></span>setPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Arcade::Graph::ISprite::setPath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set the path of the Sprite </p>
+
+</div>
+</div>
 <a id="a999555363198aa3e807c2a3cba1c058b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a999555363198aa3e807c2a3cba1c058b">&#9670;&nbsp;</a></span>setPos()</h2>
 
@@ -427,6 +495,62 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the sprite position in 3Dimension. </p>
+
+</div>
+</div>
+<a id="a8d448285845a98e95dd3cb51778bc5f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d448285845a98e95dd3cb51778bc5f4">&#9670;&nbsp;</a></span>setRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Arcade::Graph::ISprite::setRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00943.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the sprite rectangle. </p>
+
+</div>
+</div>
+<a id="a0b7b5e30f64163e036e8ec87083d5b58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7b5e30f64163e036e8ec87083d5b58">&#9670;&nbsp;</a></span>setScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Arcade::Graph::ISprite::setScale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the sprite Scale. </p>
 
 </div>
 </div>
@@ -498,7 +622,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 16:16:12 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 18:35:08 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

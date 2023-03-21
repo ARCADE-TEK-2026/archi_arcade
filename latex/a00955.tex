@@ -35,20 +35,22 @@ Collaboration diagram for Arcade\+::Graph\+::IText\+:
 virtual \mbox{\hyperlink{a00955_a296732412a63d684f2bfbb25ca57d460}{$\sim$\+IText}} ()=default
 \item 
 virtual const std\+::string \& \mbox{\hyperlink{a00955_aae2bd69ad80c1f19dfce9524b34f9145}{get\+Id}} () const override=0
-\begin{DoxyCompactList}\small\item\em Get the id of the component. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Get the Id object. \end{DoxyCompactList}\item 
 virtual const std\+::string \& \mbox{\hyperlink{a00955_a39516e3a9494be3aab6242675e8cc679}{get\+Font\+Path}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the path of the text font. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00955_a33b69515bc897cbd5e0e4036e194c7f1}{set\+Font\+Path}} (const std\+::string \&path)=0
+\begin{DoxyCompactList}\small\item\em Set the path of the text font. \end{DoxyCompactList}\item 
 virtual const std\+::string \& \mbox{\hyperlink{a00955_a11ff001fef920abf7ddb72de35dc3b5d}{get\+Text}} () const =0
 \begin{DoxyCompactList}\small\item\em Get text to print. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00955_ad20654b448adb46f4a640efd152137be}{set\+Text}} (std\+::string text)=0
+virtual void \mbox{\hyperlink{a00955_a8bfd70f59ae9a09ca91341d29504e9e4}{set\+Text}} (const std\+::string \&text)=0
 \begin{DoxyCompactList}\small\item\em Set the text to print. \end{DoxyCompactList}\item 
 virtual const \mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \& \mbox{\hyperlink{a00955_ac72f68172923a4352ecfa7b0c607acb3}{get\+Background\+Color}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the background color. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00955_a4fd972d96ccd42f34fa10bbabdf62df2}{set\+Background\+Color}} (\mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} color)=0
+virtual void \mbox{\hyperlink{a00955_a37d34aa8344b4a67a31190cb97a8f0fb}{set\+Background\+Color}} (\mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \&color)=0
 \begin{DoxyCompactList}\small\item\em Set the background color. \end{DoxyCompactList}\item 
 virtual const \mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \& \mbox{\hyperlink{a00955_ab13e117e766981863e9816dde7aa4440}{get\+Foreground\+Color}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the foreground color. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00955_a33c54c5f9402948a3e86ca0a277e1377}{set\+Foreground\+Color}} (\mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} color)=0
+virtual void \mbox{\hyperlink{a00955_a859f8e518a3ed296c273bc809629a16e}{set\+Foreground\+Color}} (\mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \&color)=0
 \begin{DoxyCompactList}\small\item\em Set the foreground color. \end{DoxyCompactList}\item 
 virtual float \mbox{\hyperlink{a00955_a101df2f0f7e648452e6ea7c93df66ac3}{get\+Police\+Size}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the police size. \end{DoxyCompactList}\item 
@@ -56,7 +58,7 @@ virtual void \mbox{\hyperlink{a00955_a339b0692ad02c83f201899668d724551}{set\+Pol
 \begin{DoxyCompactList}\small\item\em Set the police size. \end{DoxyCompactList}\item 
 virtual const \mbox{\hyperlink{a00883}{Arcade\+::\+Vector2f}} \& \mbox{\hyperlink{a00955_abcc091ec3c82c636f29bb5e043d7f770}{get\+Pos}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the text position. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00955_a56817f87f9425155e4e6b47f20116605}{set\+Pos}} (\mbox{\hyperlink{a00883}{Arcade\+::\+Vector2f}} pos)=0
+virtual void \mbox{\hyperlink{a00955_a40fa95b85a686bbc8cb59d2adc31a9da}{set\+Pos}} (\mbox{\hyperlink{a00883}{Arcade\+::\+Vector2f}} \&pos)=0
 \begin{DoxyCompactList}\small\item\em Set the text position. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -123,10 +125,10 @@ The foreground color.
 
 
 
-Get the id of the component. 
+Get the Id object. 
 
 \begin{DoxyReturn}{Returns}
-The component id 
+The Id of the Text. 
 \end{DoxyReturn}
 
 
@@ -173,21 +175,31 @@ Get text to print.
 \begin{DoxyReturn}{Returns}
 The text to print. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{a00955_a4fd972d96ccd42f34fa10bbabdf62df2}\label{a00955_a4fd972d96ccd42f34fa10bbabdf62df2}} 
+\mbox{\Hypertarget{a00955_a37d34aa8344b4a67a31190cb97a8f0fb}\label{a00955_a37d34aa8344b4a67a31190cb97a8f0fb}} 
 \index{Arcade::Graph::IText@{Arcade::Graph::IText}!setBackgroundColor@{setBackgroundColor}}
 \index{setBackgroundColor@{setBackgroundColor}!Arcade::Graph::IText@{Arcade::Graph::IText}}
 \doxysubsubsection{\texorpdfstring{setBackgroundColor()}{setBackgroundColor()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Background\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Background\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
 Set the background color. 
 
-\mbox{\Hypertarget{a00955_a33c54c5f9402948a3e86ca0a277e1377}\label{a00955_a33c54c5f9402948a3e86ca0a277e1377}} 
+\mbox{\Hypertarget{a00955_a33b69515bc897cbd5e0e4036e194c7f1}\label{a00955_a33b69515bc897cbd5e0e4036e194c7f1}} 
+\index{Arcade::Graph::IText@{Arcade::Graph::IText}!setFontPath@{setFontPath}}
+\index{setFontPath@{setFontPath}!Arcade::Graph::IText@{Arcade::Graph::IText}}
+\doxysubsubsection{\texorpdfstring{setFontPath()}{setFontPath()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Font\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the path of the text font. 
+
+\mbox{\Hypertarget{a00955_a859f8e518a3ed296c273bc809629a16e}\label{a00955_a859f8e518a3ed296c273bc809629a16e}} 
 \index{Arcade::Graph::IText@{Arcade::Graph::IText}!setForegroundColor@{setForegroundColor}}
 \index{setForegroundColor@{setForegroundColor}!Arcade::Graph::IText@{Arcade::Graph::IText}}
 \doxysubsubsection{\texorpdfstring{setForegroundColor()}{setForegroundColor()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Foreground\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Foreground\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -203,21 +215,21 @@ Set the foreground color.
 
 Set the police size. 
 
-\mbox{\Hypertarget{a00955_a56817f87f9425155e4e6b47f20116605}\label{a00955_a56817f87f9425155e4e6b47f20116605}} 
+\mbox{\Hypertarget{a00955_a40fa95b85a686bbc8cb59d2adc31a9da}\label{a00955_a40fa95b85a686bbc8cb59d2adc31a9da}} 
 \index{Arcade::Graph::IText@{Arcade::Graph::IText}!setPos@{setPos}}
 \index{setPos@{setPos}!Arcade::Graph::IText@{Arcade::Graph::IText}}
 \doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00883}{Arcade\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00883}{Arcade\+::\+Vector2f}} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
 Set the text position. 
 
-\mbox{\Hypertarget{a00955_ad20654b448adb46f4a640efd152137be}\label{a00955_ad20654b448adb46f4a640efd152137be}} 
+\mbox{\Hypertarget{a00955_a8bfd70f59ae9a09ca91341d29504e9e4}\label{a00955_a8bfd70f59ae9a09ca91341d29504e9e4}} 
 \index{Arcade::Graph::IText@{Arcade::Graph::IText}!setText@{setText}}
 \index{setText@{setText}!Arcade::Graph::IText@{Arcade::Graph::IText}}
 \doxysubsubsection{\texorpdfstring{setText()}{setText()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 

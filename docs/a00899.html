@@ -83,7 +83,7 @@ Collaboration diagram for Arcade::Core::IGameModule:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00897.png" border="0" usemap="#aArcade_1_1Core_1_1IGameModule_coll__map" alt="Collaboration graph"/></div>
 <map name="aArcade_1_1Core_1_1IGameModule_coll__map" id="aArcade_1_1Core_1_1IGameModule_coll__map">
-<area shape="rect" title="The IGameModule interface." alt="" coords="5,5,300,156"/>
+<area shape="rect" title="The IGameModule interface." alt="" coords="5,5,300,171"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -97,6 +97,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a59cbe079208324c0b0090af9d5ca1ed0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00899.html#a59cbe079208324c0b0090af9d5ca1ed0">changeGame</a> (const std::string &amp;gameName)=0</td></tr>
 <tr class="memdesc:a59cbe079208324c0b0090af9d5ca1ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current active game to the given game.  <a href="a00899.html#a59cbe079208324c0b0090af9d5ca1ed0">More...</a><br /></td></tr>
 <tr class="separator:a59cbe079208324c0b0090af9d5ca1ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c6cdaaddd5d48f5bea25efa6440a8e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00899.html#a5c6cdaaddd5d48f5bea25efa6440a8e0">changeGame</a> ()=0</td></tr>
+<tr class="memdesc:a5c6cdaaddd5d48f5bea25efa6440a8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current active game to the next (in a cyclic way)  <a href="a00899.html#a5c6cdaaddd5d48f5bea25efa6440a8e0">More...</a><br /></td></tr>
+<tr class="separator:a5c6cdaaddd5d48f5bea25efa6440a8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="a00899.html" title="The IGameModule interface.">IGameModule</a> interface. </p>
@@ -128,8 +131,36 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5c6cdaaddd5d48f5bea25efa6440a8e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c6cdaaddd5d48f5bea25efa6440a8e0">&#9670;&nbsp;</a></span>changeGame() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Arcade::Core::IGameModule::changeGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Change the current active game to the next (in a cyclic way) </p>
+<p>Throw on error </p>
+
+</div>
+</div>
 <a id="a59cbe079208324c0b0090af9d5ca1ed0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59cbe079208324c0b0090af9d5ca1ed0">&#9670;&nbsp;</a></span>changeGame()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a59cbe079208324c0b0090af9d5ca1ed0">&#9670;&nbsp;</a></span>changeGame() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,7 +228,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 16:16:12 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 18:35:08 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

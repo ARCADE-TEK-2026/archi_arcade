@@ -35,9 +35,11 @@ Collaboration diagram for Arcade\+::Graph\+::ISprite\+:
 virtual \mbox{\hyperlink{a00951_aced7a803b1241053e029ba2a27ea20d3}{$\sim$\+ISprite}} ()=default
 \item 
 virtual const std\+::string \& \mbox{\hyperlink{a00951_a5b6f4234c747de30802331f69ae3bc98}{get\+Id}} () const override=0
-\begin{DoxyCompactList}\small\item\em Get the id of the component. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Get the Id object. \end{DoxyCompactList}\item 
 virtual const std\+::string \& \mbox{\hyperlink{a00951_aa586aac80c73cff6e595d568f0569708}{get\+Path}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the path of the Sprite. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00951_a8dc0cd6e413320afe1dd1ae8f8b460ff}{set\+Path}} (const std\+::string \&path)=0
+\begin{DoxyCompactList}\small\item\em set the path of the Sprite \end{DoxyCompactList}\item 
 virtual const \mbox{\hyperlink{a00939}{TTYData}} \& \mbox{\hyperlink{a00951_a6b935bc6e7d9ab690b565333a5dd2bfc}{get\+TTYData}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the data to print when it\textquotesingle{}s TTY. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{a00951_ae3695920d35aa0608cbf94a56aa091b9}{set\+TTYData}} (const \mbox{\hyperlink{a00939}{TTYData}} \&tty\+Data)=0
@@ -50,19 +52,25 @@ virtual const \mbox{\hyperlink{a00887}{Arcade\+::\+Vector3f}} \& \mbox{\hyperlin
 \begin{DoxyCompactList}\small\item\em Get the sprite size in 3Dimension. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{a00951_ac97cde53b3df000e1777e0871623a976}{set\+Size}} (\mbox{\hyperlink{a00887}{Arcade\+::\+Vector3f}} size)=0
 \begin{DoxyCompactList}\small\item\em Set the sprite size in 3Dimension. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{a00935}{Color}} \& \mbox{\hyperlink{a00951_a5ae99e3b233319a2204a99a71a7f3f2c}{get\+Color}} () const =0
+virtual const \mbox{\hyperlink{a00935}{Color}} \& \mbox{\hyperlink{a00951_aa9b089ae153c1591212579b7fba69fa8}{get\+Color}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the sprite \mbox{\hyperlink{a00935}{Color}}. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{a00943}{Rect}} \& \mbox{\hyperlink{a00951_a445af1d5b8e51f3ce1bbc3b2cece9e3d}{get\+Rect}} () const =0
+virtual void \mbox{\hyperlink{a00951_a8f7ac32a8f06771e0d2b121b51f7a720}{set\+Color}} (const \mbox{\hyperlink{a00935}{Color}} \&color)=0
+\begin{DoxyCompactList}\small\item\em Set the sprite \mbox{\hyperlink{a00935}{Color}}. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{a00943}{Rect}} \& \mbox{\hyperlink{a00951_a408ea79cda40859bc65e43e9241cf268}{get\+Rect}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the sprite rectangle. \end{DoxyCompactList}\item 
-virtual float \& \mbox{\hyperlink{a00951_a0ab1106071f14007cedbc74f1a88d92e}{get\+Scale}} () const =0
-\begin{DoxyCompactList}\small\item\em Get the sprite Scale. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{a00951_a8d448285845a98e95dd3cb51778bc5f4}{set\+Rect}} (const \mbox{\hyperlink{a00943}{Rect}} \&rect)=0
+\begin{DoxyCompactList}\small\item\em Set the sprite rectangle. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{a00951_a294329cbb7370fd4aa87cac41e509731}{get\+Scale}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the sprite Scale. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00951_a0b7b5e30f64163e036e8ec87083d5b58}{set\+Scale}} (float scale)=0
+\begin{DoxyCompactList}\small\item\em Set the sprite Scale. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
 The \mbox{\hyperlink{a00951}{ISprite}} class. 
 
-The \mbox{\hyperlink{a00951}{ISprite}} interface is the class where you can manipulate your sprites. ATTENTION\+: This class is of Comp\+Type SPRITE 
+The \mbox{\hyperlink{a00951}{ISprite}} interface is the class where you can manipulate your sprites. ATTENTION\+: This class is of Comp\+Type SPRITE ATTENTION\+: You must have a parameter in your constructor in order to set his id. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{a00951_aced7a803b1241053e029ba2a27ea20d3}\label{a00951_aced7a803b1241053e029ba2a27ea20d3}} 
@@ -74,11 +82,11 @@ The \mbox{\hyperlink{a00951}{ISprite}} interface is the class where you can mani
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{a00951_a5ae99e3b233319a2204a99a71a7f3f2c}\label{a00951_a5ae99e3b233319a2204a99a71a7f3f2c}} 
+\mbox{\Hypertarget{a00951_aa9b089ae153c1591212579b7fba69fa8}\label{a00951_aa9b089ae153c1591212579b7fba69fa8}} 
 \index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!getColor@{getColor}}
 \index{getColor@{getColor}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
 \doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{a00935}{Color}}\& Arcade\+::\+Graph\+::\+ISprite\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{a00935}{Color}}\& Arcade\+::\+Graph\+::\+ISprite\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -95,10 +103,10 @@ The \mbox{\hyperlink{a00935}{Color}} data
 
 
 
-Get the id of the component. 
+Get the Id object. 
 
 \begin{DoxyReturn}{Returns}
-The component id 
+The Id of the Sprite. 
 \end{DoxyReturn}
 
 
@@ -132,11 +140,11 @@ The positions data are in percentages.
 \begin{DoxyReturn}{Returns}
 The path of the Sprite. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{a00951_a445af1d5b8e51f3ce1bbc3b2cece9e3d}\label{a00951_a445af1d5b8e51f3ce1bbc3b2cece9e3d}} 
+\mbox{\Hypertarget{a00951_a408ea79cda40859bc65e43e9241cf268}\label{a00951_a408ea79cda40859bc65e43e9241cf268}} 
 \index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!getRect@{getRect}}
 \index{getRect@{getRect}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
 \doxysubsubsection{\texorpdfstring{getRect()}{getRect()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{a00943}{Rect}}\& Arcade\+::\+Graph\+::\+ISprite\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{a00943}{Rect}}\& Arcade\+::\+Graph\+::\+ISprite\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -145,11 +153,11 @@ Get the sprite rectangle.
 \begin{DoxyReturn}{Returns}
 The \mbox{\hyperlink{a00943}{Rect}} data. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{a00951_a0ab1106071f14007cedbc74f1a88d92e}\label{a00951_a0ab1106071f14007cedbc74f1a88d92e}} 
+\mbox{\Hypertarget{a00951_a294329cbb7370fd4aa87cac41e509731}\label{a00951_a294329cbb7370fd4aa87cac41e509731}} 
 \index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!getScale@{getScale}}
 \index{getScale@{getScale}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
 \doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
-{\footnotesize\ttfamily virtual float\& Arcade\+::\+Graph\+::\+ISprite\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual float Arcade\+::\+Graph\+::\+ISprite\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -186,6 +194,26 @@ Get the data to print when it\textquotesingle{}s TTY.
 \begin{DoxyReturn}{Returns}
 The TTY data. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{a00951_a8f7ac32a8f06771e0d2b121b51f7a720}\label{a00951_a8f7ac32a8f06771e0d2b121b51f7a720}} 
+\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!setColor@{setColor}}
+\index{setColor@{setColor}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+ISprite\+::set\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a00935}{Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the sprite \mbox{\hyperlink{a00935}{Color}}. 
+
+\mbox{\Hypertarget{a00951_a8dc0cd6e413320afe1dd1ae8f8b460ff}\label{a00951_a8dc0cd6e413320afe1dd1ae8f8b460ff}} 
+\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!setPath@{setPath}}
+\index{setPath@{setPath}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+\doxysubsubsection{\texorpdfstring{setPath()}{setPath()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+ISprite\+::set\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+set the path of the Sprite 
+
 \mbox{\Hypertarget{a00951_a999555363198aa3e807c2a3cba1c058b}\label{a00951_a999555363198aa3e807c2a3cba1c058b}} 
 \index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!setPos@{setPos}}
 \index{setPos@{setPos}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
@@ -195,6 +223,26 @@ The TTY data.
 
 
 Set the sprite position in 3Dimension. 
+
+\mbox{\Hypertarget{a00951_a8d448285845a98e95dd3cb51778bc5f4}\label{a00951_a8d448285845a98e95dd3cb51778bc5f4}} 
+\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!setRect@{setRect}}
+\index{setRect@{setRect}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+\doxysubsubsection{\texorpdfstring{setRect()}{setRect()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+ISprite\+::set\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a00943}{Rect}} \&}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the sprite rectangle. 
+
+\mbox{\Hypertarget{a00951_a0b7b5e30f64163e036e8ec87083d5b58}\label{a00951_a0b7b5e30f64163e036e8ec87083d5b58}} 
+\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!setScale@{setScale}}
+\index{setScale@{setScale}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+\doxysubsubsection{\texorpdfstring{setScale()}{setScale()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+ISprite\+::set\+Scale (\begin{DoxyParamCaption}\item[{float}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the sprite Scale. 
 
 \mbox{\Hypertarget{a00951_ac97cde53b3df000e1777e0871623a976}\label{a00951_ac97cde53b3df000e1777e0871623a976}} 
 \index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!setSize@{setSize}}

@@ -35,9 +35,11 @@ Collaboration diagram for Arcade\+::Graph\+::IMusic\+:
 virtual \mbox{\hyperlink{a00947_ac90ebfffe808f4c35424623464bd9a13}{$\sim$\+IMusic}} ()=default
 \item 
 virtual const std\+::string \& \mbox{\hyperlink{a00947_abfa0eaa2fd543a008e6de16014306046}{get\+Id}} () const override=0
-\begin{DoxyCompactList}\small\item\em Get the id of the component. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Get the Id object. \end{DoxyCompactList}\item 
 virtual const std\+::string \& \mbox{\hyperlink{a00947_ac76f4292f434d8014275e33d8fb1a6a8}{get\+Path}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the path of the Music. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00947_a0f5c0e7bc530ce255f6b0c7d94f9a09c}{set\+Path}} (const std\+::string \&path)=0
+\begin{DoxyCompactList}\small\item\em Set the path of the Music. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{a00947_a0b3bd03acd44024955d9f1deb2e59068}{get\+Loop}} () const =0
 \begin{DoxyCompactList}\small\item\em Check if the music is looping. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{a00947_a999ca7b3b535bd2c2ee5e63b50c7c9ba}{set\+Loop}} (bool loop)=0
@@ -56,7 +58,7 @@ virtual void \mbox{\hyperlink{a00947_a4905117cdb647cc715dfd8751c6f247e}{set\+Vol
 \doxysubsection{Detailed Description}
 The \mbox{\hyperlink{a00947}{IMusic}} class. 
 
-The \mbox{\hyperlink{a00947}{IMusic}} class is the class where you can manipulate Sounds and Musics. ATTENTION\+: This class is of Comp\+Type MUSIC 
+The \mbox{\hyperlink{a00947}{IMusic}} class is the class where you can manipulate Sounds and Musics. ATTENTION\+: This class is of Comp\+Type MUSIC ATTENTION\+: You must have a parameter in your constructor in order to set his id. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{a00947_ac90ebfffe808f4c35424623464bd9a13}\label{a00947_ac90ebfffe808f4c35424623464bd9a13}} 
@@ -76,10 +78,10 @@ The \mbox{\hyperlink{a00947}{IMusic}} class is the class where you can manipulat
 
 
 
-Get the id of the component. 
+Get the Id object. 
 
 \begin{DoxyReturn}{Returns}
-The component id 
+The Id of the Music. 
 \end{DoxyReturn}
 
 
@@ -156,6 +158,16 @@ Set the Is\+Playing data.
 
 
 Set the loop data. 
+
+\mbox{\Hypertarget{a00947_a0f5c0e7bc530ce255f6b0c7d94f9a09c}\label{a00947_a0f5c0e7bc530ce255f6b0c7d94f9a09c}} 
+\index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!setPath@{setPath}}
+\index{setPath@{setPath}!Arcade::Graph::IMusic@{Arcade::Graph::IMusic}}
+\doxysubsubsection{\texorpdfstring{setPath()}{setPath()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IMusic\+::set\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the path of the Music. 
 
 \mbox{\Hypertarget{a00947_a4905117cdb647cc715dfd8751c6f247e}\label{a00947_a4905117cdb647cc715dfd8751c6f247e}} 
 \index{Arcade::Graph::IMusic@{Arcade::Graph::IMusic}!setVolume@{setVolume}}

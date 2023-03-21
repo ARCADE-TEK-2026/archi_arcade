@@ -29,7 +29,7 @@ virtual \mbox{\hyperlink{a00923}{ECS\+::\+ISystem\+Manager}} \& \mbox{\hyperlink
 virtual void \mbox{\hyperlink{a00895_aa2d6035f73c69e76403b4e114db97ca1}{change\+Graphic\+Lib}} (const std\+::string \&lib\+Graphic\+Name)=0
 \begin{DoxyCompactList}\small\item\em Change the current active graphical library to the given graphical library. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{a00895_ac0cbd83c3f4809caa19a6ffd59f68e18}{change\+Graphic\+Lib}} ()=0
-\begin{DoxyCompactList}\small\item\em Change the current active graphical library to the next one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Change the current active graphical library to the next one (in a cyclic way) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -55,7 +55,7 @@ The \mbox{\hyperlink{a00895}{IDisplay\+Module}} is passed to all systems
 
 
 
-Change the current active graphical library to the next one. 
+Change the current active graphical library to the next one (in a cyclic way) 
 
 (because the epitech subject says we can switch to the next graphical library in the folder of availible graphical library)
 

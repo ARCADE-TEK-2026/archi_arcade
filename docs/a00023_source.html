@@ -90,21 +90,25 @@ $(function() {
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00899.html#ab7d3e415dd4afd3ca2238a61c8e5ea02">   23</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00899.html#ab7d3e415dd4afd3ca2238a61c8e5ea02">~IGameModule</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00899.html#ad56aa31cb0ebb77aa965d74660d37811">   30</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00931.html">Arcade::Game::ISceneManager</a> &amp;<a class="code" href="a00899.html#ad56aa31cb0ebb77aa965d74660d37811">getSceneManager</a>() = 0;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00899.html#a59cbe079208324c0b0090af9d5ca1ed0">   39</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00899.html#a59cbe079208324c0b0090af9d5ca1ed0">changeGame</a>(<span class="keyword">const</span> std::string &amp;gameName) = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    } <span class="comment">// namespace Core</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace Arcade</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00899.html#a59cbe079208324c0b0090af9d5ca1ed0">   40</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00899.html#a59cbe079208324c0b0090af9d5ca1ed0">changeGame</a>(<span class="keyword">const</span> std::string &amp;gameName) = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00899.html#a5c6cdaaddd5d48f5bea25efa6440a8e0">   49</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00899.html#a5c6cdaaddd5d48f5bea25efa6440a8e0">changeGame</a>() = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        };</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    } <span class="comment">// namespace Core</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// namespace Arcade</span></div>
 <div class="ttc" id="aa00047_html"><div class="ttname"><a href="a00047.html">ISceneManager.hpp</a></div></div>
 <div class="ttc" id="aa00063_html"><div class="ttname"><a href="a00063.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
 <div class="ttc" id="aa00899_html"><div class="ttname"><a href="a00899.html">Arcade::Core::IGameModule</a></div><div class="ttdoc">The IGameModule interface.</div><div class="ttdef"><b>Definition:</b> IGameModule.hpp:21</div></div>
 <div class="ttc" id="aa00899_html_a59cbe079208324c0b0090af9d5ca1ed0"><div class="ttname"><a href="a00899.html#a59cbe079208324c0b0090af9d5ca1ed0">Arcade::Core::IGameModule::changeGame</a></div><div class="ttdeci">virtual void changeGame(const std::string &amp;gameName)=0</div><div class="ttdoc">Change the current active game to the given game.</div></div>
+<div class="ttc" id="aa00899_html_a5c6cdaaddd5d48f5bea25efa6440a8e0"><div class="ttname"><a href="a00899.html#a5c6cdaaddd5d48f5bea25efa6440a8e0">Arcade::Core::IGameModule::changeGame</a></div><div class="ttdeci">virtual void changeGame()=0</div><div class="ttdoc">Change the current active game to the next (in a cyclic way)</div></div>
 <div class="ttc" id="aa00899_html_ab7d3e415dd4afd3ca2238a61c8e5ea02"><div class="ttname"><a href="a00899.html#ab7d3e415dd4afd3ca2238a61c8e5ea02">Arcade::Core::IGameModule::~IGameModule</a></div><div class="ttdeci">virtual ~IGameModule()=default</div></div>
 <div class="ttc" id="aa00899_html_ad56aa31cb0ebb77aa965d74660d37811"><div class="ttname"><a href="a00899.html#ad56aa31cb0ebb77aa965d74660d37811">Arcade::Core::IGameModule::getSceneManager</a></div><div class="ttdeci">virtual Arcade::Game::ISceneManager &amp; getSceneManager()=0</div><div class="ttdoc">Get the scene manager of the current game.</div></div>
 <div class="ttc" id="aa00931_html"><div class="ttname"><a href="a00931.html">Arcade::Game::ISceneManager</a></div><div class="ttdoc">Scene manager interface.</div><div class="ttdef"><b>Definition:</b> ISceneManager.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 16:16:12 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 18:35:08 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

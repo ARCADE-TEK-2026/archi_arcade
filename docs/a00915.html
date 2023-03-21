@@ -94,9 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a44173fcb4d4c5cfc3f672474264ec27b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a44173fcb4d4c5cfc3f672474264ec27b">eventsIsEmpty</a> () const =0</td></tr>
 <tr class="memdesc:a44173fcb4d4c5cfc3f672474264ec27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is no event trigered.  <a href="a00915.html#a44173fcb4d4c5cfc3f672474264ec27b">More...</a><br /></td></tr>
 <tr class="separator:a44173fcb4d4c5cfc3f672474264ec27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e735d574dc3a30ccc55b789302d8012"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; bool, std::optional&lt; std::shared_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#a7e735d574dc3a30ccc55b789302d8012">isEventInQueue</a> (const std::string &amp;event) const =0</td></tr>
-<tr class="memdesc:a7e735d574dc3a30ccc55b789302d8012"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an event was trigered.  <a href="a00915.html#a7e735d574dc3a30ccc55b789302d8012">More...</a><br /></td></tr>
-<tr class="separator:a7e735d574dc3a30ccc55b789302d8012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7920f418e991d714fee9646b418bc3"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; bool, std::optional&lt; std::shared_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#afa7920f418e991d714fee9646b418bc3">isEventTriggered</a> (const std::string &amp;event) const =0</td></tr>
+<tr class="memdesc:afa7920f418e991d714fee9646b418bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an event was trigered.  <a href="a00915.html#afa7920f418e991d714fee9646b418bc3">More...</a><br /></td></tr>
+<tr class="separator:afa7920f418e991d714fee9646b418bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf449d25b4d7586b33d563e61689f5e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html#acf449d25b4d7586b33d563e61689f5e8">addEvent</a> (const std::string &amp;event, std::optional&lt; std::shared_ptr&lt; <a class="el" href="a00903.html">IComponent</a> &gt;&gt; component=std::nullopt)=0</td></tr>
 <tr class="memdesc:acf449d25b4d7586b33d563e61689f5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an event to list of trigered events.  <a href="a00915.html#acf449d25b4d7586b33d563e61689f5e8">More...</a><br /></td></tr>
 <tr class="separator:acf449d25b4d7586b33d563e61689f5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,7 +112,8 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="a00915.html" title="The IEventManager interface.">IEventManager</a> interface. </p>
-<p>One EventManager to manage all events some events can be created by systems (because events are string) but some events are reserved by IGraph system: "MOUSE_KEY1_PRESSED" "MOUSE_KEY2_PRESSED" "MOUSE_KEY3_PRESSED" "MOUSE_KEY4_PRESSED" "MOUSE_KEY5_PRESSED" "KEY_A_PRESSED" "KEY_B_PRESSED" "KEY_C_PRESSED" "KEY_D_PRESSED" "KEY_E_PRESSED" "KEY_F_PRESSED" "KEY_G_PRESSED" "KEY_H_PRESSED" "KEY_I_PRESSED" "KEY_J_PRESSED" "KEY_K_PRESSED" "KEY_L_PRESSED" "KEY_M_PRESSED" "KEY_N_PRESSED" "KEY_O_PRESSED" "KEY_P_PRESSED" "KEY_Q_PRESSED" "KEY_R_PRESSED" "KEY_S_PRESSED" "KEY_T_PRESSED" "KEY_U_PRESSED" "KEY_V_PRESSED" "KEY_W_PRESSED" "KEY_X_PRESSED" "KEY_Y_PRESSED" "KEY_Z_PRESSED" "KEY_0_PRESSED" "KEY_1_PRESSED" "KEY_2_PRESSED" "KEY_3_PRESSED" "KEY_4_PRESSED" "KEY_5_PRESSED" "KEY_6_PRESSED" "KEY_7_PRESSED" "KEY_8_PRESSED" "KEY_9_PRESSED" "KEY_SPACE_PRESSED" "KEY_ENTER_PRESSED" "KEY_ESC_PRESSED" "KEY_UP_PRESSED" "KEY_DOWN_PRESSED" "KEY_LEFT_PRESSED" "KEY_RIGHT_PRESSED" "KEY_TAB_PRESSED" "KEY_BACKSPACE_PRESSED" "KEY_DELETE_PRESSED" "KEY_SHIFT_PRESSED" "KEY_CTRL_PRESSED" "KEY_ALT_PRESSED" "KEY_F1_PRESSED" "KEY_F2_PRESSED" "KEY_F3_PRESSED" "KEY_F4_PRESSED" "KEY_F5_PRESSED" "KEY_F6_PRESSED" "KEY_F7_PRESSED" "KEY_F8_PRESSED" "KEY_F9_PRESSED" "KEY_F10_PRESSED" "KEY_F11_PRESSED" "KEY_F12_PRESSED" "WINDOW_CLOSE" "WINDOW_RESIZE" "WINDOW_MINIMIZE" </p>
+<p>One EventManager to manage all events some events can be created by systems (because events are string) but some events are reserved by IGraph system: "MOUSE_KEY1_PRESSED" "MOUSE_KEY2_PRESSED" "MOUSE_KEY3_PRESSED" "MOUSE_KEY4_PRESSED" "MOUSE_KEY5_PRESSED" "KEY_A_PRESSED" "KEY_B_PRESSED" "KEY_C_PRESSED" "KEY_D_PRESSED" "KEY_E_PRESSED" "KEY_F_PRESSED" "KEY_G_PRESSED" "KEY_H_PRESSED" "KEY_I_PRESSED" "KEY_J_PRESSED" "KEY_K_PRESSED" "KEY_L_PRESSED" "KEY_M_PRESSED" "KEY_N_PRESSED" "KEY_O_PRESSED" "KEY_P_PRESSED" "KEY_Q_PRESSED" "KEY_R_PRESSED" "KEY_S_PRESSED" "KEY_T_PRESSED" "KEY_U_PRESSED" "KEY_V_PRESSED" "KEY_W_PRESSED" "KEY_X_PRESSED" "KEY_Y_PRESSED" "KEY_Z_PRESSED" "KEY_0_PRESSED" "KEY_1_PRESSED" "KEY_2_PRESSED" "KEY_3_PRESSED" "KEY_4_PRESSED" "KEY_5_PRESSED" "KEY_6_PRESSED" "KEY_7_PRESSED" "KEY_8_PRESSED" "KEY_9_PRESSED" "KEY_SPACE_PRESSED" "KEY_ENTER_PRESSED" "KEY_ESC_PRESSED" "KEY_UP_PRESSED" "KEY_DOWN_PRESSED" "KEY_LEFT_PRESSED" "KEY_RIGHT_PRESSED" "KEY_TAB_PRESSED" "KEY_BACKSPACE_PRESSED" "KEY_DELETE_PRESSED" "KEY_SHIFT_PRESSED" "KEY_CTRL_PRESSED" "KEY_ALT_PRESSED" "KEY_F1_PRESSED" "KEY_F2_PRESSED" "KEY_F3_PRESSED" "KEY_F4_PRESSED" "KEY_F5_PRESSED" "KEY_F6_PRESSED" "KEY_F7_PRESSED" "KEY_F8_PRESSED" "KEY_F9_PRESSED" "KEY_F10_PRESSED" "KEY_F11_PRESSED" "KEY_F12_PRESSED" "WINDOW_CLOSE" "WINDOW_RESIZE" "WINDOW_MINIMIZE"</p>
+<p>"GAME_END" Is the event create by game system to tell core to quit game </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2523607e48ced247a844e53c060fb001"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2523607e48ced247a844e53c060fb001">&#9670;&nbsp;</a></span>~IEventManager()</h2>
@@ -268,8 +269,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7e735d574dc3a30ccc55b789302d8012"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e735d574dc3a30ccc55b789302d8012">&#9670;&nbsp;</a></span>isEventInQueue()</h2>
+<a id="afa7920f418e991d714fee9646b418bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa7920f418e991d714fee9646b418bc3">&#9670;&nbsp;</a></span>isEventTriggered()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +279,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::pair&lt;bool, std::optional&lt;std::shared_ptr&lt;<a class="el" href="a00903.html">IComponent</a>&gt; &gt; &gt; Arcade::ECS::IEventManager::isEventInQueue </td>
+          <td class="memname">virtual std::pair&lt;bool, std::optional&lt;std::shared_ptr&lt;<a class="el" href="a00903.html">IComponent</a>&gt; &gt; &gt; Arcade::ECS::IEventManager::isEventTriggered </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>event</em></td><td>)</td>
@@ -343,7 +344,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 16:16:12 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 18:35:08 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

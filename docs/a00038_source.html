@@ -92,28 +92,25 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00919.html">   25</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00919.html">ISystem</a> {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00919.html#a8a8d72403aef61fbc75ead3c3c2fdb3c">   27</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00919.html#a8a8d72403aef61fbc75ead3c3c2fdb3c">~ISystem</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00919.html#ad2d6d8764095c527c7b5d3b5a174132e">   32</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00919.html#ad2d6d8764095c527c7b5d3b5a174132e">run</a>(std::size_t deltaTime,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <a class="code" href="a00915.html">Arcade::ECS::IEventManager</a> &amp;,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <a class="code" href="a00895.html">Arcade::Core::IDisplayModule</a> &amp;displayModule,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <a class="code" href="a00899.html">Arcade::Core::IGameModule</a> &amp;gameModule) = 0;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00919.html#ace6ce33909ed5250419f94c931a0cd6a">   39</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00919.html#ace6ce33909ed5250419f94c931a0cd6a">close</a>() = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    } <span class="comment">// namespace ECS</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace Arcade</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00919.html#ad2d6d8764095c527c7b5d3b5a174132e">   31</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00919.html#ad2d6d8764095c527c7b5d3b5a174132e">run</a>(std::size_t deltaTime,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <a class="code" href="a00915.html">Arcade::ECS::IEventManager</a> &amp;,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <a class="code" href="a00895.html">Arcade::Core::IDisplayModule</a> &amp;displayModule,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <a class="code" href="a00899.html">Arcade::Core::IGameModule</a> &amp;gameModule) = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        };</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    } <span class="comment">// namespace ECS</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <span class="comment">// namespace Arcade</span></div>
 <div class="ttc" id="aa00035_html"><div class="ttname"><a href="a00035.html">IEventManager.hpp</a></div></div>
 <div class="ttc" id="aa00063_html"><div class="ttname"><a href="a00063.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
 <div class="ttc" id="aa00895_html"><div class="ttname"><a href="a00895.html">Arcade::Core::IDisplayModule</a></div><div class="ttdoc">The IDisplayModule interface.</div><div class="ttdef"><b>Definition:</b> IDisplayModule.hpp:19</div></div>
 <div class="ttc" id="aa00899_html"><div class="ttname"><a href="a00899.html">Arcade::Core::IGameModule</a></div><div class="ttdoc">The IGameModule interface.</div><div class="ttdef"><b>Definition:</b> IGameModule.hpp:21</div></div>
-<div class="ttc" id="aa00915_html"><div class="ttname"><a href="a00915.html">Arcade::ECS::IEventManager</a></div><div class="ttdoc">The IEventManager interface.</div><div class="ttdef"><b>Definition:</b> IEventManager.hpp:96</div></div>
+<div class="ttc" id="aa00915_html"><div class="ttname"><a href="a00915.html">Arcade::ECS::IEventManager</a></div><div class="ttdoc">The IEventManager interface.</div><div class="ttdef"><b>Definition:</b> IEventManager.hpp:99</div></div>
 <div class="ttc" id="aa00919_html"><div class="ttname"><a href="a00919.html">Arcade::ECS::ISystem</a></div><div class="ttdoc">The ISystem interface.</div><div class="ttdef"><b>Definition:</b> ISystem.hpp:25</div></div>
 <div class="ttc" id="aa00919_html_a8a8d72403aef61fbc75ead3c3c2fdb3c"><div class="ttname"><a href="a00919.html#a8a8d72403aef61fbc75ead3c3c2fdb3c">Arcade::ECS::ISystem::~ISystem</a></div><div class="ttdeci">virtual ~ISystem()=default</div></div>
-<div class="ttc" id="aa00919_html_ace6ce33909ed5250419f94c931a0cd6a"><div class="ttname"><a href="a00919.html#ace6ce33909ed5250419f94c931a0cd6a">Arcade::ECS::ISystem::close</a></div><div class="ttdeci">virtual void close()=0</div><div class="ttdoc">Close the system implementation.</div></div>
 <div class="ttc" id="aa00919_html_ad2d6d8764095c527c7b5d3b5a174132e"><div class="ttname"><a href="a00919.html#ad2d6d8764095c527c7b5d3b5a174132e">Arcade::ECS::ISystem::run</a></div><div class="ttdeci">virtual void run(std::size_t deltaTime, Arcade::ECS::IEventManager &amp;, Arcade::Core::IDisplayModule &amp;displayModule, Arcade::Core::IGameModule &amp;gameModule)=0</div><div class="ttdoc">Run the system implementation.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 16:16:12 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 18:35:08 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -83,7 +83,7 @@ Inheritance diagram for Arcade::Graph::IMusic:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00946.png" border="0" usemap="#aArcade_1_1Graph_1_1IMusic_inherit__map" alt="Inheritance graph"/></div>
 <map name="aArcade_1_1Graph_1_1IMusic_inherit__map" id="aArcade_1_1Graph_1_1IMusic_inherit__map">
-<area shape="rect" title="The IMusic class." alt="" coords="7,204,210,531"/>
+<area shape="rect" title="The IMusic class." alt="" coords="7,204,210,560"/>
 <area shape="rect" href="a00903.html" title=" " alt="" coords="5,5,212,156"/>
 </map>
 </div>
@@ -92,7 +92,7 @@ Collaboration diagram for Arcade::Graph::IMusic:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00945.png" border="0" usemap="#aArcade_1_1Graph_1_1IMusic_coll__map" alt="Collaboration graph"/></div>
 <map name="aArcade_1_1Graph_1_1IMusic_coll__map" id="aArcade_1_1Graph_1_1IMusic_coll__map">
-<area shape="rect" title="The IMusic class." alt="" coords="7,204,210,531"/>
+<area shape="rect" title="The IMusic class." alt="" coords="7,204,210,560"/>
 <area shape="rect" href="a00903.html" title=" " alt="" coords="5,5,212,156"/>
 </map>
 </div>
@@ -102,11 +102,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac90ebfffe808f4c35424623464bd9a13"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00947.html#ac90ebfffe808f4c35424623464bd9a13">~IMusic</a> ()=default</td></tr>
 <tr class="separator:ac90ebfffe808f4c35424623464bd9a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfa0eaa2fd543a008e6de16014306046"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00947.html#abfa0eaa2fd543a008e6de16014306046">getId</a> () const override=0</td></tr>
-<tr class="memdesc:abfa0eaa2fd543a008e6de16014306046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the id of the component.  <a href="a00947.html#abfa0eaa2fd543a008e6de16014306046">More...</a><br /></td></tr>
+<tr class="memdesc:abfa0eaa2fd543a008e6de16014306046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Id object.  <a href="a00947.html#abfa0eaa2fd543a008e6de16014306046">More...</a><br /></td></tr>
 <tr class="separator:abfa0eaa2fd543a008e6de16014306046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac76f4292f434d8014275e33d8fb1a6a8"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00947.html#ac76f4292f434d8014275e33d8fb1a6a8">getPath</a> () const =0</td></tr>
 <tr class="memdesc:ac76f4292f434d8014275e33d8fb1a6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the path of the Music.  <a href="a00947.html#ac76f4292f434d8014275e33d8fb1a6a8">More...</a><br /></td></tr>
 <tr class="separator:ac76f4292f434d8014275e33d8fb1a6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f5c0e7bc530ce255f6b0c7d94f9a09c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00947.html#a0f5c0e7bc530ce255f6b0c7d94f9a09c">setPath</a> (const std::string &amp;path)=0</td></tr>
+<tr class="memdesc:a0f5c0e7bc530ce255f6b0c7d94f9a09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the path of the Music.  <a href="a00947.html#a0f5c0e7bc530ce255f6b0c7d94f9a09c">More...</a><br /></td></tr>
+<tr class="separator:a0f5c0e7bc530ce255f6b0c7d94f9a09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b3bd03acd44024955d9f1deb2e59068"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00947.html#a0b3bd03acd44024955d9f1deb2e59068">getLoop</a> () const =0</td></tr>
 <tr class="memdesc:a0b3bd03acd44024955d9f1deb2e59068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the music is looping.  <a href="a00947.html#a0b3bd03acd44024955d9f1deb2e59068">More...</a><br /></td></tr>
 <tr class="separator:a0b3bd03acd44024955d9f1deb2e59068"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +140,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="a00947.html" title="The IMusic class.">IMusic</a> class. </p>
-<p>The <a class="el" href="a00947.html" title="The IMusic class.">IMusic</a> class is the class where you can manipulate Sounds and Musics. ATTENTION: This class is of CompType MUSIC </p>
+<p>The <a class="el" href="a00947.html" title="The IMusic class.">IMusic</a> class is the class where you can manipulate Sounds and Musics. ATTENTION: This class is of CompType MUSIC ATTENTION: You must have a parameter in your constructor in order to set his id. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac90ebfffe808f4c35424623464bd9a13"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac90ebfffe808f4c35424623464bd9a13">&#9670;&nbsp;</a></span>~IMusic()</h2>
@@ -188,8 +191,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the id of the component. </p>
-<dl class="section return"><dt>Returns</dt><dd>The component id </dd></dl>
+<p>Get the Id object. </p>
+<dl class="section return"><dt>Returns</dt><dd>The Id of the Music. </dd></dl>
 
 <p>Implements <a class="el" href="a00903.html#aaceb3652b7065250f57375469c7e0898">Arcade::ECS::IComponent</a>.</p>
 
@@ -363,6 +366,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a0f5c0e7bc530ce255f6b0c7d94f9a09c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f5c0e7bc530ce255f6b0c7d94f9a09c">&#9670;&nbsp;</a></span>setPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Arcade::Graph::IMusic::setPath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the path of the Music. </p>
+
+</div>
+</div>
 <a id="a4905117cdb647cc715dfd8751c6f247e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4905117cdb647cc715dfd8751c6f247e">&#9670;&nbsp;</a></span>setVolume()</h2>
 
@@ -397,7 +428,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 16:16:12 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 18:35:08 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
