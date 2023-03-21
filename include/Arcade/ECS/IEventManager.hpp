@@ -10,6 +10,7 @@
 #include <queue>
 #include <string>
 #include <optional>
+#include <tuple>
 #include <memory>
 #include "ArcadeStruct.hpp"
 #include "IComponent.hpp"
@@ -107,9 +108,11 @@ namespace Arcade {
                  *
                  * @param event The event to check
                  *
-                 * @return std::nullopt if there is no such event trigered else the std::optional passed as parameter of `addEvent` method
+                 * @return A pair of
+                 * bool (True if the event was trigered, False if the event was not trigered)
+                 * and std::optional<std::shared_ptr<IComponent>> (The parameter passed as parameter to `addEvent` method)
                  */
-                virtual std::optional<std::optional<std::shared_ptr<IComponent> &>> isEventInQueue(const std::string &event) const = 0;
+                virtual std::pair<bool, std::optional<std::shared_ptr<IComponent> &>> isEventInQueue(const std::string &event) const = 0;
                 /**
                  * @brief Add an event to list of trigered events
                  *
