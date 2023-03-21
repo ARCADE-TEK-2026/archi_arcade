@@ -23,16 +23,22 @@ namespace Arcade {
         class IText : Arcade::ECS::IComponent {
             public:
                 virtual ~IText() = default;
-
+                /**
+                 * @brief Get the Id object
+                 *
+                 * @return The Id of the Text.
+                 */
                 virtual const std::string &getId() const override = 0;
-
                 /**
                  * @brief Get the path of the text font.
                  *
                  * @return The path of the text font.
                  */
                 virtual const std::string &getFontPath() const = 0;
-
+                /**
+                 * @brief Set the path of the text font.
+                 */
+                virtual void setFontPath(const std::string &path) = 0;
                 /**
                  * @brief Get text to print.
                  *
@@ -42,8 +48,7 @@ namespace Arcade {
                 /**
                  * @brief Set the text to print.
                  */
-                virtual void setText(std::string text) = 0;
-
+                virtual void setText(const std::string &text) = 0;
                 /**
                  * @brief Get the background color.
                  *
@@ -54,8 +59,8 @@ namespace Arcade {
                 /**
                  * @brief Set the background color.
                  */
-                virtual void setBackgroundColor(Arcade::Graph::Color color) = 0;
-
+                virtual void setBackgroundColor(
+                Arcade::Graph::Color &color) = 0;
                 /**
                  * @brief Get the foreground color.
                  *
@@ -66,8 +71,8 @@ namespace Arcade {
                 /**
                  * @brief Set the foreground color.
                  */
-                virtual void setForegroundColor(Arcade::Graph::Color color) = 0;
-
+                virtual void setForegroundColor(
+                Arcade::Graph::Color &color) = 0;
                 /**
                  * @brief Get the police size.
                  *
@@ -78,7 +83,6 @@ namespace Arcade {
                  * @brief Set the police size.
                  */
                 virtual void setPoliceSize(float size) = 0;
-
                 /**
                  * @brief Get the text position.
                  *
@@ -90,7 +94,7 @@ namespace Arcade {
                 /**
                  * @brief Set the text position.
                  */
-                virtual void setPos(Arcade::Vector2f pos) = 0;
+                virtual void setPos(Arcade::Vector2f &pos) = 0;
         };
     } // namespace Graph
 } // namespace Arcade

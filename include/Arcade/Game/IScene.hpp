@@ -18,7 +18,6 @@ namespace Arcade {
         class IScene {
             public:
                 virtual ~IScene() = default;
-
                 /**
                  * @brief Create the scene
                  *

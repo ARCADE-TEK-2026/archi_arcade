@@ -19,7 +19,6 @@ namespace Arcade {
         class IDisplayModule {
             public:
                 virtual ~IDisplayModule() = default;
-
                 /**
                  * @brief Get the system manager of the current graphical
                  * library
@@ -34,10 +33,10 @@ namespace Arcade {
                  * @param libGraphicName The graphical library name (only the
                  * libname without .so)
                  *
-                 * @return True if the graphical library was changed, false
-                 * otherwise
+                 * Throw on error
+                 *
                  */
-                virtual bool changeGraphicLib(
+                virtual void changeGraphicLib(
                 const std::string &libGraphicName) = 0;
                 /**
                  * @brief Change the current active graphical library to the
@@ -47,9 +46,10 @@ namespace Arcade {
                  * graphical library in the folder of availible graphical
                  * library)
                  *
-                 * @return True if the graphical library was changed, false
+                 * Throw on error
+                 *
                  */
-                virtual bool changeGraphicLib() = 0;
+                virtual void changeGraphicLib() = 0;
         };
     } // namespace Core
 } // namespace Arcade
