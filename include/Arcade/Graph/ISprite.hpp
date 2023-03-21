@@ -72,19 +72,32 @@ namespace Arcade {
                  *
                  * @return The Color data
                  */
-                virtual Color &getColor() const = 0;
+                virtual const Color &getColor() const = 0;
+
+                /**
+                 * @brief Set the sprite Color.
+                 */
+                virtual void setColor(Color color) = 0;
                 /**
                  * @brief Get the sprite rectangle.
                  *
                  * @return The Rect data.
                  */
-                virtual Rect &getRect() const = 0;
+                virtual const Rect &getRect() const = 0;
+                /**
+                 * @brief Set the sprite rectangle.
+                 */
+                virtual void setRect(Rect rect) = 0;
                 /**
                  * @brief Get the sprite Scale.
                  *
                  * @return The Scale data.
                  */
-                virtual float &getScale() const = 0;
+                virtual const float &getScale() const = 0;
+                /**
+                 * @brief Set the sprite Scale.
+                 */
+                virtual void setScale(float scale) = 0;
         };
     } // namespace Graph
 } // namespace Arcade
