@@ -40,8 +40,9 @@ namespace Arcade {
                  * @param eventManager The list of events
                  */
                 virtual void update(std::size_t deltaTime,
-                Arcade::ECS::IEntityManager &entityManager,
-                Arcade::ECS::IEventManager &eventManager) = 0;
+                Arcade::ECS::IEventManager &eventManager,
+                Arcade::Core::IDisplayModule &displayModule,
+                Arcade::Core::IGameModule &gameModule) = 0;
         };
     } // namespace ECS
 } // namespace Arcade
