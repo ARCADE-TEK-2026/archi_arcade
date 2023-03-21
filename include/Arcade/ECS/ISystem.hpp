@@ -32,10 +32,6 @@ namespace Arcade {
                 Arcade::ECS::IEventManager &,
                 Arcade::Core::IDisplayModule &displayModule,
                 Arcade::Core::IGameModule &gameModule) = 0;
-                /**
-                 * @brief Close the system implementation
-                 */
-                virtual void close() = 0;
         };
     } // namespace ECS
 } // namespace Arcade
