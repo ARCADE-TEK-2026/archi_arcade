@@ -84,6 +84,7 @@ namespace Arcade {
                  * @return The Color data
                  */
                 virtual const Color &getColor() const = 0;
+
                 /**
                  * @brief Set the sprite Color.
                  */
@@ -93,7 +94,11 @@ namespace Arcade {
                  *
                  * @return The Rect data.
                  */
-                virtual Rect &getRect() const = 0;
+                virtual const Rect &getRect() const = 0;
+                /**
+                 * @brief Set the sprite rectangle.
+                 */
+                virtual void setRect(Rect &rect) = 0;
                 /**
                  * @brief Set the sprite rectangle.
                  */
