@@ -24,7 +24,7 @@ Collaboration diagram for Arcade\+::ECS\+::IEntity\+Manager\+:
 \item 
 virtual \mbox{\hyperlink{a00911_ac73d41d0058aa9c36115abfa9b8daa61}{$\sim$\+IEntity\+Manager}} ()=default
 \item 
-virtual \mbox{\hyperlink{a00907}{IEntity}} \& \mbox{\hyperlink{a00911_a863a130b3211829514e28cb11c8b397e}{create\+Entity}} ()=0
+virtual \mbox{\hyperlink{a00907}{IEntity}} \& \mbox{\hyperlink{a00911_a018b7eb67da2e67515ad8fe957fd8c30}{create\+Entity}} (const std\+::string \&id)=0
 \begin{DoxyCompactList}\small\item\em Add an entity to the manager. \end{DoxyCompactList}\item 
 virtual const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00907}{IEntity}} $>$ $>$ \& \mbox{\hyperlink{a00911_a3e71da94c3897512ff8dd4ac946ed4be}{get\+Entities}} () const =0
 \begin{DoxyCompactList}\small\item\em Get all entities created by this manager. \end{DoxyCompactList}\item 
@@ -49,16 +49,21 @@ Manage the creation of entities and their access.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{a00911_a863a130b3211829514e28cb11c8b397e}\label{a00911_a863a130b3211829514e28cb11c8b397e}} 
+\mbox{\Hypertarget{a00911_a018b7eb67da2e67515ad8fe957fd8c30}\label{a00911_a018b7eb67da2e67515ad8fe957fd8c30}} 
 \index{Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}!createEntity@{createEntity}}
 \index{createEntity@{createEntity}!Arcade::ECS::IEntityManager@{Arcade::ECS::IEntityManager}}
 \doxysubsubsection{\texorpdfstring{createEntity()}{createEntity()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{a00907}{IEntity}}\& Arcade\+::\+ECS\+::\+IEntity\+Manager\+::create\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{a00907}{IEntity}}\& Arcade\+::\+ECS\+::\+IEntity\+Manager\+::create\+Entity (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
 Add an entity to the manager. 
 
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the entity\\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 The entity created 
 \end{DoxyReturn}

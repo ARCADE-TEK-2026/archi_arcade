@@ -83,7 +83,7 @@ Collaboration diagram for Arcade::ECS::IEntityManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00909.png" border="0" usemap="#aArcade_1_1ECS_1_1IEntityManager_coll__map" alt="Collaboration graph"/></div>
 <map name="aArcade_1_1ECS_1_1IEntityManager_coll__map" id="aArcade_1_1ECS_1_1IEntityManager_coll__map">
-<area shape="rect" title="Manage the creation of entities and their access." alt="" coords="5,5,268,303"/>
+<area shape="rect" title="Manage the creation of entities and their access." alt="" coords="5,5,268,317"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -91,9 +91,9 @@ Collaboration diagram for Arcade::ECS::IEntityManager:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac73d41d0058aa9c36115abfa9b8daa61"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00911.html#ac73d41d0058aa9c36115abfa9b8daa61">~IEntityManager</a> ()=default</td></tr>
 <tr class="separator:ac73d41d0058aa9c36115abfa9b8daa61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a863a130b3211829514e28cb11c8b397e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00907.html">IEntity</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00911.html#a863a130b3211829514e28cb11c8b397e">createEntity</a> ()=0</td></tr>
-<tr class="memdesc:a863a130b3211829514e28cb11c8b397e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an entity to the manager.  <a href="a00911.html#a863a130b3211829514e28cb11c8b397e">More...</a><br /></td></tr>
-<tr class="separator:a863a130b3211829514e28cb11c8b397e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018b7eb67da2e67515ad8fe957fd8c30"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00907.html">IEntity</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00911.html#a018b7eb67da2e67515ad8fe957fd8c30">createEntity</a> (const std::string &amp;id)=0</td></tr>
+<tr class="memdesc:a018b7eb67da2e67515ad8fe957fd8c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an entity to the manager.  <a href="a00911.html#a018b7eb67da2e67515ad8fe957fd8c30">More...</a><br /></td></tr>
+<tr class="separator:a018b7eb67da2e67515ad8fe957fd8c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e71da94c3897512ff8dd4ac946ed4be"><td class="memItemLeft" align="right" valign="top">virtual const std::vector&lt; std::shared_ptr&lt; <a class="el" href="a00907.html">IEntity</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00911.html#a3e71da94c3897512ff8dd4ac946ed4be">getEntities</a> () const =0</td></tr>
 <tr class="memdesc:a3e71da94c3897512ff8dd4ac946ed4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all entities created by this manager.  <a href="a00911.html#a3e71da94c3897512ff8dd4ac946ed4be">More...</a><br /></td></tr>
 <tr class="separator:a3e71da94c3897512ff8dd4ac946ed4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,8 +136,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a863a130b3211829514e28cb11c8b397e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a863a130b3211829514e28cb11c8b397e">&#9670;&nbsp;</a></span>createEntity()</h2>
+<a id="a018b7eb67da2e67515ad8fe957fd8c30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a018b7eb67da2e67515ad8fe957fd8c30">&#9670;&nbsp;</a></span>createEntity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,7 +148,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="a00907.html">IEntity</a>&amp; Arcade::ECS::IEntityManager::createEntity </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -160,6 +161,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add an entity to the manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The id of the entity</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>The entity created </dd></dl>
 
 </div>
@@ -294,7 +301,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 10:05:29 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 10:16:57 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
