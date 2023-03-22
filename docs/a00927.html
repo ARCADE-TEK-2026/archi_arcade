@@ -91,12 +91,12 @@ Collaboration diagram for Arcade::Game::IScene:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3a1a2300d0d4d4d68b42658eb141bee"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00927.html#ad3a1a2300d0d4d4d68b42658eb141bee">~IScene</a> ()=default</td></tr>
 <tr class="separator:ad3a1a2300d0d4d4d68b42658eb141bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f08d928f1aca809677a28d54b43ce34"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00927.html#a2f08d928f1aca809677a28d54b43ce34">init</a> ()</td></tr>
-<tr class="memdesc:a2f08d928f1aca809677a28d54b43ce34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the scene.  <a href="a00927.html#a2f08d928f1aca809677a28d54b43ce34">More...</a><br /></td></tr>
-<tr class="separator:a2f08d928f1aca809677a28d54b43ce34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69a2bdefaef1a022a895ae7e713a6227"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00927.html#a69a2bdefaef1a022a895ae7e713a6227">close</a> ()</td></tr>
-<tr class="memdesc:a69a2bdefaef1a022a895ae7e713a6227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the scene.  <a href="a00927.html#a69a2bdefaef1a022a895ae7e713a6227">More...</a><br /></td></tr>
-<tr class="separator:a69a2bdefaef1a022a895ae7e713a6227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d0d3f75353904c547cd5d552f328b8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00927.html#a26d0d3f75353904c547cd5d552f328b8">init</a> ()=0</td></tr>
+<tr class="memdesc:a26d0d3f75353904c547cd5d552f328b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the scene.  <a href="a00927.html#a26d0d3f75353904c547cd5d552f328b8">More...</a><br /></td></tr>
+<tr class="separator:a26d0d3f75353904c547cd5d552f328b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b7d15ef668ac4c22f5ecc71636d569"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00927.html#a38b7d15ef668ac4c22f5ecc71636d569">close</a> ()=0</td></tr>
+<tr class="memdesc:a38b7d15ef668ac4c22f5ecc71636d569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the scene.  <a href="a00927.html#a38b7d15ef668ac4c22f5ecc71636d569">More...</a><br /></td></tr>
+<tr class="separator:a38b7d15ef668ac4c22f5ecc71636d569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52ea9a265a25ea1fa9b6fb99613482f7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00911.html">ECS::IEntityManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00927.html#a52ea9a265a25ea1fa9b6fb99613482f7">getEntityManager</a> ()=0</td></tr>
 <tr class="memdesc:a52ea9a265a25ea1fa9b6fb99613482f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the entity manager of the scene.  <a href="a00927.html#a52ea9a265a25ea1fa9b6fb99613482f7">More...</a><br /></td></tr>
 <tr class="separator:a52ea9a265a25ea1fa9b6fb99613482f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,8 +133,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a69a2bdefaef1a022a895ae7e713a6227"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69a2bdefaef1a022a895ae7e713a6227">&#9670;&nbsp;</a></span>close()</h2>
+<a id="a38b7d15ef668ac4c22f5ecc71636d569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b7d15ef668ac4c22f5ecc71636d569">&#9670;&nbsp;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,7 +151,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -217,8 +217,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f08d928f1aca809677a28d54b43ce34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f08d928f1aca809677a28d54b43ce34">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a26d0d3f75353904c547cd5d552f328b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26d0d3f75353904c547cd5d552f328b8">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +235,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -252,7 +252,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2023 22:44:44 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Mar 22 2023 10:37:55 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

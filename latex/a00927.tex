@@ -24,9 +24,9 @@ Collaboration diagram for Arcade\+::Game\+::IScene\+:
 \item 
 virtual \mbox{\hyperlink{a00927_ad3a1a2300d0d4d4d68b42658eb141bee}{$\sim$\+IScene}} ()=default
 \item 
-virtual bool \mbox{\hyperlink{a00927_a2f08d928f1aca809677a28d54b43ce34}{init}} ()
+virtual bool \mbox{\hyperlink{a00927_a26d0d3f75353904c547cd5d552f328b8}{init}} ()=0
 \begin{DoxyCompactList}\small\item\em Create the scene. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00927_a69a2bdefaef1a022a895ae7e713a6227}{close}} ()
+virtual void \mbox{\hyperlink{a00927_a38b7d15ef668ac4c22f5ecc71636d569}{close}} ()=0
 \begin{DoxyCompactList}\small\item\em Close the scene. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{a00911}{ECS\+::\+IEntity\+Manager}} \& \mbox{\hyperlink{a00927_a52ea9a265a25ea1fa9b6fb99613482f7}{get\+Entity\+Manager}} ()=0
 \begin{DoxyCompactList}\small\item\em Get the entity manager of the scene. \end{DoxyCompactList}\item 
@@ -47,11 +47,11 @@ The \mbox{\hyperlink{a00927}{IScene}} interface.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{a00927_a69a2bdefaef1a022a895ae7e713a6227}\label{a00927_a69a2bdefaef1a022a895ae7e713a6227}} 
+\mbox{\Hypertarget{a00927_a38b7d15ef668ac4c22f5ecc71636d569}\label{a00927_a38b7d15ef668ac4c22f5ecc71636d569}} 
 \index{Arcade::Game::IScene@{Arcade::Game::IScene}!close@{close}}
 \index{close@{close}!Arcade::Game::IScene@{Arcade::Game::IScene}}
 \doxysubsubsection{\texorpdfstring{close()}{close()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+Game\+::\+IScene\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Game\+::\+IScene\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -83,11 +83,11 @@ Get the system manager of the scene.
 \begin{DoxyReturn}{Returns}
 The system manager of the scene 
 \end{DoxyReturn}
-\mbox{\Hypertarget{a00927_a2f08d928f1aca809677a28d54b43ce34}\label{a00927_a2f08d928f1aca809677a28d54b43ce34}} 
+\mbox{\Hypertarget{a00927_a26d0d3f75353904c547cd5d552f328b8}\label{a00927_a26d0d3f75353904c547cd5d552f328b8}} 
 \index{Arcade::Game::IScene@{Arcade::Game::IScene}!init@{init}}
 \index{init@{init}!Arcade::Game::IScene@{Arcade::Game::IScene}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
-{\footnotesize\ttfamily virtual bool Arcade\+::\+Game\+::\+IScene\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual bool Arcade\+::\+Game\+::\+IScene\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
