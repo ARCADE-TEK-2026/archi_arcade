@@ -32,7 +32,7 @@ virtual const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00903
 \begin{DoxyCompactList}\small\item\em Get all components of type {\ttfamily comp\+Type} \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{a00907_a2b6e500df1d7d350fa00bb57c7d10b6c}{add\+Component}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00903}{IComponent}} $>$ component)=0
 \begin{DoxyCompactList}\small\item\em Add a component. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00907_ae1b0864f76fa9ad515adb5514bc8e43f}{remove\+Component}} (std\+::string id)=0
+virtual void \mbox{\hyperlink{a00907_a6cf0c632639abbfb76a266d007bed227}{remove\+Component}} (const std\+::string \&id)=0
 \begin{DoxyCompactList}\small\item\em Remove a component. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{a00907_abddaeef7a17806c4502c61952e3b4ee2}{remove\+Components}} (Comp\+Type type)=0
 \begin{DoxyCompactList}\small\item\em Remove all components of type {\ttfamily Comp\+Type} \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -110,11 +110,11 @@ Get the entity id.
 \begin{DoxyReturn}{Returns}
 The entity id 
 \end{DoxyReturn}
-\mbox{\Hypertarget{a00907_ae1b0864f76fa9ad515adb5514bc8e43f}\label{a00907_ae1b0864f76fa9ad515adb5514bc8e43f}} 
+\mbox{\Hypertarget{a00907_a6cf0c632639abbfb76a266d007bed227}\label{a00907_a6cf0c632639abbfb76a266d007bed227}} 
 \index{Arcade::ECS::IEntity@{Arcade::ECS::IEntity}!removeComponent@{removeComponent}}
 \index{removeComponent@{removeComponent}!Arcade::ECS::IEntity@{Arcade::ECS::IEntity}}
 \doxysubsubsection{\texorpdfstring{removeComponent()}{removeComponent()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEntity\+::remove\+Component (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEntity\+::remove\+Component (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
