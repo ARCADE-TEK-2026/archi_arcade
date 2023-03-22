@@ -21,8 +21,8 @@ namespace Arcade {
         struct TTYData {
             public:
                 std::string defaultChar;
-                Color foreground;
-                Color background;
+                short foregroundColor;
+                short backgroundColor;
         };
         struct Rect {
             public:
