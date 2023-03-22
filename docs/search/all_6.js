@@ -4,7 +4,7 @@ var searchData=
   ['game_26',['GAME',['../a00011.html#a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13',1,'Api.hpp']]],
   ['getbackgroundcolor_27',['getBackgroundColor',['../a00955.html#ac72f68172923a4352ecfa7b0c607acb3',1,'Arcade::Graph::IText']]],
   ['getcolor_28',['getColor',['../a00951.html#aa9b089ae153c1591212579b7fba69fa8',1,'Arcade::Graph::ISprite']]],
-  ['getcomponents_29',['getComponents',['../a00907.html#a8fe017d8bfbffd06d120834d6e8c8b59',1,'Arcade::ECS::IEntity::getComponents()=0'],['../a00907.html#a60d82ca07e4ab56b1d57ca03b9f8ae36',1,'Arcade::ECS::IEntity::getComponents(CompType type)=0']]],
+  ['getcomponents_29',['getComponents',['../a00907.html#a66a2b662605187a047b0ae3bcc7d1487',1,'Arcade::ECS::IEntity::getComponents()=0'],['../a00907.html#af1c37be4dcbab053fb86b1bf3d399d14',1,'Arcade::ECS::IEntity::getComponents(CompType type)=0']]],
   ['getcurrentscene_30',['getCurrentScene',['../a00931.html#ae9e4d02109ca0b23f12ad6f1b2966d36',1,'Arcade::Game::ISceneManager']]],
   ['getentities_31',['getEntities',['../a00911.html#a3e71da94c3897512ff8dd4ac946ed4be',1,'Arcade::ECS::IEntityManager']]],
   ['getentitiesbycomponenttype_32',['getEntitiesByComponentType',['../a00911.html#a8838321771a4c664f711661435bbf170',1,'Arcade::ECS::IEntityManager']]],

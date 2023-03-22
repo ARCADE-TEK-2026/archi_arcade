@@ -26,11 +26,11 @@ virtual \mbox{\hyperlink{a00907_a2112acabd726dc9377fc267d71286381}{$\sim$\+IEnti
 \item 
 virtual std\+::string \mbox{\hyperlink{a00907_a19dbef678c86a5dad566644f38de569d}{get\+Id}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the entity id. \end{DoxyCompactList}\item 
-virtual const std\+::map$<$ Comp\+Type, std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00903}{IComponent}} $>$ $>$ $>$ \& \mbox{\hyperlink{a00907_a8fe017d8bfbffd06d120834d6e8c8b59}{get\+Components}} ()=0
+virtual const std\+::map$<$ Comp\+Type, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00903}{IComponent}} $>$ $>$ $>$ \& \mbox{\hyperlink{a00907_a66a2b662605187a047b0ae3bcc7d1487}{get\+Components}} ()=0
 \begin{DoxyCompactList}\small\item\em Get all components. \end{DoxyCompactList}\item 
-virtual const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00903}{IComponent}} $>$ $>$ \& \mbox{\hyperlink{a00907_a60d82ca07e4ab56b1d57ca03b9f8ae36}{get\+Components}} (Comp\+Type type)=0
+virtual const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00903}{IComponent}} $>$ $>$ \& \mbox{\hyperlink{a00907_af1c37be4dcbab053fb86b1bf3d399d14}{get\+Components}} (Comp\+Type type)=0
 \begin{DoxyCompactList}\small\item\em Get all components of type {\ttfamily comp\+Type} \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00907_a6688b4c25087bf34d88c0485c4ccfe1f}{add\+Component}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00903}{IComponent}} $>$ component)=0
+virtual void \mbox{\hyperlink{a00907_a2b6e500df1d7d350fa00bb57c7d10b6c}{add\+Component}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00903}{IComponent}} $>$ component)=0
 \begin{DoxyCompactList}\small\item\em Add a component. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{a00907_ae1b0864f76fa9ad515adb5514bc8e43f}{remove\+Component}} (std\+::string id)=0
 \begin{DoxyCompactList}\small\item\em Remove a component. \end{DoxyCompactList}\item 
@@ -51,11 +51,11 @@ The \mbox{\hyperlink{a00907}{IEntity}} interface.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{a00907_a6688b4c25087bf34d88c0485c4ccfe1f}\label{a00907_a6688b4c25087bf34d88c0485c4ccfe1f}} 
+\mbox{\Hypertarget{a00907_a2b6e500df1d7d350fa00bb57c7d10b6c}\label{a00907_a2b6e500df1d7d350fa00bb57c7d10b6c}} 
 \index{Arcade::ECS::IEntity@{Arcade::ECS::IEntity}!addComponent@{addComponent}}
 \index{addComponent@{addComponent}!Arcade::ECS::IEntity@{Arcade::ECS::IEntity}}
 \doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEntity\+::add\+Component (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00903}{IComponent}} $>$}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEntity\+::add\+Component (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00903}{IComponent}} $>$}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -66,11 +66,11 @@ Add a component.
 {\em component} & The component to add \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{a00907_a8fe017d8bfbffd06d120834d6e8c8b59}\label{a00907_a8fe017d8bfbffd06d120834d6e8c8b59}} 
+\mbox{\Hypertarget{a00907_a66a2b662605187a047b0ae3bcc7d1487}\label{a00907_a66a2b662605187a047b0ae3bcc7d1487}} 
 \index{Arcade::ECS::IEntity@{Arcade::ECS::IEntity}!getComponents@{getComponents}}
 \index{getComponents@{getComponents}!Arcade::ECS::IEntity@{Arcade::ECS::IEntity}}
 \doxysubsubsection{\texorpdfstring{getComponents()}{getComponents()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual const std\+::map$<$Comp\+Type, std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{a00903}{IComponent}}$>$ $>$ $>$\& Arcade\+::\+ECS\+::\+IEntity\+::get\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual const std\+::map$<$Comp\+Type, std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00903}{IComponent}}$>$ $>$ $>$\& Arcade\+::\+ECS\+::\+IEntity\+::get\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -79,11 +79,11 @@ Get all components.
 \begin{DoxyReturn}{Returns}
 The list of components 
 \end{DoxyReturn}
-\mbox{\Hypertarget{a00907_a60d82ca07e4ab56b1d57ca03b9f8ae36}\label{a00907_a60d82ca07e4ab56b1d57ca03b9f8ae36}} 
+\mbox{\Hypertarget{a00907_af1c37be4dcbab053fb86b1bf3d399d14}\label{a00907_af1c37be4dcbab053fb86b1bf3d399d14}} 
 \index{Arcade::ECS::IEntity@{Arcade::ECS::IEntity}!getComponents@{getComponents}}
 \index{getComponents@{getComponents}!Arcade::ECS::IEntity@{Arcade::ECS::IEntity}}
 \doxysubsubsection{\texorpdfstring{getComponents()}{getComponents()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{a00903}{IComponent}}$>$ $>$\& Arcade\+::\+ECS\+::\+IEntity\+::get\+Components (\begin{DoxyParamCaption}\item[{Comp\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00903}{IComponent}}$>$ $>$\& Arcade\+::\+ECS\+::\+IEntity\+::get\+Components (\begin{DoxyParamCaption}\item[{Comp\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
