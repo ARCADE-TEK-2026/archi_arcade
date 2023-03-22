@@ -27,7 +27,7 @@ namespace Arcade {
                  *
                  * @return True if the scene was created, false otherwise
                  */
-                virtual bool init();
+                virtual bool init() = 0;
                 /**
                  * @brief Close the scene
                  *
@@ -35,7 +35,7 @@ namespace Arcade {
                  * (we might still need it, but we want to dealocate some
                  * resource maybe ?)
                  */
-                virtual void close();
+                virtual void close() = 0;
                 /**
                  * @brief Get the entity manager of the scene
                  *

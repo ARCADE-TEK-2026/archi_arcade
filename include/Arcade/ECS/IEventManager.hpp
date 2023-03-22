@@ -124,7 +124,7 @@ namespace Arcade {
                  * trigered more than one time in one frame
                  */
                 virtual std::pair<bool,
-                std::vector<std::optional<std::shared_ptr<IComponent>>>>
+                std::optional<std::vector<std::optional<std::shared_ptr<IComponent>>>>>
                 isEventTriggered(const std::string &event) const = 0;
                 /**
                  * @brief Add an event to list of trigered events
