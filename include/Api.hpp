@@ -23,7 +23,7 @@
 
 extern "C"
 {
-    enum class LibType { GRAPH, GAME };
+    EXPORT enum class LibType { GRAPH, GAME };
 
     /**
      * @brief The game shared lib main entry point to get scenes
@@ -33,7 +33,7 @@ extern "C"
      * All game shared lib must have this function
      *
      */
-    std::unique_ptr<Arcade::Game::ISceneManager> getScenes();
+    EXPORT std::unique_ptr<Arcade::Game::ISceneManager> getScenes(std::unique_ptr<Arcade::Game::ISceneManager> sceneManager);
 
     /**
      * @brief The Graph shared lib main entry point to get systems
@@ -43,7 +43,7 @@ extern "C"
      * All graph shared lib must have this function
      *
      */
-    std::unique_ptr<Arcade::ECS::ISystemManager> getSystems();
+    EXPORT std::unique_ptr<Arcade::ECS::ISystemManager> getSystems(std::unique_ptr<Arcade::ECS::ISystemManager> systemManager);
 
     /**
      * @brief The Shared lib entry point to get lib name
@@ -53,7 +53,7 @@ extern "C"
      * All shared lib must have this function
      *
      */
-    std::string getName();
+    EXPORT std::string getName();
 
     /**
      * @brief The Shared lib entry point to get lib type
@@ -63,5 +63,5 @@ extern "C"
      * All shared lib must have this function
      *
      */
-    LibType getType();
+    EXPORT LibType getType();
 }

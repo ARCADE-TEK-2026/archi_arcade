@@ -36,6 +36,8 @@ namespace Arcade {
                  *
                  * Throw on error
                  *
+                 * Never call this directly in game systems, see documentation of EventManager for this purpose
+                 *
                  */
                 virtual void changeGame(const std::string &gameName) = 0;
 
@@ -44,6 +46,8 @@ namespace Arcade {
                  * cyclic way)
                  *
                  * Throw on error
+                 *
+                 * Never call this directly in game systems, see documentation of EventManager for this purpose
                  *
                  */
                 virtual void changeGame() = 0;
