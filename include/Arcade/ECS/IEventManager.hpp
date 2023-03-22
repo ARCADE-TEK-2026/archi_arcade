@@ -88,6 +88,12 @@ namespace Arcade {
          * "WINDOW_CLOSE"
          * "WINDOW_RESIZE"
          * "WINDOW_MINIMIZE"
+         *
+         * Some events are used to change libs
+         * such as
+         * "CHANGE_GRAPH" with component <lib_graph_name>
+         * same goes for the game lib
+         * "CHANGE_GAME" with component <lib_game_name>
          */
         class IEventManager {
             public:

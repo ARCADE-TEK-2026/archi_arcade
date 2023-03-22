@@ -10,6 +10,7 @@
 
 #include <string>
 #include "ISceneManager.hpp"
+#include "IEventManager.hpp"
 
 namespace Arcade {
     namespace Core {
@@ -36,6 +37,12 @@ namespace Arcade {
                  * @return True if the game was changed, false otherwise
                  */
                 virtual bool changeGame(const std::string &gameName) = 0;
+                /**
+                 * @brief Get Game Event Only Manager
+                 *
+                 * @return The event manager only used for game
+                 */
+                virtual Arcade::ECS::IEventManager &getGameEventManager() = 0;
         };
     } // namespace Core
 } // namespace Arcade

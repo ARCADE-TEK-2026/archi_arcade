@@ -8,6 +8,7 @@
 #pragma once
 
 #include "ISystemManager.hpp"
+#include "ArcadeStruct.hpp"
 
 namespace Arcade {
     namespace Core {
@@ -50,6 +51,16 @@ namespace Arcade {
                  * @return True if the graphical library was changed, false
                  */
                 virtual bool changeGraphicLib() = 0;
+                /**
+                 * @brief Get he size of the window
+                 */
+                virtual Arcade::Vector2f &getWindowSize() = 0;
+                /**
+                 * @brief Set the window size
+                 *
+                 * @param newSize The vector2f representing the new window size
+                 */
+                virtual void setWindowSize(const Arcade::Vector2f &newSize) = 0;
         };
     } // namespace Core
 } // namespace Arcade
