@@ -57,7 +57,7 @@ namespace Arcade {
                  *
                  * @param std::string The component id to remove
                  */
-                virtual void removeComponent(std::string id) = 0;
+                virtual void removeComponent(const std::string &id) = 0;
                 /**
                  * @brief Remove all components of type `CompType`
                  *
