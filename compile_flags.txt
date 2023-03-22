@@ -1,0 +1,7 @@
+-Iinclude
+-Iinclude/Arcade
+-Iinclude/Arcade/Core
+-Iinclude/Arcade/ECS
+-Iinclude/Arcade/Game
+-Iinclude/Arcade/Graph
+-std=c++20

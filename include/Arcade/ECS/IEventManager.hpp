@@ -7,9 +7,13 @@
 
 #pragma once
 
-#include <queue>
+#include <memory>
+#include <optional>
 #include <string>
+#include <tuple>
+#include <vector>
 #include "ArcadeStruct.hpp"
+#include "IComponent.hpp"
 
 namespace Arcade {
     namespace ECS {
@@ -94,6 +98,12 @@ namespace Arcade {
          * "CHANGE_GRAPH" with component <lib_graph_name>
          * same goes for the game lib
          * "CHANGE_GAME" with component <lib_game_name>
+         * "GAME_END" Is the event create by game system to tell core to quit
+         * game and go main menu
+         *
+         * "QUIT" Is the event create by game or main menu to tell core to quit
+         * program
+         *
          */
         class IEventManager {
             public:
@@ -110,22 +120,27 @@ namespace Arcade {
                  *
                  * @param event The event to check
                  *
-                 * @return True if the event was trigered, false otherwise
+                 * @return A pair of
+                 * bool (True if the event was trigered, False if the event was
+                 * not trigered) and
+                 * std::vector<std::optional<std::shared_ptr<IComponent>>> (list
+                 * of the parameter passed as parameter to `addEvent` method)
+                 * Why a vector of optional? Because event of same type can be
+                 * trigered more than one time in one frame
                  */
-                virtual bool isEventInQueue(const std::string &event) const = 0;
+                virtual std::pair<bool,
+                std::optional<std::vector<std::optional<std::shared_ptr<IComponent>>>>>
+                isEventTriggered(const std::string &event) const = 0;
                 /**
                  * @brief Add an event to list of trigered events
                  *
                  * @param event The event to add
+                 * @param component The component to add as optional parameter
+                 * with the event
                  */
-                virtual void addEvent(const std::string &event) = 0;
-                /**
-                 * @brief Remove an event from list of trigered events and
-                 * return it
-                 *
-                 * @return The event that was removed
-                 */
-                virtual const std::string &popEvent() = 0;
+                virtual void addEvent(const std::string &event,
+                std::optional<std::shared_ptr<IComponent>> component =
+                std::nullopt) = 0;
                 /**
                  * @brief Remove all events from list of trigered events
                  */

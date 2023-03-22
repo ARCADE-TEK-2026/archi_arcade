@@ -18,7 +18,6 @@ namespace Arcade {
         class ISceneManager {
             public:
                 virtual ~ISceneManager() = default;
-
                 /**
                  * @brief Add a scene to the scene manager
                  *

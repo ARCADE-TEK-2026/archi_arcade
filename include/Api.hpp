@@ -16,6 +16,11 @@
     #define EXPORT
 #endif
 
+/**
+ * Each graphical library must call in one system the setMousePosition method of
+ * EventManager
+ */
+
 extern "C"
 {
     enum class LibType { GRAPH, GAME };
