@@ -38,8 +38,8 @@ extern "C"
      * everything in .so
      *
      */
-    EXPORT std::unique_ptr<Arcade::Game::ISceneManager> getScenes(
-    std::unique_ptr<Arcade::Game::ISceneManager> sceneManager);
+    EXPORT std::shared_ptr<Arcade::Game::ISceneManager> getScenes(
+    std::shared_ptr<Arcade::Game::ISceneManager> sceneManager);
 
     /**
      * @brief The Graph shared lib main entry point to get systems
@@ -54,8 +54,8 @@ extern "C"
      * everything in .so
      *
      */
-    EXPORT std::unique_ptr<Arcade::ECS::ISystemManager> getSystems(
-    std::unique_ptr<Arcade::ECS::ISystemManager> systemManager);
+    EXPORT std::shared_ptr<Arcade::ECS::ISystemManager> getSystems(
+    std::shared_ptr<Arcade::ECS::ISystemManager> systemManager);
 
     /**
      * @brief The Shared lib entry point to get lib name

@@ -29,7 +29,7 @@ namespace Arcade {
                  *
                  * @return The system manager of the current graphical library
                  */
-                virtual ECS::ISystemManager &getSystemManager() = 0;
+                virtual std::shared_ptr<ECS::ISystemManager> getSystemManager() = 0;
                 /**
                  * @brief Change the current active graphical library to the
                  * given graphical library
