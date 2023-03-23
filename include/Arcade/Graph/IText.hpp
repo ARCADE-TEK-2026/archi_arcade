@@ -60,7 +60,7 @@ namespace Arcade {
                  * @brief Set the background color.
                  */
                 virtual void setBackgroundColor(
-                Arcade::Graph::Color &color) = 0;
+                const Arcade::Graph::Color &color) = 0;
                 /**
                  * @brief Get the foreground color.
                  *
@@ -72,7 +72,7 @@ namespace Arcade {
                  * @brief Set the foreground color.
                  */
                 virtual void setForegroundColor(
-                Arcade::Graph::Color &color) = 0;
+                const Arcade::Graph::Color &color) = 0;
                 /**
                  * @brief Get the police size.
                  *
@@ -94,7 +94,7 @@ namespace Arcade {
                 /**
                  * @brief Set the text position.
                  */
-                virtual void setPos(Arcade::Vector2f &pos) = 0;
+                virtual void setPos(const Arcade::Vector2f &pos) = 0;
         };
     } // namespace Graph
 } // namespace Arcade
