@@ -27,7 +27,7 @@ namespace Arcade {
                  *
                  * @return The scene manager of the current game
                  */
-                virtual Arcade::Game::ISceneManager &getSceneManager() = 0;
+                virtual std::unique_ptr<Arcade::Game::ISceneManager> &getSceneManager() = 0;
 
                 /**
                  * @brief Change the current active game to the given game
