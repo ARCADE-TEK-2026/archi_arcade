@@ -95,6 +95,16 @@ namespace Arcade {
                  * @brief Set the text position.
                  */
                 virtual void setPos(const Arcade::Vector2f &pos) = 0;
+                /**
+                 * @brief Get the text hitbox.
+                 *
+                 * @return The text hitbox.
+                 */
+                virtual const Arcade::Vector2f &getHitbox() const = 0;
+                /**
+                 * @brief Set the text hitbox.
+                 */
+                virtual void setHitbox(const Arcade::Vector2f &hitbox) = 0;
         };
     } // namespace Graph
 } // namespace Arcade
