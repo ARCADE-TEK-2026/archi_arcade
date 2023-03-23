@@ -7,8 +7,11 @@
 
 #pragma once
 
-#include "ISystemManager.hpp"
+#include <memory>
+#include <string>
 #include "ArcadeStruct.hpp"
+#include "IComponent.hpp"
+#include "ISystemManager.hpp"
 
 namespace Arcade {
     namespace Core {
@@ -35,9 +38,15 @@ namespace Arcade {
                  * libname without .so)
                  *
                  * Throw on error
-                 *!!!ATTENTION!!!: This function must be called only when you receive
-                 * the event CHANGE_GRAPH, the param can be found in the component
-                 * that can be linked to the event
+                 *
+                 * Never call this directly in game systems, see documentation
+                 * of EventManager for this purpose.
+                 * Why ? because this function can destroy the
+                 *components/entities/systems you are on when you execute it
+                 *
+                 *!!!ATTENTION!!!: This function must be called only when you
+                 *receive the event CHANGE_GRAPH, the param can be found in the
+                 *component that can be linked to the event (so, in core loop)
                  */
                 virtual void changeGraphicLib(
                 const std::string &libGraphicName) = 0;
@@ -50,11 +59,43 @@ namespace Arcade {
                  * library)
                  *
                  * Throw on error
-                 * !!!ATTENTION!!!: This function must be called only when you receive
-                 * the event CHANGE_GRAPH, this one is called if there is no param
+                 * !!!ATTENTION!!!: This function must be called only when you
+                 * receive the event CHANGE_GRAPH, this one is called if there
+                 * is no param
+                 *
+                 * Never call this directly in game systems, see documentation
+                 * of EventManager for this purpose
+                 * Why ? because this function can destroy the
+                 * components/entities/systems you are on when you execute it
                  *
                  */
                 virtual void changeGraphicLib() = 0;
+                /**
+                 * @brief Add a component to the current active graphical
+                 * library
+                 *
+                 * @param component The component to add
+                 */
+                virtual void addComponent(
+                std::shared_ptr<ECS::IComponent> component) = 0;
+                /**
+                 * @brief Remove a component from the current active graphical
+                 * library
+                 *
+                 * @param componentId The component id to remove
+                 */
+                virtual void removeComponent(
+                const std::string &componentId) = 0;
+                /**
+                 * @brief Get the component of the current active graphical
+                 * library
+                 *
+                 * @param componentId The component id to get
+                 *
+                 * @return optional of the component id if found
+                 */
+                virtual std::optional<std::shared_ptr<ECS::IComponent>>
+                getComponent(const std::string &componentId) const = 0;
                 /**
                  * @brief Get he size of the window
                  */

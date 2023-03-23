@@ -52,8 +52,8 @@ namespace Arcade {
                  *
                  * @return The entity
                  */
-                virtual std::shared_ptr<IEntity>
-                getEntitiesById(const std::string &id) const = 0;
+                virtual std::shared_ptr<IEntity> getEntitiesById(
+                const std::string &id) const = 0;
                 /**
                  * @brief Remove an entity from the manager
                  *

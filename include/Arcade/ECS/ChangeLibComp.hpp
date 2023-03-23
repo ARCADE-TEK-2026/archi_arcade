@@ -36,7 +36,7 @@ namespace Arcade {
                  */
                 virtual void setLibPath(const std::string &path) = 0;
         };
-    }
-}
+    } // namespace ECS
+} // namespace Arcade
 
 #endif // ARCHI_ARCADE_CHANGELIBCOMP_HPP
