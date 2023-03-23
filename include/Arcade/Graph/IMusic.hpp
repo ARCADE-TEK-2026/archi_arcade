@@ -21,7 +21,7 @@ namespace Arcade {
          * ATTENTION: You must have a parameter in your constructor
          * in order to set his id.
          */
-        class IMusic : Arcade::ECS::IComponent {
+        class IMusic : public Arcade::ECS::IComponent {
             public:
                 virtual ~IMusic() = default;
                 /**
