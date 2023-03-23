@@ -10,6 +10,7 @@
 
 #include <string>
 #include "ISceneManager.hpp"
+#include "IEventManager.hpp"
 
 namespace Arcade {
     namespace Core {
@@ -40,6 +41,9 @@ namespace Arcade {
                  * of EventManager for this purpose
                  * Why ? because this function can destroy the components/entities/systems you are on when you execute it
                  *
+                 *!!!ATTENTION!!!: This function must be called only when you receive
+                 * the event CHANGE_GAME, the param can be found in the component
+                 * that can be linked to the event (in the core loop)
                  */
                 virtual void changeGame(const std::string &gameName) = 0;
 
@@ -53,8 +57,16 @@ namespace Arcade {
                  * of EventManager for this purpose
                  * Why ? because this function can destroy the components/entities/systems you are on when you execute it
                  *
+                 *!!!ATTENTION!!!: This function must be called only when you receive
+                 * the event CHANGE_GAME, called when there is not param (in the core loop)
                  */
                 virtual void changeGame() = 0;
+                /**
+                 * @brief Get Game Event Only Manager
+                 *
+                 * @return The event manager only used for game
+                 */
+                virtual Arcade::ECS::IEventManager &getGameEventManager() = 0;
         };
     } // namespace Core
 } // namespace Arcade

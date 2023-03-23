@@ -14,7 +14,7 @@ namespace Arcade {
         /**
          * @brief The IComponents interface
          *
-         * defaultComponent type to implement: TEXT, SPRITE, MUSIC
+         * defaultComponent type to implement: TEXT, SPRITE, MUSIC, CHANGE_LIB
          */
         enum class CompType;
 
