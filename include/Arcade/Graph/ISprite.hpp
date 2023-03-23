@@ -65,7 +65,7 @@ namespace Arcade {
                 /**
                  * @brief Set the sprite position in 3Dimension.
                  */
-                virtual void setPos(Arcade::Vector3f pos) = 0;
+                virtual void setPos(const Arcade::Vector3f &pos) = 0;
                 /**
                  * @brief Get the sprite size in 3Dimension.
                  *
@@ -77,7 +77,7 @@ namespace Arcade {
                 /**
                  * @brief Set the sprite size in 3Dimension.
                  */
-                virtual void setSize(Arcade::Vector3f size) = 0;
+                virtual void setSize(const Arcade::Vector3f &size) = 0;
                 /**
                  * @brief Get the sprite Color.
                  *
