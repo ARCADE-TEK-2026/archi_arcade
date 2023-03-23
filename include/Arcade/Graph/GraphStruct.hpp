@@ -13,7 +13,6 @@ namespace Arcade {
     namespace Graph {
         struct Color {
             public:
-                Color(int r, int g, int b, int a) : r(r), g(g), b(b), a(a) {}
                 int r;
                 int g;
                 int b;
@@ -21,14 +20,12 @@ namespace Arcade {
         };
         struct TTYData {
             public:
-                TTYData(std::string defaultChar, Color foreground, Color background) : defaultChar(defaultChar), foreground(foreground), background(background) {}
                 std::string defaultChar;
                 Color foreground;
                 Color background;
         };
         struct Rect {
             public:
-                Rect(int left, int top, int width, int height) : left(left), top(top), width(width), height(height) {}
                 int left;
                 int top;
                 int width;
