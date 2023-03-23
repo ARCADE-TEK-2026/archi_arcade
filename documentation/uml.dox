@@ -44,9 +44,9 @@
 
   À implementer:
   ```cpp
-  class Arcade::Core::Core; // see docs on EventManager to see what you need to catch from events triggered
-  class Arcade::Core::DisplayModule; // manager for graphic lib + more cool things (see docs)
-  class Arcade::Core::GameModule; // manager for game scene + more cool things (see docs) 
+  class Arcade::Core::Core; // regarde la doc de IEventMnagers pour savoir ce qu'il faut prendre des évènements créer
+  class Arcade::Core::DisplayModule; // manager pour la lib graphic + d'autres choses cool
+  class Arcade::Core::GameModule; // manager pour les scene de jeu + d'autre choses cool
   class Arcade::ECS::Entity; // l'IEntity n'a pas vocation à avoir beaucoup d'enfant. Un seul suffit justement grâce à l'ECS qui permet de rajouter des componsant à chaque entité
   class Arcade::ECS::EntityManager; // pas besoin non plus de faire beaucoup d'enfant sur l'IEntityManager (la personne qui écrit cette doc ne vois pas de cas croncrêt où il faudrait plusieurs implementation différentes de IEntityManager)
   class Arcade::ECS::EventManager; // pas besoin d'en avoir plusieurs implementation différentes
@@ -68,8 +68,8 @@
   class Arcade::ECS:://{Tous les systems}// les systemes sont les fonctions qui permettent de réaliser des action dans un ECS, sans systemes, vous n'avez pas de jeux. Il vous est invité à faire chaque systems pour une modification différentes, et pas tous dans 1 seul systemes.
   class Arcade::ECS::AScene; // c'est cool les abstract!!
   class Arcade::ECS:://{Toutes les scenes}// cela permet d'avoir des scenes avec fonction d'entré customisable (la méthode `init`)
-  // next is entry point for shared library
-  // please read Api.hpp for more details
+  // ce qui suit permet d'avoir un point d'entré défini pour chaque lib
+  // lisez le fichier Api.hpp pour plus d'info
   LibType getType();
   std::string getName();
   std::unique_ptr<Arcade::Game::ISceneManager> getScenes(std::unique_ptr<Arcade::Game::ISceneManager> sceneManager);
@@ -82,8 +82,8 @@
   À implementer dans chaque lib graphic:
   ```cpp
   class Arcade::ECS::System; // le system permettant d'afficher/jouer de la music avec la lib graphique qu'il wrap.
-  // next is entry point for shared library
-  // please read Api.hpp for more details
+  // ce qui suit permet d'avoir un point d'entré défini pour chaque lib
+  // lisez le fichier Api.hpp pour plus d'info
   LibType getType();
   std::string getName();
   std::unique_ptr<Arcade::ECS::ISystemManager> getSystems(std::unique_ptr<Arcade::ECS::ISystemManager> systemManager);
