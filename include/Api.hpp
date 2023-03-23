@@ -23,7 +23,7 @@
 
 extern "C"
 {
-    EXPORT enum class LibType { GRAPH, GAME };
+    enum class LibType { GRAPH, GAME };
 
     /**
      * @brief The game shared lib main entry point to get scenes
