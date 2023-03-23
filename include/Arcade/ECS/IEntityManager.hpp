@@ -59,7 +59,7 @@ namespace Arcade {
                  *
                  * @param id The entity id to remove
                  */
-                virtual void removeEntity(std::string id) = 0;
+                virtual void removeEntity(const std::string &id) = 0;
                 /**
                  * @brief Remove all entities from the manager
                  */
