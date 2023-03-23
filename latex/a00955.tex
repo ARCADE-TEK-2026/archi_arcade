@@ -46,11 +46,11 @@ virtual void \mbox{\hyperlink{a00955_a8bfd70f59ae9a09ca91341d29504e9e4}{set\+Tex
 \begin{DoxyCompactList}\small\item\em Set the text to print. \end{DoxyCompactList}\item 
 virtual const \mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \& \mbox{\hyperlink{a00955_ac72f68172923a4352ecfa7b0c607acb3}{get\+Background\+Color}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the background color. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00955_a37d34aa8344b4a67a31190cb97a8f0fb}{set\+Background\+Color}} (\mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \&color)=0
+virtual void \mbox{\hyperlink{a00955_a7f0f929adfd87a1cfc4558e882446c5f}{set\+Background\+Color}} (const \mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \&color)=0
 \begin{DoxyCompactList}\small\item\em Set the background color. \end{DoxyCompactList}\item 
 virtual const \mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \& \mbox{\hyperlink{a00955_ab13e117e766981863e9816dde7aa4440}{get\+Foreground\+Color}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the foreground color. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00955_a859f8e518a3ed296c273bc809629a16e}{set\+Foreground\+Color}} (\mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \&color)=0
+virtual void \mbox{\hyperlink{a00955_ace13d3543cd6811a164a647cccbbbd87}{set\+Foreground\+Color}} (const \mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \&color)=0
 \begin{DoxyCompactList}\small\item\em Set the foreground color. \end{DoxyCompactList}\item 
 virtual float \mbox{\hyperlink{a00955_a101df2f0f7e648452e6ea7c93df66ac3}{get\+Police\+Size}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the police size. \end{DoxyCompactList}\item 
@@ -58,7 +58,7 @@ virtual void \mbox{\hyperlink{a00955_a339b0692ad02c83f201899668d724551}{set\+Pol
 \begin{DoxyCompactList}\small\item\em Set the police size. \end{DoxyCompactList}\item 
 virtual const \mbox{\hyperlink{a00883}{Arcade\+::\+Vector2f}} \& \mbox{\hyperlink{a00955_abcc091ec3c82c636f29bb5e043d7f770}{get\+Pos}} () const =0
 \begin{DoxyCompactList}\small\item\em Get the text position. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{a00955_a40fa95b85a686bbc8cb59d2adc31a9da}{set\+Pos}} (\mbox{\hyperlink{a00883}{Arcade\+::\+Vector2f}} \&pos)=0
+virtual void \mbox{\hyperlink{a00955_a5fd52af0c85bfab99e2e6131797e01c8}{set\+Pos}} (const \mbox{\hyperlink{a00883}{Arcade\+::\+Vector2f}} \&pos)=0
 \begin{DoxyCompactList}\small\item\em Set the text position. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -175,11 +175,11 @@ Get text to print.
 \begin{DoxyReturn}{Returns}
 The text to print. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{a00955_a37d34aa8344b4a67a31190cb97a8f0fb}\label{a00955_a37d34aa8344b4a67a31190cb97a8f0fb}} 
+\mbox{\Hypertarget{a00955_a7f0f929adfd87a1cfc4558e882446c5f}\label{a00955_a7f0f929adfd87a1cfc4558e882446c5f}} 
 \index{Arcade::Graph::IText@{Arcade::Graph::IText}!setBackgroundColor@{setBackgroundColor}}
 \index{setBackgroundColor@{setBackgroundColor}!Arcade::Graph::IText@{Arcade::Graph::IText}}
 \doxysubsubsection{\texorpdfstring{setBackgroundColor()}{setBackgroundColor()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Background\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Background\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -195,11 +195,11 @@ Set the background color.
 
 Set the path of the text font. 
 
-\mbox{\Hypertarget{a00955_a859f8e518a3ed296c273bc809629a16e}\label{a00955_a859f8e518a3ed296c273bc809629a16e}} 
+\mbox{\Hypertarget{a00955_ace13d3543cd6811a164a647cccbbbd87}\label{a00955_ace13d3543cd6811a164a647cccbbbd87}} 
 \index{Arcade::Graph::IText@{Arcade::Graph::IText}!setForegroundColor@{setForegroundColor}}
 \index{setForegroundColor@{setForegroundColor}!Arcade::Graph::IText@{Arcade::Graph::IText}}
 \doxysubsubsection{\texorpdfstring{setForegroundColor()}{setForegroundColor()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Foreground\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Foreground\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a00935}{Arcade\+::\+Graph\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -215,11 +215,11 @@ Set the foreground color.
 
 Set the police size. 
 
-\mbox{\Hypertarget{a00955_a40fa95b85a686bbc8cb59d2adc31a9da}\label{a00955_a40fa95b85a686bbc8cb59d2adc31a9da}} 
+\mbox{\Hypertarget{a00955_a5fd52af0c85bfab99e2e6131797e01c8}\label{a00955_a5fd52af0c85bfab99e2e6131797e01c8}} 
 \index{Arcade::Graph::IText@{Arcade::Graph::IText}!setPos@{setPos}}
 \index{setPos@{setPos}!Arcade::Graph::IText@{Arcade::Graph::IText}}
 \doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
-{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00883}{Arcade\+::\+Vector2f}} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IText\+::set\+Pos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a00883}{Arcade\+::\+Vector2f}} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 

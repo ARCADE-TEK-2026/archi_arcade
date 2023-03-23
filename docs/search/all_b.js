@@ -1,18 +1,18 @@
 var searchData=
 [
-  ['setbackgroundcolor_99',['setBackgroundColor',['../a00955.html#a37d34aa8344b4a67a31190cb97a8f0fb',1,'Arcade::Graph::IText']]],
+  ['setbackgroundcolor_99',['setBackgroundColor',['../a00955.html#a7f0f929adfd87a1cfc4558e882446c5f',1,'Arcade::Graph::IText']]],
   ['setcolor_100',['setColor',['../a00951.html#a8f7ac32a8f06771e0d2b121b51f7a720',1,'Arcade::Graph::ISprite']]],
   ['setfontpath_101',['setFontPath',['../a00955.html#a33b69515bc897cbd5e0e4036e194c7f1',1,'Arcade::Graph::IText']]],
-  ['setforegroundcolor_102',['setForegroundColor',['../a00955.html#a859f8e518a3ed296c273bc809629a16e',1,'Arcade::Graph::IText']]],
+  ['setforegroundcolor_102',['setForegroundColor',['../a00955.html#ace13d3543cd6811a164a647cccbbbd87',1,'Arcade::Graph::IText']]],
   ['setisplaying_103',['setIsPlaying',['../a00947.html#a86834eb38ff839874a2f5f33fa4989fb',1,'Arcade::Graph::IMusic']]],
   ['setloop_104',['setLoop',['../a00947.html#a999ca7b3b535bd2c2ee5e63b50c7c9ba',1,'Arcade::Graph::IMusic']]],
   ['setmouseposition_105',['setMousePosition',['../a00915.html#acb7d32bbeabb07f606f11047022de1b5',1,'Arcade::ECS::IEventManager']]],
   ['setpath_106',['setPath',['../a00947.html#a0f5c0e7bc530ce255f6b0c7d94f9a09c',1,'Arcade::Graph::IMusic::setPath()'],['../a00951.html#a8dc0cd6e413320afe1dd1ae8f8b460ff',1,'Arcade::Graph::ISprite::setPath()']]],
   ['setpolicesize_107',['setPoliceSize',['../a00955.html#a339b0692ad02c83f201899668d724551',1,'Arcade::Graph::IText']]],
-  ['setpos_108',['setPos',['../a00951.html#a999555363198aa3e807c2a3cba1c058b',1,'Arcade::Graph::ISprite::setPos()'],['../a00955.html#a40fa95b85a686bbc8cb59d2adc31a9da',1,'Arcade::Graph::IText::setPos()']]],
+  ['setpos_108',['setPos',['../a00951.html#a27f020ca10b9d3ef8a5e63be40f35c58',1,'Arcade::Graph::ISprite::setPos()'],['../a00955.html#a5fd52af0c85bfab99e2e6131797e01c8',1,'Arcade::Graph::IText::setPos()']]],
   ['setrect_109',['setRect',['../a00951.html#a8d448285845a98e95dd3cb51778bc5f4',1,'Arcade::Graph::ISprite']]],
   ['setscale_110',['setScale',['../a00951.html#a0b7b5e30f64163e036e8ec87083d5b58',1,'Arcade::Graph::ISprite']]],
-  ['setsize_111',['setSize',['../a00951.html#ac97cde53b3df000e1777e0871623a976',1,'Arcade::Graph::ISprite']]],
+  ['setsize_111',['setSize',['../a00951.html#a771449e322212e09e1d71596ea59cce4',1,'Arcade::Graph::ISprite']]],
   ['settext_112',['setText',['../a00955.html#a8bfd70f59ae9a09ca91341d29504e9e4',1,'Arcade::Graph::IText']]],
   ['setttydata_113',['setTTYData',['../a00951.html#ae3695920d35aa0608cbf94a56aa091b9',1,'Arcade::Graph::ISprite']]],
   ['setvolume_114',['setVolume',['../a00947.html#a4905117cdb647cc715dfd8751c6f247e',1,'Arcade::Graph::IMusic']]]
