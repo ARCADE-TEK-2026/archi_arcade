@@ -32,8 +32,10 @@ extern "C"
      *
      * All game shared lib must have this function
      *
-     * It takes a parameter because, if there was no parameter, we will have to implement all the Archi commune in all .so (to be hable to create (malloc/new) one of them
-     * Now, with this parameter, we don't have to code everything in .so
+     * It takes a parameter because, if there was no parameter, we will have to
+     * implement all the Archi commune in all .so (to be hable to create
+     * (malloc/new) one of them Now, with this parameter, we don't have to code
+     * everything in .so
      *
      */
     EXPORT std::unique_ptr<Arcade::Game::ISceneManager> getScenes(
@@ -46,8 +48,10 @@ extern "C"
      *
      * All graph shared lib must have this function
      *
-     * It takes a parameter because, if there was no parameter, we will have to implement all the Archi commune in all .so (to be hable to create (malloc/new) one of them
-     * Now, with this parameter, we don't have to code everything in .so
+     * It takes a parameter because, if there was no parameter, we will have to
+     * implement all the Archi commune in all .so (to be hable to create
+     * (malloc/new) one of them Now, with this parameter, we don't have to code
+     * everything in .so
      *
      */
     EXPORT std::unique_ptr<Arcade::ECS::ISystemManager> getSystems(

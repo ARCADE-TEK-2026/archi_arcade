@@ -9,9 +9,9 @@
 
 #include <memory>
 #include <string>
+#include "ArcadeStruct.hpp"
 #include "IComponent.hpp"
 #include "ISystemManager.hpp"
-#include "ArcadeStruct.hpp"
 
 namespace Arcade {
     namespace Core {
@@ -41,11 +41,12 @@ namespace Arcade {
                  *
                  * Never call this directly in game systems, see documentation
                  * of EventManager for this purpose.
-                 * Why ? because this function can destroy the components/entities/systems you are on when you execute it
+                 * Why ? because this function can destroy the
+                 *components/entities/systems you are on when you execute it
                  *
-                 *!!!ATTENTION!!!: This function must be called only when you receive
-                 * the event CHANGE_GRAPH, the param can be found in the component
-                 * that can be linked to the event (so, in core loop)
+                 *!!!ATTENTION!!!: This function must be called only when you
+                 *receive the event CHANGE_GRAPH, the param can be found in the
+                 *component that can be linked to the event (so, in core loop)
                  */
                 virtual void changeGraphicLib(
                 const std::string &libGraphicName) = 0;
@@ -58,12 +59,14 @@ namespace Arcade {
                  * library)
                  *
                  * Throw on error
-                 * !!!ATTENTION!!!: This function must be called only when you receive
-                 * the event CHANGE_GRAPH, this one is called if there is no param
+                 * !!!ATTENTION!!!: This function must be called only when you
+                 * receive the event CHANGE_GRAPH, this one is called if there
+                 * is no param
                  *
                  * Never call this directly in game systems, see documentation
                  * of EventManager for this purpose
-                 * Why ? because this function can destroy the components/entities/systems you are on when you execute it
+                 * Why ? because this function can destroy the
+                 * components/entities/systems you are on when you execute it
                  *
                  */
                 virtual void changeGraphicLib() = 0;

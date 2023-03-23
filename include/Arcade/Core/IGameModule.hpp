@@ -9,8 +9,8 @@
 #pragma once
 
 #include <string>
-#include "ISceneManager.hpp"
 #include "IEventManager.hpp"
+#include "ISceneManager.hpp"
 
 namespace Arcade {
     namespace Core {
@@ -39,11 +39,12 @@ namespace Arcade {
                  *
                  * Never call this directly in game systems, see documentation
                  * of EventManager for this purpose
-                 * Why ? because this function can destroy the components/entities/systems you are on when you execute it
+                 * Why ? because this function can destroy the
+                 *components/entities/systems you are on when you execute it
                  *
-                 *!!!ATTENTION!!!: This function must be called only when you receive
-                 * the event CHANGE_GAME, the param can be found in the component
-                 * that can be linked to the event (in the core loop)
+                 *!!!ATTENTION!!!: This function must be called only when you
+                 *receive the event CHANGE_GAME, the param can be found in the
+                 *component that can be linked to the event (in the core loop)
                  */
                 virtual void changeGame(const std::string &gameName) = 0;
 
@@ -55,10 +56,12 @@ namespace Arcade {
                  *
                  * Never call this directly in game systems, see documentation
                  * of EventManager for this purpose
-                 * Why ? because this function can destroy the components/entities/systems you are on when you execute it
+                 * Why ? because this function can destroy the
+                 *components/entities/systems you are on when you execute it
                  *
-                 *!!!ATTENTION!!!: This function must be called only when you receive
-                 * the event CHANGE_GAME, called when there is not param (in the core loop)
+                 *!!!ATTENTION!!!: This function must be called only when you
+                 *receive the event CHANGE_GAME, called when there is not param
+                 *(in the core loop)
                  */
                 virtual void changeGame() = 0;
                 /**
