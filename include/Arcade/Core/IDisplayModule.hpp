@@ -97,6 +97,15 @@ namespace Arcade {
                 virtual std::optional<std::shared_ptr<ECS::IComponent>>
                 getComponent(const std::string &componentId) const = 0;
                 /**
+                 * @brief Get all components of type `compType`
+                 *
+                 * @param type The type of component to get
+                 *
+                 * @return The list of components filtered
+                 */
+                virtual const std::vector<std::shared_ptr<ECS::IComponent>> &
+                getComponents(ECS::CompType type) const = 0;
+                /**
                  * @brief Get he size of the window
                  */
                 virtual Arcade::Vector2f &getWindowSize() = 0;
