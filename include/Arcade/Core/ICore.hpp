@@ -13,7 +13,8 @@ namespace Arcade {
          * @brief The ICore class
          *
          * The ICore class is the main class of the project.
-         * It has an IEventManager that is passed between the IDisplayModule and the IGameModule
+         * It has an IEventManager that is passed between the IDisplayModule and
+         * the IGameModule
          *
          * The core need to create a vector of availible graphical library and
          * game library using the default entryPoint defined in `Api.hpp`
