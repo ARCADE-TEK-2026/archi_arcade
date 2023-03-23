@@ -35,7 +35,9 @@ namespace Arcade {
                  * libname without .so)
                  *
                  * Throw on error
-                 *
+                 *!!!ATTENTION!!!: This function must be called only when you receive
+                 * the event CHANGE_GRAPH, the param can be found in the component
+                 * that can be linked to the event
                  */
                 virtual void changeGraphicLib(
                 const std::string &libGraphicName) = 0;
@@ -48,6 +50,8 @@ namespace Arcade {
                  * library)
                  *
                  * Throw on error
+                 * !!!ATTENTION!!!: This function must be called only when you receive
+                 * the event CHANGE_GRAPH, this one is called if there is no param
                  *
                  */
                 virtual void changeGraphicLib() = 0;
