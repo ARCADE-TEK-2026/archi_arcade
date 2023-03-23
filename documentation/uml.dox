@@ -47,8 +47,6 @@
   class Arcade::Core::Core; // regarde la doc de IEventMnagers pour savoir ce qu'il faut prendre des évènements créer
   class Arcade::Core::DisplayModule; // manager pour la lib graphic + d'autres choses cool
   class Arcade::Core::GameModule; // manager pour les scene de jeu + d'autre choses cool
-  class Arcade::ECS::Entity; // l'IEntity n'a pas vocation à avoir beaucoup d'enfant. Un seul suffit justement grâce à l'ECS qui permet de rajouter des componsant à chaque entité
-  class Arcade::ECS::EntityManager; // pas besoin non plus de faire beaucoup d'enfant sur l'IEntityManager (la personne qui écrit cette doc ne vois pas de cas croncrêt où il faudrait plusieurs implementation différentes de IEntityManager)
   class Arcade::ECS::EventManager; // pas besoin d'en avoir plusieurs implementation différentes
   class Arcade::ECS::SystemManager; // la non plus je ne vois pas pourquoi il faudrait faire plusieurs SystemManager avec des implementation différentes
   class Arcade::ECS::SceneManager; // toujours pareil que la class d'avant
@@ -59,6 +57,9 @@
 
   À implementer dans chaque jeux:
   ```cpp
+  class Arcade::ECS::Entity; // l'IEntity n'a pas vocation à avoir beaucoup d'enfant. Un seul suffit justement grâce à l'ECS qui permet de rajouter des componsant à chaque entité
+  class Arcade::ECS::EntityManager; // pas besoin non plus de faire beaucoup d'enfant sur l'IEntityManager (la personne qui écrit cette doc ne vois pas de cas croncrêt où il faudrait plusieurs implementation différentes de IEntityManager)
+  class Arcade::ECS::SystemManager; // la non plus je ne vois pas pourquoi il faudrait faire plusieurs SystemManager avec des implementation différentes
   class Arcade::ECS::AComponent; // vous verrez forcemenet l'utilité de faire ça
   class Arcade::ECS:://{Tous les composant}// les composant sont la clé pour ajouter des variables à vos entités, il est recommandé d'en faire ce que vous voulez tant qu'ils héritent de IComponent(ou AComponent)
   class Arcade::Graph::Music; // pas besoin de plusieurs implementation dérivant de IMusic. Un composant purement présent pour que la lib graphique sache l'interpreter.
