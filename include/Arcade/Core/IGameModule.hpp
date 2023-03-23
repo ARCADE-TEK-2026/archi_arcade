@@ -38,6 +38,7 @@ namespace Arcade {
                  *
                  * Never call this directly in game systems, see documentation
                  * of EventManager for this purpose
+                 * Why ? because this function can destroy the components/entities/systems you are on when you execute it
                  *
                  */
                 virtual void changeGame(const std::string &gameName) = 0;
@@ -50,6 +51,7 @@ namespace Arcade {
                  *
                  * Never call this directly in game systems, see documentation
                  * of EventManager for this purpose
+                 * Why ? because this function can destroy the components/entities/systems you are on when you execute it
                  *
                  */
                 virtual void changeGame() = 0;

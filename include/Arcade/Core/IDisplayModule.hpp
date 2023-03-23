@@ -39,7 +39,8 @@ namespace Arcade {
                  * Throw on error
                  *
                  * Never call this directly in game systems, see documentation
-                 * of EventManager for this purpose
+                 * of EventManager for this purpose.
+                 * Why ? because this function can destroy the components/entities/systems you are on when you execute it
                  *
                  */
                 virtual void changeGraphicLib(
@@ -56,6 +57,7 @@ namespace Arcade {
                  *
                  * Never call this directly in game systems, see documentation
                  * of EventManager for this purpose
+                 * Why ? because this function can destroy the components/entities/systems you are on when you execute it
                  *
                  */
                 virtual void changeGraphicLib() = 0;
