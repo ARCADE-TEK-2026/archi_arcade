@@ -10,6 +10,7 @@
 
 #include <string>
 #include "ISceneManager.hpp"
+#include "IEventManager.hpp"
 
 namespace Arcade {
     namespace Core {
@@ -35,7 +36,9 @@ namespace Arcade {
                  * @param gameName The game filename to change to (without .so)
                  *
                  * Throw on error
-                 *
+                 *!!!ATTENTION!!!: This function must be called only when you receive
+                 * the event CHANGE_GAME, the param can be found in the component
+                 * that can be linked to the event
                  */
                 virtual void changeGame(const std::string &gameName) = 0;
 
@@ -44,9 +47,16 @@ namespace Arcade {
                  * cyclic way)
                  *
                  * Throw on error
-                 *
+                 *!!!ATTENTION!!!: This function must be called only when you receive
+                 * the event CHANGE_GAME, called when there is not param
                  */
                 virtual void changeGame() = 0;
+                /**
+                 * @brief Get Game Event Only Manager
+                 *
+                 * @return The event manager only used for game
+                 */
+                virtual Arcade::ECS::IEventManager &getGameEventManager() = 0;
         };
     } // namespace Core
 } // namespace Arcade
