@@ -23,7 +23,7 @@ namespace Arcade {
          * ATTENTION: You must have a parameter in your constructor
          * in order to set his id.
          */
-        class ISprite : Arcade::ECS::IComponent {
+        class ISprite : public Arcade::ECS::IComponent {
             public:
                 virtual ~ISprite() = default;
                 /**
