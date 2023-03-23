@@ -33,7 +33,7 @@ extern "C"
      * All game shared lib must have this function
      *
      */
-    std::unique_ptr<Arcade::Game::ISceneManager> getScenes();
+    std::shared_ptr<Arcade::Game::ISceneManager> getScenes(std::shared_ptr<Arcade::Game::ISceneManager>);
 
     /**
      * @brief The Graph shared lib main entry point to get systems
@@ -43,7 +43,7 @@ extern "C"
      * All graph shared lib must have this function
      *
      */
-    std::unique_ptr<Arcade::ECS::ISystemManager> getSystems();
+    std::shared_ptr<Arcade::ECS::ISystemManager> getSystems(std::shared_ptr<Arcade::ECS::ISystemManager>);
 
     /**
      * @brief The Shared lib entry point to get lib name
