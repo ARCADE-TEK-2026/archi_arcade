@@ -93,6 +93,11 @@ namespace Arcade {
          * "WINDOW_RESIZE"
          * "WINDOW_MINIMIZE"
          *
+         * Some events are used to change libs
+         * such as
+         * "CHANGE_GRAPH" with component ChangeLibComp
+         * same goes for the game lib
+         * "CHANGE_GAME" with component ChangeLibComp
          * "GAME_END" Is the event create by game system to tell core to quit
          * game and go main menu
          *
@@ -124,7 +129,8 @@ namespace Arcade {
                  * trigered more than one time in one frame
                  */
                 virtual std::pair<bool,
-                std::optional<std::vector<std::optional<std::shared_ptr<IComponent>>>>>
+                std::optional<
+                std::vector<std::optional<std::shared_ptr<IComponent>>>>>
                 isEventTriggered(const std::string &event) const = 0;
                 /**
                  * @brief Add an event to list of trigered events

@@ -35,16 +35,19 @@ namespace Arcade {
                  */
                 virtual const std::map<CompType,
                 std::vector<std::shared_ptr<IComponent>>> &
-                getComponents() = 0;
+                getComponents() const = 0;
                 /**
                  * @brief Get all components of type `compType`
                  *
                  * @param type The type of component to get
                  *
+                 * !!!ATTENTION!!!: You need to use .at()
+                 * in order to manipulate your map or vector because of const
+                 *
                  * @return The list of components filtered
                  */
                 virtual const std::vector<std::shared_ptr<IComponent>> &
-                getComponents(CompType type) = 0;
+                getComponents(CompType type) const = 0;
                 /**
                  * @brief Add a component
                  *

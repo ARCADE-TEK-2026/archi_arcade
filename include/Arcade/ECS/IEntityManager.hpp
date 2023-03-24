@@ -45,11 +45,21 @@ namespace Arcade {
                 virtual std::unique_ptr<std::vector<std::shared_ptr<IEntity>>>
                 getEntitiesByComponentType(CompType comp) const = 0;
                 /**
+                 * @brief Get the entity created by this manager that have
+                 * the requested ID
+                 *
+                 * @param id The id to find
+                 *
+                 * @return The entity
+                 */
+                virtual std::shared_ptr<IEntity> getEntitiesById(
+                const std::string &id) const = 0;
+                /**
                  * @brief Remove an entity from the manager
                  *
                  * @param id The entity id to remove
                  */
-                virtual void removeEntity(std::string id) = 0;
+                virtual void removeEntity(const std::string &id) = 0;
                 /**
                  * @brief Remove all entities from the manager
                  */

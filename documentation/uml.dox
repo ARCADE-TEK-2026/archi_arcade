@@ -1,4 +1,104 @@
 /*!
   \mainpage Architecture Commune Arcade
+  Bienvenu sur cette Architecture Commune de l'Arcade.
+  Projet de 2ème année au sein de Epitech.
+
+  Source Tree:
+  ```txt
+  include/
+  ├── Api.hpp
+  └── Arcade
+      ├── ArcadeStruct.hpp
+      ├── Core
+      │   ├── ICore.hpp
+      │   ├── IDisplayModule.hpp
+      │   └── IGameModule.hpp
+      ├── ECS
+      │   ├── IComponent.hpp
+      │   ├── IEntity.hpp
+      │   ├── IEntityManager.hpp
+      │   ├── IEventManager.hpp
+      │   ├── ISystem.hpp
+      │   └── ISystemManager.hpp
+      ├── Game
+      │   ├── IScene.hpp
+      │   └── ISceneManager.hpp
+      └── Graph
+          ├── GraphStruct.hpp
+          ├── IMusic.hpp
+          ├── ISprite.hpp
+          └── IText.hpp
+
+  6 directories, 17 files
+  ```
+
+  Comme vous pouvez le voir, nous avons decider d'integrer un ECS directement dans l'architecture commune.
+
+  Le projet se compose en 3 parties:
+  - Le Core (le binaire arcade)
+  - Les jeux (sous forme de .so)
+  - Les lib graphic (sous forme de .so)
+
+  ----------------------------------------------------------------------------
+  LE CORE
+
+  À implementer:
+  ```cpp
+  class Arcade::Core::Core; // regarde la doc de IEventMnagers pour savoir ce qu'il faut prendre des évènements créer
+  class Arcade::Core::DisplayModule; // manager pour la lib graphic + d'autres choses cool
+  class Arcade::Core::GameModule; // manager pour les scene de jeu + d'autre choses cool
+  class Arcade::ECS::EventManager; // pas besoin d'en avoir plusieurs implementation différentes
+  class Arcade::ECS::SystemManager; // la non plus je ne vois pas pourquoi il faudrait faire plusieurs SystemManager avec des implementation différentes
+  class Arcade::ECS::SceneManager; // toujours pareil que la class d'avant
+  ```
+
+  ----------------------------------------------------------------------------
+  LES JEUX
+
+  À implementer dans chaque jeux:
+  ```cpp
+  class Arcade::ECS::Entity; // l'IEntity n'a pas vocation à avoir beaucoup d'enfant. Un seul suffit justement grâce à l'ECS qui permet de rajouter des componsant à chaque entité
+  class Arcade::ECS::EntityManager; // pas besoin non plus de faire beaucoup d'enfant sur l'IEntityManager (la personne qui écrit cette doc ne vois pas de cas croncrêt où il faudrait plusieurs implementation différentes de IEntityManager)
+  class Arcade::ECS::SystemManager; // la non plus je ne vois pas pourquoi il faudrait faire plusieurs SystemManager avec des implementation différentes
+  class Arcade::ECS::AComponent; // vous verrez forcemenet l'utilité de faire ça
+  class Arcade::ECS:://{Tous les composant}// les composant sont la clé pour ajouter des variables à vos entités, il est recommandé d'en faire ce que vous voulez tant qu'ils héritent de IComponent(ou AComponent)
+  class Arcade::Graph::Music; // pas besoin de plusieurs implementation dérivant de IMusic. Un composant purement présent pour que la lib graphique sache l'interpreter.
+  class Arcade::Graph::Sprite; // pas besoin de plusieurs implementation dérivant de ISprite. Un composant purement présent pour que la lib graphique sache l'interpreter.
+  class Arcade::Graph::Text; // pas besoin de plusieurs implementation dérivant de IText. Un composant purement présent pour que la lib graphique sache l'interpreter.
+  class Arcade::ECS::ASystem; // pour les plus courageux
+  class Arcade::ECS:://{Tous les systems}// les systemes sont les fonctions qui permettent de réaliser des action dans un ECS, sans systemes, vous n'avez pas de jeux. Il vous est invité à faire chaque systems pour une modification différentes, et pas tous dans 1 seul systemes.
+  class Arcade::ECS::AScene; // c'est cool les abstract!!
+  class Arcade::ECS:://{Toutes les scenes}// cela permet d'avoir des scenes avec fonction d'entré customisable (la méthode `init`)
+  // ce qui suit permet d'avoir un point d'entré défini pour chaque lib
+  // lisez le fichier Api.hpp pour plus d'info
+  LibType getType();
+  std::string getName();
+  std::unique_ptr<Arcade::Game::ISceneManager> getScenes(std::unique_ptr<Arcade::Game::ISceneManager> sceneManager);
+
+  ```
+
+  ----------------------------------------------------------------------------
+  LES LIB GRAPHIC
+
+  À implementer dans chaque lib graphic:
+  ```cpp
+  class Arcade::ECS::System; // le system permettant d'afficher/jouer de la music avec la lib graphique qu'il wrap.
+  // ce qui suit permet d'avoir un point d'entré défini pour chaque lib
+  // lisez le fichier Api.hpp pour plus d'info
+  LibType getType();
+  std::string getName();
+  std::unique_ptr<Arcade::ECS::ISystemManager> getSystems(std::unique_ptr<Arcade::ECS::ISystemManager> systemManager);
+  ```
+
+
+  ----------------------------------------------------------------------------
+
+  N.B.: L'écrivain de cette documentation prie de bien vouloir l'excuser pour la prise de partie, il sera heureux de débatre par l'intermédiaire d'issue sur github dans le cas où une information dans cette documentation serait fausse.
+  N.B.: Pour get des éléments dans un vecteur const il faut utiliser la méthode .at()
+
+  lien du github: https://github.com/ARCADE-TEK-2026/archi_arcade
+
+  ----------------------------------------------------------------------------
+
   \image html uml.svg
 */
