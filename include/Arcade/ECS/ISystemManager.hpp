@@ -7,6 +7,7 @@
 
 #pragma once
 
+#include <memory>
 #include <string>
 #include <vector>
 #include "IEntityManager.hpp"
@@ -24,8 +25,8 @@ namespace Arcade {
                  * @param name The name of the system
                  * @param system The system to add
                  */
-                virtual void addSystem(
-                const std::string &name, Arcade::ECS::ISystem *system) = 0;
+                virtual void addSystem(const std::string &name,
+                std::unique_ptr<Arcade::ECS::ISystem> system) = 0;
                 /**
                  * @brief Remove a system from the system manager
                  *
