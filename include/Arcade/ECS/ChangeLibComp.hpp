@@ -1,6 +1,9 @@
-//
-// Created by patatofour on 23/03/23.
-//
+/*
+** EPITECH PROJECT, 2023
+** Archi Arcade Promo 2026 Toulouse
+** File description:
+** Components to change lib game/graphic
+*/
 
 #ifndef ARCHI_ARCADE_CHANGELIBCOMP_HPP
 #define ARCHI_ARCADE_CHANGELIBCOMP_HPP
