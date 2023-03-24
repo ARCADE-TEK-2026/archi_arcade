@@ -24,13 +24,6 @@ namespace Arcade {
                 virtual ~IGameModule() = default;
 
                 /**
-                 * @brief Get the scene manager of the current game
-                 *
-                 * @return The scene manager of the current game
-                 */
-                virtual std::shared_ptr<Arcade::Game::ISceneManager> getSceneManager() = 0;
-
-                /**
                  * @brief Change the current active game to the given game
                  *
                  * @param gameName The game filename to change to (without .so)
@@ -64,12 +57,7 @@ namespace Arcade {
                  *(in the core loop)
                  */
                 virtual void changeGame() = 0;
-                /**
-                 * @brief Get Game Event Only Manager
-                 *
-                 * @return The event manager only used for game
-                 */
-                virtual std::shared_ptr<Arcade::ECS::IEventManager>getGameEventManager() = 0;
+                virtual void update() = 0;
         };
     } // namespace Core
 } // namespace Arcade

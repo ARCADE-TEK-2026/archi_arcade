@@ -70,51 +70,7 @@ namespace Arcade {
                  *
                  */
                 virtual void changeGraphicLib() = 0;
-                /**
-                 * @brief Add a component to the current active graphical
-                 * library
-                 *
-                 * @param component The component to add
-                 */
-                virtual void addComponent(
-                std::shared_ptr<ECS::IComponent> component) = 0;
-                /**
-                 * @brief Remove a component from the current active graphical
-                 * library
-                 *
-                 * @param componentId The component id to remove
-                 */
-                virtual void removeComponent(
-                const std::string &componentId) = 0;
-                /**
-                 * @brief Get the component of the current active graphical
-                 * library
-                 *
-                 * @param componentId The component id to get
-                 *
-                 * @return optional of the component id if found
-                 */
-                virtual std::optional<std::shared_ptr<ECS::IComponent>>
-                getComponent(const std::string &componentId) const = 0;
-                /**
-                 * @brief Get all components of type `compType`
-                 *
-                 * @param type The type of component to get
-                 *
-                 * @return The list of components filtered
-                 */
-                virtual const std::vector<std::shared_ptr<ECS::IComponent>> &
-                getComponents(ECS::CompType type) const = 0;
-                /**
-                 * @brief Get he size of the window
-                 */
-                virtual const Arcade::Vector2f &getWindowSize() const = 0;
-                /**
-                 * @brief Set the window size
-                 *
-                 * @param newSize The vector2f representing the new window size
-                 */
-                virtual void setWindowSize(const Arcade::Vector2f &newSize) = 0;
+                virtual void update() = 0;
         };
     } // namespace Core
 } // namespace Arcade
