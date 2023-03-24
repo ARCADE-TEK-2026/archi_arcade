@@ -10,7 +10,8 @@
 
 #include <string>
 #include "IEventManager.hpp"
-#include "ISceneManager.hpp"
+#include "IEntityManager.hpp"
+#include "IScene.hpp"
 
 namespace Arcade {
     namespace Core {
@@ -24,49 +25,15 @@ namespace Arcade {
                 virtual ~IGameModule() = default;
 
                 /**
-                 * @brief Change the current active game to the given game
+                 * @brief method that will be called each frame by the core
                  *
-                 * @param gameName The game filename to change to (without .so)
+                 * You are expected to update the current scene in this method
                  *
-                 * Throw on error
-                 *
-                 * Never call this directly in game systems, see documentation
-                 * of EventManager for this purpose
-                 * Why ? because this function can destroy the
-                 *components/entities/systems you are on when you execute it
-                 *
-                 *!!!ATTENTION!!!: This function must be called only when you
-                 *receive the event CHANGE_GAME, the param can be found in the
-                 *component that can be linked to the event (in the core loop)
+                 * @param deltaTime time passed since last frame
+                 * @param eventManager the event manager
                  */
-                virtual void changeGame(const std::string &gameName) = 0;
-
-                /**
-                 * @brief Change the current active game to the next (in a
-                 * cyclic way)
-                 *
-                 * Throw on error
-                 *
-                 * Never call this directly in game systems, see documentation
-                 * of EventManager for this purpose
-                 * Why ? because this function can destroy the
-                 *components/entities/systems you are on when you execute it
-                 *
-                 *!!!ATTENTION!!!: This function must be called only when you
-                 *receive the event CHANGE_GAME, called when there is not param
-                 *(in the core loop)
-                 */
-                virtual void changeGame() = 0;
-                virtual void update(float deltaTime, Arcade::ECS::IEventManager
-                    &eventManager) = 0;
-                /**
-                 * @brief Add a scene to the scene manager
-                 *
-                 * @param sceneName The name of the scene
-                 * @param scene The scene to add
-                 */
-                virtual void registerScene(const std::string &sceneName,
-                Arcade::Game::IScene &scene) = 0;
+                virtual void update(float deltaTime,
+                Arcade::ECS::IEventManager &eventManager) = 0;
                 /**
                  * @brief Get the current active scene
                  *
@@ -74,11 +41,11 @@ namespace Arcade {
                  */
                 virtual Arcade::Game::IScene &getCurrentScene() = 0;
                 /**
-                 * @brief Change the current active scene
+                 * @brief Get the entity manager of the current active scene
                  *
-                 * @param sceneName The name of the scene to change to
+                 * @return The entity manager of the current active scene
                  */
-                virtual void changeScene(const std::string &sceneName) = 0;
+                virtual Arcade::ECS::IEntityManager &getCurrentEntityManager() = 0;
         };
     } // namespace Core
 } // namespace Arcade

@@ -7,7 +7,6 @@
 
 #pragma once
 
-#include "ISceneManager.hpp"
 #include "ISystemManager.hpp"
 
 #ifdef _WIN32
@@ -32,7 +31,7 @@ extern "C"
      *
      * All game shared lib must have this function
      */
-    EXPORT Arcade::Core::IGameModule *getScenes();
+    EXPORT Arcade::Core::IGameModule *getGameModule();
 
     /**
      * @brief The Graphs shared lib main entry point to get DisplayModule
@@ -41,7 +40,7 @@ extern "C"
      *
      * All graph shared lib must have this function
      */
-    EXPORT Arcade::Core::IDisplayModule *getSystems();
+    EXPORT Arcade::Core::IDisplayModule *getDisplayModule();
 
     /**
      * @brief The Shared lib entry point to get lib name
@@ -49,7 +48,6 @@ extern "C"
      * @return Lib's name in std::string
      *
      * All shared lib must have this function
-     *
      */
     EXPORT const char *getName();
 
@@ -59,7 +57,6 @@ extern "C"
      * @return LibType enum
      *
      * All shared lib must have this function
-     *
      */
     EXPORT LibType getType();
 }

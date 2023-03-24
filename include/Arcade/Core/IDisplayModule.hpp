@@ -7,71 +7,30 @@
 
 #pragma once
 
-#include <memory>
-#include <string>
-#include "ArcadeStruct.hpp"
-#include "IComponent.hpp"
-#include "IScene.hpp"
+#include "IEventManager.hpp"
+#include "IEntityManager.hpp"
 
 namespace Arcade {
     namespace Core {
         /**
          * @brief The IDisplayModule interface
          *
-         * The IDisplayModule is passed to all systems
+         * IDisplayModule is the interface given by all graphical lib .so
          */
         class IDisplayModule {
             public:
                 virtual ~IDisplayModule() = default;
+
                 /**
-                 * @brief Get the system manager of the current graphical
-                 * library
+                 * @brief function that will be called each frame by the core
                  *
-                 * @return The system manager of the current graphical library
+                 * This function is called right after the `update` of the IGameModule
+                 *
+                 * @param eventManager the event manager (you must add events)
+                 * @param entityManager the entity manager
                  */
-                virtual std::shared_ptr<ECS::ISystemManager> getSystemManager() = 0;
-                /**
-                 * @brief Change the current active graphical library to the
-                 * given graphical library
-                 *
-                 * @param libGraphicName The graphical library name (only the
-                 * libname without .so)
-                 *
-                 * Throw on error
-                 *
-                 * Never call this directly in game systems, see documentation
-                 * of EventManager for this purpose.
-                 * Why ? because this function can destroy the
-                 *components/entities/systems you are on when you execute it
-                 *
-                 *!!!ATTENTION!!!: This function must be called only when you
-                 *receive the event CHANGE_GRAPH, the param can be found in the
-                 *component that can be linked to the event (so, in core loop)
-                 */
-                virtual void changeGraphicLib(
-                const std::string &libGraphicName) = 0;
-                /**
-                 * @brief Change the current active graphical library to the
-                 * next one (in a cyclic way)
-                 *
-                 * (because the epitech subject says we can switch to the next
-                 * graphical library in the folder of availible graphical
-                 * library)
-                 *
-                 * Throw on error
-                 * !!!ATTENTION!!!: This function must be called only when you
-                 * receive the event CHANGE_GRAPH, this one is called if there
-                 * is no param
-                 *
-                 * Never call this directly in game systems, see documentation
-                 * of EventManager for this purpose
-                 * Why ? because this function can destroy the
-                 * components/entities/systems you are on when you execute it
-                 *
-                 */
-                virtual void changeGraphicLib() = 0;
-                virtual void update(float deltaTime, Arcade::ECS::IEventManager
-                    &eventManager, Arcade::Game::IScene &currentScene) = 0;
+                virtual void update(Arcade::ECS::IEventManager &eventManager,
+                Arcade::ECS::IEntityManager &entityManager) = 0;
         };
     } // namespace Core
 } // namespace Arcade

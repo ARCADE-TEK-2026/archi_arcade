@@ -146,20 +146,6 @@ namespace Arcade {
                  * @brief Remove all events from list of trigered events
                  */
                 virtual void clearEvents() = 0;
-
-                /**
-                 * @brief Get the last known mouse position
-                 *
-                 * @return The last known mouse position
-                 */
-                virtual const Arcade::Vector2f &getMousePosition() const = 0;
-                /**
-                 * @brief Set the last known mouse position
-                 *
-                 * @param mousePosition The last known mouse position
-                 */
-                virtual void setMousePosition(
-                const Arcade::Vector2f &mousePosition) = 0;
         };
     } // namespace ECS
 } // namespace Arcade
