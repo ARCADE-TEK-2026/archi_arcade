@@ -32,8 +32,14 @@ extern "C"
      *
      * All game shared lib must have this function
      *
+     * It takes a parameter because, if there was no parameter, we will have to
+     * implement all the Archi commune in all .so (to be hable to create
+     * (malloc/new) one of them Now, with this parameter, we don't have to code
+     * everything in .so
+     *
      */
-    std::unique_ptr<Arcade::Game::ISceneManager> getScenes();
+    EXPORT std::shared_ptr<Arcade::Game::ISceneManager> getScenes(
+    std::shared_ptr<Arcade::Game::ISceneManager> sceneManager);
 
     /**
      * @brief The Graph shared lib main entry point to get systems
@@ -42,8 +48,14 @@ extern "C"
      *
      * All graph shared lib must have this function
      *
+     * It takes a parameter because, if there was no parameter, we will have to
+     * implement all the Archi commune in all .so (to be hable to create
+     * (malloc/new) one of them Now, with this parameter, we don't have to code
+     * everything in .so
+     *
      */
-    std::unique_ptr<Arcade::ECS::ISystemManager> getSystems();
+    EXPORT std::shared_ptr<Arcade::ECS::ISystemManager> getSystems(
+    std::shared_ptr<Arcade::ECS::ISystemManager> systemManager);
 
     /**
      * @brief The Shared lib entry point to get lib name
@@ -53,7 +65,7 @@ extern "C"
      * All shared lib must have this function
      *
      */
-    std::string getName();
+    EXPORT std::string getName();
 
     /**
      * @brief The Shared lib entry point to get lib type
@@ -63,5 +75,5 @@ extern "C"
      * All shared lib must have this function
      *
      */
-    LibType getType();
+    EXPORT LibType getType();
 }
