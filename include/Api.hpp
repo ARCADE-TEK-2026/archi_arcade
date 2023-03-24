@@ -23,7 +23,7 @@
 
 extern "C"
 {
-    enum class LibType { GRAPH, GAME };
+    enum LibType { GRAPH, GAME };
 
     /**
      * @brief The Games shared lib main entry point to get GameModule
@@ -51,7 +51,7 @@ extern "C"
      * All shared lib must have this function
      *
      */
-    EXPORT std::string getName();
+    EXPORT const char *getName();
 
     /**
      * @brief The Shared lib entry point to get lib type
