@@ -40,10 +40,9 @@ namespace Arcade {
                  * @param entityManager The list of entities
                  * @param eventManager The list of events
                  */
-                virtual void update(std::size_t deltaTime,
-                Arcade::ECS::IEventManager &eventManager,
-                Arcade::Core::IDisplayModule &displayModule,
-                Arcade::Core::IGameModule &gameModule) = 0;
+                virtual void update(float deltaTime,
+                    Arcade::ECS::IEventManager &eventManager,
+                    Arcade::Game::IScene &currentScene) = 0;
         };
     } // namespace ECS
 } // namespace Arcade

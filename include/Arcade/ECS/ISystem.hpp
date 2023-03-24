@@ -28,10 +28,9 @@ namespace Arcade {
                 /**
                  * @brief Run the system implementation
                  */
-                virtual void run(std::size_t deltaTime,
-                Arcade::ECS::IEventManager &,
-                Arcade::Core::IDisplayModule &displayModule,
-                Arcade::Core::IGameModule &gameModule) = 0;
+                virtual void run(float deltaTime,
+                    Arcade::ECS::IEventManager &eventManager,
+                    Arcade::Game::IScene &currentScene) = 0;
         };
     } // namespace ECS
 } // namespace Arcade

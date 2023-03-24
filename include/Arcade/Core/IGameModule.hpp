@@ -57,7 +57,28 @@ namespace Arcade {
                  *(in the core loop)
                  */
                 virtual void changeGame() = 0;
-                virtual void update() = 0;
+                virtual void update(float deltaTime, Arcade::ECS::IEventManager
+                    &eventManager) = 0;
+                /**
+                 * @brief Add a scene to the scene manager
+                 *
+                 * @param sceneName The name of the scene
+                 * @param scene The scene to add
+                 */
+                virtual void registerScene(const std::string &sceneName,
+                Arcade::Game::IScene &scene) = 0;
+                /**
+                 * @brief Get the current active scene
+                 *
+                 * @return The current active scene
+                 */
+                virtual Arcade::Game::IScene &getCurrentScene() = 0;
+                /**
+                 * @brief Change the current active scene
+                 *
+                 * @param sceneName The name of the scene to change to
+                 */
+                virtual void changeScene(const std::string &sceneName) = 0;
         };
     } // namespace Core
 } // namespace Arcade

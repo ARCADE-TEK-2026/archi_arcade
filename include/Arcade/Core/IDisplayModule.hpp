@@ -11,7 +11,7 @@
 #include <string>
 #include "ArcadeStruct.hpp"
 #include "IComponent.hpp"
-#include "ISystemManager.hpp"
+#include "IScene.hpp"
 
 namespace Arcade {
     namespace Core {
@@ -70,7 +70,8 @@ namespace Arcade {
                  *
                  */
                 virtual void changeGraphicLib() = 0;
-                virtual void update() = 0;
+                virtual void update(float deltaTime, Arcade::ECS::IEventManager
+                    &eventManager, Arcade::Game::IScene &currentScene) = 0;
         };
     } // namespace Core
 } // namespace Arcade
