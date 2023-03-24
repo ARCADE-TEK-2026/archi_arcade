@@ -14,6 +14,11 @@ TARGET_SETUP_SCRIPT="update-archi.sh"
 
 rm -rf "$SOURCE_CLONE_FOLDER"
 git clone "$SOURCE_REPO_URL" "$SOURCE_CLONE_FOLDER"
+if [[ "$1" == "--dev" ]]; then
+    echo "Install dev dependencies"
+    OLD_PWD="$PWD"
+    cd "$SOURCE_CLONE_FOLDER" && git switch dev && cd "$OLD_PWD"
+fi
 mkdir -p "$TARGET_INCLUDE_FOLDER"
 cp -r "$SOURCE_INCLUDE_FOLDER/"* "$TARGET_INCLUDE_FOLDER"
 cp "$SOURCE_SETUP_SCRIPT" "$TARGET_SETUP_SCRIPT"
