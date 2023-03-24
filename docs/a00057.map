@@ -1,7 +1,5 @@
-<map id="include/Arcade/Graph/ISprite.hpp" name="include/Arcade/Graph/ISprite.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="89,5,250,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="217,169,276,196"/>
-<area shape="rect" id="node3" href="$a00014.html" title=" " alt="" coords="25,95,159,121"/>
-<area shape="rect" id="node4" href="$a00050.html" title=" " alt="" coords="183,95,310,121"/>
-<area shape="rect" id="node5" href="$a00026.html" title=" " alt="" coords="334,95,463,121"/>
+<map id="include/Arcade/Graph/IMusic.hpp" name="include/Arcade/Graph/IMusic.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="57,169,115,196"/>
+<area shape="rect" id="node3" href="$a00029.html" title=" " alt="" coords="73,95,203,121"/>
 </map>

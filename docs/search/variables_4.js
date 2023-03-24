@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['g_264',['g',['../a00935.html#abb17ee7862551379901ccc6ef7533d19',1,'Arcade::Graph::Color']]]
+  ['g_284',['g',['../a00942.html#abb17ee7862551379901ccc6ef7533d19',1,'Arcade::Graph::Color']]]
 ];

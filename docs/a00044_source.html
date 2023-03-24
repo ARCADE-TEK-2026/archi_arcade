@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/Arcade/Game/IScene.hpp Source File</title>
+<title>Architecture Arcade: include/Arcade/ECS/ISystemManager.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,53 +62,61 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4dfcdfd0f1f897aca432108a19677038.html">Arcade</a></li><li class="navelem"><a class="el" href="dir_2d62a961a5408d569097ae4442906481.html">Game</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4dfcdfd0f1f897aca432108a19677038.html">Arcade</a></li><li class="navelem"><a class="el" href="dir_f33418ab7739082dfc9cb8d90b753f42.html">ECS</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">IScene.hpp</div>  </div>
+<div class="title">ISystemManager.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00044.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2023</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Archi Arcade Promo 2026 Toulouse</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** Scene are regroupments of entities and systems</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** System manager interface</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00032.html">IEntityManager.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00041.html">ISystemManager.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00063.html">Arcade</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00066.html">   14</a></span>&#160;    <span class="keyword">namespace </span>Game {</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00927.html">   18</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00927.html">IScene</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00927.html#ad3a1a2300d0d4d4d68b42658eb141bee">   20</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00927.html#ad3a1a2300d0d4d4d68b42658eb141bee">~IScene</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00927.html#a26d0d3f75353904c547cd5d552f328b8">   30</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00927.html#a26d0d3f75353904c547cd5d552f328b8">init</a>() = 0;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00927.html#a38b7d15ef668ac4c22f5ecc71636d569">   38</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00927.html#a38b7d15ef668ac4c22f5ecc71636d569">close</a>() = 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00927.html#a52ea9a265a25ea1fa9b6fb99613482f7">   44</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00911.html">ECS::IEntityManager</a> &amp;<a class="code" href="a00927.html#a52ea9a265a25ea1fa9b6fb99613482f7">getEntityManager</a>() = 0;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00927.html#a22aba455b5280ad115ba7583f6563715">   50</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00923.html">ECS::ISystemManager</a> &amp;<a class="code" href="a00927.html#a22aba455b5280ad115ba7583f6563715">getSystemManager</a>() = 0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        };</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    } <span class="comment">// namespace Game</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <span class="comment">// namespace Arcade</span></div>
-<div class="ttc" id="aa00032_html"><div class="ttname"><a href="a00032.html">IEntityManager.hpp</a></div></div>
-<div class="ttc" id="aa00041_html"><div class="ttname"><a href="a00041.html">ISystemManager.hpp</a></div></div>
-<div class="ttc" id="aa00063_html"><div class="ttname"><a href="a00063.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
-<div class="ttc" id="aa00911_html"><div class="ttname"><a href="a00911.html">Arcade::ECS::IEntityManager</a></div><div class="ttdoc">Manage the creation of entities and their access.</div><div class="ttdef"><b>Definition:</b> IEntityManager.hpp:19</div></div>
-<div class="ttc" id="aa00923_html"><div class="ttname"><a href="a00923.html">Arcade::ECS::ISystemManager</a></div><div class="ttdef"><b>Definition:</b> ISystemManager.hpp:18</div></div>
-<div class="ttc" id="aa00927_html"><div class="ttname"><a href="a00927.html">Arcade::Game::IScene</a></div><div class="ttdoc">The IScene interface.</div><div class="ttdef"><b>Definition:</b> IScene.hpp:18</div></div>
-<div class="ttc" id="aa00927_html_a22aba455b5280ad115ba7583f6563715"><div class="ttname"><a href="a00927.html#a22aba455b5280ad115ba7583f6563715">Arcade::Game::IScene::getSystemManager</a></div><div class="ttdeci">virtual ECS::ISystemManager &amp; getSystemManager()=0</div><div class="ttdoc">Get the system manager of the scene.</div></div>
-<div class="ttc" id="aa00927_html_a26d0d3f75353904c547cd5d552f328b8"><div class="ttname"><a href="a00927.html#a26d0d3f75353904c547cd5d552f328b8">Arcade::Game::IScene::init</a></div><div class="ttdeci">virtual bool init()=0</div><div class="ttdoc">Create the scene.</div></div>
-<div class="ttc" id="aa00927_html_a38b7d15ef668ac4c22f5ecc71636d569"><div class="ttname"><a href="a00927.html#a38b7d15ef668ac4c22f5ecc71636d569">Arcade::Game::IScene::close</a></div><div class="ttdeci">virtual void close()=0</div><div class="ttdoc">Close the scene.</div></div>
-<div class="ttc" id="aa00927_html_a52ea9a265a25ea1fa9b6fb99613482f7"><div class="ttname"><a href="a00927.html#a52ea9a265a25ea1fa9b6fb99613482f7">Arcade::Game::IScene::getEntityManager</a></div><div class="ttdeci">virtual ECS::IEntityManager &amp; getEntityManager()=0</div><div class="ttdoc">Get the entity manager of the scene.</div></div>
-<div class="ttc" id="aa00927_html_ad3a1a2300d0d4d4d68b42658eb141bee"><div class="ttname"><a href="a00927.html#ad3a1a2300d0d4d4d68b42658eb141bee">Arcade::Game::IScene::~IScene</a></div><div class="ttdeci">virtual ~IScene()=default</div></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00035.html">IEntityManager.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00038.html">IEventManager.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00041.html">ISystem.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00066.html">Arcade</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">namespace </span>ECS {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00930.html">   19</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00930.html">ISystemManager</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00930.html#a60867e72f13bcb4b9b58046c58adb0f5">   21</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00930.html#a60867e72f13bcb4b9b58046c58adb0f5">~ISystemManager</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00930.html#ae4b388f6df781c6f91e5d89ad8a0f891">   28</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00930.html#ae4b388f6df781c6f91e5d89ad8a0f891">addSystem</a>(<span class="keyword">const</span> std::string &amp;name,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                std::unique_ptr&lt;Arcade::ECS::ISystem&gt; system) = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00930.html#a1b1050fb958386f47e312c8c62bf2802">   35</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00930.html#a1b1050fb958386f47e312c8c62bf2802">removeSystem</a>(<span class="keyword">const</span> std::string &amp;name) = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="a00930.html#ab43c83834d0e48e9270dd4af328be26c">   43</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00930.html#ab43c83834d0e48e9270dd4af328be26c">update</a>(std::size_t deltaTime,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <a class="code" href="a00922.html">Arcade::ECS::IEventManager</a> &amp;eventManager,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <a class="code" href="a00898.html">Arcade::Core::IDisplayModule</a> &amp;displayModule,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <a class="code" href="a00902.html">Arcade::Core::IGameModule</a> &amp;gameModule) = 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        };</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    } <span class="comment">// namespace ECS</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace Arcade</span></div>
+<div class="ttc" id="aa00035_html"><div class="ttname"><a href="a00035.html">IEntityManager.hpp</a></div></div>
+<div class="ttc" id="aa00038_html"><div class="ttname"><a href="a00038.html">IEventManager.hpp</a></div></div>
+<div class="ttc" id="aa00041_html"><div class="ttname"><a href="a00041.html">ISystem.hpp</a></div></div>
+<div class="ttc" id="aa00066_html"><div class="ttname"><a href="a00066.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
+<div class="ttc" id="aa00898_html"><div class="ttname"><a href="a00898.html">Arcade::Core::IDisplayModule</a></div><div class="ttdoc">The IDisplayModule interface.</div><div class="ttdef"><b>Definition:</b> IDisplayModule.hpp:23</div></div>
+<div class="ttc" id="aa00902_html"><div class="ttname"><a href="a00902.html">Arcade::Core::IGameModule</a></div><div class="ttdoc">The IGameModule interface.</div><div class="ttdef"><b>Definition:</b> IGameModule.hpp:22</div></div>
+<div class="ttc" id="aa00922_html"><div class="ttname"><a href="a00922.html">Arcade::ECS::IEventManager</a></div><div class="ttdoc">The IEventManager interface.</div><div class="ttdef"><b>Definition:</b> IEventManager.hpp:108</div></div>
+<div class="ttc" id="aa00930_html"><div class="ttname"><a href="a00930.html">Arcade::ECS::ISystemManager</a></div><div class="ttdef"><b>Definition:</b> ISystemManager.hpp:19</div></div>
+<div class="ttc" id="aa00930_html_a1b1050fb958386f47e312c8c62bf2802"><div class="ttname"><a href="a00930.html#a1b1050fb958386f47e312c8c62bf2802">Arcade::ECS::ISystemManager::removeSystem</a></div><div class="ttdeci">virtual void removeSystem(const std::string &amp;name)=0</div><div class="ttdoc">Remove a system from the system manager.</div></div>
+<div class="ttc" id="aa00930_html_a60867e72f13bcb4b9b58046c58adb0f5"><div class="ttname"><a href="a00930.html#a60867e72f13bcb4b9b58046c58adb0f5">Arcade::ECS::ISystemManager::~ISystemManager</a></div><div class="ttdeci">virtual ~ISystemManager()=default</div></div>
+<div class="ttc" id="aa00930_html_ab43c83834d0e48e9270dd4af328be26c"><div class="ttname"><a href="a00930.html#ab43c83834d0e48e9270dd4af328be26c">Arcade::ECS::ISystemManager::update</a></div><div class="ttdeci">virtual void update(std::size_t deltaTime, Arcade::ECS::IEventManager &amp;eventManager, Arcade::Core::IDisplayModule &amp;displayModule, Arcade::Core::IGameModule &amp;gameModule)=0</div><div class="ttdoc">Update all systems of the system manager.</div></div>
+<div class="ttc" id="aa00930_html_ae4b388f6df781c6f91e5d89ad8a0f891"><div class="ttname"><a href="a00930.html#ae4b388f6df781c6f91e5d89ad8a0f891">Arcade::ECS::ISystemManager::addSystem</a></div><div class="ttdeci">virtual void addSystem(const std::string &amp;name, std::unique_ptr&lt; Arcade::ECS::ISystem &gt; system)=0</div><div class="ttdoc">Add a system to the system manager.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 23 2023 00:15:38 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 24 2023 13:13:21 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

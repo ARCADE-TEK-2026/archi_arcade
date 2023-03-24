@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/Arcade/ECS/IEventManager.hpp File Reference</title>
+<title>Architecture Arcade: include/Arcade/ECS/IEntityManager.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,44 +70,39 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">IEventManager.hpp File Reference</div>  </div>
+<div class="title">IEntityManager.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;tuple&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00014_source.html">ArcadeStruct.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00026_source.html">IComponent.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00032_source.html">IEntity.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for IEventManager.hpp:</div>
+Include dependency graph for IEntityManager.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00036.png" border="0" usemap="#ainclude_2Arcade_2ECS_2IEventManager_8hpp" alt=""/></div>
-<map name="ainclude_2Arcade_2ECS_2IEventManager_8hpp" id="ainclude_2Arcade_2ECS_2IEventManager_8hpp">
-<area shape="rect" title=" " alt="" coords="209,5,359,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,83,121"/>
-<area shape="rect" title=" " alt="" coords="107,95,181,121"/>
-<area shape="rect" title=" " alt="" coords="403,169,461,196"/>
-<area shape="rect" title=" " alt="" coords="257,95,311,121"/>
-<area shape="rect" title=" " alt="" coords="335,95,398,121"/>
-<area shape="rect" href="a00014.html" title=" " alt="" coords="423,95,556,121"/>
-<area shape="rect" href="a00026.html" title=" " alt="" coords="581,95,710,121"/>
+<div class="center"><img src="a00036.png" border="0" usemap="#ainclude_2Arcade_2ECS_2IEntityManager_8hpp" alt=""/></div>
+<map name="ainclude_2Arcade_2ECS_2IEntityManager_8hpp" id="ainclude_2Arcade_2ECS_2IEntityManager_8hpp">
+<area shape="rect" title=" " alt="" coords="5,5,157,47"/>
+<area shape="rect" title=" " alt="" coords="43,169,120,196"/>
+<area shape="rect" title=" " alt="" coords="341,244,400,271"/>
+<area shape="rect" href="a00032.html" title=" " alt="" coords="205,95,296,121"/>
+<area shape="rect" title=" " alt="" coords="511,169,582,196"/>
+<area shape="rect" title=" " alt="" coords="144,169,195,196"/>
+<area shape="rect" title=" " alt="" coords="219,169,282,196"/>
+<area shape="rect" href="a00029.html" title=" " alt="" coords="306,169,435,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00037.png" border="0" usemap="#ainclude_2Arcade_2ECS_2IEventManager_8hppdep" alt=""/></div>
-<map name="ainclude_2Arcade_2ECS_2IEventManager_8hppdep" id="ainclude_2Arcade_2ECS_2IEventManager_8hppdep">
-<area shape="rect" title=" " alt="" coords="58,5,209,47"/>
-<area shape="rect" href="a00038.html" title=" " alt="" coords="5,95,152,136"/>
-<area shape="rect" href="a00041.html" title=" " alt="" coords="52,184,215,225"/>
-<area shape="rect" href="a00011.html" title=" " alt="" coords="25,459,148,486"/>
-<area shape="rect" href="a00020.html" title=" " alt="" coords="56,273,211,315"/>
-<area shape="rect" href="a00044.html" title=" " alt="" coords="235,273,397,315"/>
-<area shape="rect" href="a00047.html" title=" " alt="" coords="201,363,362,404"/>
-<area shape="rect" href="a00023.html" title=" " alt="" coords="205,452,357,493"/>
+<div class="center"><img src="a00037.png" border="0" usemap="#ainclude_2Arcade_2ECS_2IEntityManager_8hppdep" alt=""/></div>
+<map name="ainclude_2Arcade_2ECS_2IEntityManager_8hppdep" id="ainclude_2Arcade_2ECS_2IEntityManager_8hppdep">
+<area shape="rect" title=" " alt="" coords="128,5,280,47"/>
+<area shape="rect" href="a00044.html" title=" " alt="" coords="64,95,227,136"/>
+<area shape="rect" href="a00047.html" title=" " alt="" coords="215,184,377,225"/>
+<area shape="rect" href="a00011.html" title=" " alt="" coords="5,370,128,397"/>
+<area shape="rect" href="a00020.html" title=" " alt="" coords="36,184,191,225"/>
+<area shape="rect" href="a00050.html" title=" " alt="" coords="181,273,342,315"/>
+<area shape="rect" href="a00023.html" title=" " alt="" coords="185,363,337,404"/>
 </map>
 </div>
 </div>
@@ -115,21 +110,21 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00915.html">Arcade::ECS::IEventManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="a00915.html" title="The IEventManager interface.">IEventManager</a> interface.  <a href="a00915.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00918.html">Arcade::ECS::IEntityManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage the creation of entities and their access.  <a href="a00918.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00063"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html">Arcade</a></td></tr>
+<tr class="memitem:a00066"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00066.html">Arcade</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00065"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html">Arcade::ECS</a></td></tr>
+<tr class="memitem:a00068"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html">Arcade::ECS</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 23 2023 00:15:38 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 24 2023 13:13:21 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

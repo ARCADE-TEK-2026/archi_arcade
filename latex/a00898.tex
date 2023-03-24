@@ -1,0 +1,203 @@
+\hypertarget{a00898}{}\doxysection{Arcade\+::Core\+::IDisplay\+Module Class Reference}
+\label{a00898}\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
+
+
+The \mbox{\hyperlink{a00898}{IDisplay\+Module}} interface.  
+
+
+
+
+{\ttfamily \#include $<$IDisplay\+Module.\+hpp$>$}
+
+
+
+Collaboration diagram for Arcade\+::Core\+::IDisplay\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{a00896}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{a00898_ab0dca340871523283d3f52af4053032a}{$\sim$\+IDisplay\+Module}} ()=default
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00930}{ECS\+::\+ISystem\+Manager}} $>$ \mbox{\hyperlink{a00898_a26a34a26a5c8bc0f95ee6f76e4fda11e}{get\+System\+Manager}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the system manager of the current graphical library. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00898_aa2d6035f73c69e76403b4e114db97ca1}{change\+Graphic\+Lib}} (const std\+::string \&lib\+Graphic\+Name)=0
+\begin{DoxyCompactList}\small\item\em Change the current active graphical library to the given graphical library. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00898_ac0cbd83c3f4809caa19a6ffd59f68e18}{change\+Graphic\+Lib}} ()=0
+\begin{DoxyCompactList}\small\item\em Change the current active graphical library to the next one (in a cyclic way) \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00898_a317c72a1565aa871fce3f6bbad60909f}{add\+Component}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00910}{ECS\+::\+IComponent}} $>$ component)=0
+\begin{DoxyCompactList}\small\item\em Add a component to the current active graphical library. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00898_ac85d68f6a0618fc3540aff38a7238f3a}{remove\+Component}} (const std\+::string \&component\+Id)=0
+\begin{DoxyCompactList}\small\item\em Remove a component from the current active graphical library. \end{DoxyCompactList}\item 
+virtual std\+::optional$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00910}{ECS\+::\+IComponent}} $>$ $>$ \mbox{\hyperlink{a00898_aa7a3c1b372c0b5f5ddc339db15c6696e}{get\+Component}} (const std\+::string \&component\+Id) const =0
+\begin{DoxyCompactList}\small\item\em Get the component of the current active graphical library. \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00910}{ECS\+::\+IComponent}} $>$ $>$ \& \mbox{\hyperlink{a00898_a3d2137379a545a20cfad022e00a385bb}{get\+Components}} (ECS\+::\+Comp\+Type type) const =0
+\begin{DoxyCompactList}\small\item\em Get all components of type {\ttfamily comp\+Type} \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{a00886}{Arcade\+::\+Vector2f}} \& \mbox{\hyperlink{a00898_ad402c62e6fdbb059c5aa228bd9bed850}{get\+Window\+Size}} () const =0
+\begin{DoxyCompactList}\small\item\em Get he size of the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00898_a6620572d3e81c79a8c24b3b9b16fe71b}{set\+Window\+Size}} (const \mbox{\hyperlink{a00886}{Arcade\+::\+Vector2f}} \&new\+Size)=0
+\begin{DoxyCompactList}\small\item\em Set the window size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{a00898}{IDisplay\+Module}} interface. 
+
+The \mbox{\hyperlink{a00898}{IDisplay\+Module}} is passed to all systems 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00898_ab0dca340871523283d3f52af4053032a}\label{a00898_ab0dca340871523283d3f52af4053032a}} 
+\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!````~IDisplayModule@{$\sim$IDisplayModule}}
+\index{````~IDisplayModule@{$\sim$IDisplayModule}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{$\sim$IDisplayModule()}{~IDisplayModule()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+Core\+::\+IDisplay\+Module\+::$\sim$\+IDisplay\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00898_a317c72a1565aa871fce3f6bbad60909f}\label{a00898_a317c72a1565aa871fce3f6bbad60909f}} 
+\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!addComponent@{addComponent}}
+\index{addComponent@{addComponent}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Core\+::\+IDisplay\+Module\+::add\+Component (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00910}{ECS\+::\+IComponent}} $>$}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add a component to the current active graphical library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & The component to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00898_ac0cbd83c3f4809caa19a6ffd59f68e18}\label{a00898_ac0cbd83c3f4809caa19a6ffd59f68e18}} 
+\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!changeGraphicLib@{changeGraphicLib}}
+\index{changeGraphicLib@{changeGraphicLib}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{changeGraphicLib()}{changeGraphicLib()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Core\+::\+IDisplay\+Module\+::change\+Graphic\+Lib (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Change the current active graphical library to the next one (in a cyclic way) 
+
+(because the epitech subject says we can switch to the next graphical library in the folder of availible graphical library)
+
+Throw on error !!!\+ATTENTION!!!\+: This function must be called only when you receive the event CHANGE\+\_\+\+GRAPH, this one is called if there is no param
+
+Never call this directly in game systems, see documentation of Event\+Manager for this purpose Why ? because this function can destroy the components/entities/systems you are on when you execute it \mbox{\Hypertarget{a00898_aa2d6035f73c69e76403b4e114db97ca1}\label{a00898_aa2d6035f73c69e76403b4e114db97ca1}} 
+\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!changeGraphicLib@{changeGraphicLib}}
+\index{changeGraphicLib@{changeGraphicLib}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{changeGraphicLib()}{changeGraphicLib()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Core\+::\+IDisplay\+Module\+::change\+Graphic\+Lib (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lib\+Graphic\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Change the current active graphical library to the given graphical library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lib\+Graphic\+Name} & The graphical library name (only the libname without .so)\\
+\hline
+\end{DoxyParams}
+Throw on error
+
+Never call this directly in game systems, see documentation of Event\+Manager for this purpose. Why ? because this function can destroy the components/entities/systems you are on when you execute it
+
+!!!\+ATTENTION!!!\+: This function must be called only when you receive the event CHANGE\+\_\+\+GRAPH, the param can be found in the component that can be linked to the event (so, in core loop) \mbox{\Hypertarget{a00898_aa7a3c1b372c0b5f5ddc339db15c6696e}\label{a00898_aa7a3c1b372c0b5f5ddc339db15c6696e}} 
+\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily virtual std\+::optional$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00910}{ECS\+::\+IComponent}}$>$ $>$ Arcade\+::\+Core\+::\+IDisplay\+Module\+::get\+Component (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{component\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the component of the current active graphical library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component\+Id} & The component id to get\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+optional of the component id if found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00898_a3d2137379a545a20cfad022e00a385bb}\label{a00898_a3d2137379a545a20cfad022e00a385bb}} 
+\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!getComponents@{getComponents}}
+\index{getComponents@{getComponents}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{getComponents()}{getComponents()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00910}{ECS\+::\+IComponent}}$>$ $>$\& Arcade\+::\+Core\+::\+IDisplay\+Module\+::get\+Components (\begin{DoxyParamCaption}\item[{ECS\+::\+Comp\+Type}]{type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get all components of type {\ttfamily comp\+Type} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of component to get\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of components filtered 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00898_a26a34a26a5c8bc0f95ee6f76e4fda11e}\label{a00898_a26a34a26a5c8bc0f95ee6f76e4fda11e}} 
+\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!getSystemManager@{getSystemManager}}
+\index{getSystemManager@{getSystemManager}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{getSystemManager()}{getSystemManager()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00930}{ECS\+::\+ISystem\+Manager}}$>$ Arcade\+::\+Core\+::\+IDisplay\+Module\+::get\+System\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the system manager of the current graphical library. 
+
+\begin{DoxyReturn}{Returns}
+The system manager of the current graphical library 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00898_ad402c62e6fdbb059c5aa228bd9bed850}\label{a00898_ad402c62e6fdbb059c5aa228bd9bed850}} 
+\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!getWindowSize@{getWindowSize}}
+\index{getWindowSize@{getWindowSize}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{getWindowSize()}{getWindowSize()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{a00886}{Arcade\+::\+Vector2f}}\& Arcade\+::\+Core\+::\+IDisplay\+Module\+::get\+Window\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get he size of the window. 
+
+\mbox{\Hypertarget{a00898_ac85d68f6a0618fc3540aff38a7238f3a}\label{a00898_ac85d68f6a0618fc3540aff38a7238f3a}} 
+\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!removeComponent@{removeComponent}}
+\index{removeComponent@{removeComponent}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{removeComponent()}{removeComponent()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Core\+::\+IDisplay\+Module\+::remove\+Component (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{component\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove a component from the current active graphical library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component\+Id} & The component id to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00898_a6620572d3e81c79a8c24b3b9b16fe71b}\label{a00898_a6620572d3e81c79a8c24b3b9b16fe71b}} 
+\index{Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}!setWindowSize@{setWindowSize}}
+\index{setWindowSize@{setWindowSize}!Arcade::Core::IDisplayModule@{Arcade::Core::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{setWindowSize()}{setWindowSize()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Core\+::\+IDisplay\+Module\+::set\+Window\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a00886}{Arcade\+::\+Vector2f}} \&}]{new\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the window size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Size} & The vector2f representing the new window size \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Arcade/\+Core/\mbox{\hyperlink{a00020}{IDisplay\+Module.\+hpp}}\end{DoxyCompactItemize}

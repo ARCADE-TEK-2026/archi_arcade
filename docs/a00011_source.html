@@ -79,8 +79,8 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00047.html">ISceneManager.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00041.html">ISystemManager.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00050.html">ISceneManager.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00044.html">ISystemManager.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    #define EXPORT __declspec(dllexport)</span></div>
@@ -92,27 +92,30 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">   26</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a> { <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487">GRAPH</a>, <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13">GAME</a> };</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00011.html#a182ec86f83648772eeee4a66996d8f25">   36</a></span>&#160;    std::unique_ptr&lt;Arcade::Game::ISceneManager&gt; <a class="code" href="a00011.html#a182ec86f83648772eeee4a66996d8f25">getScenes</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00011.html#ae165d25fc17828ee8ca15df4dac728c2">   46</a></span>&#160;    std::unique_ptr&lt;Arcade::ECS::ISystemManager&gt; <a class="code" href="a00011.html#ae165d25fc17828ee8ca15df4dac728c2">getSystems</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00011.html#ac0fc966d4386ddb71d99361e3fccb311">   56</a></span>&#160;    std::string <a class="code" href="a00011.html#ac0fc966d4386ddb71d99361e3fccb311">getName</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00011.html#a19760a91ea6abfcf31fb434c6a121162">   66</a></span>&#160;    <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a> <a class="code" href="a00011.html#a19760a91ea6abfcf31fb434c6a121162">getType</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="ttc" id="aa00011_html_a182ec86f83648772eeee4a66996d8f25"><div class="ttname"><a href="a00011.html#a182ec86f83648772eeee4a66996d8f25">getScenes</a></div><div class="ttdeci">std::unique_ptr&lt; Arcade::Game::ISceneManager &gt; getScenes()</div><div class="ttdoc">The game shared lib main entry point to get scenes.</div></div>
-<div class="ttc" id="aa00011_html_a19760a91ea6abfcf31fb434c6a121162"><div class="ttname"><a href="a00011.html#a19760a91ea6abfcf31fb434c6a121162">getType</a></div><div class="ttdeci">LibType getType()</div><div class="ttdoc">The Shared lib entry point to get lib type.</div></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00011.html#a9fab8efd3514dd290c620917fe844b3d">   41</a></span>&#160;    <a class="code" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> std::shared_ptr&lt;Arcade::Game::ISceneManager&gt; <a class="code" href="a00011.html#a9fab8efd3514dd290c620917fe844b3d">getScenes</a>(</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::shared_ptr&lt;Arcade::Game::ISceneManager&gt; sceneManager);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00011.html#a689214538345231b62f1985f714610e4">   57</a></span>&#160;    <a class="code" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> std::shared_ptr&lt;Arcade::ECS::ISystemManager&gt; <a class="code" href="a00011.html#a689214538345231b62f1985f714610e4">getSystems</a>(</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::shared_ptr&lt;Arcade::ECS::ISystemManager&gt; systemManager);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="a00011.html#a5cafcdee8016feaafbc820ae5ef2a537">   68</a></span>&#160;    <a class="code" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> std::string <a class="code" href="a00011.html#a5cafcdee8016feaafbc820ae5ef2a537">getName</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00011.html#ab33833f69d75c62be75bb97a2c0c2a44">   78</a></span>&#160;    <a class="code" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> <a class="code" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a> <a class="code" href="a00011.html#ab33833f69d75c62be75bb97a2c0c2a44">getType</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="ttc" id="aa00011_html_a3472d8cdbb788d5f1815b3522595bc49"><div class="ttname"><a href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a></div><div class="ttdeci">#define EXPORT</div><div class="ttdef"><b>Definition:</b> Api.hpp:16</div></div>
+<div class="ttc" id="aa00011_html_a5cafcdee8016feaafbc820ae5ef2a537"><div class="ttname"><a href="a00011.html#a5cafcdee8016feaafbc820ae5ef2a537">getName</a></div><div class="ttdeci">EXPORT std::string getName()</div><div class="ttdoc">The Shared lib entry point to get lib name.</div></div>
+<div class="ttc" id="aa00011_html_a689214538345231b62f1985f714610e4"><div class="ttname"><a href="a00011.html#a689214538345231b62f1985f714610e4">getSystems</a></div><div class="ttdeci">EXPORT std::shared_ptr&lt; Arcade::ECS::ISystemManager &gt; getSystems(std::shared_ptr&lt; Arcade::ECS::ISystemManager &gt; systemManager)</div><div class="ttdoc">The Graph shared lib main entry point to get systems.</div></div>
 <div class="ttc" id="aa00011_html_a6bd8133fc17124d3215b7fc6edecf616"><div class="ttname"><a href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a></div><div class="ttdeci">LibType</div><div class="ttdef"><b>Definition:</b> Api.hpp:26</div></div>
 <div class="ttc" id="aa00011_html_a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13"><div class="ttname"><a href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13">LibType::GAME</a></div><div class="ttdeci">@ GAME</div></div>
 <div class="ttc" id="aa00011_html_a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487"><div class="ttname"><a href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487">LibType::GRAPH</a></div><div class="ttdeci">@ GRAPH</div></div>
-<div class="ttc" id="aa00011_html_ac0fc966d4386ddb71d99361e3fccb311"><div class="ttname"><a href="a00011.html#ac0fc966d4386ddb71d99361e3fccb311">getName</a></div><div class="ttdeci">std::string getName()</div><div class="ttdoc">The Shared lib entry point to get lib name.</div></div>
-<div class="ttc" id="aa00011_html_ae165d25fc17828ee8ca15df4dac728c2"><div class="ttname"><a href="a00011.html#ae165d25fc17828ee8ca15df4dac728c2">getSystems</a></div><div class="ttdeci">std::unique_ptr&lt; Arcade::ECS::ISystemManager &gt; getSystems()</div><div class="ttdoc">The Graph shared lib main entry point to get systems.</div></div>
-<div class="ttc" id="aa00041_html"><div class="ttname"><a href="a00041.html">ISystemManager.hpp</a></div></div>
-<div class="ttc" id="aa00047_html"><div class="ttname"><a href="a00047.html">ISceneManager.hpp</a></div></div>
+<div class="ttc" id="aa00011_html_a9fab8efd3514dd290c620917fe844b3d"><div class="ttname"><a href="a00011.html#a9fab8efd3514dd290c620917fe844b3d">getScenes</a></div><div class="ttdeci">EXPORT std::shared_ptr&lt; Arcade::Game::ISceneManager &gt; getScenes(std::shared_ptr&lt; Arcade::Game::ISceneManager &gt; sceneManager)</div><div class="ttdoc">The game shared lib main entry point to get scenes.</div></div>
+<div class="ttc" id="aa00011_html_ab33833f69d75c62be75bb97a2c0c2a44"><div class="ttname"><a href="a00011.html#ab33833f69d75c62be75bb97a2c0c2a44">getType</a></div><div class="ttdeci">EXPORT LibType getType()</div><div class="ttdoc">The Shared lib entry point to get lib type.</div></div>
+<div class="ttc" id="aa00044_html"><div class="ttname"><a href="a00044.html">ISystemManager.hpp</a></div></div>
+<div class="ttc" id="aa00050_html"><div class="ttname"><a href="a00050.html">ISceneManager.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 23 2023 00:15:38 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 24 2023 13:13:21 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

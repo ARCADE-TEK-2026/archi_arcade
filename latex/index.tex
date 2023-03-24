@@ -1,1 +1,109 @@
+Bienvenu sur cette Architecture Commune de l\textquotesingle{}\mbox{\hyperlink{a00066}{Arcade}}. Projet de 2ème année au sein de Epitech.
+
+Source Tree\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{include/}
+\DoxyCodeLine{├── Api.hpp}
+\DoxyCodeLine{└── \mbox{\hyperlink{a00066}{Arcade}}}
+\DoxyCodeLine{    ├── ArcadeStruct.hpp}
+\DoxyCodeLine{    ├── Core}
+\DoxyCodeLine{    │   ├── ICore.hpp}
+\DoxyCodeLine{    │   ├── IDisplayModule.hpp}
+\DoxyCodeLine{    │   └── IGameModule.hpp}
+\DoxyCodeLine{    ├── ECS}
+\DoxyCodeLine{    │   ├── IComponent.hpp}
+\DoxyCodeLine{    │   ├── IEntity.hpp}
+\DoxyCodeLine{    │   ├── IEntityManager.hpp}
+\DoxyCodeLine{    │   ├── IEventManager.hpp}
+\DoxyCodeLine{    │   ├── ISystem.hpp}
+\DoxyCodeLine{    │   └── ISystemManager.hpp}
+\DoxyCodeLine{    ├── Game}
+\DoxyCodeLine{    │   ├── IScene.hpp}
+\DoxyCodeLine{    │   └── ISceneManager.hpp}
+\DoxyCodeLine{    └── Graph}
+\DoxyCodeLine{        ├── GraphStruct.hpp}
+\DoxyCodeLine{        ├── IMusic.hpp}
+\DoxyCodeLine{        ├── ISprite.hpp}
+\DoxyCodeLine{        └── IText.hpp}
+\DoxyCodeLine{}
+\DoxyCodeLine{6 directories, 17 files}
+
+\end{DoxyCode}
+
+
+Comme vous pouvez le voir, nous avons decider d\textquotesingle{}integrer un ECS directement dans l\textquotesingle{}architecture commune.
+
+Le projet se compose en 3 parties\+:
+\begin{DoxyItemize}
+\item Le Core (le binaire arcade)
+\item Les jeux (sous forme de .so)
+\item Les lib graphic (sous forme de .so)
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+ LE CORE
+
+À implementer\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }Arcade::Core::Core; \textcolor{comment}{// regarde la doc de IEventMnagers pour savoir ce qu'il faut prendre des évènements créer}}
+\DoxyCodeLine{\textcolor{keyword}{class }Arcade::Core::DisplayModule; \textcolor{comment}{// manager pour la lib graphic + d'autres choses cool}}
+\DoxyCodeLine{\textcolor{keyword}{class }Arcade::Core::GameModule; \textcolor{comment}{// manager pour les scene de jeu + d'autre choses cool}}
+\DoxyCodeLine{\textcolor{keyword}{class }Arcade::ECS::EventManager; \textcolor{comment}{// pas besoin d'en avoir plusieurs implementation différentes}}
+\DoxyCodeLine{\textcolor{keyword}{class }Arcade::ECS::SystemManager; \textcolor{comment}{// la non plus je ne vois pas pourquoi il faudrait faire plusieurs SystemManager avec des implementation différentes}}
+\DoxyCodeLine{\textcolor{keyword}{class }Arcade::ECS::SceneManager; \textcolor{comment}{// toujours pareil que la class d'avant}}
+
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+ LES JEUX
+
+À implementer dans chaque jeux\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{class }Arcade::ECS::Entity; \textcolor{comment}{// l'IEntity n'a pas vocation à avoir beaucoup d'enfant. Un seul suffit justement grâce à l'ECS qui permet de rajouter des componsant à chaque entité}}
+\DoxyCodeLine{  \textcolor{keyword}{class }Arcade::ECS::EntityManager; \textcolor{comment}{// pas besoin non plus de faire beaucoup d'enfant sur l'IEntityManager (la personne qui écrit cette doc ne vois pas de cas croncrêt où il faudrait plusieurs implementation différentes de IEntityManager)}}
+\DoxyCodeLine{  \textcolor{keyword}{class }Arcade::ECS::SystemManager; \textcolor{comment}{// la non plus je ne vois pas pourquoi il faudrait faire plusieurs SystemManager avec des implementation différentes}}
+\DoxyCodeLine{  \textcolor{keyword}{class }Arcade::ECS::AComponent; \textcolor{comment}{// vous verrez forcemenet l'utilité de faire ça}}
+\DoxyCodeLine{  \textcolor{keyword}{class }\mbox{\hyperlink{a00068}{Arcade::ECS}}::\textcolor{comment}{//\{Tous les composant\}// les composant sont la clé pour ajouter des variables à vos entités, il est recommandé d'en faire ce que vous voulez tant qu'ils héritent de IComponent(ou AComponent)}}
+\DoxyCodeLine{  class Arcade::Graph::Music; \textcolor{comment}{// pas besoin de plusieurs implementation dérivant de IMusic. Un composant purement présent pour que la lib graphique sache l'interpreter.}}
+\DoxyCodeLine{  class Arcade::Graph::Sprite; \textcolor{comment}{// pas besoin de plusieurs implementation dérivant de ISprite. Un composant purement présent pour que la lib graphique sache l'interpreter.}}
+\DoxyCodeLine{  class Arcade::Graph::Text; \textcolor{comment}{// pas besoin de plusieurs implementation dérivant de IText. Un composant purement présent pour que la lib graphique sache l'interpreter.}}
+\DoxyCodeLine{  class Arcade::ECS::ASystem; \textcolor{comment}{// pour les plus courageux}}
+\DoxyCodeLine{  class \mbox{\hyperlink{a00068}{Arcade::ECS}}::\textcolor{comment}{//\{Tous les systems\}// les systemes sont les fonctions qui permettent de réaliser des action dans un ECS, sans systemes, vous n'avez pas de jeux. Il vous est invité à faire chaque systems pour une modification différentes, et pas tous dans 1 seul systemes.}}
+\DoxyCodeLine{  class Arcade::ECS::AScene; \textcolor{comment}{// c'est cool les abstract!!}}
+\DoxyCodeLine{  class \mbox{\hyperlink{a00068}{Arcade::ECS}}::\textcolor{comment}{//\{Toutes les scenes\}// cela permet d'avoir des scenes avec fonction d'entré customisable (la méthode `init`)}}
+\DoxyCodeLine{ce qui suit permet d'avoir un point d'entré défini pour chaque lib}
+\DoxyCodeLine{lisez le fichier Api.hpp pour plus d'info}
+\DoxyCodeLine{  \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{LibType}} \mbox{\hyperlink{a00011_ab33833f69d75c62be75bb97a2c0c2a44}{getType}}();}
+\DoxyCodeLine{  std::string \mbox{\hyperlink{a00011_a5cafcdee8016feaafbc820ae5ef2a537}{getName}}();}
+\DoxyCodeLine{  std::unique\_ptr<Arcade::Game::ISceneManager> \mbox{\hyperlink{a00011_a9fab8efd3514dd290c620917fe844b3d}{getScenes}}(std::unique\_ptr<Arcade::Game::ISceneManager> sceneManager);}
+
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+ LES LIB GRAPHIC
+
+À implementer dans chaque lib graphic\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }Arcade::ECS::System; \textcolor{comment}{// le system permettant d'afficher/jouer de la music avec la lib graphique qu'il wrap.}}
+\DoxyCodeLine{\textcolor{comment}{// ce qui suit permet d'avoir un point d'entré défini pour chaque lib}}
+\DoxyCodeLine{\textcolor{comment}{// lisez le fichier Api.hpp pour plus d'info}}
+\DoxyCodeLine{\mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{LibType}} \mbox{\hyperlink{a00011_ab33833f69d75c62be75bb97a2c0c2a44}{getType}}();}
+\DoxyCodeLine{std::string \mbox{\hyperlink{a00011_a5cafcdee8016feaafbc820ae5ef2a537}{getName}}();}
+\DoxyCodeLine{std::unique\_ptr<Arcade::ECS::ISystemManager> \mbox{\hyperlink{a00011_a689214538345231b62f1985f714610e4}{getSystems}}(std::unique\_ptr<Arcade::ECS::ISystemManager> systemManager);}
+
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+
+
+N.\+B.\+: L\textquotesingle{}écrivain de cette documentation prie de bien vouloir l\textquotesingle{}excuser pour la prise de partie, il sera heureux de débatre par l\textquotesingle{}intermédiaire d\textquotesingle{}issue sur github dans le cas où une information dans cette documentation serait fausse. N.\+B.\+: Pour get des éléments dans un vecteur const il faut utiliser la méthode .at()
+
+lien du github\+: \href{https://github.com/ARCADE-TEK-2026/archi_arcade}{\texttt{ https\+://github.\+com/\+ARCADE-\/\+TEK-\/2026/archi\+\_\+arcade}}
+
+\DoxyHorRuler{0}
+
+
  

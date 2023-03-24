@@ -27,13 +27,13 @@ enum class \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00931}{Arcade\+::\+Game\+::\+IScene\+Manager}} $>$ \mbox{\hyperlink{a00011_a182ec86f83648772eeee4a66996d8f25}{get\+Scenes}} ()
+\mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00938}{Arcade\+::\+Game\+::\+IScene\+Manager}} $>$ \mbox{\hyperlink{a00011_a9fab8efd3514dd290c620917fe844b3d}{get\+Scenes}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00938}{Arcade\+::\+Game\+::\+IScene\+Manager}} $>$ scene\+Manager)
 \begin{DoxyCompactList}\small\item\em The game shared lib main entry point to get scenes. \end{DoxyCompactList}\item 
-std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a00923}{Arcade\+::\+ECS\+::\+ISystem\+Manager}} $>$ \mbox{\hyperlink{a00011_ae165d25fc17828ee8ca15df4dac728c2}{get\+Systems}} ()
+\mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00930}{Arcade\+::\+ECS\+::\+ISystem\+Manager}} $>$ \mbox{\hyperlink{a00011_a689214538345231b62f1985f714610e4}{get\+Systems}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00930}{Arcade\+::\+ECS\+::\+ISystem\+Manager}} $>$ system\+Manager)
 \begin{DoxyCompactList}\small\item\em The Graph shared lib main entry point to get systems. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{a00011_ac0fc966d4386ddb71d99361e3fccb311}{get\+Name}} ()
+\mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} std\+::string \mbox{\hyperlink{a00011_a5cafcdee8016feaafbc820ae5ef2a537}{get\+Name}} ()
 \begin{DoxyCompactList}\small\item\em The Shared lib entry point to get lib name. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}} \mbox{\hyperlink{a00011_a19760a91ea6abfcf31fb434c6a121162}{get\+Type}} ()
+\mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}} \mbox{\hyperlink{a00011_ab33833f69d75c62be75bb97a2c0c2a44}{get\+Type}} ()
 \begin{DoxyCompactList}\small\item\em The Shared lib entry point to get lib type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -66,11 +66,11 @@ GAME&\\
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{a00011_ac0fc966d4386ddb71d99361e3fccb311}\label{a00011_ac0fc966d4386ddb71d99361e3fccb311}} 
+\mbox{\Hypertarget{a00011_a5cafcdee8016feaafbc820ae5ef2a537}\label{a00011_a5cafcdee8016feaafbc820ae5ef2a537}} 
 \index{Api.hpp@{Api.hpp}!getName@{getName}}
 \index{getName@{getName}!Api.hpp@{Api.hpp}}
 \doxysubsubsection{\texorpdfstring{getName()}{getName()}}
-{\footnotesize\ttfamily std\+::string get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} std\+::string get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -79,11 +79,11 @@ The Shared lib entry point to get lib name.
 \begin{DoxyReturn}{Returns}
 Lib\textquotesingle{}s name in std\+::string
 \end{DoxyReturn}
-All shared lib must have this function \mbox{\Hypertarget{a00011_a182ec86f83648772eeee4a66996d8f25}\label{a00011_a182ec86f83648772eeee4a66996d8f25}} 
+All shared lib must have this function \mbox{\Hypertarget{a00011_a9fab8efd3514dd290c620917fe844b3d}\label{a00011_a9fab8efd3514dd290c620917fe844b3d}} 
 \index{Api.hpp@{Api.hpp}!getScenes@{getScenes}}
 \index{getScenes@{getScenes}!Api.hpp@{Api.hpp}}
 \doxysubsubsection{\texorpdfstring{getScenes()}{getScenes()}}
-{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{a00931}{Arcade\+::\+Game\+::\+IScene\+Manager}}$>$ get\+Scenes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00938}{Arcade\+::\+Game\+::\+IScene\+Manager}}$>$ get\+Scenes (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00938}{Arcade\+::\+Game\+::\+IScene\+Manager}} $>$}]{scene\+Manager }\end{DoxyParamCaption})}
 
 
 
@@ -92,11 +92,13 @@ The game shared lib main entry point to get scenes.
 \begin{DoxyReturn}{Returns}
 A unique\+\_\+ptr on IScene\+Manager instance
 \end{DoxyReturn}
-All game shared lib must have this function \mbox{\Hypertarget{a00011_ae165d25fc17828ee8ca15df4dac728c2}\label{a00011_ae165d25fc17828ee8ca15df4dac728c2}} 
+All game shared lib must have this function
+
+It takes a parameter because, if there was no parameter, we will have to implement all the Archi commune in all .so (to be hable to create (malloc/new) one of them Now, with this parameter, we don\textquotesingle{}t have to code everything in .so \mbox{\Hypertarget{a00011_a689214538345231b62f1985f714610e4}\label{a00011_a689214538345231b62f1985f714610e4}} 
 \index{Api.hpp@{Api.hpp}!getSystems@{getSystems}}
 \index{getSystems@{getSystems}!Api.hpp@{Api.hpp}}
 \doxysubsubsection{\texorpdfstring{getSystems()}{getSystems()}}
-{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{a00923}{Arcade\+::\+ECS\+::\+ISystem\+Manager}}$>$ get\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00930}{Arcade\+::\+ECS\+::\+ISystem\+Manager}}$>$ get\+Systems (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00930}{Arcade\+::\+ECS\+::\+ISystem\+Manager}} $>$}]{system\+Manager }\end{DoxyParamCaption})}
 
 
 
@@ -105,11 +107,13 @@ The Graph shared lib main entry point to get systems.
 \begin{DoxyReturn}{Returns}
 A unique\+\_\+ptr on ISystem\+Manager instance
 \end{DoxyReturn}
-All graph shared lib must have this function \mbox{\Hypertarget{a00011_a19760a91ea6abfcf31fb434c6a121162}\label{a00011_a19760a91ea6abfcf31fb434c6a121162}} 
+All graph shared lib must have this function
+
+It takes a parameter because, if there was no parameter, we will have to implement all the Archi commune in all .so (to be hable to create (malloc/new) one of them Now, with this parameter, we don\textquotesingle{}t have to code everything in .so \mbox{\Hypertarget{a00011_ab33833f69d75c62be75bb97a2c0c2a44}\label{a00011_ab33833f69d75c62be75bb97a2c0c2a44}} 
 \index{Api.hpp@{Api.hpp}!getType@{getType}}
 \index{getType@{getType}!Api.hpp@{Api.hpp}}
 \doxysubsubsection{\texorpdfstring{getType()}{getType()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}} get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}} get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 

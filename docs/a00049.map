@@ -1,5 +1,6 @@
-<map id="include/Arcade/Game/ISceneManager.hpp" name="include/Arcade/Game/ISceneManager.hpp">
+<map id="include/Arcade/Game/IScene.hpp" name="include/Arcade/Game/IScene.hpp">
 <area shape="rect" id="node1" title=" " alt="" coords="66,5,227,47"/>
-<area shape="rect" id="node2" href="$a00011.html" title=" " alt="" coords="5,102,128,129"/>
-<area shape="rect" id="node3" href="$a00023.html" title=" " alt="" coords="152,95,304,136"/>
+<area shape="rect" id="node2" href="$a00050.html" title=" " alt="" coords="66,95,227,136"/>
+<area shape="rect" id="node3" href="$a00011.html" title=" " alt="" coords="5,191,128,218"/>
+<area shape="rect" id="node4" href="$a00023.html" title=" " alt="" coords="152,184,304,225"/>
 </map>

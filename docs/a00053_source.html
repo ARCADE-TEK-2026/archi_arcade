@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/Arcade/Graph/IMusic.hpp Source File</title>
+<title>Architecture Arcade: include/Arcade/Graph/GraphStruct.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,56 +67,63 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">IMusic.hpp</div>  </div>
+<div class="title">GraphStruct.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00053.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** EPITECH PROJECT, 2023</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">** Archi Arcade Promo 2026 Toulouse</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** File description:</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** A music child of components that will be understood by the graphic library</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">** Useful struct for the grapical lib</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00026.html">IComponent.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00063.html">Arcade</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">namespace </span>Graph {</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00947.html">   24</a></span>&#160;        <span class="keyword">class </span><a class="code" href="a00947.html">IMusic</a> : <a class="code" href="a00903.html">Arcade::ECS::IComponent</a> {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00947.html#ac90ebfffe808f4c35424623464bd9a13">   26</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="a00947.html#ac90ebfffe808f4c35424623464bd9a13">~IMusic</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00947.html#abfa0eaa2fd543a008e6de16014306046">   32</a></span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> std::string &amp;<a class="code" href="a00947.html#abfa0eaa2fd543a008e6de16014306046">getId</a>() <span class="keyword">const override</span> = 0;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00947.html#ac76f4292f434d8014275e33d8fb1a6a8">   38</a></span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> std::string &amp;<a class="code" href="a00947.html#ac76f4292f434d8014275e33d8fb1a6a8">getPath</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a00947.html#a0f5c0e7bc530ce255f6b0c7d94f9a09c">   42</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00947.html#a0f5c0e7bc530ce255f6b0c7d94f9a09c">setPath</a>(<span class="keyword">const</span> std::string &amp;path) = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a00947.html#a0b3bd03acd44024955d9f1deb2e59068">   48</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00947.html#a0b3bd03acd44024955d9f1deb2e59068">getLoop</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00947.html#a999ca7b3b535bd2c2ee5e63b50c7c9ba">   52</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00947.html#a999ca7b3b535bd2c2ee5e63b50c7c9ba">setLoop</a>(<span class="keywordtype">bool</span> loop) = 0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="a00947.html#a8057d8416ffac81d0baae609d2ac0c09">   58</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00947.html#a8057d8416ffac81d0baae609d2ac0c09">getIsPlaying</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00947.html#a86834eb38ff839874a2f5f33fa4989fb">   62</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00947.html#a86834eb38ff839874a2f5f33fa4989fb">setIsPlaying</a>(<span class="keywordtype">bool</span> isPlaying) = 0;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="a00947.html#a53ae25638120337856a5862661ef9084">   68</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="a00947.html#a53ae25638120337856a5862661ef9084">getVolume</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="a00947.html#a4905117cdb647cc715dfd8751c6f247e">   72</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00947.html#a4905117cdb647cc715dfd8751c6f247e">setVolume</a>(<span class="keywordtype">float</span> volume) = 0;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        };</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    } <span class="comment">// namespace Graph</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <span class="comment">// namespace Arcade</span></div>
-<div class="ttc" id="aa00026_html"><div class="ttname"><a href="a00026.html">IComponent.hpp</a></div></div>
-<div class="ttc" id="aa00063_html"><div class="ttname"><a href="a00063.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
-<div class="ttc" id="aa00903_html"><div class="ttname"><a href="a00903.html">Arcade::ECS::IComponent</a></div><div class="ttdef"><b>Definition:</b> IComponent.hpp:21</div></div>
-<div class="ttc" id="aa00947_html"><div class="ttname"><a href="a00947.html">Arcade::Graph::IMusic</a></div><div class="ttdoc">The IMusic class.</div><div class="ttdef"><b>Definition:</b> IMusic.hpp:24</div></div>
-<div class="ttc" id="aa00947_html_a0b3bd03acd44024955d9f1deb2e59068"><div class="ttname"><a href="a00947.html#a0b3bd03acd44024955d9f1deb2e59068">Arcade::Graph::IMusic::getLoop</a></div><div class="ttdeci">virtual bool getLoop() const =0</div><div class="ttdoc">Check if the music is looping.</div></div>
-<div class="ttc" id="aa00947_html_a0f5c0e7bc530ce255f6b0c7d94f9a09c"><div class="ttname"><a href="a00947.html#a0f5c0e7bc530ce255f6b0c7d94f9a09c">Arcade::Graph::IMusic::setPath</a></div><div class="ttdeci">virtual void setPath(const std::string &amp;path)=0</div><div class="ttdoc">Set the path of the Music.</div></div>
-<div class="ttc" id="aa00947_html_a4905117cdb647cc715dfd8751c6f247e"><div class="ttname"><a href="a00947.html#a4905117cdb647cc715dfd8751c6f247e">Arcade::Graph::IMusic::setVolume</a></div><div class="ttdeci">virtual void setVolume(float volume)=0</div><div class="ttdoc">Get the Volume data.</div></div>
-<div class="ttc" id="aa00947_html_a53ae25638120337856a5862661ef9084"><div class="ttname"><a href="a00947.html#a53ae25638120337856a5862661ef9084">Arcade::Graph::IMusic::getVolume</a></div><div class="ttdeci">virtual float getVolume() const =0</div><div class="ttdoc">Get the Volume data.</div></div>
-<div class="ttc" id="aa00947_html_a8057d8416ffac81d0baae609d2ac0c09"><div class="ttname"><a href="a00947.html#a8057d8416ffac81d0baae609d2ac0c09">Arcade::Graph::IMusic::getIsPlaying</a></div><div class="ttdeci">virtual bool getIsPlaying() const =0</div><div class="ttdoc">Check if the music is currently played.</div></div>
-<div class="ttc" id="aa00947_html_a86834eb38ff839874a2f5f33fa4989fb"><div class="ttname"><a href="a00947.html#a86834eb38ff839874a2f5f33fa4989fb">Arcade::Graph::IMusic::setIsPlaying</a></div><div class="ttdeci">virtual void setIsPlaying(bool isPlaying)=0</div><div class="ttdoc">Set the IsPlaying data.</div></div>
-<div class="ttc" id="aa00947_html_a999ca7b3b535bd2c2ee5e63b50c7c9ba"><div class="ttname"><a href="a00947.html#a999ca7b3b535bd2c2ee5e63b50c7c9ba">Arcade::Graph::IMusic::setLoop</a></div><div class="ttdeci">virtual void setLoop(bool loop)=0</div><div class="ttdoc">Set the loop data.</div></div>
-<div class="ttc" id="aa00947_html_abfa0eaa2fd543a008e6de16014306046"><div class="ttname"><a href="a00947.html#abfa0eaa2fd543a008e6de16014306046">Arcade::Graph::IMusic::getId</a></div><div class="ttdeci">virtual const std::string &amp; getId() const override=0</div><div class="ttdoc">Get the Id object.</div></div>
-<div class="ttc" id="aa00947_html_ac76f4292f434d8014275e33d8fb1a6a8"><div class="ttname"><a href="a00947.html#ac76f4292f434d8014275e33d8fb1a6a8">Arcade::Graph::IMusic::getPath</a></div><div class="ttdeci">virtual const std::string &amp; getPath() const =0</div><div class="ttdoc">Get the path of the Music.</div></div>
-<div class="ttc" id="aa00947_html_ac90ebfffe808f4c35424623464bd9a13"><div class="ttname"><a href="a00947.html#ac90ebfffe808f4c35424623464bd9a13">Arcade::Graph::IMusic::~IMusic</a></div><div class="ttdeci">virtual ~IMusic()=default</div></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00066.html">Arcade</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="a00070.html">   13</a></span>&#160;    <span class="keyword">namespace </span>Graph {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00942.html">   14</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="a00942.html">Color</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="a00942.html#ab01b045ccd33e59b8f914e849176fdc5">   16</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00942.html#ab01b045ccd33e59b8f914e849176fdc5">r</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="a00942.html#abb17ee7862551379901ccc6ef7533d19">   17</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00942.html#abb17ee7862551379901ccc6ef7533d19">g</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00942.html#ad27410851699269c3d51fdeb6bd0f25d">   18</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00942.html#ad27410851699269c3d51fdeb6bd0f25d">b</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00942.html#a755b9912b9694d73fac90b28425ffb6d">   19</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00942.html#a755b9912b9694d73fac90b28425ffb6d">a</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        };</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00946.html">   21</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="a00946.html">TTYData</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00946.html#a402a79668ca86b5436e88395ac6d3725">   23</a></span>&#160;                std::string <a class="code" href="a00946.html#a402a79668ca86b5436e88395ac6d3725">defaultChar</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00946.html#ab25fd97c6b846592c54905b062ba4d6a">   24</a></span>&#160;                <a class="code" href="a00942.html">Color</a> <a class="code" href="a00946.html#ab25fd97c6b846592c54905b062ba4d6a">foreground</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00946.html#a54ea7d24c1502d1d1f5c50e582747459">   25</a></span>&#160;                <a class="code" href="a00942.html">Color</a> <a class="code" href="a00946.html#a54ea7d24c1502d1d1f5c50e582747459">background</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        };</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00950.html">   27</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="a00950.html">Rect</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00950.html#a642d417324ca3e68cb0cbe64082c30b3">   29</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00950.html#a642d417324ca3e68cb0cbe64082c30b3">left</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00950.html#a322373137724c4345f9ee3c307163842">   30</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00950.html#a322373137724c4345f9ee3c307163842">top</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00950.html#ac634695fdf9377bc101f76f50c161493">   31</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00950.html#ac634695fdf9377bc101f76f50c161493">width</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00950.html#a2b143385e8684c52e5bb1dc7c9824873">   32</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="a00950.html#a2b143385e8684c52e5bb1dc7c9824873">height</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        };</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    } <span class="comment">// namespace Graph</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <span class="comment">// namespace Arcade</span></div>
+<div class="ttc" id="aa00066_html"><div class="ttname"><a href="a00066.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> ArcadeStruct.hpp:10</div></div>
+<div class="ttc" id="aa00942_html"><div class="ttname"><a href="a00942.html">Arcade::Graph::Color</a></div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:14</div></div>
+<div class="ttc" id="aa00942_html_a755b9912b9694d73fac90b28425ffb6d"><div class="ttname"><a href="a00942.html#a755b9912b9694d73fac90b28425ffb6d">Arcade::Graph::Color::a</a></div><div class="ttdeci">int a</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:19</div></div>
+<div class="ttc" id="aa00942_html_ab01b045ccd33e59b8f914e849176fdc5"><div class="ttname"><a href="a00942.html#ab01b045ccd33e59b8f914e849176fdc5">Arcade::Graph::Color::r</a></div><div class="ttdeci">int r</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:16</div></div>
+<div class="ttc" id="aa00942_html_abb17ee7862551379901ccc6ef7533d19"><div class="ttname"><a href="a00942.html#abb17ee7862551379901ccc6ef7533d19">Arcade::Graph::Color::g</a></div><div class="ttdeci">int g</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:17</div></div>
+<div class="ttc" id="aa00942_html_ad27410851699269c3d51fdeb6bd0f25d"><div class="ttname"><a href="a00942.html#ad27410851699269c3d51fdeb6bd0f25d">Arcade::Graph::Color::b</a></div><div class="ttdeci">int b</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:18</div></div>
+<div class="ttc" id="aa00946_html"><div class="ttname"><a href="a00946.html">Arcade::Graph::TTYData</a></div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:21</div></div>
+<div class="ttc" id="aa00946_html_a402a79668ca86b5436e88395ac6d3725"><div class="ttname"><a href="a00946.html#a402a79668ca86b5436e88395ac6d3725">Arcade::Graph::TTYData::defaultChar</a></div><div class="ttdeci">std::string defaultChar</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:23</div></div>
+<div class="ttc" id="aa00946_html_a54ea7d24c1502d1d1f5c50e582747459"><div class="ttname"><a href="a00946.html#a54ea7d24c1502d1d1f5c50e582747459">Arcade::Graph::TTYData::background</a></div><div class="ttdeci">Color background</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:25</div></div>
+<div class="ttc" id="aa00946_html_ab25fd97c6b846592c54905b062ba4d6a"><div class="ttname"><a href="a00946.html#ab25fd97c6b846592c54905b062ba4d6a">Arcade::Graph::TTYData::foreground</a></div><div class="ttdeci">Color foreground</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:24</div></div>
+<div class="ttc" id="aa00950_html"><div class="ttname"><a href="a00950.html">Arcade::Graph::Rect</a></div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:27</div></div>
+<div class="ttc" id="aa00950_html_a2b143385e8684c52e5bb1dc7c9824873"><div class="ttname"><a href="a00950.html#a2b143385e8684c52e5bb1dc7c9824873">Arcade::Graph::Rect::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:32</div></div>
+<div class="ttc" id="aa00950_html_a322373137724c4345f9ee3c307163842"><div class="ttname"><a href="a00950.html#a322373137724c4345f9ee3c307163842">Arcade::Graph::Rect::top</a></div><div class="ttdeci">int top</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:30</div></div>
+<div class="ttc" id="aa00950_html_a642d417324ca3e68cb0cbe64082c30b3"><div class="ttname"><a href="a00950.html#a642d417324ca3e68cb0cbe64082c30b3">Arcade::Graph::Rect::left</a></div><div class="ttdeci">int left</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:29</div></div>
+<div class="ttc" id="aa00950_html_ac634695fdf9377bc101f76f50c161493"><div class="ttname"><a href="a00950.html#ac634695fdf9377bc101f76f50c161493">Arcade::Graph::Rect::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> GraphStruct.hpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 23 2023 00:15:38 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 24 2023 13:13:21 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

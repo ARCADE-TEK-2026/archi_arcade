@@ -1,0 +1,115 @@
+\hypertarget{a00902}{}\doxysection{Arcade\+::Core\+::IGame\+Module Class Reference}
+\label{a00902}\index{Arcade::Core::IGameModule@{Arcade::Core::IGameModule}}
+
+
+The \mbox{\hyperlink{a00902}{IGame\+Module}} interface.  
+
+
+
+
+{\ttfamily \#include $<$IGame\+Module.\+hpp$>$}
+
+
+
+Collaboration diagram for Arcade\+::Core\+::IGame\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{a00900}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{a00902_ab7d3e415dd4afd3ca2238a61c8e5ea02}{$\sim$\+IGame\+Module}} ()=default
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00938}{Arcade\+::\+Game\+::\+IScene\+Manager}} $>$ \mbox{\hyperlink{a00902_aae5ea6e44badfa5af8d40640bc2a4f28}{get\+Scene\+Manager}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the scene manager of the current game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00902_a59cbe079208324c0b0090af9d5ca1ed0}{change\+Game}} (const std\+::string \&game\+Name)=0
+\begin{DoxyCompactList}\small\item\em Change the current active game to the given game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00902_a5c6cdaaddd5d48f5bea25efa6440a8e0}{change\+Game}} ()=0
+\begin{DoxyCompactList}\small\item\em Change the current active game to the next (in a cyclic way) \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00922}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} $>$ \mbox{\hyperlink{a00902_abcc1f3f64a2e5198fe8955a9fb9f187d}{get\+Game\+Event\+Manager}} ()=0
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{a00069}{Game}} Event Only Manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{a00902}{IGame\+Module}} interface. 
+
+The \mbox{\hyperlink{a00902}{IGame\+Module}} is passed to all systems 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00902_ab7d3e415dd4afd3ca2238a61c8e5ea02}\label{a00902_ab7d3e415dd4afd3ca2238a61c8e5ea02}} 
+\index{Arcade::Core::IGameModule@{Arcade::Core::IGameModule}!````~IGameModule@{$\sim$IGameModule}}
+\index{````~IGameModule@{$\sim$IGameModule}!Arcade::Core::IGameModule@{Arcade::Core::IGameModule}}
+\doxysubsubsection{\texorpdfstring{$\sim$IGameModule()}{~IGameModule()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+Core\+::\+IGame\+Module\+::$\sim$\+IGame\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00902_a5c6cdaaddd5d48f5bea25efa6440a8e0}\label{a00902_a5c6cdaaddd5d48f5bea25efa6440a8e0}} 
+\index{Arcade::Core::IGameModule@{Arcade::Core::IGameModule}!changeGame@{changeGame}}
+\index{changeGame@{changeGame}!Arcade::Core::IGameModule@{Arcade::Core::IGameModule}}
+\doxysubsubsection{\texorpdfstring{changeGame()}{changeGame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Core\+::\+IGame\+Module\+::change\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Change the current active game to the next (in a cyclic way) 
+
+Throw on error
+
+Never call this directly in game systems, see documentation of Event\+Manager for this purpose Why ? because this function can destroy the components/entities/systems you are on when you execute it
+
+!!!\+ATTENTION!!!\+: This function must be called only when you receive the event CHANGE\+\_\+\+GAME, called when there is not param (in the core loop) \mbox{\Hypertarget{a00902_a59cbe079208324c0b0090af9d5ca1ed0}\label{a00902_a59cbe079208324c0b0090af9d5ca1ed0}} 
+\index{Arcade::Core::IGameModule@{Arcade::Core::IGameModule}!changeGame@{changeGame}}
+\index{changeGame@{changeGame}!Arcade::Core::IGameModule@{Arcade::Core::IGameModule}}
+\doxysubsubsection{\texorpdfstring{changeGame()}{changeGame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Core\+::\+IGame\+Module\+::change\+Game (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{game\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Change the current active game to the given game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & The game filename to change to (without .so)\\
+\hline
+\end{DoxyParams}
+Throw on error
+
+Never call this directly in game systems, see documentation of Event\+Manager for this purpose Why ? because this function can destroy the components/entities/systems you are on when you execute it
+
+!!!\+ATTENTION!!!\+: This function must be called only when you receive the event CHANGE\+\_\+\+GAME, the param can be found in the component that can be linked to the event (in the core loop) \mbox{\Hypertarget{a00902_abcc1f3f64a2e5198fe8955a9fb9f187d}\label{a00902_abcc1f3f64a2e5198fe8955a9fb9f187d}} 
+\index{Arcade::Core::IGameModule@{Arcade::Core::IGameModule}!getGameEventManager@{getGameEventManager}}
+\index{getGameEventManager@{getGameEventManager}!Arcade::Core::IGameModule@{Arcade::Core::IGameModule}}
+\doxysubsubsection{\texorpdfstring{getGameEventManager()}{getGameEventManager()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00922}{Arcade\+::\+ECS\+::\+IEvent\+Manager}}$>$ Arcade\+::\+Core\+::\+IGame\+Module\+::get\+Game\+Event\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get \mbox{\hyperlink{a00069}{Game}} Event Only Manager. 
+
+\begin{DoxyReturn}{Returns}
+The event manager only used for game 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00902_aae5ea6e44badfa5af8d40640bc2a4f28}\label{a00902_aae5ea6e44badfa5af8d40640bc2a4f28}} 
+\index{Arcade::Core::IGameModule@{Arcade::Core::IGameModule}!getSceneManager@{getSceneManager}}
+\index{getSceneManager@{getSceneManager}!Arcade::Core::IGameModule@{Arcade::Core::IGameModule}}
+\doxysubsubsection{\texorpdfstring{getSceneManager()}{getSceneManager()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00938}{Arcade\+::\+Game\+::\+IScene\+Manager}}$>$ Arcade\+::\+Core\+::\+IGame\+Module\+::get\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the scene manager of the current game. 
+
+\begin{DoxyReturn}{Returns}
+The scene manager of the current game 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Arcade/\+Core/\mbox{\hyperlink{a00023}{IGame\+Module.\+hpp}}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ttydata_155',['TTYData',['../a00939.html',1,'Arcade::Graph']]]
+  ['ttydata_166',['TTYData',['../a00946.html',1,'Arcade::Graph']]]
 ];

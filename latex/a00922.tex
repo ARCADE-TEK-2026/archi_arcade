@@ -1,0 +1,150 @@
+\hypertarget{a00922}{}\doxysection{Arcade\+::ECS\+::IEvent\+Manager Class Reference}
+\label{a00922}\index{Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}}
+
+
+The \mbox{\hyperlink{a00922}{IEvent\+Manager}} interface.  
+
+
+
+
+{\ttfamily \#include $<$IEvent\+Manager.\+hpp$>$}
+
+
+
+Collaboration diagram for Arcade\+::ECS\+::IEvent\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{a00920}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{a00922_a2523607e48ced247a844e53c060fb001}{$\sim$\+IEvent\+Manager}} ()=default
+\item 
+virtual bool \mbox{\hyperlink{a00922_a44173fcb4d4c5cfc3f672474264ec27b}{events\+Is\+Empty}} () const =0
+\begin{DoxyCompactList}\small\item\em Check if there is no event trigered. \end{DoxyCompactList}\item 
+virtual std\+::pair$<$ bool, std\+::optional$<$ std\+::vector$<$ std\+::optional$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00910}{IComponent}} $>$ $>$ $>$ $>$ $>$ \mbox{\hyperlink{a00922_a3c0ef0017fae94063728a56ac90b02a4}{is\+Event\+Triggered}} (const std\+::string \&event) const =0
+\begin{DoxyCompactList}\small\item\em Check if an event was trigered. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00922_acf449d25b4d7586b33d563e61689f5e8}{add\+Event}} (const std\+::string \&event, std\+::optional$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00910}{IComponent}} $>$$>$ component=std\+::nullopt)=0
+\begin{DoxyCompactList}\small\item\em Add an event to list of trigered events. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00922_a31d98f0497d5712053e1bf53f01325e0}{clear\+Events}} ()=0
+\begin{DoxyCompactList}\small\item\em Remove all events from list of trigered events. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{a00886}{Arcade\+::\+Vector2f}} \& \mbox{\hyperlink{a00922_a6aa99b36ab45651d9eed367671ca3259}{get\+Mouse\+Position}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the last known mouse position. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{a00922_acb7d32bbeabb07f606f11047022de1b5}{set\+Mouse\+Position}} (const \mbox{\hyperlink{a00886}{Arcade\+::\+Vector2f}} \&mouse\+Position)=0
+\begin{DoxyCompactList}\small\item\em Set the last known mouse position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{a00922}{IEvent\+Manager}} interface. 
+
+One Event\+Manager to manage all events some events can be created by systems (because events are string) but some events are reserved by IGraph system\+: \char`\"{}\+MOUSE\+\_\+\+KEY1\+\_\+\+PRESSED\char`\"{} \char`\"{}\+MOUSE\+\_\+\+KEY2\+\_\+\+PRESSED\char`\"{} \char`\"{}\+MOUSE\+\_\+\+KEY3\+\_\+\+PRESSED\char`\"{} \char`\"{}\+MOUSE\+\_\+\+KEY4\+\_\+\+PRESSED\char`\"{} \char`\"{}\+MOUSE\+\_\+\+KEY5\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+A\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+B\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+C\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+D\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+E\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+G\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+H\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+I\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+J\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+K\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+L\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+M\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+N\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+O\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+P\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+Q\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+R\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+S\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+T\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+U\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+V\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+W\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+X\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+Y\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+Z\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+0\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+1\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+2\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+3\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+4\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+5\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+6\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+7\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+8\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+9\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+SPACE\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+ENTER\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+ESC\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+UP\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+DOWN\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+LEFT\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+RIGHT\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+TAB\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+BACKSPACE\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+DELETE\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+SHIFT\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+CTRL\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+ALT\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F1\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F2\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F3\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F4\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F5\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F6\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F7\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F8\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F9\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F10\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F11\+\_\+\+PRESSED\char`\"{} \char`\"{}\+KEY\+\_\+\+F12\+\_\+\+PRESSED\char`\"{} \char`\"{}\+WINDOW\+\_\+\+CLOSE\char`\"{} \char`\"{}\+WINDOW\+\_\+\+RESIZE\char`\"{} \char`\"{}\+WINDOW\+\_\+\+MINIMIZE\char`\"{}
+
+Some events are used to change libs such as \char`\"{}\+CHANGE\+\_\+\+GRAPH\char`\"{} with component \mbox{\hyperlink{a00906}{Change\+Lib\+Comp}} same goes for the game lib \char`\"{}\+CHANGE\+\_\+\+GAME\char`\"{} with component \mbox{\hyperlink{a00906}{Change\+Lib\+Comp}} \char`\"{}\+GAME\+\_\+\+END\char`\"{} Is the event create by game system to tell core to quit game and go main menu
+
+\char`\"{}\+QUIT\char`\"{} Is the event create by game or main menu to tell core to quit program 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00922_a2523607e48ced247a844e53c060fb001}\label{a00922_a2523607e48ced247a844e53c060fb001}} 
+\index{Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}!````~IEventManager@{$\sim$IEventManager}}
+\index{````~IEventManager@{$\sim$IEventManager}!Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$IEventManager()}{~IEventManager()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+ECS\+::\+IEvent\+Manager\+::$\sim$\+IEvent\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00922_acf449d25b4d7586b33d563e61689f5e8}\label{a00922_acf449d25b4d7586b33d563e61689f5e8}} 
+\index{Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}!addEvent@{addEvent}}
+\index{addEvent@{addEvent}!Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}}
+\doxysubsubsection{\texorpdfstring{addEvent()}{addEvent()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEvent\+Manager\+::add\+Event (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{event,  }\item[{std\+::optional$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00910}{IComponent}} $>$$>$}]{component = {\ttfamily std\+:\+:nullopt} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add an event to list of trigered events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The event to add \\
+\hline
+{\em component} & The component to add as optional parameter with the event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00922_a31d98f0497d5712053e1bf53f01325e0}\label{a00922_a31d98f0497d5712053e1bf53f01325e0}} 
+\index{Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}!clearEvents@{clearEvents}}
+\index{clearEvents@{clearEvents}!Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}}
+\doxysubsubsection{\texorpdfstring{clearEvents()}{clearEvents()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEvent\+Manager\+::clear\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove all events from list of trigered events. 
+
+\mbox{\Hypertarget{a00922_a44173fcb4d4c5cfc3f672474264ec27b}\label{a00922_a44173fcb4d4c5cfc3f672474264ec27b}} 
+\index{Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}!eventsIsEmpty@{eventsIsEmpty}}
+\index{eventsIsEmpty@{eventsIsEmpty}!Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}}
+\doxysubsubsection{\texorpdfstring{eventsIsEmpty()}{eventsIsEmpty()}}
+{\footnotesize\ttfamily virtual bool Arcade\+::\+ECS\+::\+IEvent\+Manager\+::events\+Is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if there is no event trigered. 
+
+\begin{DoxyReturn}{Returns}
+true if there is no event trigered 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00922_a6aa99b36ab45651d9eed367671ca3259}\label{a00922_a6aa99b36ab45651d9eed367671ca3259}} 
+\index{Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}!getMousePosition@{getMousePosition}}
+\index{getMousePosition@{getMousePosition}!Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}}
+\doxysubsubsection{\texorpdfstring{getMousePosition()}{getMousePosition()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{a00886}{Arcade\+::\+Vector2f}}\& Arcade\+::\+ECS\+::\+IEvent\+Manager\+::get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the last known mouse position. 
+
+\begin{DoxyReturn}{Returns}
+The last known mouse position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00922_a3c0ef0017fae94063728a56ac90b02a4}\label{a00922_a3c0ef0017fae94063728a56ac90b02a4}} 
+\index{Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}!isEventTriggered@{isEventTriggered}}
+\index{isEventTriggered@{isEventTriggered}!Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}}
+\doxysubsubsection{\texorpdfstring{isEventTriggered()}{isEventTriggered()}}
+{\footnotesize\ttfamily virtual std\+::pair$<$bool, std\+::optional$<$ std\+::vector$<$std\+::optional$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00910}{IComponent}}$>$ $>$ $>$ $>$ $>$ Arcade\+::\+ECS\+::\+IEvent\+Manager\+::is\+Event\+Triggered (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{event }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if an event was trigered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The event to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pair of bool (True if the event was trigered, False if the event was not trigered) and std\+::vector$<$std\+::optional$<$std\+::shared\+\_\+ptr$<$\+IComponent$>$$>$$>$ (list of the parameter passed as parameter to {\ttfamily add\+Event} method) Why a vector of optional? Because event of same type can be trigered more than one time in one frame 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00922_acb7d32bbeabb07f606f11047022de1b5}\label{a00922_acb7d32bbeabb07f606f11047022de1b5}} 
+\index{Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}!setMousePosition@{setMousePosition}}
+\index{setMousePosition@{setMousePosition}!Arcade::ECS::IEventManager@{Arcade::ECS::IEventManager}}
+\doxysubsubsection{\texorpdfstring{setMousePosition()}{setMousePosition()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+IEvent\+Manager\+::set\+Mouse\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a00886}{Arcade\+::\+Vector2f}} \&}]{mouse\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the last known mouse position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Position} & The last known mouse position \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Arcade/\+ECS/\mbox{\hyperlink{a00038}{IEvent\+Manager.\+hpp}}\end{DoxyCompactItemize}

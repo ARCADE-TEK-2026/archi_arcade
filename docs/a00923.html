@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: Arcade::ECS::ISystemManager Class Reference</title>
+<title>Architecture Arcade: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,213 +62,23 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00063.html">Arcade</a></li><li class="navelem"><a class="el" href="a00065.html">ECS</a></li><li class="navelem"><a class="el" href="a00923.html">ISystemManager</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00066.html">Arcade</a></li><li class="navelem"><a class="el" href="a00068.html">ECS</a></li><li class="navelem"><a class="el" href="a00926.html">ISystem</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00920.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Arcade::ECS::ISystemManager Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Arcade::ECS::ISystem Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00041_source.html">ISystemManager.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for Arcade::ECS::ISystemManager:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00921.png" border="0" usemap="#aArcade_1_1ECS_1_1ISystemManager_coll__map" alt="Collaboration graph"/></div>
-<map name="aArcade_1_1ECS_1_1ISystemManager_coll__map" id="aArcade_1_1ECS_1_1ISystemManager_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,336,259"/>
-</map>
-</div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a60867e72f13bcb4b9b58046c58adb0f5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00923.html#a60867e72f13bcb4b9b58046c58adb0f5">~ISystemManager</a> ()=default</td></tr>
-<tr class="separator:a60867e72f13bcb4b9b58046c58adb0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70c01e9c68714f136fe9be0905a1c34f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00923.html#a70c01e9c68714f136fe9be0905a1c34f">addSystem</a> (const std::string &amp;name, <a class="el" href="a00919.html">Arcade::ECS::ISystem</a> *system)=0</td></tr>
-<tr class="memdesc:a70c01e9c68714f136fe9be0905a1c34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a system to the system manager.  <a href="a00923.html#a70c01e9c68714f136fe9be0905a1c34f">More...</a><br /></td></tr>
-<tr class="separator:a70c01e9c68714f136fe9be0905a1c34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b1050fb958386f47e312c8c62bf2802"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00923.html#a1b1050fb958386f47e312c8c62bf2802">removeSystem</a> (const std::string &amp;name)=0</td></tr>
-<tr class="memdesc:a1b1050fb958386f47e312c8c62bf2802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a system from the system manager.  <a href="a00923.html#a1b1050fb958386f47e312c8c62bf2802">More...</a><br /></td></tr>
-<tr class="separator:a1b1050fb958386f47e312c8c62bf2802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab43c83834d0e48e9270dd4af328be26c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00923.html#ab43c83834d0e48e9270dd4af328be26c">update</a> (std::size_t deltaTime, <a class="el" href="a00915.html">Arcade::ECS::IEventManager</a> &amp;eventManager, <a class="el" href="a00895.html">Arcade::Core::IDisplayModule</a> &amp;displayModule, <a class="el" href="a00899.html">Arcade::Core::IGameModule</a> &amp;gameModule)=0</td></tr>
-<tr class="memdesc:ab43c83834d0e48e9270dd4af328be26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all systems of the system manager.  <a href="a00923.html#ab43c83834d0e48e9270dd4af328be26c">More...</a><br /></td></tr>
-<tr class="separator:ab43c83834d0e48e9270dd4af328be26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a60867e72f13bcb4b9b58046c58adb0f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60867e72f13bcb4b9b58046c58adb0f5">&#9670;&nbsp;</a></span>~ISystemManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Arcade::ECS::ISystemManager::~ISystemManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a70c01e9c68714f136fe9be0905a1c34f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70c01e9c68714f136fe9be0905a1c34f">&#9670;&nbsp;</a></span>addSystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Arcade::ECS::ISystemManager::addSystem </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00919.html">Arcade::ECS::ISystem</a> *&#160;</td>
-          <td class="paramname"><em>system</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Add a system to the system manager. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>The name of the system </td></tr>
-    <tr><td class="paramname">system</td><td>The system to add </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a1b1050fb958386f47e312c8c62bf2802"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b1050fb958386f47e312c8c62bf2802">&#9670;&nbsp;</a></span>removeSystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Arcade::ECS::ISystemManager::removeSystem </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Remove a system from the system manager. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>The name of the system to remove </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab43c83834d0e48e9270dd4af328be26c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab43c83834d0e48e9270dd4af328be26c">&#9670;&nbsp;</a></span>update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Arcade::ECS::ISystemManager::update </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>deltaTime</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00915.html">Arcade::ECS::IEventManager</a> &amp;&#160;</td>
-          <td class="paramname"><em>eventManager</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00895.html">Arcade::Core::IDisplayModule</a> &amp;&#160;</td>
-          <td class="paramname"><em>displayModule</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00899.html">Arcade::Core::IGameModule</a> &amp;&#160;</td>
-          <td class="paramname"><em>gameModule</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Update all systems of the system manager. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">deltaTime</td><td>The time since the last update </td></tr>
-    <tr><td class="paramname">entityManager</td><td>The list of entities </td></tr>
-    <tr><td class="paramname">eventManager</td><td>The list of events </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/Arcade/ECS/<a class="el" href="a00041_source.html">ISystemManager.hpp</a></li>
-</ul>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a00926.html">Arcade::ECS::ISystem</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a00926.html#ad2d6d8764095c527c7b5d3b5a174132e">run</a>(std::size_t deltaTime, Arcade::ECS::IEventManager &amp;, Arcade::Core::IDisplayModule &amp;displayModule, Arcade::Core::IGameModule &amp;gameModule)=0</td><td class="entry"><a class="el" href="a00926.html">Arcade::ECS::ISystem</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00926.html#a8a8d72403aef61fbc75ead3c3c2fdb3c">~ISystem</a>()=default</td><td class="entry"><a class="el" href="a00926.html">Arcade::ECS::ISystem</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+</table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 23 2023 00:15:39 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 24 2023 13:13:21 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -1,0 +1,60 @@
+\hypertarget{a00926}{}\doxysection{Arcade\+::ECS\+::ISystem Class Reference}
+\label{a00926}\index{Arcade::ECS::ISystem@{Arcade::ECS::ISystem}}
+
+
+The \mbox{\hyperlink{a00926}{ISystem}} interface.  
+
+
+
+
+{\ttfamily \#include $<$ISystem.\+hpp$>$}
+
+
+
+Collaboration diagram for Arcade\+::ECS\+::ISystem\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{a00924}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{a00926_a8a8d72403aef61fbc75ead3c3c2fdb3c}{$\sim$\+ISystem}} ()=default
+\item 
+virtual void \mbox{\hyperlink{a00926_ad2d6d8764095c527c7b5d3b5a174132e}{run}} (std\+::size\+\_\+t delta\+Time, \mbox{\hyperlink{a00922}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&, \mbox{\hyperlink{a00898}{Arcade\+::\+Core\+::\+IDisplay\+Module}} \&display\+Module, \mbox{\hyperlink{a00902}{Arcade\+::\+Core\+::\+IGame\+Module}} \&game\+Module)=0
+\begin{DoxyCompactList}\small\item\em Run the system implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{a00926}{ISystem}} interface. 
+
+Systems will inherits from this 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00926_a8a8d72403aef61fbc75ead3c3c2fdb3c}\label{a00926_a8a8d72403aef61fbc75ead3c3c2fdb3c}} 
+\index{Arcade::ECS::ISystem@{Arcade::ECS::ISystem}!````~ISystem@{$\sim$ISystem}}
+\index{````~ISystem@{$\sim$ISystem}!Arcade::ECS::ISystem@{Arcade::ECS::ISystem}}
+\doxysubsubsection{\texorpdfstring{$\sim$ISystem()}{~ISystem()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+ECS\+::\+ISystem\+::$\sim$\+ISystem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00926_ad2d6d8764095c527c7b5d3b5a174132e}\label{a00926_ad2d6d8764095c527c7b5d3b5a174132e}} 
+\index{Arcade::ECS::ISystem@{Arcade::ECS::ISystem}!run@{run}}
+\index{run@{run}!Arcade::ECS::ISystem@{Arcade::ECS::ISystem}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+ECS\+::\+ISystem\+::run (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{delta\+Time,  }\item[{\mbox{\hyperlink{a00922}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&}]{,  }\item[{\mbox{\hyperlink{a00898}{Arcade\+::\+Core\+::\+IDisplay\+Module}} \&}]{display\+Module,  }\item[{\mbox{\hyperlink{a00902}{Arcade\+::\+Core\+::\+IGame\+Module}} \&}]{game\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Run the system implementation. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Arcade/\+ECS/\mbox{\hyperlink{a00041}{ISystem.\+hpp}}\end{DoxyCompactItemize}
