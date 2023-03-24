@@ -94,6 +94,7 @@
   ----------------------------------------------------------------------------
 
   N.B.: L'écrivain de cette documentation prie de bien vouloir l'excuser pour la prise de partie, il sera heureux de débatre par l'intermédiaire d'issue sur github dans le cas où une information dans cette documentation serait fausse.
+  N.B.: Pour get des éléments dans un vecteur const il faut utiliser la méthode .at()
 
   lien du github: https://github.com/ARCADE-TEK-2026/archi_arcade
 
