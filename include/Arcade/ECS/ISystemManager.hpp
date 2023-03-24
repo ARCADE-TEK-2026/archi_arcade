@@ -26,7 +26,7 @@ namespace Arcade {
                  * @param system The system to add
                  */
                 virtual void addSystem(const std::string &name,
-                std::shared_ptr<Arcade::ECS::ISystem> system) = 0;
+                std::unique_ptr<Arcade::ECS::ISystem> system) = 0;
                 /**
                  * @brief Remove a system from the system manager
                  *
