@@ -69,7 +69,7 @@ namespace Arcade {
                  *
                  * @return The event manager only used for game
                  */
-                virtual Arcade::ECS::IEventManager &getGameEventManager() = 0;
+                virtual std::shared_ptr<Arcade::ECS::IEventManager>getGameEventManager() = 0;
         };
     } // namespace Core
 } // namespace Arcade

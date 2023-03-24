@@ -41,6 +41,9 @@ namespace Arcade {
                  *
                  * @param type The type of component to get
                  *
+                 * !!!ATTENTION!!!: You need to use .at()
+                 * in order to manipulate your map or vector because of const
+                 *
                  * @return The list of components filtered
                  */
                 virtual const std::vector<std::shared_ptr<IComponent>> &
