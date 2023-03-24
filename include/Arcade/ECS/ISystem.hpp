@@ -15,6 +15,9 @@ namespace Arcade {
         class IDisplayModule;
         class IGameModule;
     } // namespace Core
+    namespace Game {
+        class IScene;
+    }
 
     namespace ECS {
         /**

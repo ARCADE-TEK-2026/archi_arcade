@@ -44,13 +44,13 @@ namespace Arcade {
                  *
                  * @return The entity manager of the scene
                  */
-                virtual std::shared_ptr<ECS::IEntityManager>getEntityManager() = 0;
+                virtual std::shared_ptr<ECS::IEntityManager> getEntityManager() = 0;
                 /**
                  * @brief Get the system manager of the scene
                  *
                  * @return The system manager of the scene
                  */
-                virtual std::shared_ptr<ECS::ISystemManager>getSystemManager() = 0;
+                virtual std::shared_ptr<ECS::ISystemManager> getSystemManager() = 0;
         };
     } // namespace Game
 } // namespace Arcade
