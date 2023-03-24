@@ -41,8 +41,8 @@ namespace Arcade {
                  * @param eventManager The list of events
                  */
                 virtual void update(float deltaTime,
-                    Arcade::ECS::IEventManager &eventManager,
-                    Arcade::Game::IScene &currentScene) = 0;
+                Arcade::ECS::IEventManager &eventManager,
+                Arcade::Game::IScene &currentScene) = 0;
         };
     } // namespace ECS
 } // namespace Arcade

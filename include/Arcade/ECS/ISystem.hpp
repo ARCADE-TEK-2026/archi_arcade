@@ -32,8 +32,8 @@ namespace Arcade {
                  * @brief Run the system implementation
                  */
                 virtual void run(float deltaTime,
-                    Arcade::ECS::IEventManager &eventManager,
-                    Arcade::Game::IScene &currentScene) = 0;
+                Arcade::ECS::IEventManager &eventManager,
+                Arcade::Game::IScene &currentScene) = 0;
         };
     } // namespace ECS
 } // namespace Arcade

@@ -7,8 +7,8 @@
 
 #pragma once
 
-#include "IEventManager.hpp"
 #include "IEntityManager.hpp"
+#include "IEventManager.hpp"
 
 namespace Arcade {
     namespace Core {
@@ -24,7 +24,8 @@ namespace Arcade {
                 /**
                  * @brief function that will be called each frame by the core
                  *
-                 * This function is called right after the `update` of the IGameModule
+                 * This function is called right after the `update` of the
+                 * IGameModule
                  *
                  * @param eventManager the event manager (you must add events)
                  * @param entityManager the entity manager

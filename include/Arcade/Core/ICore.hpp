@@ -26,7 +26,8 @@ namespace Arcade {
                 virtual ~ICore() = default;
 
                 /**
-                 * @brief function that will call `update` of IGameModule and IDisplayModule
+                 * @brief function that will call `update` of IGameModule and
+                 * IDisplayModule
                  */
                 virtual void update() = 0;
         };

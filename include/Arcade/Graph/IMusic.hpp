@@ -17,7 +17,8 @@ namespace Arcade {
          *
          * The IMusic class is the class where you can manipulate Sounds and
          * Musics.
-         * ATTENTION: This class is of CompType MUSIC (you need to set the type in order for the graphic to play it)
+         * ATTENTION: This class is of CompType MUSIC (you need to set the type
+         * in order for the graphic to play it)
          */
         struct IMusic : public Arcade::ECS::IComponent {
             public:

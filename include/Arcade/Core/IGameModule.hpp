@@ -9,8 +9,8 @@
 #pragma once
 
 #include <string>
-#include "IEventManager.hpp"
 #include "IEntityManager.hpp"
+#include "IEventManager.hpp"
 #include "IScene.hpp"
 
 namespace Arcade {
@@ -32,8 +32,8 @@ namespace Arcade {
                  * @param deltaTime time passed since last frame
                  * @param eventManager the event manager
                  */
-                virtual void update(float deltaTime,
-                Arcade::ECS::IEventManager &eventManager) = 0;
+                virtual void update(
+                float deltaTime, Arcade::ECS::IEventManager &eventManager) = 0;
                 /**
                  * @brief Get the current active scene
                  *
@@ -45,7 +45,8 @@ namespace Arcade {
                  *
                  * @return The entity manager of the current active scene
                  */
-                virtual Arcade::ECS::IEntityManager &getCurrentEntityManager() = 0;
+                virtual Arcade::ECS::IEntityManager &
+                getCurrentEntityManager() = 0;
         };
     } // namespace Core
 } // namespace Arcade

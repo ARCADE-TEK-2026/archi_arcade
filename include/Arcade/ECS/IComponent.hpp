@@ -22,7 +22,8 @@ namespace Arcade {
             public:
                 virtual ~IComponent() = default;
                 /**
-                 * @brief Type of the component (it let you cast without headache)
+                 * @brief Type of the component (it let you cast without
+                 * headache)
                  */
                 CompType type;
                 /**

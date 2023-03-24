@@ -19,7 +19,8 @@ namespace Arcade {
          *
          * The IText class is the class where you can manipulate text.
          *
-         * ATTENTION: This class is of CompType TEXT (you need to set the type in order for the graphic to play it)
+         * ATTENTION: This class is of CompType TEXT (you need to set the type
+         * in order for the graphic to play it)
          */
         struct IText : public Arcade::ECS::IComponent {
             public:
@@ -40,7 +41,8 @@ namespace Arcade {
                  */
                 Color textColor;
                 /**
-                 * @brief The sprite position in 3Dimension (you can use only x and y if you want)
+                 * @brief The sprite position in 3Dimension (you can use only x
+                 * and y if you want)
                  *
                  * Positions are in percentages. (0 -> 100)
                  */

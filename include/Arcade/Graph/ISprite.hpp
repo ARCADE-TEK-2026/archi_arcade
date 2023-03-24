@@ -19,7 +19,8 @@ namespace Arcade {
          *
          * The ISprite interface is the class where you can manipulate your
          * sprites.
-         * ATTENTION: This class is of CompType SPRITE (you need to set the type in order for the graphic to play it)
+         * ATTENTION: This class is of CompType SPRITE (you need to set the type
+         * in order for the graphic to play it)
          */
         struct ISprite : public Arcade::ECS::IComponent {
             public:
@@ -32,7 +33,8 @@ namespace Arcade {
                  */
                 TTYData ttyData;
                 /**
-                 * @brief The sprite position in 3Dimension (you can use only x and y if you want)
+                 * @brief The sprite position in 3Dimension (you can use only x
+                 * and y if you want)
                  *
                  * Positions are in percentages. (0 -> 100)
                  */
@@ -45,7 +47,8 @@ namespace Arcade {
                  * @brief The index of the current sprite
                  *
                  * to get the rect of the current sprite:
-                 * sprite.rect.left + (sprite.rect.width * sprite.currentRectIndex);
+                 * sprite.rect.left + (sprite.rect.width *
+                 * sprite.currentRectIndex);
                  */
                 int currentRectIndex;
         };
