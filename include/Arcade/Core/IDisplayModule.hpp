@@ -108,7 +108,7 @@ namespace Arcade {
                 /**
                  * @brief Get he size of the window
                  */
-                virtual Arcade::Vector2f &getWindowSize() = 0;
+                virtual const Arcade::Vector2f &getWindowSize() const = 0;
                 /**
                  * @brief Set the window size
                  *
