@@ -99,7 +99,7 @@ namespace Arcade {
                 /**
                  * @brief Get he size of the window
                  */
-                virtual Arcade::Vector2f &getWindowSize() = 0;
+                virtual Arcade::Vector2f getWindowSize() = 0;
                 /**
                  * @brief Set the window size
                  *
