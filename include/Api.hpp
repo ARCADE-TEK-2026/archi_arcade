@@ -7,7 +7,8 @@
 
 #pragma once
 
-#include "ISystemManager.hpp"
+#include "IGameModule.hpp"
+#include "IDisplayModule.hpp"
 
 #ifdef _WIN32
     #define EXPORT __declspec(dllexport)
