@@ -11,7 +11,7 @@
 #include "IEventManager.hpp"
 
 namespace Arcade {
-    namespace Core {
+    namespace Graph {
         /**
          * @brief The IDisplayModule interface
          *

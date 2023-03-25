@@ -14,7 +14,7 @@
 #include "IScene.hpp"
 
 namespace Arcade {
-    namespace Core {
+    namespace Game {
         /**
          * @brief The IGameModule interface
          *
