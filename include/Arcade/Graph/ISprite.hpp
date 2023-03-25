@@ -19,96 +19,38 @@ namespace Arcade {
          *
          * The ISprite interface is the class where you can manipulate your
          * sprites.
-         * ATTENTION: This class is of CompType SPRITE
-         * ATTENTION: You must have a parameter in your constructor
-         * in order to set his id.
+         * ATTENTION: This class is of CompType SPRITE (you need to set the type
+         * in order for the graphic to play it)
          */
-        class ISprite : public Arcade::ECS::IComponent {
+        struct ISprite : public Arcade::ECS::IComponent {
             public:
-                virtual ~ISprite() = default;
                 /**
-                 * @brief Get the Id object
+                 * @brief The path of the sprite
+                 */
+                std::string path;
+                /**
+                 * @brief Data for tty graphic lib to be hable to draw it
+                 */
+                TTYData ttyData;
+                /**
+                 * @brief The sprite position in 3Dimension (you can use only x
+                 * and y if you want)
                  *
-                 * @return The Id of the Sprite.
+                 * Positions are in percentages. (0 -> 100)
                  */
-                virtual const std::string &getId() const override = 0;
+                Arcade::Vector3f pos;
                 /**
-                 * @brief Get the path of the Sprite
+                 * @brief The sprite rect of one sprite in the spritesheet path
+                 */
+                Rect rect;
+                /**
+                 * @brief The index of the current sprite
                  *
-                 * @return The path of the Sprite
+                 * to get the rect of the current sprite:
+                 * sprite.rect.left + (sprite.rect.width *
+                 * sprite.currentRectIndex);
                  */
-                virtual const std::string &getPath() const = 0;
-                /**
-                 * @brief set the path of the Sprite
-                 */
-                virtual void setPath(const std::string &path) = 0;
-                /**
-                 * @brief Get the data to print when it's TTY.
-                 *
-                 * @return The TTY data.
-                 */
-                virtual const TTYData &getTTYData() const = 0;
-                /**
-                 * @brief Set tty data
-                 *
-                 * @param ttyData The TTY data.
-                 */
-                virtual void setTTYData(const TTYData &ttyData) = 0;
-                /**
-                 * @brief Get the sprite position in 3Dimension.
-                 *
-                 * The positions data are in percentages.
-                 *
-                 * @return The path of the Sprite.
-                 */
-                virtual const Arcade::Vector3f &getPos() const = 0;
-                /**
-                 * @brief Set the sprite position in 3Dimension.
-                 */
-                virtual void setPos(const Arcade::Vector3f &pos) = 0;
-                /**
-                 * @brief Get the sprite size in 3Dimension.
-                 *
-                 * The size data is in percentages.
-                 *
-                 * @return The path of the Sprite.
-                 */
-                virtual const Arcade::Vector3f &getSize() const = 0;
-                /**
-                 * @brief Set the sprite size in 3Dimension.
-                 */
-                virtual void setSize(const Arcade::Vector3f &size) = 0;
-                /**
-                 * @brief Get the sprite Color.
-                 *
-                 * @return The Color data
-                 */
-                virtual const Color &getColor() const = 0;
-
-                /**
-                 * @brief Set the sprite Color.
-                 */
-                virtual void setColor(const Color &color) = 0;
-                /**
-                 * @brief Get the sprite rectangle.
-                 *
-                 * @return The Rect data.
-                 */
-                virtual const Rect &getRect() const = 0;
-                /**
-                 * @brief Set the sprite rectangle.
-                 */
-                virtual void setRect(const Rect &rect) = 0;
-                /**
-                 * @brief Get the sprite Scale.
-                 *
-                 * @return The Scale data.
-                 */
-                virtual float getScale() const = 0;
-                /**
-                 * @brief Set the sprite Scale.
-                 */
-                virtual void setScale(float scale) = 0;
+                int currentRectIndex;
         };
     } // namespace Graph
 } // namespace Arcade

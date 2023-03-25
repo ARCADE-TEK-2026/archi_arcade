@@ -39,18 +39,9 @@ namespace Arcade {
                 /**
                  * @brief Get the entity manager of the scene
                  *
-                 * !!!ATTENTION!!!: Shared_ptr is used instead of 'unique_ptr &'
-                 * because of dereferencing unique_ptr
-                 *
                  * @return The entity manager of the scene
                  */
-                virtual std::shared_ptr<ECS::IEntityManager>getEntityManager() = 0;
-                /**
-                 * @brief Get the system manager of the scene
-                 *
-                 * @return The system manager of the scene
-                 */
-                virtual std::shared_ptr<ECS::ISystemManager>getSystemManager() = 0;
+                virtual ECS::IEntityManager &getEntityManager() = 0;
         };
     } // namespace Game
 } // namespace Arcade
