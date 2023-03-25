@@ -95,12 +95,10 @@ namespace Arcade {
          *
          * Some events are used to change libs
          * such as
-         * "CHANGE_GRAPH" with component ChangeLibComp
-         * same goes for the game lib
-         * "CHANGE_GAME" with component ChangeLibComp
+         * "CHANGE_GRAPH" to tell core to change the graphical lib used
+         * "CHANGE_GAME" to tell core to change the game played
          * "GAME_END" Is the event create by game system to tell core to quit
          * game and go main menu
-         *
          * "QUIT" Is the event create by game or main menu to tell core to quit
          * program
          *
