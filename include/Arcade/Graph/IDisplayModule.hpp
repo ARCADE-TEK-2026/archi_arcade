@@ -31,8 +31,8 @@ namespace Arcade {
                  * @param entityManager the entity manager
                  */
                 virtual void update(float delta,
-                    Arcade::ECS::IEventManager &eventManager,
-                    Arcade::ECS::IEntityManager &entityManager) = 0;
+                Arcade::ECS::IEventManager &eventManager,
+                Arcade::ECS::IEntityManager &entityManager) = 0;
         };
-    } // namespace Core
+    } // namespace Graph
 } // namespace Arcade

@@ -32,8 +32,8 @@ namespace Arcade {
                  * @param deltaTime time passed since last frame
                  * @param eventManager the event manager
                  */
-                virtual void update(float deltaTime,
-                    Arcade::ECS::IEventManager &eventManager) = 0;
+                virtual void update(
+                float deltaTime, Arcade::ECS::IEventManager &eventManager) = 0;
                 /**
                  * @brief Get the entity manager of the current active scene
                  *
@@ -42,5 +42,5 @@ namespace Arcade {
                 virtual Arcade::ECS::IEntityManager &
                 getCurrentEntityManager() = 0;
         };
-    } // namespace Core
+    } // namespace Game
 } // namespace Arcade

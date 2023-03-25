@@ -52,7 +52,8 @@ extern "C"
      *
      * @param displayModule A ptr on IDisplayModule
      */
-    EXPORT void destroyDisplayModule(Arcade::Core::IDisplayModule *displayModule);
+    EXPORT void destroyDisplayModule(
+    Arcade::Core::IDisplayModule *displayModule);
 
     /**
      * @brief The Shared lib entry point to get lib name

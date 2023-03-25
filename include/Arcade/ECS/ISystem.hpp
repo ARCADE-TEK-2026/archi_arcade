@@ -8,8 +8,8 @@
 #pragma once
 
 #include <cstddef>
-#include "IEventManager.hpp"
 #include "IEntityManager.hpp"
+#include "IEventManager.hpp"
 
 namespace Arcade {
     namespace Core {
