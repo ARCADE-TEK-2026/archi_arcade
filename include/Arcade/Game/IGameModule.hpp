@@ -18,7 +18,8 @@ namespace Arcade {
         /**
          * @brief The IGameModule interface
          *
-         * The IGameModule is passed to all systems
+         * This concret class will be created by the game .so and will be destroyed by the .so through
+         * getGameModule() method and destroyGameModule() method
          */
         class IGameModule {
             public:

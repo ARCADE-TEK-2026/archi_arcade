@@ -15,7 +15,8 @@ namespace Arcade {
         /**
          * @brief The IDisplayModule interface
          *
-         * IDisplayModule is the interface given by all graphical lib .so
+         * This concret class will be created by the game .so and will be destroyed by the .so through
+         * getDisplayModule() method and destroyDisplayModule() method
          */
         class IDisplayModule {
             public:
