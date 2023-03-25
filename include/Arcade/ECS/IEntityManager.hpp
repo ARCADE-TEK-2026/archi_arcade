@@ -45,6 +45,15 @@ namespace Arcade {
                 virtual std::unique_ptr<std::vector<std::shared_ptr<IEntity>>>
                 getEntitiesByComponentType(CompType comp) const = 0;
                 /**
+                 * @brief Get all components created by this manager of type CompType
+                 *
+                 * @param comp The component type to check in each entity
+                 *
+                 * @return The vector
+                 */
+                virtual std::unique_ptr<std::vector<std::shared_ptr<IComponent>>>
+                getComponentsByComponentType(CompType comp) const = 0;
+                /**
                  * @brief Get the entity created by this manager that have
                  * the requested ID
                  *
