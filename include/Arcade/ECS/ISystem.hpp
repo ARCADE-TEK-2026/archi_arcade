@@ -9,15 +9,13 @@
 
 #include <cstddef>
 #include "IEventManager.hpp"
+#include "IEntityManager.hpp"
 
 namespace Arcade {
     namespace Core {
         class IDisplayModule;
         class IGameModule;
     } // namespace Core
-    namespace Game {
-        class IScene;
-    }
 
     namespace ECS {
         /**
@@ -33,7 +31,7 @@ namespace Arcade {
                  */
                 virtual void run(float deltaTime,
                 Arcade::ECS::IEventManager &eventManager,
-                Arcade::Game::IScene &currentScene) = 0;
+                Arcade::ECS::IEntityManager &currentScene) = 0;
         };
     } // namespace ECS
 } // namespace Arcade
