@@ -42,7 +42,7 @@ namespace Arcade {
                  */
                 virtual void update(float deltaTime,
                 Arcade::ECS::IEventManager &eventManager,
-                Arcade::Game::IScene &currentScene) = 0;
+                Arcade::ECS::IEntityManager &currentScene) = 0;
         };
     } // namespace ECS
 } // namespace Arcade
