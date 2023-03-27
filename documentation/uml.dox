@@ -43,26 +43,32 @@
 
   À implementer:
   ```cpp
-  class Arcade::Core::ICore;            // La classe principal pour le binaire arcade.
-                                        // Elle doit avoir au moins le main menu, le IGameModule du jeux
-                                        // actuel (si chargé), le IDisplayModule de la librairie actuel,
-                                        // et un IEventManager qui sera passé en parametre
-                                        // à la partie graphique et à la partie jeux.
-                                        // À chaque frame, il faut appeler la méthode `update`.
-                                        // La méthode `update` doit:
-                                        // - regarder si des évènements survenus dans le IEventManager:
-                                        //    - demande à changer de lib graphique
-                                        //    - demande à changer de lib de jeux
-                                        //    - demande à quiter le jeux
-                                        //    - demande à quiter le programme
-                                        // - si un jeux est chargé
-                                        //     - appeler le `update` du IGameModule
-                                        // - sinon
-                                        //     - appeler le `update` du main menu
-                                        // - appeler le `update` du IDisplayModule
+  /*
+    La classe principal pour le binaire arcade.
+    Elle doit avoir au moins le main menu, le IGameModule du jeux
+    actuel (si chargé), le IDisplayModule de la librairie actuel,
+    et un IEventManager qui sera passé en parametre
+    à la partie graphique et à la partie jeux.
+    À chaque frame, il faut appeler la méthode `update`.
+    La méthode `update` doit:
+    - regarder si des évènements survenus dans le IEventManager:
+       - demande à changer de lib graphique
+       - demande à changer de lib de jeux
+       - demande à quiter le jeux
+       - demande à quiter le programme
+    - si un jeux est chargé
+        - appeler le `update` du IGameModule
+    - sinon
+        - appeler le `update` du main menu
+    - appeler le `update` du IDisplayModule
+  */
+  class Arcade::Core::ICore;
 
-  class Arcade::ECS::IEventmanager;     // Le gestionneur des évènements survenu dans toute
-                                        // l'éxecution du programme.
+  /*
+    Le gestionneur des évènements survenu dans toute
+    l'éxecution du programme.
+  */
+  class Arcade::ECS::IEventmanager;
   ```
 
   ----------------------------------------------------------------------------
@@ -70,38 +76,64 @@
 
   À implementer dans chaque jeux:
   ```cpp
-  class Arcade::ECS::IEntity;           // L'unité la plus petite de l'ECS, elle possède des composant.
-                                        // C'est la relation composant-system(expliqué plus tard)
-                                        // qui permet à un ECS de réaliser des actions.
+  /*
+    L'unité la plus petite de l'ECS, elle possède des composant.
+    C'est la relation composant-system(expliqué plus tard)
+    qui permet à un ECS de réaliser des actions.
+  */
+  class Arcade::ECS::IEntity;
 
-  class Arcade::ECS::IComponent;        // Un composant représente uniquement des variables que l'on
-                                        // vient ajouter à une entité.
+  /*
+    Un composant représente uniquement des variables que l'on
+    vient ajouter à une entité.
+  */
+  class Arcade::ECS::IComponent;
 
-  class Arcade::ECS::IEntityManager;    // Un gestionneur d'entité.
-                                        // Il permet de facilité la recherche de certaines entités.
+  /*
+    Un gestionneur d'entité.
+    Il permet de facilité la recherche de certaines entités.
+  */
+  class Arcade::ECS::IEntityManager;
 
-  class Arcade::ECS::ISystem;           // Ce sont des classes qui sont appelées à chaque frame du
-                                        // jeux avec leur méthode `run`.
+  /*
+    Ce sont des classes qui sont appelées à chaque frame du
+    jeux avec leur méthode `run`.
+  */
+  class Arcade::ECS::ISystem;
 
-  class Arcade::ECS::ISystemManager;    // Un gestionneur de systeme.
-                                        // Il permet de faciliter l'appel de toutes les méthode `run`
-                                        // de tous les systemes qu'il posséde.
+  /*
+    Un gestionneur de systeme.
+    Il permet de faciliter l'appel de toutes les méthode `run`
+    de tous les systemes qu'il posséde.
+  */
+  class Arcade::ECS::ISystemManager;
 
-  class Arcade::Game::IScene;           // Représente une étape de cinématique/jeux du jeux.
-                                        // La première fois qu'elle est lancé, la méthode `init`
-                                        // est appelée.
-                                        // Quand la scene est quitté (on change de scene/...)
-                                        // la méthode `close` est appelée.
+  /*
+    Représente une étape de cinématique/jeux du jeux.
+    La première fois qu'elle est lancé, la méthode `init`
+    est appelée.
+    Quand la scene est quitté (on change de scene/...)
+    la méthode `close` est appelée.
+  */
+  class Arcade::Game::IScene;
 
-  class Arcade::Game::IGameModule;      // L'interface par laquelle le binaire arcade inter-agit.
-                                        // À chaque frame, la méthode `update` est appelée.
-                                        // À chaque frame, la méthode `getCurrentEntityManager`
-                                        // est appelée. Cela permet de passer les entitées qu'il
-                                        // faut au IDisplayModule (qui lui va s'occuper d'afficher ce qu'il comprend)
+  /*
+    L'interface par laquelle le binaire arcade inter-agit.
+    À chaque frame, la méthode `update` est appelée.
+    À chaque frame, la méthode `getCurrentEntityManager`
+    est appelée. Cela permet de passer les entitées qu'il
+    faut au IDisplayModule (qui lui va s'occuper d'afficher ce qu'il comprend)
+  */
+  class Arcade::Game::IGameModule;
 
-  class Arcade::Graph::IMusic;          // Des composants "normalisés" qui permettent
-  class Arcade::Graph::IText;           // au IDisplayModule d'affiché/de jouer
-  class Arcade::Graph::ISprite;         // ces composants.
+  /*
+    Des composants "normalisés" qui permettent
+    au IDisplayModule d'affiché/de jouer
+    ces composants.
+  */
+  class Arcade::Graph::IMusic; 
+  class Arcade::Graph::IText;
+  class Arcade::Graph::ISprite;
   ```
 
   ----------------------------------------------------------------------------
@@ -109,19 +141,23 @@
 
   À implementer dans chaque lib graphic:
   ```cpp
-  class Arcade::Graph::IDisplayModule;  // L'interface par laquelle le binaire arcade inter-agit.
-                                        // Il permet de faire un rendu graphique des composant
-                                        // "normalisés" (IText, IMusic, ISprite)
-                                        // À chaque frame, la méthode `update` est appelée.
-                                        // Il est attendu à ce que cette méthode mette à jour
-                                        // les évènements survenus.
+  /*
+    L'interface par laquelle le binaire arcade inter-agit.
+    Il permet de faire un rendu graphique des composant
+    "normalisés" (IText, IMusic, ISprite)
+    À chaque frame, la méthode `update` est appelée.
+    Il est attendu à ce que cette méthode mette à jour
+    les évènements survenus.
+  */
+  class Arcade::Graph::IDisplayModule;
 
-                                        // Pour vous faciliter la vie, vous pouvez avoir la même architecure que dans le IGameModule:
-                                        // Un ISystemManager qui manage vos différents systemes.
-                                        // Dans ce cas:
-
-  class Arcade::ECS::ISystem;           // regardez les infos plus haut.
-  class Arcade::ECS::ISystemMAnager;    // regardez plus haut.
+  /*
+    Pour vous faciliter la vie, vous pouvez avoir la même architecure que dans le IGameModule:
+    Un ISystemManager qui manage vos différents systemes.
+    Dans ce cas:
+  */
+  class Arcade::ECS::ISystem;
+  class Arcade::ECS::ISystemMAnager;
   ```
 
 
