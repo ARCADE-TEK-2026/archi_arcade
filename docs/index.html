@@ -100,97 +100,41 @@ $(function() {
 </ul>
 <hr  />
 <p> LE CORE</p>
-<p>À implementer: </p><div class="fragment"><div class="line"><span class="keyword">class </span><a class="code" href="a00888.html">Arcade::Core::ICore</a>;            <span class="comment">// La classe principal pour le binaire arcade.</span></div>
-<div class="line">                                      <span class="comment">// Elle doit avoir au moins le main menu, le IGameModule du jeux</span></div>
-<div class="line">                                      <span class="comment">// actuel (si chargé), le IDisplayModule de la librairie actuel,</span></div>
-<div class="line">                                      <span class="comment">// et un IEventManager qui sera passé en parametre</span></div>
-<div class="line">                                      <span class="comment">// à la partie graphique et à la partie jeux.</span></div>
-<div class="line">                                      <span class="comment">// À chaque frame, il faut appeler la méthode `update`.</span></div>
-<div class="line">                                      <span class="comment">// La méthode `update` doit:</span></div>
-<div class="line">                                      <span class="comment">// - regarder si des évènements survenus dans le IEventManager:</span></div>
-<div class="line">                                      <span class="comment">//    - demande à changer de lib graphique</span></div>
-<div class="line">                                      <span class="comment">//    - demande à changer de lib de jeux</span></div>
-<div class="line">                                      <span class="comment">//    - demande à quiter le jeux</span></div>
-<div class="line">                                      <span class="comment">//    - demande à quiter le programme</span></div>
-<div class="line">                                      <span class="comment">// - si un jeux est chargé</span></div>
-<div class="line">                                      <span class="comment">//     - appeler le `update` du IGameModule</span></div>
-<div class="line">                                      <span class="comment">// - sinon</span></div>
-<div class="line">                                      <span class="comment">//     - appeler le `update` du main menu</span></div>
-<div class="line">                                      <span class="comment">// - appeler le `update` du IDisplayModule</span></div>
+<p>À implementer: </p><div class="fragment"><div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment">  La classe principal pour le binaire arcade.</span></div>
+<div class="line"><span class="comment">  Elle doit avoir au moins le main menu, le IGameModule du jeux</span></div>
+<div class="line"><span class="comment">  actuel (si chargé), le IDisplayModule de la librairie actuel,</span></div>
+<div class="line"><span class="comment">  et un IEventManager qui sera passé en parametre</span></div>
+<div class="line"><span class="comment">  à la partie graphique et à la partie jeux.</span></div>
+<div class="line"><span class="comment">  À chaque frame, il faut appeler la méthode `update`.</span></div>
+<div class="line"><span class="comment">  La méthode `update` doit:</span></div>
+<div class="line"><span class="comment">  - regarder si des évènements survenus dans le IEventManager:</span></div>
+<div class="line"><span class="comment">     - demande à changer de lib graphique</span></div>
+<div class="line"><span class="comment">     - demande à changer de lib de jeux</span></div>
+<div class="line"><span class="comment">     - demande à quiter le jeux</span></div>
+<div class="line"><span class="comment">     - demande à quiter le programme</span></div>
+<div class="line"><span class="comment">  - si un jeux est chargé</span></div>
+<div class="line"><span class="comment">      - appeler le `update` du IGameModule</span></div>
+<div class="line"><span class="comment">  - sinon</span></div>
+<div class="line"><span class="comment">      - appeler le `update` du main menu</span></div>
+<div class="line"><span class="comment">  - appeler le `update` du IDisplayModule</span></div>
+<div class="line"><span class="comment">*/</span></div>
+<div class="line"><span class="keyword">class </span><a class="code" href="a00888.html">Arcade::Core::ICore</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">class </span>Arcade::ECS::IEventmanager;     <span class="comment">// Le gestionneur des évènements survenu dans toute</span></div>
-<div class="line">                                      <span class="comment">// l&#39;éxecution du programme.</span></div>
+<div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment">  Le gestionneur des évènements survenu dans toute</span></div>
+<div class="line"><span class="comment">  l&#39;éxecution du programme.</span></div>
+<div class="line"><span class="comment">*/</span></div>
+<div class="line"><span class="keyword">class </span>Arcade::ECS::IEventmanager;</div>
 <div class="ttc" id="aa00888_html"><div class="ttname"><a href="a00888.html">Arcade::Core::ICore</a></div><div class="ttdoc">The ICore class.</div><div class="ttdef"><b>Definition:</b> ICore.hpp:24</div></div>
 </div><!-- fragment --><hr  />
 <p> LES JEUX</p>
-<p>À implementer dans chaque jeux: </p><div class="fragment"><div class="line">  <span class="keyword">class </span><a class="code" href="a00896.html">Arcade::ECS::IEntity</a>;           <span class="comment">// L&#39;unité la plus petite de l&#39;ECS, elle possède des composant.</span></div>
-<div class="line">C<span class="stringliteral">&#39;est la relation composant-system(expliqué plus tard)</span></div>
-<div class="line"><span class="stringliteral">qui permet à un ECS de réaliser des actions.</span></div>
-<div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">  class Arcade::ECS::IComponent;        // Un composant représente uniquement des variables que l&#39;</span>on</div>
-<div class="line">vient ajouter à une entité.</div>
-<div class="line"> </div>
-<div class="line">  <span class="keyword">class </span><a class="code" href="a00900.html">Arcade::ECS::IEntityManager</a>;    <span class="comment">// Un gestionneur d&#39;entité.</span></div>
-<div class="line">Il permet de facilité la recherche de certaines entités.</div>
-<div class="line"> </div>
-<div class="line">  <span class="keyword">class </span><a class="code" href="a00908.html">Arcade::ECS::ISystem</a>;           <span class="comment">// Ce sont des classes qui sont appelées à chaque frame du</span></div>
-<div class="line">jeux avec leur méthode `<a class="code" href="a00908.html#a3ead01729785e8e87224626ea7bbda20">run</a>`.</div>
-<div class="line"> </div>
-<div class="line">  <span class="keyword">class </span><a class="code" href="a00912.html">Arcade::ECS::ISystemManager</a>;    <span class="comment">// Un gestionneur de systeme.</span></div>
-<div class="line">Il permet de faciliter l<span class="stringliteral">&#39;appel de toutes les méthode `run`</span></div>
-<div class="line"><span class="stringliteral">de tous les systemes qu&#39;</span>il posséde.</div>
-<div class="line"> </div>
-<div class="line">  <span class="keyword">class </span><a class="code" href="a00920.html">Arcade::Game::IScene</a>;           <span class="comment">// Représente une étape de cinématique/jeux du jeux.</span></div>
-<div class="line">La première fois qu<span class="stringliteral">&#39;elle est lancé, la méthode `init`</span></div>
-<div class="line"><span class="stringliteral">est appelée.</span></div>
-<div class="line"><span class="stringliteral">Quand la scene est quitté (on change de scene/...)</span></div>
-<div class="line"><span class="stringliteral">la méthode `close` est appelée.</span></div>
-<div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">  class Arcade::Game::IGameModule;      // L&#39;</span><span class="keyword">interface </span>par laquelle le binaire arcade inter-agit.</div>
-<div class="line">À chaque frame, la méthode `update` est appelée.</div>
-<div class="line">À chaque frame, la méthode `getCurrentEntityManager`</div>
-<div class="line">est appelée. Cela permet de passer les entitées qu&#39;il</div>
-<div class="line">faut au IDisplayModule (qui lui va s&#39;occuper d&#39;afficher ce qu&#39;il comprend)</div>
-<div class="line"> </div>
-<div class="line">  class <a class="code" href="a00060.html">Arcade</a>::Graph::IMusic;          <span class="comment">// Des composants &quot;normalisés&quot; qui permettent</span></div>
-<div class="line">  class <a class="code" href="a00948.html">Arcade::Graph::IText</a>;           <span class="comment">// au IDisplayModule d&#39;affiché/de jouer</span></div>
-<div class="line">  class <a class="code" href="a00944.html">Arcade::Graph::ISprite</a>;         <span class="comment">// ces composants.</span></div>
-<div class="ttc" id="aa00896_html"><div class="ttname"><a href="a00896.html">Arcade::ECS::IEntity</a></div><div class="ttdoc">The IEntity interface.</div><div class="ttdef"><b>Definition:</b> IEntity.hpp:22</div></div>
-<div class="ttc" id="aa00900_html"><div class="ttname"><a href="a00900.html">Arcade::ECS::IEntityManager</a></div><div class="ttdoc">Manage the creation of entities and their access.</div><div class="ttdef"><b>Definition:</b> IEntityManager.hpp:19</div></div>
-<div class="ttc" id="aa00908_html"><div class="ttname"><a href="a00908.html">Arcade::ECS::ISystem</a></div><div class="ttdoc">The ISystem interface.</div><div class="ttdef"><b>Definition:</b> ISystem.hpp:26</div></div>
-<div class="ttc" id="aa00908_html_a3ead01729785e8e87224626ea7bbda20"><div class="ttname"><a href="a00908.html#a3ead01729785e8e87224626ea7bbda20">Arcade::ECS::ISystem::run</a></div><div class="ttdeci">virtual void run(float deltaTime, Arcade::ECS::IEventManager &amp;eventManager, Arcade::ECS::IEntityManager &amp;currentScene)=0</div><div class="ttdoc">Run the system implementation.</div></div>
-<div class="ttc" id="aa00912_html"><div class="ttname"><a href="a00912.html">Arcade::ECS::ISystemManager</a></div><div class="ttdef"><b>Definition:</b> ISystemManager.hpp:19</div></div>
-<div class="ttc" id="aa00920_html"><div class="ttname"><a href="a00920.html">Arcade::Game::IScene</a></div><div class="ttdoc">The IScene interface.</div><div class="ttdef"><b>Definition:</b> IScene.hpp:18</div></div>
-<div class="ttc" id="aa00944_html"><div class="ttname"><a href="a00944.html">Arcade::Graph::ISprite</a></div><div class="ttdoc">The ISprite class.</div><div class="ttdef"><b>Definition:</b> ISprite.hpp:25</div></div>
-<div class="ttc" id="aa00948_html"><div class="ttname"><a href="a00948.html">Arcade::Graph::IText</a></div><div class="ttdoc">The IText class.</div><div class="ttdef"><b>Definition:</b> IText.hpp:25</div></div>
-</div><!-- fragment --><hr  />
-<p> LES LIB GRAPHIC</p>
-<p>À implementer dans chaque lib graphic: </p><div class="fragment"><div class="line"><span class="keyword">class </span><a class="code" href="a00936.html">Arcade::Graph::IDisplayModule</a>;  <span class="comment">// L&#39;interface par laquelle le binaire arcade inter-agit.</span></div>
-<div class="line">                                      <span class="comment">// Il permet de faire un rendu graphique des composant</span></div>
-<div class="line">                                      <span class="comment">// &quot;normalisés&quot; (IText, IMusic, ISprite)</span></div>
-<div class="line">                                      <span class="comment">// À chaque frame, la méthode `update` est appelée.</span></div>
-<div class="line">                                      <span class="comment">// Il est attendu à ce que cette méthode mette à jour</span></div>
-<div class="line">                                      <span class="comment">// les évènements survenus.</span></div>
-<div class="line"> </div>
-<div class="line">                                      <span class="comment">// Pour vous faciliter la vie, vous pouvez avoir la même architecure que dans le IGameModule:</span></div>
-<div class="line">                                      <span class="comment">// Un ISystemManager qui manage vos différents systemes.</span></div>
-<div class="line">                                      <span class="comment">// Dans ce cas:</span></div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">class </span><a class="code" href="a00908.html">Arcade::ECS::ISystem</a>;           <span class="comment">// regardez les infos plus haut.</span></div>
-<div class="line"><span class="keyword">class </span>Arcade::ECS::ISystemMAnager;    <span class="comment">// regardez plus haut.</span></div>
-<div class="ttc" id="aa00936_html"><div class="ttname"><a href="a00936.html">Arcade::Graph::IDisplayModule</a></div><div class="ttdoc">The IDisplayModule interface.</div><div class="ttdef"><b>Definition:</b> IDisplayModule.hpp:21</div></div>
-</div><!-- fragment --><hr  />
-<p>N.B.: L'écrivain de cette documentation prie de bien vouloir l'excuser pour la prise de partie, il sera heureux de débatre par l'intermédiaire d'issue sur github dans le cas où une information dans cette documentation serait fausse. N.B.: Pour get des éléments dans un vecteur const il faut utiliser la méthode .at()</p>
-<p>lien du github: <a href="https://github.com/ARCADE-TEK-2026/archi_arcade">https://github.com/ARCADE-TEK-2026/archi_arcade</a></p>
-<hr  />
-<div class="image">
-<object type="image/svg+xml" data="uml.svg" style="pointer-events: none;"></object>
-</div>
- </div></div><!-- PageDoc -->
+<p>À implementer dans chaque jeux: ```cpp /* L'unité la plus petite de l'ECS, elle possède des composant. C'est la relation composant-system(expliqué plus tard) qui permet à un ECS de réaliser des actions. </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 27 2023 09:24:17 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 27 2023 11:56:45 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

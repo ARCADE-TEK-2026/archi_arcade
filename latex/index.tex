@@ -44,26 +44,32 @@ Le projet se compose en 3 parties\+:
 
 À implementer\+: 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{a00888}{Arcade::Core::ICore}};            \textcolor{comment}{// La classe principal pour le binaire arcade.}}
-\DoxyCodeLine{                                      \textcolor{comment}{// Elle doit avoir au moins le main menu, le IGameModule du jeux}}
-\DoxyCodeLine{                                      \textcolor{comment}{// actuel (si chargé), le IDisplayModule de la librairie actuel,}}
-\DoxyCodeLine{                                      \textcolor{comment}{// et un IEventManager qui sera passé en parametre}}
-\DoxyCodeLine{                                      \textcolor{comment}{// à la partie graphique et à la partie jeux.}}
-\DoxyCodeLine{                                      \textcolor{comment}{// À chaque frame, il faut appeler la méthode `update`.}}
-\DoxyCodeLine{                                      \textcolor{comment}{// La méthode `update` doit:}}
-\DoxyCodeLine{                                      \textcolor{comment}{// -\/ regarder si des évènements survenus dans le IEventManager:}}
-\DoxyCodeLine{                                      \textcolor{comment}{//    -\/ demande à changer de lib graphique}}
-\DoxyCodeLine{                                      \textcolor{comment}{//    -\/ demande à changer de lib de jeux}}
-\DoxyCodeLine{                                      \textcolor{comment}{//    -\/ demande à quiter le jeux}}
-\DoxyCodeLine{                                      \textcolor{comment}{//    -\/ demande à quiter le programme}}
-\DoxyCodeLine{                                      \textcolor{comment}{// -\/ si un jeux est chargé}}
-\DoxyCodeLine{                                      \textcolor{comment}{//     -\/ appeler le `update` du IGameModule}}
-\DoxyCodeLine{                                      \textcolor{comment}{// -\/ sinon}}
-\DoxyCodeLine{                                      \textcolor{comment}{//     -\/ appeler le `update` du main menu}}
-\DoxyCodeLine{                                      \textcolor{comment}{// -\/ appeler le `update` du IDisplayModule}}
+\DoxyCodeLine{\textcolor{comment}{/*}}
+\DoxyCodeLine{\textcolor{comment}{  La classe principal pour le binaire arcade.}}
+\DoxyCodeLine{\textcolor{comment}{  Elle doit avoir au moins le main menu, le IGameModule du jeux}}
+\DoxyCodeLine{\textcolor{comment}{  actuel (si chargé), le IDisplayModule de la librairie actuel,}}
+\DoxyCodeLine{\textcolor{comment}{  et un IEventManager qui sera passé en parametre}}
+\DoxyCodeLine{\textcolor{comment}{  à la partie graphique et à la partie jeux.}}
+\DoxyCodeLine{\textcolor{comment}{  À chaque frame, il faut appeler la méthode `update`.}}
+\DoxyCodeLine{\textcolor{comment}{  La méthode `update` doit:}}
+\DoxyCodeLine{\textcolor{comment}{  -\/ regarder si des évènements survenus dans le IEventManager:}}
+\DoxyCodeLine{\textcolor{comment}{     -\/ demande à changer de lib graphique}}
+\DoxyCodeLine{\textcolor{comment}{     -\/ demande à changer de lib de jeux}}
+\DoxyCodeLine{\textcolor{comment}{     -\/ demande à quiter le jeux}}
+\DoxyCodeLine{\textcolor{comment}{     -\/ demande à quiter le programme}}
+\DoxyCodeLine{\textcolor{comment}{  -\/ si un jeux est chargé}}
+\DoxyCodeLine{\textcolor{comment}{      -\/ appeler le `update` du IGameModule}}
+\DoxyCodeLine{\textcolor{comment}{  -\/ sinon}}
+\DoxyCodeLine{\textcolor{comment}{      -\/ appeler le `update` du main menu}}
+\DoxyCodeLine{\textcolor{comment}{  -\/ appeler le `update` du IDisplayModule}}
+\DoxyCodeLine{\textcolor{comment}{*/}}
+\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{a00888}{Arcade::Core::ICore}};}
 \DoxyCodeLine{}
-\DoxyCodeLine{\textcolor{keyword}{class }Arcade::ECS::IEventmanager;     \textcolor{comment}{// Le gestionneur des évènements survenu dans toute}}
-\DoxyCodeLine{                                      \textcolor{comment}{// l'éxecution du programme.}}
+\DoxyCodeLine{\textcolor{comment}{/*}}
+\DoxyCodeLine{\textcolor{comment}{  Le gestionneur des évènements survenu dans toute}}
+\DoxyCodeLine{\textcolor{comment}{  l'éxecution du programme.}}
+\DoxyCodeLine{\textcolor{comment}{*/}}
+\DoxyCodeLine{\textcolor{keyword}{class }Arcade::ECS::IEventmanager;}
 
 \end{DoxyCode}
 
@@ -71,74 +77,4 @@ Le projet se compose en 3 parties\+:
 \DoxyHorRuler{0}
  LES JEUX
 
-À implementer dans chaque jeux\+: 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{  \textcolor{keyword}{class }\mbox{\hyperlink{a00896}{Arcade::ECS::IEntity}};           \textcolor{comment}{// L'unité la plus petite de l'ECS, elle possède des composant.}}
-\DoxyCodeLine{C\textcolor{stringliteral}{'est la relation composant-\/system(expliqué plus tard)}}
-\DoxyCodeLine{\textcolor{stringliteral}{qui permet à un ECS de réaliser des actions.}}
-\DoxyCodeLine{\textcolor{stringliteral}{}}
-\DoxyCodeLine{\textcolor{stringliteral}{  class Arcade::ECS::IComponent;        // Un composant représente uniquement des variables que l'}on}
-\DoxyCodeLine{vient ajouter à une entité.}
-\DoxyCodeLine{}
-\DoxyCodeLine{  \textcolor{keyword}{class }\mbox{\hyperlink{a00900}{Arcade::ECS::IEntityManager}};    \textcolor{comment}{// Un gestionneur d'entité.}}
-\DoxyCodeLine{Il permet de facilité la recherche de certaines entités.}
-\DoxyCodeLine{}
-\DoxyCodeLine{  \textcolor{keyword}{class }\mbox{\hyperlink{a00908}{Arcade::ECS::ISystem}};           \textcolor{comment}{// Ce sont des classes qui sont appelées à chaque frame du}}
-\DoxyCodeLine{jeux avec leur méthode `\mbox{\hyperlink{a00908_a3ead01729785e8e87224626ea7bbda20}{run}}`.}
-\DoxyCodeLine{}
-\DoxyCodeLine{  \textcolor{keyword}{class }\mbox{\hyperlink{a00912}{Arcade::ECS::ISystemManager}};    \textcolor{comment}{// Un gestionneur de systeme.}}
-\DoxyCodeLine{Il permet de faciliter l\textcolor{stringliteral}{'appel de toutes les méthode `run`}}
-\DoxyCodeLine{\textcolor{stringliteral}{de tous les systemes qu'}il posséde.}
-\DoxyCodeLine{}
-\DoxyCodeLine{  \textcolor{keyword}{class }\mbox{\hyperlink{a00920}{Arcade::Game::IScene}};           \textcolor{comment}{// Représente une étape de cinématique/jeux du jeux.}}
-\DoxyCodeLine{La première fois qu\textcolor{stringliteral}{'elle est lancé, la méthode `init`}}
-\DoxyCodeLine{\textcolor{stringliteral}{est appelée.}}
-\DoxyCodeLine{\textcolor{stringliteral}{Quand la scene est quitté (on change de scene/...)}}
-\DoxyCodeLine{\textcolor{stringliteral}{la méthode `close` est appelée.}}
-\DoxyCodeLine{\textcolor{stringliteral}{}}
-\DoxyCodeLine{\textcolor{stringliteral}{  class Arcade::Game::IGameModule;      // L'}\textcolor{keyword}{interface }par laquelle le binaire arcade inter-\/agit.}
-\DoxyCodeLine{À chaque frame, la méthode `update` est appelée.}
-\DoxyCodeLine{À chaque frame, la méthode `getCurrentEntityManager`}
-\DoxyCodeLine{est appelée. Cela permet de passer les entitées qu'il}
-\DoxyCodeLine{faut au IDisplayModule (qui lui va s'occuper d'afficher ce qu'il comprend)}
-\DoxyCodeLine{}
-\DoxyCodeLine{  class \mbox{\hyperlink{a00060}{Arcade}}::Graph::IMusic;          \textcolor{comment}{// Des composants "{}normalisés"{} qui permettent}}
-\DoxyCodeLine{  class \mbox{\hyperlink{a00948}{Arcade::Graph::IText}};           \textcolor{comment}{// au IDisplayModule d'affiché/de jouer}}
-\DoxyCodeLine{  class \mbox{\hyperlink{a00944}{Arcade::Graph::ISprite}};         \textcolor{comment}{// ces composants.}}
-
-\end{DoxyCode}
-
-
-\DoxyHorRuler{0}
- LES LIB GRAPHIC
-
-À implementer dans chaque lib graphic\+: 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{a00936}{Arcade::Graph::IDisplayModule}};  \textcolor{comment}{// L'interface par laquelle le binaire arcade inter-\/agit.}}
-\DoxyCodeLine{                                      \textcolor{comment}{// Il permet de faire un rendu graphique des composant}}
-\DoxyCodeLine{                                      \textcolor{comment}{// "{}normalisés"{} (IText, IMusic, ISprite)}}
-\DoxyCodeLine{                                      \textcolor{comment}{// À chaque frame, la méthode `update` est appelée.}}
-\DoxyCodeLine{                                      \textcolor{comment}{// Il est attendu à ce que cette méthode mette à jour}}
-\DoxyCodeLine{                                      \textcolor{comment}{// les évènements survenus.}}
-\DoxyCodeLine{}
-\DoxyCodeLine{                                      \textcolor{comment}{// Pour vous faciliter la vie, vous pouvez avoir la même architecure que dans le IGameModule:}}
-\DoxyCodeLine{                                      \textcolor{comment}{// Un ISystemManager qui manage vos différents systemes.}}
-\DoxyCodeLine{                                      \textcolor{comment}{// Dans ce cas:}}
-\DoxyCodeLine{}
-\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{a00908}{Arcade::ECS::ISystem}};           \textcolor{comment}{// regardez les infos plus haut.}}
-\DoxyCodeLine{\textcolor{keyword}{class }Arcade::ECS::ISystemMAnager;    \textcolor{comment}{// regardez plus haut.}}
-
-\end{DoxyCode}
-
-
-\DoxyHorRuler{0}
-
-
-N.\+B.\+: L\textquotesingle{}écrivain de cette documentation prie de bien vouloir l\textquotesingle{}excuser pour la prise de partie, il sera heureux de débatre par l\textquotesingle{}intermédiaire d\textquotesingle{}issue sur github dans le cas où une information dans cette documentation serait fausse. N.\+B.\+: Pour get des éléments dans un vecteur const il faut utiliser la méthode .at()
-
-lien du github\+: \href{https://github.com/ARCADE-TEK-2026/archi_arcade}{\texttt{ https\+://github.\+com/\+ARCADE-\/\+TEK-\/2026/archi\+\_\+arcade}}
-
-\DoxyHorRuler{0}
-
-
- 
+À implementer dans chaque jeux\+: \`{}\`{}\`{}cpp /$\ast$ L\textquotesingle{}unité la plus petite de l\textquotesingle{}ECS, elle possède des composant. C\textquotesingle{}est la relation composant-\/system(expliqué plus tard) qui permet à un ECS de réaliser des actions. 

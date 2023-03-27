@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['color_111',['Color',['../a00924.html',1,'Arcade::Graph']]]
+  ['color_113',['Color',['../a00924.html',1,'Arcade::Graph']]]
 ];
