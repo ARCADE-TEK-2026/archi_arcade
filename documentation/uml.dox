@@ -44,8 +44,8 @@
   À implementer:
   ```cpp
   class Arcade::Core::ICore;            // La classe principal pour le binaire arcade.
-                                        // Elle doit avoir au moins le IGameModule du jeux
-                                        // actuel, le IDisplayModule de la librairie actuel,
+                                        // Elle doit avoir au moins le main menu, le IGameModule du jeux
+                                        // actuel (si chargé), le IDisplayModule de la librairie actuel,
                                         // et un IEventManager qui sera passé en parametre
                                         // à la partie graphique et à la partie jeux.
                                         // À chaque frame, il faut appeler la méthode `update`.
@@ -53,10 +53,12 @@
                                         // - regarder si des évènements survenus dans le IEventManager:
                                         //    - demande à changer de lib graphique
                                         //    - demande à changer de lib de jeux
+                                        //    - demande à quiter le jeux
                                         //    - demande à quiter le programme
-                                        //    (si c'est le cas, gérer les évènement dans le core
-                                        //     et ne pas appeler le `update` du IGameModule)
-                                        // - appeler le `update` du IGameModule (si la condition plus haut n'est pas respéctée)
+                                        // - si un jeux est chargé
+                                        //     - appeler le `update` du IGameModule
+                                        // - sinon
+                                        //     - appeler le `update` du main menu
                                         // - appeler le `update` du IDisplayModule
 
   class Arcade::ECS::IEventmanager;     // Le gestionneur des évènements survenu dans toute
@@ -68,7 +70,7 @@
 
   À implementer dans chaque jeux:
   ```cpp
-  class Arcade::ECS::IEntity;           // L'unité la plus petite de l'ECS, elle posède des composant.
+  class Arcade::ECS::IEntity;           // L'unité la plus petite de l'ECS, elle possède des composant.
                                         // C'est la relation composant-system(expliqué plus tard)
                                         // qui permet à un ECS de réaliser des actions.
 
