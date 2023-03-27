@@ -12,10 +12,12 @@
 #include "IEventManager.hpp"
 
 namespace Arcade {
-    namespace Core {
-        class IDisplayModule;
+    namespace Game {
         class IGameModule;
     } // namespace Core
+    namespace Graph {
+        class IDisplayModule;
+    } // namespace Graph
 
     namespace ECS {
         /**
