@@ -1,19 +1,9 @@
-<map id="include/Arcade/Core/IGameModule.hpp" name="include/Arcade/Core/IGameModule.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="873,5,1025,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="703,543,762,569"/>
-<area shape="rect" id="node3" href="$a00038.html" title=" " alt="" coords="338,393,485,420"/>
-<area shape="rect" id="node10" href="$a00050.html" title=" " alt="" coords="874,95,1023,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="870,468,947,495"/>
-<area shape="rect" id="node5" title=" " alt="" coords="181,468,255,495"/>
-<area shape="rect" id="node6" title=" " alt="" coords="280,468,335,495"/>
-<area shape="rect" id="node7" title=" " alt="" coords="512,468,575,495"/>
-<area shape="rect" id="node8" href="$a00014.html" title=" " alt="" coords="23,468,157,495"/>
-<area shape="rect" id="node9" href="$a00029.html" title=" " alt="" coords="359,468,488,495"/>
-<area shape="rect" id="node11" href="$a00047.html" title=" " alt="" coords="877,169,970,196"/>
-<area shape="rect" id="node12" href="$a00035.html" title=" " alt="" coords="849,319,997,345"/>
-<area shape="rect" id="node16" href="$a00044.html" title=" " alt="" coords="628,244,787,271"/>
-<area shape="rect" id="node13" href="$a00032.html" title=" " alt="" coords="745,393,835,420"/>
-<area shape="rect" id="node14" title=" " alt="" coords="599,468,669,495"/>
-<area shape="rect" id="node15" title=" " alt="" coords="795,468,846,495"/>
-<area shape="rect" id="node17" href="$a00041.html" title=" " alt="" coords="477,319,580,345"/>
+<map id="include/Arcade/ECS/IEntity.hpp" name="include/Arcade/ECS/IEntity.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="178,5,325,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,76,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="101,95,151,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="175,95,253,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="355,169,414,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="328,95,391,121"/>
+<area shape="rect" id="node7" href="$a00020.html" title=" " alt="" coords="415,95,544,121"/>
 </map>

@@ -1,0 +1,84 @@
+\hypertarget{a00916}{}\doxysection{Arcade\+::Game\+::IGame\+Module Class Reference}
+\label{a00916}\index{Arcade::Game::IGameModule@{Arcade::Game::IGameModule}}
+
+
+The \mbox{\hyperlink{a00916}{IGame\+Module}} interface.  
+
+
+
+
+{\ttfamily \#include $<$IGame\+Module.\+hpp$>$}
+
+
+
+Collaboration diagram for Arcade\+::Game\+::IGame\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{a00914}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{a00916_a550f693108031e632a91a8af8794de9e}{$\sim$\+IGame\+Module}} ()=default
+\item 
+virtual void \mbox{\hyperlink{a00916_a66752958ca62a3fea13bb162d8567cbd}{update}} (float delta\+Time, \mbox{\hyperlink{a00904}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&event\+Manager)=0
+\begin{DoxyCompactList}\small\item\em method that will be called each frame by the core \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{a00900}{Arcade\+::\+ECS\+::\+IEntity\+Manager}} \& \mbox{\hyperlink{a00916_af1db0a058b856bf8f6234c28cd67922b}{get\+Current\+Entity\+Manager}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the entity manager of the current active scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{a00916}{IGame\+Module}} interface. 
+
+This concret class will be created by the game .so and will be destroyed by the .so through \mbox{\hyperlink{a00011_af55f24c99c01a12fa733601ca8db2823}{get\+Game\+Module()}} method and \mbox{\hyperlink{a00011_a065a0425d88cf44bef96ab7bef9f99bc}{destroy\+Game\+Module()}} method 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00916_a550f693108031e632a91a8af8794de9e}\label{a00916_a550f693108031e632a91a8af8794de9e}} 
+\index{Arcade::Game::IGameModule@{Arcade::Game::IGameModule}!````~IGameModule@{$\sim$IGameModule}}
+\index{````~IGameModule@{$\sim$IGameModule}!Arcade::Game::IGameModule@{Arcade::Game::IGameModule}}
+\doxysubsubsection{\texorpdfstring{$\sim$IGameModule()}{~IGameModule()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+Game\+::\+IGame\+Module\+::$\sim$\+IGame\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00916_af1db0a058b856bf8f6234c28cd67922b}\label{a00916_af1db0a058b856bf8f6234c28cd67922b}} 
+\index{Arcade::Game::IGameModule@{Arcade::Game::IGameModule}!getCurrentEntityManager@{getCurrentEntityManager}}
+\index{getCurrentEntityManager@{getCurrentEntityManager}!Arcade::Game::IGameModule@{Arcade::Game::IGameModule}}
+\doxysubsubsection{\texorpdfstring{getCurrentEntityManager()}{getCurrentEntityManager()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{a00900}{Arcade\+::\+ECS\+::\+IEntity\+Manager}}\& Arcade\+::\+Game\+::\+IGame\+Module\+::get\+Current\+Entity\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the entity manager of the current active scene. 
+
+\begin{DoxyReturn}{Returns}
+The entity manager of the current active scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00916_a66752958ca62a3fea13bb162d8567cbd}\label{a00916_a66752958ca62a3fea13bb162d8567cbd}} 
+\index{Arcade::Game::IGameModule@{Arcade::Game::IGameModule}!update@{update}}
+\index{update@{update}!Arcade::Game::IGameModule@{Arcade::Game::IGameModule}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Game\+::\+IGame\+Module\+::update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time,  }\item[{\mbox{\hyperlink{a00904}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&}]{event\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+method that will be called each frame by the core 
+
+You are expected to update the current scene in this method
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & time passed since last frame \\
+\hline
+{\em event\+Manager} & the event manager \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Arcade/\+Game/\mbox{\hyperlink{a00038}{IGame\+Module.\+hpp}}\end{DoxyCompactItemize}

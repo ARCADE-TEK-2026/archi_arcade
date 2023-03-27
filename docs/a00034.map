@@ -1,10 +1,7 @@
-<map id="include/Arcade/ECS/IEntity.hpp" name="include/Arcade/ECS/IEntity.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="131,5,277,47"/>
-<area shape="rect" id="node2" href="$a00035.html" title=" " alt="" coords="128,95,280,136"/>
-<area shape="rect" id="node3" href="$a00044.html" title=" " alt="" coords="64,184,227,225"/>
-<area shape="rect" id="node6" href="$a00047.html" title=" " alt="" coords="215,273,377,315"/>
-<area shape="rect" id="node4" href="$a00011.html" title=" " alt="" coords="5,459,128,486"/>
-<area shape="rect" id="node5" href="$a00020.html" title=" " alt="" coords="36,273,191,315"/>
-<area shape="rect" id="node7" href="$a00050.html" title=" " alt="" coords="181,363,342,404"/>
-<area shape="rect" id="node8" href="$a00023.html" title=" " alt="" coords="185,452,337,493"/>
+<map id="include/Arcade/ECS/ISystem.hpp" name="include/Arcade/ECS/ISystem.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="13,5,160,47"/>
+<area shape="rect" id="node2" href="$a00035.html" title=" " alt="" coords="5,95,168,136"/>
+<area shape="rect" id="node3" href="$a00041.html" title=" " alt="" coords="6,184,167,225"/>
+<area shape="rect" id="node4" href="$a00038.html" title=" " alt="" coords="6,273,167,315"/>
+<area shape="rect" id="node5" href="$a00011.html" title=" " alt="" coords="25,363,148,389"/>
 </map>

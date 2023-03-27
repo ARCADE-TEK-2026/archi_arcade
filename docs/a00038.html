@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Architecture Arcade: include/Arcade/ECS/IEventManager.hpp File Reference</title>
+<title>Architecture Arcade: include/Arcade/Game/IGameModule.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4dfcdfd0f1f897aca432108a19677038.html">Arcade</a></li><li class="navelem"><a class="el" href="dir_f33418ab7739082dfc9cb8d90b753f42.html">ECS</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4dfcdfd0f1f897aca432108a19677038.html">Arcade</a></li><li class="navelem"><a class="el" href="dir_2d62a961a5408d569097ae4442906481.html">Game</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,44 +70,43 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">IEventManager.hpp File Reference</div>  </div>
+<div class="title">IGameModule.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;optional&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;tuple&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00014_source.html">ArcadeStruct.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00029_source.html">IComponent.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00026_source.html">IEntityManager.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00029_source.html">IEventManager.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00041_source.html">IScene.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for IEventManager.hpp:</div>
+Include dependency graph for IGameModule.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00039.png" border="0" usemap="#ainclude_2Arcade_2ECS_2IEventManager_8hpp" alt=""/></div>
-<map name="ainclude_2Arcade_2ECS_2IEventManager_8hpp" id="ainclude_2Arcade_2ECS_2IEventManager_8hpp">
-<area shape="rect" title=" " alt="" coords="209,5,359,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,83,121"/>
-<area shape="rect" title=" " alt="" coords="107,95,181,121"/>
-<area shape="rect" title=" " alt="" coords="403,169,461,196"/>
-<area shape="rect" title=" " alt="" coords="257,95,311,121"/>
-<area shape="rect" title=" " alt="" coords="335,95,398,121"/>
-<area shape="rect" href="a00014.html" title=" " alt="" coords="423,95,556,121"/>
-<area shape="rect" href="a00029.html" title=" " alt="" coords="581,95,710,121"/>
+<div class="center"><img src="a00039.png" border="0" usemap="#ainclude_2Arcade_2Game_2IGameModule_8hpp" alt=""/></div>
+<map name="ainclude_2Arcade_2Game_2IGameModule_8hpp" id="ainclude_2Arcade_2Game_2IGameModule_8hpp">
+<area shape="rect" title=" " alt="" coords="835,5,997,47"/>
+<area shape="rect" title=" " alt="" coords="704,543,763,569"/>
+<area shape="rect" href="a00026.html" title=" " alt="" coords="849,319,997,345"/>
+<area shape="rect" href="a00029.html" title=" " alt="" coords="404,393,551,420"/>
+<area shape="rect" href="a00041.html" title=" " alt="" coords="828,95,921,121"/>
+<area shape="rect" title=" " alt="" coords="721,468,799,495"/>
+<area shape="rect" href="a00023.html" title=" " alt="" coords="783,393,873,420"/>
+<area shape="rect" title=" " alt="" coords="949,468,1019,495"/>
+<area shape="rect" title=" " alt="" coords="873,468,924,495"/>
+<area shape="rect" title=" " alt="" coords="481,468,543,495"/>
+<area shape="rect" href="a00020.html" title=" " alt="" coords="567,468,697,495"/>
+<area shape="rect" title=" " alt="" coords="93,468,168,495"/>
+<area shape="rect" title=" " alt="" coords="193,468,247,495"/>
+<area shape="rect" href="a00014.html" title=" " alt="" coords="272,468,405,495"/>
+<area shape="rect" href="a00035.html" title=" " alt="" coords="599,169,758,196"/>
+<area shape="rect" href="a00032.html" title=" " alt="" coords="717,244,819,271"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00040.png" border="0" usemap="#ainclude_2Arcade_2ECS_2IEventManager_8hppdep" alt=""/></div>
-<map name="ainclude_2Arcade_2ECS_2IEventManager_8hppdep" id="ainclude_2Arcade_2ECS_2IEventManager_8hppdep">
-<area shape="rect" title=" " alt="" coords="78,5,229,47"/>
-<area shape="rect" href="a00023.html" title=" " alt="" coords="27,452,179,493"/>
-<area shape="rect" href="a00041.html" title=" " alt="" coords="80,95,227,136"/>
-<area shape="rect" href="a00044.html" title=" " alt="" coords="183,184,345,225"/>
-<area shape="rect" href="a00011.html" title=" " alt="" coords="300,459,423,486"/>
-<area shape="rect" href="a00020.html" title=" " alt="" coords="43,273,197,315"/>
-<area shape="rect" href="a00047.html" title=" " alt="" coords="222,273,383,315"/>
-<area shape="rect" href="a00050.html" title=" " alt="" coords="222,363,383,404"/>
+<div class="center"><img src="a00040.png" border="0" usemap="#ainclude_2Arcade_2Game_2IGameModule_8hppdep" alt=""/></div>
+<map name="ainclude_2Arcade_2Game_2IGameModule_8hppdep" id="ainclude_2Arcade_2Game_2IGameModule_8hppdep">
+<area shape="rect" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" href="a00011.html" title=" " alt="" coords="25,95,147,121"/>
 </map>
 </div>
 </div>
@@ -115,21 +114,21 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00922.html">Arcade::ECS::IEventManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="a00922.html" title="The IEventManager interface.">IEventManager</a> interface.  <a href="a00922.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00916.html">Arcade::Game::IGameModule</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="a00916.html" title="The IGameModule interface.">IGameModule</a> interface.  <a href="a00916.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00066"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00066.html">Arcade</a></td></tr>
+<tr class="memitem:a00060"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00060.html">Arcade</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00068"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html">Arcade::ECS</a></td></tr>
+<tr class="memitem:a00063"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html">Arcade::Game</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 24 2023 13:13:21 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 27 2023 09:24:17 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['defaultchar_282',['defaultChar',['../a00946.html#a402a79668ca86b5436e88395ac6d3725',1,'Arcade::Graph::TTYData']]]
+  ['currentrectindex_194',['currentRectIndex',['../a00944.html#a0a8519fe991cf2e12fd454a6f0683247',1,'Arcade::Graph::ISprite']]]
 ];

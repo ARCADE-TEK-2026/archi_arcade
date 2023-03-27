@@ -1,0 +1,69 @@
+\hypertarget{a00936}{}\doxysection{Arcade\+::Graph\+::IDisplay\+Module Class Reference}
+\label{a00936}\index{Arcade::Graph::IDisplayModule@{Arcade::Graph::IDisplayModule}}
+
+
+The \mbox{\hyperlink{a00936}{IDisplay\+Module}} interface.  
+
+
+
+
+{\ttfamily \#include $<$IDisplay\+Module.\+hpp$>$}
+
+
+
+Collaboration diagram for Arcade\+::Graph\+::IDisplay\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{a00934}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{a00936_ac812c3aaace1cce7e8b2a3aa7fea4281}{$\sim$\+IDisplay\+Module}} ()=default
+\item 
+virtual void \mbox{\hyperlink{a00936_a6707829d7e3f6cba21fa5fa5a3f79f38}{update}} (float delta, \mbox{\hyperlink{a00904}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&event\+Manager, \mbox{\hyperlink{a00900}{Arcade\+::\+ECS\+::\+IEntity\+Manager}} \&entity\+Manager)=0
+\begin{DoxyCompactList}\small\item\em function that will be called each frame by the core \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{a00936}{IDisplay\+Module}} interface. 
+
+This concret class will be created by the game .so and will be destroyed by the .so through \mbox{\hyperlink{a00011_a8fa58925c4e6cac6447997b40fb5a29b}{get\+Display\+Module()}} method and \mbox{\hyperlink{a00011_a30ae8f95e372e67c2714f47f2fd83349}{destroy\+Display\+Module()}} method 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00936_ac812c3aaace1cce7e8b2a3aa7fea4281}\label{a00936_ac812c3aaace1cce7e8b2a3aa7fea4281}} 
+\index{Arcade::Graph::IDisplayModule@{Arcade::Graph::IDisplayModule}!````~IDisplayModule@{$\sim$IDisplayModule}}
+\index{````~IDisplayModule@{$\sim$IDisplayModule}!Arcade::Graph::IDisplayModule@{Arcade::Graph::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{$\sim$IDisplayModule()}{~IDisplayModule()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+Graph\+::\+IDisplay\+Module\+::$\sim$\+IDisplay\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00936_a6707829d7e3f6cba21fa5fa5a3f79f38}\label{a00936_a6707829d7e3f6cba21fa5fa5a3f79f38}} 
+\index{Arcade::Graph::IDisplayModule@{Arcade::Graph::IDisplayModule}!update@{update}}
+\index{update@{update}!Arcade::Graph::IDisplayModule@{Arcade::Graph::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+Graph\+::\+IDisplay\+Module\+::update (\begin{DoxyParamCaption}\item[{float}]{delta,  }\item[{\mbox{\hyperlink{a00904}{Arcade\+::\+ECS\+::\+IEvent\+Manager}} \&}]{event\+Manager,  }\item[{\mbox{\hyperlink{a00900}{Arcade\+::\+ECS\+::\+IEntity\+Manager}} \&}]{entity\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+function that will be called each frame by the core 
+
+This function is called right after the {\ttfamily update} of the IGame\+Module
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Manager} & the event manager (you must add events) \\
+\hline
+{\em entity\+Manager} & the entity manager \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Arcade/\+Graph/\mbox{\hyperlink{a00047}{IDisplay\+Module.\+hpp}}\end{DoxyCompactItemize}

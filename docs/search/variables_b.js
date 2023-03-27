@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['y_291',['y',['../a00886.html#abdd122772c584069e597edfce415f6e6',1,'Arcade::Vector2f::y()'],['../a00890.html#ad282c1d3a2a7981a7465c7a012104afa',1,'Arcade::Vector3f::y()']]]
+  ['text_208',['text',['../a00948.html#a7397eda4348bca759ae7698105d2e966',1,'Arcade::Graph::IText']]],
+  ['textcolor_209',['textColor',['../a00948.html#a58259214912e2be26501ef7c94400523',1,'Arcade::Graph::IText']]],
+  ['top_210',['top',['../a00932.html#a322373137724c4345f9ee3c307163842',1,'Arcade::Graph::Rect']]],
+  ['ttydata_211',['ttyData',['../a00944.html#a9634e9f0b9e391c5a0c26f1c6d1f5008',1,'Arcade::Graph::ISprite']]],
+  ['type_212',['type',['../a00892.html#a5d060c88116727a527091e77276917cc',1,'Arcade::ECS::IComponent']]]
 ];

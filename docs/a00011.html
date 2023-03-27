@@ -74,30 +74,31 @@ $(function() {
 <div class="title">Api.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00050_source.html">ISceneManager.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00044_source.html">ISystemManager.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="a00047_source.html">IDisplayModule.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00038_source.html">IGameModule.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Api.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="a00012.png" border="0" usemap="#ainclude_2Api_8hpp" alt=""/></div>
 <map name="ainclude_2Api_8hpp" id="ainclude_2Api_8hpp">
-<area shape="rect" title=" " alt="" coords="747,5,869,32"/>
-<area shape="rect" href="a00050.html" title=" " alt="" coords="791,80,940,107"/>
-<area shape="rect" href="a00044.html" title=" " alt="" coords="670,229,829,256"/>
-<area shape="rect" title=" " alt="" coords="904,453,981,480"/>
-<area shape="rect" href="a00047.html" title=" " alt="" coords="819,155,912,181"/>
-<area shape="rect" href="a00035.html" title=" " alt="" coords="753,304,901,331"/>
-<area shape="rect" title=" " alt="" coords="712,528,771,555"/>
-<area shape="rect" href="a00032.html" title=" " alt="" coords="705,379,796,405"/>
-<area shape="rect" title=" " alt="" coords="633,453,703,480"/>
-<area shape="rect" title=" " alt="" coords="779,453,829,480"/>
-<area shape="rect" title=" " alt="" coords="546,453,609,480"/>
-<area shape="rect" href="a00029.html" title=" " alt="" coords="393,453,522,480"/>
-<area shape="rect" href="a00038.html" title=" " alt="" coords="365,379,512,405"/>
-<area shape="rect" href="a00041.html" title=" " alt="" coords="477,304,579,331"/>
-<area shape="rect" title=" " alt="" coords="5,453,80,480"/>
-<area shape="rect" title=" " alt="" coords="105,453,159,480"/>
-<area shape="rect" href="a00014.html" title=" " alt="" coords="184,453,317,480"/>
+<area shape="rect" title=" " alt="" coords="797,5,920,32"/>
+<area shape="rect" href="a00047.html" title=" " alt="" coords="853,304,1003,331"/>
+<area shape="rect" href="a00038.html" title=" " alt="" coords="649,80,791,107"/>
+<area shape="rect" href="a00026.html" title=" " alt="" coords="803,379,951,405"/>
+<area shape="rect" href="a00029.html" title=" " alt="" coords="461,379,608,405"/>
+<area shape="rect" title=" " alt="" coords="899,528,976,555"/>
+<area shape="rect" title=" " alt="" coords="508,603,567,629"/>
+<area shape="rect" href="a00023.html" title=" " alt="" coords="733,453,824,480"/>
+<area shape="rect" title=" " alt="" coords="678,528,749,555"/>
+<area shape="rect" title=" " alt="" coords="773,528,824,555"/>
+<area shape="rect" title=" " alt="" coords="177,528,239,555"/>
+<area shape="rect" href="a00020.html" title=" " alt="" coords="525,528,654,555"/>
+<area shape="rect" title=" " alt="" coords="245,453,320,480"/>
+<area shape="rect" title=" " alt="" coords="345,453,399,480"/>
+<area shape="rect" href="a00014.html" title=" " alt="" coords="424,453,557,480"/>
+<area shape="rect" href="a00041.html" title=" " alt="" coords="673,155,767,181"/>
+<area shape="rect" href="a00035.html" title=" " alt="" coords="545,229,703,256"/>
+<area shape="rect" href="a00032.html" title=" " alt="" coords="573,304,675,331"/>
 </map>
 </div>
 </div>
@@ -110,25 +111,31 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a6bd8133fc17124d3215b7fc6edecf616"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a> { <br />
-&#160;&#160;<a class="el" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487">GRAPH</a>
+<tr class="memitem:a6bd8133fc17124d3215b7fc6edecf616"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a> { <br />
+&#160;&#160;<a class="el" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616a3f2da53bcaa9802a92482bd71391fcf8">GRAPH</a>
 , <br />
-&#160;&#160;<a class="el" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13">GAME</a>
+&#160;&#160;<a class="el" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616ad50cf309d7568040619ed26ee6835a84">GAME</a>
 <br />
  }</td></tr>
 <tr class="separator:a6bd8133fc17124d3215b7fc6edecf616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9fab8efd3514dd290c620917fe844b3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> std::shared_ptr&lt; <a class="el" href="a00938.html">Arcade::Game::ISceneManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a9fab8efd3514dd290c620917fe844b3d">getScenes</a> (std::shared_ptr&lt; <a class="el" href="a00938.html">Arcade::Game::ISceneManager</a> &gt; sceneManager)</td></tr>
-<tr class="memdesc:a9fab8efd3514dd290c620917fe844b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The game shared lib main entry point to get scenes.  <a href="a00011.html#a9fab8efd3514dd290c620917fe844b3d">More...</a><br /></td></tr>
-<tr class="separator:a9fab8efd3514dd290c620917fe844b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a689214538345231b62f1985f714610e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> std::shared_ptr&lt; <a class="el" href="a00930.html">Arcade::ECS::ISystemManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a689214538345231b62f1985f714610e4">getSystems</a> (std::shared_ptr&lt; <a class="el" href="a00930.html">Arcade::ECS::ISystemManager</a> &gt; systemManager)</td></tr>
-<tr class="memdesc:a689214538345231b62f1985f714610e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Graph shared lib main entry point to get systems.  <a href="a00011.html#a689214538345231b62f1985f714610e4">More...</a><br /></td></tr>
-<tr class="separator:a689214538345231b62f1985f714610e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cafcdee8016feaafbc820ae5ef2a537"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a5cafcdee8016feaafbc820ae5ef2a537">getName</a> ()</td></tr>
-<tr class="memdesc:a5cafcdee8016feaafbc820ae5ef2a537"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Shared lib entry point to get lib name.  <a href="a00011.html#a5cafcdee8016feaafbc820ae5ef2a537">More...</a><br /></td></tr>
-<tr class="separator:a5cafcdee8016feaafbc820ae5ef2a537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af55f24c99c01a12fa733601ca8db2823"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> <a class="el" href="a00916.html">Arcade::Game::IGameModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#af55f24c99c01a12fa733601ca8db2823">getGameModule</a> ()</td></tr>
+<tr class="memdesc:af55f24c99c01a12fa733601ca8db2823"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Games shared lib main entry point to get GameModule.  <a href="a00011.html#af55f24c99c01a12fa733601ca8db2823">More...</a><br /></td></tr>
+<tr class="separator:af55f24c99c01a12fa733601ca8db2823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a065a0425d88cf44bef96ab7bef9f99bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a065a0425d88cf44bef96ab7bef9f99bc">destroyGameModule</a> (<a class="el" href="a00916.html">Arcade::Game::IGameModule</a> *gameModule)</td></tr>
+<tr class="memdesc:a065a0425d88cf44bef96ab7bef9f99bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the GameModule created by getGameModule.  <a href="a00011.html#a065a0425d88cf44bef96ab7bef9f99bc">More...</a><br /></td></tr>
+<tr class="separator:a065a0425d88cf44bef96ab7bef9f99bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa58925c4e6cac6447997b40fb5a29b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> <a class="el" href="a00936.html">Arcade::Graph::IDisplayModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a8fa58925c4e6cac6447997b40fb5a29b">getDisplayModule</a> ()</td></tr>
+<tr class="memdesc:a8fa58925c4e6cac6447997b40fb5a29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Graphs shared lib main entry point to get DisplayModule.  <a href="a00011.html#a8fa58925c4e6cac6447997b40fb5a29b">More...</a><br /></td></tr>
+<tr class="separator:a8fa58925c4e6cac6447997b40fb5a29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ae8f95e372e67c2714f47f2fd83349"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a30ae8f95e372e67c2714f47f2fd83349">destroyDisplayModule</a> (<a class="el" href="a00936.html">Arcade::Graph::IDisplayModule</a> *displayModule)</td></tr>
+<tr class="memdesc:a30ae8f95e372e67c2714f47f2fd83349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the DisplayModule created by getDisplayModule.  <a href="a00011.html#a30ae8f95e372e67c2714f47f2fd83349">More...</a><br /></td></tr>
+<tr class="separator:a30ae8f95e372e67c2714f47f2fd83349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14981c4de7f188c4f59bc929b5e3583b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a14981c4de7f188c4f59bc929b5e3583b">getName</a> ()</td></tr>
+<tr class="memdesc:a14981c4de7f188c4f59bc929b5e3583b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Shared lib entry point to get lib name.  <a href="a00011.html#a14981c4de7f188c4f59bc929b5e3583b">More...</a><br /></td></tr>
+<tr class="separator:a14981c4de7f188c4f59bc929b5e3583b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab33833f69d75c62be75bb97a2c0c2a44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> <a class="el" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#ab33833f69d75c62be75bb97a2c0c2a44">getType</a> ()</td></tr>
 <tr class="memdesc:ab33833f69d75c62be75bb97a2c0c2a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Shared lib entry point to get lib type.  <a href="a00011.html#ab33833f69d75c62be75bb97a2c0c2a44">More...</a><br /></td></tr>
 <tr class="separator:ab33833f69d75c62be75bb97a2c0c2a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,37 +161,123 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">enum <a class="el" href="a00011.html#a6bd8133fc17124d3215b7fc6edecf616">LibType</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Each graphical library must call in one system the setMousePosition method of EventManager </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487"></a>GRAPH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13"></a>GAME&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6bd8133fc17124d3215b7fc6edecf616a3f2da53bcaa9802a92482bd71391fcf8"></a>GRAPH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bd8133fc17124d3215b7fc6edecf616ad50cf309d7568040619ed26ee6835a84"></a>GAME&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a5cafcdee8016feaafbc820ae5ef2a537"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cafcdee8016feaafbc820ae5ef2a537">&#9670;&nbsp;</a></span>getName()</h2>
+<a id="a30ae8f95e372e67c2714f47f2fd83349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ae8f95e372e67c2714f47f2fd83349">&#9670;&nbsp;</a></span>destroyDisplayModule()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> std::string getName </td>
+          <td class="memname"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> void destroyDisplayModule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00936.html">Arcade::Graph::IDisplayModule</a> *&#160;</td>
+          <td class="paramname"><em>displayModule</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the DisplayModule created by getDisplayModule. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">displayModule</td><td>A ptr on IDisplayModule </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a065a0425d88cf44bef96ab7bef9f99bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a065a0425d88cf44bef96ab7bef9f99bc">&#9670;&nbsp;</a></span>destroyGameModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> void destroyGameModule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00916.html">Arcade::Game::IGameModule</a> *&#160;</td>
+          <td class="paramname"><em>gameModule</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the GameModule created by getGameModule. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gameModule</td><td>A ptr on IGameModule </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8fa58925c4e6cac6447997b40fb5a29b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa58925c4e6cac6447997b40fb5a29b">&#9670;&nbsp;</a></span>getDisplayModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> <a class="el" href="a00936.html">Arcade::Graph::IDisplayModule</a>* getDisplayModule </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Graphs shared lib main entry point to get DisplayModule. </p>
+<dl class="section return"><dt>Returns</dt><dd>A ptr on IDisplayModule</dd></dl>
+<p>All graph shared lib must have this function </p>
+
+</div>
+</div>
+<a id="af55f24c99c01a12fa733601ca8db2823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af55f24c99c01a12fa733601ca8db2823">&#9670;&nbsp;</a></span>getGameModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> <a class="el" href="a00916.html">Arcade::Game::IGameModule</a>* getGameModule </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Games shared lib main entry point to get GameModule. </p>
+<dl class="section return"><dt>Returns</dt><dd>A ptr on IGameModule</dd></dl>
+<p>All game shared lib must have this function </p>
+
+</div>
+</div>
+<a id="a14981c4de7f188c4f59bc929b5e3583b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14981c4de7f188c4f59bc929b5e3583b">&#9670;&nbsp;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> const char* getName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -195,52 +288,6 @@ Functions</h2></td></tr>
 <p>The Shared lib entry point to get lib name. </p>
 <dl class="section return"><dt>Returns</dt><dd>Lib's name in std::string</dd></dl>
 <p>All shared lib must have this function </p>
-
-</div>
-</div>
-<a id="a9fab8efd3514dd290c620917fe844b3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fab8efd3514dd290c620917fe844b3d">&#9670;&nbsp;</a></span>getScenes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> std::shared_ptr&lt;<a class="el" href="a00938.html">Arcade::Game::ISceneManager</a>&gt; getScenes </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="a00938.html">Arcade::Game::ISceneManager</a> &gt;&#160;</td>
-          <td class="paramname"><em>sceneManager</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The game shared lib main entry point to get scenes. </p>
-<dl class="section return"><dt>Returns</dt><dd>A unique_ptr on ISceneManager instance</dd></dl>
-<p>All game shared lib must have this function</p>
-<p>It takes a parameter because, if there was no parameter, we will have to implement all the Archi commune in all .so (to be hable to create (malloc/new) one of them Now, with this parameter, we don't have to code everything in .so </p>
-
-</div>
-</div>
-<a id="a689214538345231b62f1985f714610e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a689214538345231b62f1985f714610e4">&#9670;&nbsp;</a></span>getSystems()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00011.html#a3472d8cdbb788d5f1815b3522595bc49">EXPORT</a> std::shared_ptr&lt;<a class="el" href="a00930.html">Arcade::ECS::ISystemManager</a>&gt; getSystems </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="a00930.html">Arcade::ECS::ISystemManager</a> &gt;&#160;</td>
-          <td class="paramname"><em>systemManager</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The Graph shared lib main entry point to get systems. </p>
-<dl class="section return"><dt>Returns</dt><dd>A unique_ptr on ISystemManager instance</dd></dl>
-<p>All graph shared lib must have this function</p>
-<p>It takes a parameter because, if there was no parameter, we will have to implement all the Archi commune in all .so (to be hable to create (malloc/new) one of them Now, with this parameter, we don't have to code everything in .so </p>
 
 </div>
 </div>
@@ -268,7 +315,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 24 2023 13:13:21 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 27 2023 09:24:17 for Architecture Arcade by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

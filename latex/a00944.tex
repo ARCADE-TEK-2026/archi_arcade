@@ -1,0 +1,108 @@
+\hypertarget{a00944}{}\doxysection{Arcade\+::Graph\+::ISprite Struct Reference}
+\label{a00944}\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+
+
+The \mbox{\hyperlink{a00944}{ISprite}} class.  
+
+
+
+
+{\ttfamily \#include $<$ISprite.\+hpp$>$}
+
+
+
+Inheritance diagram for Arcade\+::Graph\+::ISprite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{a00943}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Arcade\+::Graph\+::ISprite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00942}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{a00944_aea3fe4ac3aeeac2ddf31309ebd910f83}{path}}
+\begin{DoxyCompactList}\small\item\em The path of the sprite. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00928}{TTYData}} \mbox{\hyperlink{a00944_a9634e9f0b9e391c5a0c26f1c6d1f5008}{tty\+Data}}
+\begin{DoxyCompactList}\small\item\em Data for tty graphic lib to be hable to draw it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00884}{Arcade\+::\+Vector3f}} \mbox{\hyperlink{a00944_ad1cabfe98c487a1df7b3b33c630ad2d2}{pos}}
+\begin{DoxyCompactList}\small\item\em The sprite position in 3Dimension (you can use only x and y if you want) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00932}{Rect}} \mbox{\hyperlink{a00944_a415d6fbf0261ad6411ed50d289d801dc}{rect}}
+\begin{DoxyCompactList}\small\item\em The sprite rect of one sprite in the spritesheet path. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{a00944_a0a8519fe991cf2e12fd454a6f0683247}{current\+Rect\+Index}}
+\begin{DoxyCompactList}\small\item\em The index of the current sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{a00944}{ISprite}} class. 
+
+The \mbox{\hyperlink{a00944}{ISprite}} interface is the class where you can manipulate your sprites. ATTENTION\+: This class is of Comp\+Type SPRITE (you need to set the type in order for the graphic to play it) 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a00944_a0a8519fe991cf2e12fd454a6f0683247}\label{a00944_a0a8519fe991cf2e12fd454a6f0683247}} 
+\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!currentRectIndex@{currentRectIndex}}
+\index{currentRectIndex@{currentRectIndex}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+\doxysubsubsection{\texorpdfstring{currentRectIndex}{currentRectIndex}}
+{\footnotesize\ttfamily int Arcade\+::\+Graph\+::\+ISprite\+::current\+Rect\+Index}
+
+
+
+The index of the current sprite. 
+
+to get the rect of the current sprite\+: sprite.\+rect.\+left + (sprite.\+rect.\+width $\ast$ sprite.\+current\+Rect\+Index); \mbox{\Hypertarget{a00944_aea3fe4ac3aeeac2ddf31309ebd910f83}\label{a00944_aea3fe4ac3aeeac2ddf31309ebd910f83}} 
+\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!path@{path}}
+\index{path@{path}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily std\+::string Arcade\+::\+Graph\+::\+ISprite\+::path}
+
+
+
+The path of the sprite. 
+
+\mbox{\Hypertarget{a00944_ad1cabfe98c487a1df7b3b33c630ad2d2}\label{a00944_ad1cabfe98c487a1df7b3b33c630ad2d2}} 
+\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!pos@{pos}}
+\index{pos@{pos}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00884}{Arcade\+::\+Vector3f}} Arcade\+::\+Graph\+::\+ISprite\+::pos}
+
+
+
+The sprite position in 3Dimension (you can use only x and y if you want) 
+
+Positions are in percentages. (0 -\/$>$ 100) \mbox{\Hypertarget{a00944_a415d6fbf0261ad6411ed50d289d801dc}\label{a00944_a415d6fbf0261ad6411ed50d289d801dc}} 
+\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!rect@{rect}}
+\index{rect@{rect}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00932}{Rect}} Arcade\+::\+Graph\+::\+ISprite\+::rect}
+
+
+
+The sprite rect of one sprite in the spritesheet path. 
+
+\mbox{\Hypertarget{a00944_a9634e9f0b9e391c5a0c26f1c6d1f5008}\label{a00944_a9634e9f0b9e391c5a0c26f1c6d1f5008}} 
+\index{Arcade::Graph::ISprite@{Arcade::Graph::ISprite}!ttyData@{ttyData}}
+\index{ttyData@{ttyData}!Arcade::Graph::ISprite@{Arcade::Graph::ISprite}}
+\doxysubsubsection{\texorpdfstring{ttyData}{ttyData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00928}{TTYData}} Arcade\+::\+Graph\+::\+ISprite\+::tty\+Data}
+
+
+
+Data for tty graphic lib to be hable to draw it. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Arcade/\+Graph/\mbox{\hyperlink{a00053}{ISprite.\+hpp}}\end{DoxyCompactItemize}

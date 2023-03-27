@@ -1,7 +1,7 @@
 \hypertarget{a00011}{}\doxysection{include/\+Api.hpp File Reference}
 \label{a00011}\index{include/Api.hpp@{include/Api.hpp}}
-{\ttfamily \#include \char`\"{}IScene\+Manager.\+hpp\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}ISystem\+Manager.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}IDisplay\+Module.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}IGame\+Module.\+hpp\char`\"{}}\newline
 Include dependency graph for Api.\+hpp\+:
 \nopagebreak
 \begin{figure}[H]
@@ -18,20 +18,24 @@ Include dependency graph for Api.\+hpp\+:
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum class \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}} \{ \newline
-\mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487}{GRAPH}}
+enum \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}} \{ \newline
+\mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616a3f2da53bcaa9802a92482bd71391fcf8}{GRAPH}}
 , \newline
-\mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13}{GAME}}
+\mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616ad50cf309d7568040619ed26ee6835a84}{GAME}}
  \}
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00938}{Arcade\+::\+Game\+::\+IScene\+Manager}} $>$ \mbox{\hyperlink{a00011_a9fab8efd3514dd290c620917fe844b3d}{get\+Scenes}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00938}{Arcade\+::\+Game\+::\+IScene\+Manager}} $>$ scene\+Manager)
-\begin{DoxyCompactList}\small\item\em The game shared lib main entry point to get scenes. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00930}{Arcade\+::\+ECS\+::\+ISystem\+Manager}} $>$ \mbox{\hyperlink{a00011_a689214538345231b62f1985f714610e4}{get\+Systems}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00930}{Arcade\+::\+ECS\+::\+ISystem\+Manager}} $>$ system\+Manager)
-\begin{DoxyCompactList}\small\item\em The Graph shared lib main entry point to get systems. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} std\+::string \mbox{\hyperlink{a00011_a5cafcdee8016feaafbc820ae5ef2a537}{get\+Name}} ()
+\mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} \mbox{\hyperlink{a00916}{Arcade\+::\+Game\+::\+IGame\+Module}} $\ast$ \mbox{\hyperlink{a00011_af55f24c99c01a12fa733601ca8db2823}{get\+Game\+Module}} ()
+\begin{DoxyCompactList}\small\item\em The Games shared lib main entry point to get Game\+Module. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} void \mbox{\hyperlink{a00011_a065a0425d88cf44bef96ab7bef9f99bc}{destroy\+Game\+Module}} (\mbox{\hyperlink{a00916}{Arcade\+::\+Game\+::\+IGame\+Module}} $\ast$game\+Module)
+\begin{DoxyCompactList}\small\item\em Destroy the Game\+Module created by get\+Game\+Module. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} \mbox{\hyperlink{a00936}{Arcade\+::\+Graph\+::\+IDisplay\+Module}} $\ast$ \mbox{\hyperlink{a00011_a8fa58925c4e6cac6447997b40fb5a29b}{get\+Display\+Module}} ()
+\begin{DoxyCompactList}\small\item\em The Graphs shared lib main entry point to get Display\+Module. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} void \mbox{\hyperlink{a00011_a30ae8f95e372e67c2714f47f2fd83349}{destroy\+Display\+Module}} (\mbox{\hyperlink{a00936}{Arcade\+::\+Graph\+::\+IDisplay\+Module}} $\ast$display\+Module)
+\begin{DoxyCompactList}\small\item\em Destroy the Display\+Module created by get\+Display\+Module. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} const char $\ast$ \mbox{\hyperlink{a00011_a14981c4de7f188c4f59bc929b5e3583b}{get\+Name}} ()
 \begin{DoxyCompactList}\small\item\em The Shared lib entry point to get lib name. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}} \mbox{\hyperlink{a00011_ab33833f69d75c62be75bb97a2c0c2a44}{get\+Type}} ()
 \begin{DoxyCompactList}\small\item\em The Shared lib entry point to get lib type. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -51,14 +55,14 @@ enum class \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}
 \index{Api.hpp@{Api.hpp}!LibType@{LibType}}
 \index{LibType@{LibType}!Api.hpp@{Api.hpp}}
 \doxysubsubsection{\texorpdfstring{LibType}{LibType}}
-{\footnotesize\ttfamily enum \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{a00011_a6bd8133fc17124d3215b7fc6edecf616}{Lib\+Type}}}
 
 Each graphical library must call in one system the set\+Mouse\+Position method of Event\+Manager \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{GRAPH@{GRAPH}!Api.hpp@{Api.hpp}}\index{Api.hpp@{Api.hpp}!GRAPH@{GRAPH}}}\mbox{\Hypertarget{a00011_a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487}\label{a00011_a6bd8133fc17124d3215b7fc6edecf616ae27e2917b6444fcd3452d2d87046a487}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRAPH@{GRAPH}!Api.hpp@{Api.hpp}}\index{Api.hpp@{Api.hpp}!GRAPH@{GRAPH}}}\mbox{\Hypertarget{a00011_a6bd8133fc17124d3215b7fc6edecf616a3f2da53bcaa9802a92482bd71391fcf8}\label{a00011_a6bd8133fc17124d3215b7fc6edecf616a3f2da53bcaa9802a92482bd71391fcf8}} 
 GRAPH&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME@{GAME}!Api.hpp@{Api.hpp}}\index{Api.hpp@{Api.hpp}!GAME@{GAME}}}\mbox{\Hypertarget{a00011_a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13}\label{a00011_a6bd8133fc17124d3215b7fc6edecf616a4504e1ed59cd9732b8a844e5424e6f13}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME@{GAME}!Api.hpp@{Api.hpp}}\index{Api.hpp@{Api.hpp}!GAME@{GAME}}}\mbox{\Hypertarget{a00011_a6bd8133fc17124d3215b7fc6edecf616ad50cf309d7568040619ed26ee6835a84}\label{a00011_a6bd8133fc17124d3215b7fc6edecf616ad50cf309d7568040619ed26ee6835a84}} 
 GAME&\\
 \hline
 
@@ -66,11 +70,67 @@ GAME&\\
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{a00011_a5cafcdee8016feaafbc820ae5ef2a537}\label{a00011_a5cafcdee8016feaafbc820ae5ef2a537}} 
+\mbox{\Hypertarget{a00011_a30ae8f95e372e67c2714f47f2fd83349}\label{a00011_a30ae8f95e372e67c2714f47f2fd83349}} 
+\index{Api.hpp@{Api.hpp}!destroyDisplayModule@{destroyDisplayModule}}
+\index{destroyDisplayModule@{destroyDisplayModule}!Api.hpp@{Api.hpp}}
+\doxysubsubsection{\texorpdfstring{destroyDisplayModule()}{destroyDisplayModule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} void destroy\+Display\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00936}{Arcade\+::\+Graph\+::\+IDisplay\+Module}} $\ast$}]{display\+Module }\end{DoxyParamCaption})}
+
+
+
+Destroy the Display\+Module created by get\+Display\+Module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & A ptr on IDisplay\+Module \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00011_a065a0425d88cf44bef96ab7bef9f99bc}\label{a00011_a065a0425d88cf44bef96ab7bef9f99bc}} 
+\index{Api.hpp@{Api.hpp}!destroyGameModule@{destroyGameModule}}
+\index{destroyGameModule@{destroyGameModule}!Api.hpp@{Api.hpp}}
+\doxysubsubsection{\texorpdfstring{destroyGameModule()}{destroyGameModule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} void destroy\+Game\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00916}{Arcade\+::\+Game\+::\+IGame\+Module}} $\ast$}]{game\+Module }\end{DoxyParamCaption})}
+
+
+
+Destroy the Game\+Module created by get\+Game\+Module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Module} & A ptr on IGame\+Module \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00011_a8fa58925c4e6cac6447997b40fb5a29b}\label{a00011_a8fa58925c4e6cac6447997b40fb5a29b}} 
+\index{Api.hpp@{Api.hpp}!getDisplayModule@{getDisplayModule}}
+\index{getDisplayModule@{getDisplayModule}!Api.hpp@{Api.hpp}}
+\doxysubsubsection{\texorpdfstring{getDisplayModule()}{getDisplayModule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} \mbox{\hyperlink{a00936}{Arcade\+::\+Graph\+::\+IDisplay\+Module}}$\ast$ get\+Display\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The Graphs shared lib main entry point to get Display\+Module. 
+
+\begin{DoxyReturn}{Returns}
+A ptr on IDisplay\+Module
+\end{DoxyReturn}
+All graph shared lib must have this function \mbox{\Hypertarget{a00011_af55f24c99c01a12fa733601ca8db2823}\label{a00011_af55f24c99c01a12fa733601ca8db2823}} 
+\index{Api.hpp@{Api.hpp}!getGameModule@{getGameModule}}
+\index{getGameModule@{getGameModule}!Api.hpp@{Api.hpp}}
+\doxysubsubsection{\texorpdfstring{getGameModule()}{getGameModule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} \mbox{\hyperlink{a00916}{Arcade\+::\+Game\+::\+IGame\+Module}}$\ast$ get\+Game\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The Games shared lib main entry point to get Game\+Module. 
+
+\begin{DoxyReturn}{Returns}
+A ptr on IGame\+Module
+\end{DoxyReturn}
+All game shared lib must have this function \mbox{\Hypertarget{a00011_a14981c4de7f188c4f59bc929b5e3583b}\label{a00011_a14981c4de7f188c4f59bc929b5e3583b}} 
 \index{Api.hpp@{Api.hpp}!getName@{getName}}
 \index{getName@{getName}!Api.hpp@{Api.hpp}}
 \doxysubsubsection{\texorpdfstring{getName()}{getName()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} std\+::string get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} const char$\ast$ get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -79,37 +139,7 @@ The Shared lib entry point to get lib name.
 \begin{DoxyReturn}{Returns}
 Lib\textquotesingle{}s name in std\+::string
 \end{DoxyReturn}
-All shared lib must have this function \mbox{\Hypertarget{a00011_a9fab8efd3514dd290c620917fe844b3d}\label{a00011_a9fab8efd3514dd290c620917fe844b3d}} 
-\index{Api.hpp@{Api.hpp}!getScenes@{getScenes}}
-\index{getScenes@{getScenes}!Api.hpp@{Api.hpp}}
-\doxysubsubsection{\texorpdfstring{getScenes()}{getScenes()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00938}{Arcade\+::\+Game\+::\+IScene\+Manager}}$>$ get\+Scenes (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00938}{Arcade\+::\+Game\+::\+IScene\+Manager}} $>$}]{scene\+Manager }\end{DoxyParamCaption})}
-
-
-
-The game shared lib main entry point to get scenes. 
-
-\begin{DoxyReturn}{Returns}
-A unique\+\_\+ptr on IScene\+Manager instance
-\end{DoxyReturn}
-All game shared lib must have this function
-
-It takes a parameter because, if there was no parameter, we will have to implement all the Archi commune in all .so (to be hable to create (malloc/new) one of them Now, with this parameter, we don\textquotesingle{}t have to code everything in .so \mbox{\Hypertarget{a00011_a689214538345231b62f1985f714610e4}\label{a00011_a689214538345231b62f1985f714610e4}} 
-\index{Api.hpp@{Api.hpp}!getSystems@{getSystems}}
-\index{getSystems@{getSystems}!Api.hpp@{Api.hpp}}
-\doxysubsubsection{\texorpdfstring{getSystems()}{getSystems()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{a00011_a3472d8cdbb788d5f1815b3522595bc49}{EXPORT}} std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{a00930}{Arcade\+::\+ECS\+::\+ISystem\+Manager}}$>$ get\+Systems (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00930}{Arcade\+::\+ECS\+::\+ISystem\+Manager}} $>$}]{system\+Manager }\end{DoxyParamCaption})}
-
-
-
-The Graph shared lib main entry point to get systems. 
-
-\begin{DoxyReturn}{Returns}
-A unique\+\_\+ptr on ISystem\+Manager instance
-\end{DoxyReturn}
-All graph shared lib must have this function
-
-It takes a parameter because, if there was no parameter, we will have to implement all the Archi commune in all .so (to be hable to create (malloc/new) one of them Now, with this parameter, we don\textquotesingle{}t have to code everything in .so \mbox{\Hypertarget{a00011_ab33833f69d75c62be75bb97a2c0c2a44}\label{a00011_ab33833f69d75c62be75bb97a2c0c2a44}} 
+All shared lib must have this function \mbox{\Hypertarget{a00011_ab33833f69d75c62be75bb97a2c0c2a44}\label{a00011_ab33833f69d75c62be75bb97a2c0c2a44}} 
 \index{Api.hpp@{Api.hpp}!getType@{getType}}
 \index{getType@{getType}!Api.hpp@{Api.hpp}}
 \doxysubsubsection{\texorpdfstring{getType()}{getType()}}

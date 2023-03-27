@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['g_284',['g',['../a00942.html#abb17ee7862551379901ccc6ef7533d19',1,'Arcade::Graph::Color']]]
+  ['fontpath_196',['fontPath',['../a00948.html#a20c1848f9350f0e465db6f7f948b440f',1,'Arcade::Graph::IText']]],
+  ['foreground_197',['foreground',['../a00928.html#ab25fd97c6b846592c54905b062ba4d6a',1,'Arcade::Graph::TTYData']]]
 ];
