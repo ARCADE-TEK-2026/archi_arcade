@@ -14,26 +14,32 @@ namespace Arcade {
         /**
          * @brief The IComponents interface
          *
-         * defaultComponent type to implement: TEXT, SPRITE, MUSIC, CHANGE_LIB
+         * defaultComponent type to implement: TEXT, SPRITE, MUSIC
+         * !!!ATTENTION!!!
+         * it must start like this (copy paste exactly in the same order):
+         * ```cpp
+         * enum class CompType: int {
+         *     TEXT = 0,
+         *     SPRITE = 1,
+         *     MUSIC = 2,
+         * };
+         * ```
+         * !!!ATTENTION!!!
          */
         enum class CompType;
 
-        class IComponent {
+        struct IComponent {
             public:
                 virtual ~IComponent() = default;
-
                 /**
-                 * @brief Get the type of the component.
-                 *
-                 * @return The component type (CompType)
+                 * @brief Type of the component (it let you cast without
+                 * headache)
                  */
-                virtual CompType getType() const = 0;
+                CompType type;
                 /**
-                 * @brief Get the id of the component.
-                 *
-                 * @return The component id
+                 * @brief Name of the component
                  */
-                virtual const std::string &getId() const = 0;
+                std::string id;
         };
     } // namespace ECS
 };    // namespace Arcade

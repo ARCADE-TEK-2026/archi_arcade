@@ -95,12 +95,10 @@ namespace Arcade {
          *
          * Some events are used to change libs
          * such as
-         * "CHANGE_GRAPH" with component ChangeLibComp
-         * same goes for the game lib
-         * "CHANGE_GAME" with component ChangeLibComp
+         * "CHANGE_GRAPH" to tell core to change the graphical lib used
+         * "CHANGE_GAME" to tell core to change the game played
          * "GAME_END" Is the event create by game system to tell core to quit
          * game and go main menu
-         *
          * "QUIT" Is the event create by game or main menu to tell core to quit
          * program
          *
@@ -146,20 +144,6 @@ namespace Arcade {
                  * @brief Remove all events from list of trigered events
                  */
                 virtual void clearEvents() = 0;
-
-                /**
-                 * @brief Get the last known mouse position
-                 *
-                 * @return The last known mouse position
-                 */
-                virtual const Arcade::Vector2f &getMousePosition() const = 0;
-                /**
-                 * @brief Set the last known mouse position
-                 *
-                 * @param mousePosition The last known mouse position
-                 */
-                virtual void setMousePosition(
-                const Arcade::Vector2f &mousePosition) = 0;
         };
     } // namespace ECS
 } // namespace Arcade

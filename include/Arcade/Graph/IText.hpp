@@ -18,83 +18,35 @@ namespace Arcade {
          * @brief The IText class
          *
          * The IText class is the class where you can manipulate text.
-         * ATTENTION: This class is of CompType TEXT
+         *
+         * ATTENTION: This class is of CompType TEXT (you need to set the type
+         * in order for the graphic to play it)
          */
-        class IText : public Arcade::ECS::IComponent {
+        struct IText : public Arcade::ECS::IComponent {
             public:
-                virtual ~IText() = default;
                 /**
-                 * @brief Get the Id object
+                 * @brief Font path
+                 */
+                std::string fontPath;
+                /**
+                 * @brief Text to display
+                 */
+                std::string text;
+                /**
+                 * @brief The background color
+                 */
+                Color backgroundColor;
+                /**
+                 * @brief The text color
+                 */
+                Color textColor;
+                /**
+                 * @brief The sprite position in 3Dimension (you can use only x
+                 * and y if you want)
                  *
-                 * @return The Id of the Text.
+                 * Positions are in percentages. (0 -> 100)
                  */
-                virtual const std::string &getId() const override = 0;
-                /**
-                 * @brief Get the path of the text font.
-                 *
-                 * @return The path of the text font.
-                 */
-                virtual const std::string &getFontPath() const = 0;
-                /**
-                 * @brief Set the path of the text font.
-                 */
-                virtual void setFontPath(const std::string &path) = 0;
-                /**
-                 * @brief Get text to print.
-                 *
-                 * @return The text to print.
-                 */
-                virtual const std::string &getText() const = 0;
-                /**
-                 * @brief Set the text to print.
-                 */
-                virtual void setText(const std::string &text) = 0;
-                /**
-                 * @brief Get the background color.
-                 *
-                 * @return The background color.
-                 */
-                virtual const Arcade::Graph::Color &
-                getBackgroundColor() const = 0;
-                /**
-                 * @brief Set the background color.
-                 */
-                virtual void setBackgroundColor(
-                const Arcade::Graph::Color &color) = 0;
-                /**
-                 * @brief Get the foreground color.
-                 *
-                 * @return The foreground color.
-                 */
-                virtual const Arcade::Graph::Color &
-                getForegroundColor() const = 0;
-                /**
-                 * @brief Set the foreground color.
-                 */
-                virtual void setForegroundColor(
-                const Arcade::Graph::Color &color) = 0;
-                /**
-                 * @brief Get the police size.
-                 *
-                 * @return The police size.
-                 */
-                virtual float getPoliceSize() const = 0;
-                /**
-                 * @brief Set the police size.
-                 */
-                virtual void setPoliceSize(float size) = 0;
-                /**
-                 * @brief Get the text position.
-                 *
-                 * The positions data are in percentages.
-                 *
-                 * @return The text position.
-                 */
-                virtual const Arcade::Vector2f &getPos() const = 0;
-                /**
-                 * @brief Set the text position.
-                 */
-                virtual void setPos(const Arcade::Vector2f &pos) = 0;
+                Arcade::Vector3f pos;
         };
     } // namespace Graph
 } // namespace Arcade
