@@ -25,6 +25,14 @@ namespace Arcade {
          * };
          * ```
          * !!!ATTENTION!!!
+         * To be hable to not have error. Because enum are int, and if game
+         * has set a component type `POSITION = 4` and graph has set a component type
+         * `SFSPRITE = 4`, the game if it will getEntitiesByComponentType(POSITION)
+         * it will also get SFSPRITE (there are int 4 too)
+         * To fix this problem:
+         * - Graph : CompType range are from 0 to 100 (inclusive)
+         * - Core : CompType range are from 101 to 200 (inclusive)
+         * - Game : CompType range are from 201 to int max
          */
         enum class CompType;
 
