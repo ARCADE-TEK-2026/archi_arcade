@@ -98,7 +98,7 @@ namespace Arcade {
          * "CHANGE_GAME" to tell core to change the game played
          * "GAME_END" Is the event create by game system to tell core to quit
          * game and go main menu
-         * "QUIT" Is the event create by game or main menu to tell core to quit
+         * "QUIT" Is the event create by game main menu or grapic lib to tell core to quit
          * program
          *
          */
