@@ -89,7 +89,6 @@ namespace Arcade {
          * "KEY_F10_PRESSED"
          * "KEY_F11_PRESSED"
          * "KEY_F12_PRESSED"
-         * "WINDOW_CLOSE"
          * "WINDOW_RESIZE"
          * "WINDOW_MINIMIZE"
          *
