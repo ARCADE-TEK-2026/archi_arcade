@@ -162,6 +162,20 @@
 
 
   ----------------------------------------------------------------------------
+  -------------------------- Warnings ----------------------------------------
+  ```cpp
+  /*
+    * To be hable to not have error. Because enum are int, and if game
+    * has set a component type `POSITION = 4` and graph has set a component type
+    * `SFSPRITE = 4`, the game if it will getEntitiesByComponentType(POSITION)
+    * it will also get SFSPRITE (there are int 4 too)
+    * To fix this problem:
+    * - Graph : CompType range are from 0 to 100 (inclusive)
+    * - Core : CompType range are from 101 to 200 (inclusive)
+    * - Game : CompType range are from 201 to int max
+  */
+  ```
+  ----------------------------------------------------------------------------
 
   N.B.: L'écrivain de cette documentation prie de bien vouloir l'excuser pour la prise de partie, il sera heureux de débatre par l'intermédiaire d'issue sur github dans le cas où une information dans cette documentation serait fausse.
   N.B.: Pour get des éléments dans un vecteur const il faut utiliser la méthode .at()
