@@ -31,7 +31,7 @@ namespace Arcade {
                  * @param eventManager the event manager (you must add events)
                  * @param entityManager the entity manager
                  */
-                virtual void update(float delta,
+                virtual void update(double delta,
                 Arcade::ECS::IEventManager &eventManager,
                 Arcade::ECS::IEntityManager &entityManager) = 0;
         };
