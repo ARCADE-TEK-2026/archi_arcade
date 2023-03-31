@@ -44,7 +44,7 @@ namespace Arcade {
                  * @brief The sprite position in 3Dimension (you can use only x
                  * and y if you want)
                  *
-                 * Positions are in percentages. (0 -> 100)
+                 * Positions in Pixel, terminal graph libs handle ratio
                  */
                 Arcade::Vector3f pos;
         };
