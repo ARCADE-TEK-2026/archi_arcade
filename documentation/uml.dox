@@ -74,7 +74,7 @@
   ----------------------------------------------------------------------------
   LES JEUX
 
-  Utilisation de sprite communs, soit présents dans l'archi commune dans assets/, soit à ajouter.
+  Utilisation de sprite communs, soit présents dans l'archi commune dans assets/, soit à ajouter en pr.
 
   À implementer dans chaque jeux:
   ```cpp
