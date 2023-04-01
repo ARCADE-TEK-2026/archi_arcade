@@ -74,6 +74,8 @@
   ----------------------------------------------------------------------------
   LES JEUX
 
+  Utilisation de sprite communs, soit présents dans l'archi commune dans assets/, soit à ajouter en pr.
+
   À implementer dans chaque jeux:
   ```cpp
   /*
@@ -145,6 +147,7 @@
     L'interface par laquelle le binaire arcade inter-agit.
     Il permet de faire un rendu graphique des composant
     "normalisés" (IText, IMusic, ISprite)
+    Il doit créer une fenêtre de 1920 par 1080 en pixels et 240 par 67 en terminal
     À chaque frame, la méthode `update` est appelée.
     Il est attendu à ce que cette méthode mette à jour
     les évènements survenus.
