@@ -37,7 +37,11 @@ cp "$SOURCE_SETUP_SCRIPT" "$TARGET_SETUP_SCRIPT"
 chmod +x "$TARGET_SETUP_SCRIPT"
 if [[ "$DOWLOAD_ASSETS" == "y" ]]; then
     echo "Download assets..."
-    cp -r "$SOURCE_ASSETS_FOLDER" "$TARGET_ASSETS_FOLDER"
+    if [[ ! -d "$TARGET_ASSETS_FOLDER" ]]; then
+        cp -r "$SOURCE_ASSETS_FOLDER" "$TARGET_ASSETS_FOLDER"
+    else
+        cp -r "$SOURCE_ASSETS_FOLDER/"* "$TARGET_ASSETS_FOLDER"
+    fi
 fi
 rm -rf "$SOURCE_CLONE_FOLDER"
 
