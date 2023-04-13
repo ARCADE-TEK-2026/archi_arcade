@@ -10,18 +10,18 @@
   └── Arcade
       ├── ArcadeStruct.hpp
       ├── Core
-      │   ├── ICore.hpp
-      │   ├── IDisplayModule.hpp
-      │   └── IGameModule.hpp
+      │   ├── ICore.hpp
+      │   ├── IDisplayModule.hpp
+      │   └── IGameModule.hpp
       ├── ECS
-      │   ├── IComponent.hpp
-      │   ├── IEntity.hpp
-      │   ├── IEntityManager.hpp
-      │   ├── IEventManager.hpp
-      │   ├── ISystem.hpp
-      │   └── ISystemManager.hpp
+      │   ├── IComponent.hpp
+      │   ├── IEntity.hpp
+      │   ├── IEntityManager.hpp
+      │   ├── IEventManager.hpp
+      │   ├── ISystem.hpp
+      │   └── ISystemManager.hpp
       ├── Game
-      │   └── IScene.hpp
+      │   └── IScene.hpp
       └── Graph
           ├── GraphStruct.hpp
           ├── IMusic.hpp
@@ -30,8 +30,11 @@
 
   6 directories, 16 files
   ```
-  uml: https://github.com/ARCADE-TEK-2026/archi_arcade/blob/gh-pages/uml.svg
-  full documentation: https://github.com/ARCADE-TEK-2026/archi_arcade/blob/main/documentation/uml.dox
+  <a href="https://github.com/ARCADE-TEK-2026/archi_arcade/blob/gh-pages/uml.svg">uml svg link</a>
+
+  <a href="https://github.com/ARCADE-TEK-2026/archi_arcade/blob/main/documentation/uml.dox">full documentation in plain text</a>
+
+  <a href="https://github.com/ARCADE-TEK-2026/archi_arcade/blob/main/documentation/GourceArchiCommune.mp4">gource du repo archi commune</a>
 
   Comme vous pouvez le voir, nous avons decider d'integrer un ECS directement dans l'architecture commune.
 
