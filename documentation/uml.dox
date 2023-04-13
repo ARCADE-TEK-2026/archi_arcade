@@ -30,11 +30,13 @@
 
   6 directories, 16 files
   ```
-  <a href="https://github.com/ARCADE-TEK-2026/archi_arcade/blob/gh-pages/uml.svg">uml svg link</a>
+  <a href="https://github.com/ARCADE-TEK-2026/archi_arcade/blob/gh-pages/uml.svg">UML svg link</a>
 
-  <a href="https://github.com/ARCADE-TEK-2026/archi_arcade/blob/main/documentation/uml.dox">full documentation in plain text</a>
+  <a href="https://github.com/ARCADE-TEK-2026/archi_arcade/blob/main/documentation/uml.dox">Full documentation in plain text</a>
 
-  <a href="https://github.com/ARCADE-TEK-2026/archi_arcade/blob/main/documentation/GourceArchiCommune.mp4">gource du repo archi commune</a>
+  <a href="https://github.com/ARCADE-TEK-2026/archi_arcade/blob/main/documentation/GourceArchiCommune.mp4">Gource du repo archi commune</a>
+
+  <a href="https://github.com/ARCADE-TEK-2026/archi_arcade/blob/main/documentation/uml-animate.svg">Animation des modifs sur l'archi</a>
 
   Comme vous pouvez le voir, nous avons decider d'integrer un ECS directement dans l'architecture commune.
 
